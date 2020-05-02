@@ -39,13 +39,22 @@ $BITSNPICAS convertbitmap \
 	-o Fairfax.ttf -f ttf Fairfax.kbits \
 	-o FairfaxBold.ttf -f ttf FairfaxBold.kbits \
 	-o FairfaxItalic.ttf -f ttf FairfaxItalic.kbits \
-	-o FairfaxSerif.ttf -f ttf FairfaxSerif.kbits
+	-o FairfaxSerif.ttf -f ttf FairfaxSerif.kbits \
+	-s 'Fairfax( Serif)?' -r '$0 SM' -c \
+	-o FairfaxSM.ttf -f ttf Fairfax.kbits \
+	-o FairfaxSMBold.ttf -f ttf FairfaxBold.kbits \
+	-o FairfaxSMItalic.ttf -f ttf FairfaxItalic.kbits \
+	-o FairfaxSerifSM.ttf -f ttf FairfaxSerif.kbits
 
 # Convert to eot
 $TTF2EOT < Fairfax.ttf > Fairfax.eot
 $TTF2EOT < FairfaxBold.ttf > FairfaxBold.eot
 $TTF2EOT < FairfaxItalic.ttf > FairfaxItalic.eot
 $TTF2EOT < FairfaxSerif.ttf > FairfaxSerif.eot
+$TTF2EOT < FairfaxSM.ttf > FairfaxSM.eot
+$TTF2EOT < FairfaxSMBold.ttf > FairfaxSMBold.eot
+$TTF2EOT < FairfaxSMItalic.ttf > FairfaxSMItalic.eot
+$TTF2EOT < FairfaxSerifSM.ttf > FairfaxSerifSM.eot
 
 # Create zip
 zip Fairfax.zip OFL.txt Fairfax*.ttf Fairfax*.eot
@@ -60,4 +69,12 @@ cp FairfaxItalic.ttf fairfax/fairfaxitalic.ttf
 cp FairfaxItalic.eot fairfax/fairfaxitalic.eot
 cp FairfaxSerif.ttf fairfax/fairfaxserif.ttf
 cp FairfaxSerif.eot fairfax/fairfaxserif.eot
+cp FairfaxSM.ttf fairfax/fairfaxsm.ttf
+cp FairfaxSM.eot fairfax/fairfaxsm.eot
+cp FairfaxSMBold.ttf fairfax/fairfaxsmbold.ttf
+cp FairfaxSMBold.eot fairfax/fairfaxsmbold.eot
+cp FairfaxSMItalic.ttf fairfax/fairfaxsmitalic.ttf
+cp FairfaxSMItalic.eot fairfax/fairfaxsmitalic.eot
+cp FairfaxSerifSM.ttf fairfax/fairfaxserifsm.ttf
+cp FairfaxSerifSM.eot fairfax/fairfaxserifsm.eot
 cp Fairfax.zip fairfax/fairfax.zip
