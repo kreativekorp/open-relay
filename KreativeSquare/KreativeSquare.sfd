@@ -21,12 +21,13 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1504498285
-ModificationTime: 1587526772
+ModificationTime: 1588456507
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
 LineGap: 0
 VLineGap: 0
+Panose: 2 0 6 9 0 0 0 0 0 0
 OS2TypoAscent: 560
 OS2TypoAOffset: 0
 OS2TypoDescent: -160
@@ -52,7 +53,7 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 63456 32 8
+WinInfo: 1047840 32 8
 BeginPrivate: 0
 EndPrivate
 BeginChars: 1114112 5703

@@ -1,0 +1,5 @@
+===FontName: KreativeSquareSM
+===FullName: Kreative Square SM
+===FamilyName: Kreative Square SM
+
+@@@StrictMonospace
