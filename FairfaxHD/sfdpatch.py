@@ -30,6 +30,13 @@ class SfdChar:
 		self.properties.append(prop)
 		return i
 
+	def get(self, key):
+		k = key + ': '
+		for i in range(len(self.properties)):
+			if self.properties[i].startswith(k):
+				return self.properties[i]
+		return None
+
 	def print(self):
 		print('StartChar: ' + self.name)
 		for prop in self.properties:
@@ -65,6 +72,13 @@ class Sfd:
 		self.properties.append(prop)
 		return i
 
+	def get(self, key):
+		k = key + ': '
+		for i in range(len(self.properties)):
+			if self.properties[i].startswith(k):
+				return self.properties[i]
+		return None
+
 	def charIndex(self, name, create=False):
 		try:
 			return self.charindex[name]
@@ -75,6 +89,53 @@ class Sfd:
 				self.charindex[name] = i
 				return i
 			return -1
+
+	def renumber(self):
+		unimap = {}
+		for i in range(len(self.chars)):
+			self.charindex[self.chars[i].name] = i
+			encline = self.chars[i].get('Encoding')
+			if encline is not None:
+				encline = encline.split(' ')
+				unimap[encline[-2]] = str(i)
+				encline[-1] = str(i)
+				self.chars[i].set(' '.join(encline))
+		# Fix references.
+		for i in range(len(self.chars)):
+			for j in range(len(self.chars[i].properties)-1,-1,-1):
+				line = self.chars[i].properties[j]
+				if line.startswith('Refer: '):
+					line = line.split(' ')
+					try:
+						line[1] = unimap[line[2]]
+						self.chars[i].properties[j] = ' '.join(line)
+					except KeyError:
+						self.chars[i].properties.pop(j)
+
+	def removeChar(self, name):
+		try:
+			self.chars.pop(self.charindex.pop(name))
+			self.renumber()
+		except KeyError:
+			pass
+
+	def strictMonospace(self):
+		wline = None
+		spidx = self.charIndex('space')
+		if spidx >= 0:
+			wline = self.chars[spidx].get('Width')
+		if wline is None:
+			wline = 'Width: 0'
+		for i in range(len(self.chars)-1,-1,-1):
+			if self.chars[i].get('Width') != wline:
+				self.charindex.pop(self.chars[i].name)
+				self.chars.pop(i)
+			else:
+				# Remove glyph substitution references.
+				for j in range(len(self.chars[i].properties)-1,-1,-1):
+					if '2: ' in self.chars[i].properties[j]:
+						self.chars[i].properties.pop(j)
+		self.renumber()
 
 	def print(self):
 		print('SplineFontDB: ' + self.version)
@@ -106,6 +167,12 @@ class Sfd:
 						self.encsize = encsize
 				elif line.startswith('SplineFontDB: '):
 					self.version = line[14:]
+				elif line.startswith('---StartChar: '):
+					self.removeChar(line[14:])
+				elif line == '@@@StrictMonospace':
+					self.strictMonospace()
+				elif line == '@@@Renumber':
+					self.renumber()
 				elif line.startswith('+++'):
 					self.append(line[3:])
 				elif line.startswith('---'):

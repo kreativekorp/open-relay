@@ -1,0 +1,5 @@
+===FontName: FairfaxSMHD
+===FullName: Fairfax SM HD
+===FamilyName: Fairfax SM HD
+
+@@@StrictMonospace

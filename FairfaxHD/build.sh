@@ -17,22 +17,28 @@ else
 fi
 
 # Clean
-rm -f FairfaxHD.sfd-* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHaxHD.*
+rm -f FairfaxHD.sfd-* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd
 
 # Make programming ligature version
 python sfdpatch.py FairfaxHD.sfd ligatures.txt > FairfaxHaxHD.sfd
 
+# Make strict monospace version
+python sfdpatch.py FairfaxHD.sfd strictmono.txt > FairfaxSMHD.sfd
+
 # Generate ttf
-$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 128); i = i+1; endloop' FairfaxHD.sfd FairfaxHaxHD.sfd
+$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 128); i = i+1; endloop' \
+	FairfaxHD.sfd FairfaxHaxHD.sfd FairfaxSMHD.sfd
 
 # Convert to eot
 $TTF2EOT < FairfaxHD.ttf > FairfaxHD.eot
 $TTF2EOT < FairfaxHaxHD.ttf > FairfaxHaxHD.eot
+$TTF2EOT < FairfaxSMHD.ttf > FairfaxSMHD.eot
 
 # Create zip
-zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot
-zip FairfaxHaxHD.zip OFL.txt FairfaxHaxHD.ttf FairfaxHaxHD.eot
+zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
+zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
+zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
 
 # Create lowercase versions
 mkdir fairfaxhd
@@ -42,3 +48,6 @@ cp FairfaxHD.zip fairfaxhd/fairfaxhd.zip
 cp FairfaxHaxHD.ttf fairfaxhd/fairfaxhaxhd.ttf
 cp FairfaxHaxHD.eot fairfaxhd/fairfaxhaxhd.eot
 cp FairfaxHaxHD.zip fairfaxhd/fairfaxhaxhd.zip
+cp FairfaxSMHD.ttf fairfaxhd/fairfaxsmhd.ttf
+cp FairfaxSMHD.eot fairfaxhd/fairfaxsmhd.eot
+cp FairfaxSMHD.zip fairfaxhd/fairfaxsmhd.zip
