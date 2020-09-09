@@ -5,7 +5,7 @@ FamilyName: Kreative Square
 Weight: Medium
 Copyright: Kreative Square copyright (c) Kreative Software 2017-2020 under the Open Font License.
 UComments: "2017-9-3: Created with FontForge (http://fontforge.org)"
-Version: 2020.09.03
+Version: 2020.09.08
 ItalicAngle: 0
 UnderlinePosition: -72
 UnderlineWidth: 36
@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1504498285
-ModificationTime: 1599126355
+ModificationTime: 1599617921
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -43,7 +43,7 @@ HheadDescent: -160
 HheadDOffset: 0
 OS2XHeight: 400
 OS2Vendor: 'KrKo'
-Lookup: 4 0 1 "Combining Sequences 0" { "Combining Sequences 0-1"  } [<1,0> ('DFLT' <'dflt' > ) 'rlig' ('DFLT' <'dflt' > ) ]
+Lookup: 4 0 1 "Combining Sequences 0" { "Combining Sequences 0-1"  } [<1,0> ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) 'rlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033
@@ -53,7 +53,7 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1044704 32 8
+WinInfo: 63456 32 8
 BeginPrivate: 0
 EndPrivate
 BeginChars: 1114112 5708
@@ -81073,42 +81073,52 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-552 8 m 1
- 572 18 l 1
- 577 18 l 1
- 577 -30 l 1
- 569 -30 l 1
- 569 8 l 1
- 555 1 l 1
- 552 8 l 1
-419 4 m 1
- 403 -12 l 1
- 419 -12 l 1
- 419 4 l 1
-395 -8 m 1
- 421 18 l 1
- 427 18 l 1
- 427 -12 l 1
- 435 -12 l 1
- 435 -20 l 1
- 427 -20 l 1
- 427 -30 l 1
- 419 -30 l 1
- 419 -20 l 1
- 395 -20 l 1
- 395 -8 l 1
-509 -22 m 1
- 535 -22 l 1
- 535 -30 l 1
- 495 -30 l 1
- 495 -22 l 1
- 495 -22 527 -3 527 5 c 0
- 527 8 522 10 515 10 c 0
- 509 10 504 8 503 6 c 1
- 495 7 l 1
- 497 13 505 18 515 18 c 0
- 526 18 535 12 535 5 c 0
- 535 -6 509 -22 509 -22 c 1
+553 -15 m 0
+ 553 -19 558 -22 565 -22 c 0
+ 572 -22 577 -19 577 -15 c 0
+ 577 -11 572 -8 565 -8 c 0
+ 558 -8 553 -11 553 -15 c 0
+545 5 m 0
+ 545 12 554 18 565 18 c 0
+ 576 18 585 12 585 5 c 0
+ 585 1 583 -2 579 -4 c 1
+ 583 -7 585 -11 585 -15 c 0
+ 585 -23 576 -30 565 -30 c 0
+ 554 -30 545 -23 545 -15 c 0
+ 545 -11 547 -7 551 -4 c 1
+ 547 -2 545 1 545 5 c 0
+565 0 m 0
+ 572 0 577 2 577 5 c 0
+ 577 8 572 10 565 10 c 0
+ 558 10 553 8 553 5 c 0
+ 553 2 558 0 565 0 c 0
+503 -6 m 0
+ 503 -15 508 -22 515 -22 c 0
+ 522 -22 527 -15 527 -6 c 0
+ 527 3 522 10 515 10 c 0
+ 508 10 503 3 503 -6 c 0
+495 -6 m 0
+ 495 7 504 18 515 18 c 0
+ 526 18 535 7 535 -6 c 0
+ 535 -19 526 -30 515 -30 c 0
+ 504 -30 495 -19 495 -6 c 0
+407 -20 m 1
+ 409 -21 412 -22 415 -22 c 0
+ 422 -22 427 -18 427 -14 c 2
+ 427 -11 l 1
+ 424 -13 419 -14 415 -14 c 0
+ 404 -14 395 -7 395 2 c 0
+ 395 11 404 18 415 18 c 0
+ 426 18 435 11 435 2 c 2
+ 435 -14 l 2
+ 435 -23 426 -30 415 -30 c 0
+ 409 -30 405 -28 401 -25 c 1
+ 407 -20 l 1
+427 2 m 0
+ 427 6 422 10 415 10 c 0
+ 408 10 403 6 403 2 c 0
+ 403 -2 408 -6 415 -6 c 0
+ 422 -6 427 -2 427 2 c 0
 409 68 m 1
  435 68 l 1
  435 60 l 1

@@ -24,7 +24,7 @@ rm -rf kreativesquare
 python sfdpatch.py KreativeSquare.sfd strictmono.txt > KreativeSquareSM.sfd
 
 # Generate ttf
-$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 128); i = i+1; endloop' \
+$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
 	KreativeSquare.sfd KreativeSquareSM.sfd
 
 # Convert to eot
