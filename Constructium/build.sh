@@ -21,7 +21,8 @@ rm -f Constructium.sfd-* Constructium.ttf Constructium.eot Constructium.zip
 rm -rf constructium
 
 # Generate ttf
-$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 128); i = i+1; endloop' Constructium.sfd
+$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
+	Constructium.sfd
 
 # Convert to eot
 $TTF2EOT < Constructium.ttf > Constructium.eot
