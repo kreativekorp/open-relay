@@ -27,7 +27,7 @@ python sfdpatch.py FairfaxHD.sfd ligatures.txt > FairfaxHaxHD.sfd
 python sfdpatch.py FairfaxHD.sfd strictmono.txt > FairfaxSMHD.sfd
 
 # Generate ttf
-$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 128); i = i+1; endloop' \
+$FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
 	FairfaxHD.sfd FairfaxHaxHD.sfd FairfaxSMHD.sfd
 
 # Convert to eot
