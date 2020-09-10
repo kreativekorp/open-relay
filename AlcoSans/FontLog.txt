@@ -1,0 +1,6 @@
+2020.09.09:
+- First version
+- KSPUA (nonstandard punctuation, nonstandard Latin, fake Greek, etc.)
+- Tengwar
+- Klingon
+- Aliphbepf
