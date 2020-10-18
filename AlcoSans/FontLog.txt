@@ -1,3 +1,9 @@
+2020.10.17:
+- Cirth
+- Amman-Iar
+- Ewellic
+- Ewellic Presentation Forms
+
 2020.09.09:
 - First version
 - KSPUA (nonstandard punctuation, nonstandard Latin, fake Greek, etc.)
