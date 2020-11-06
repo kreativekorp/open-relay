@@ -1,3 +1,10 @@
+2020.11.05:
+- Sylabica
+- Unifon
+- Unifon Extended
+- Braille Extended
+- Lhenazi
+
 2020.10.17:
 - Cirth
 - Amman-Iar
