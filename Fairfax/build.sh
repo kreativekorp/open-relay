@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Find Bits'n'Picas
 if test -f BitsNPicas.jar; then
 	BITSNPICAS="java -jar BitsNPicas.jar"
 elif test -f ../BitsNPicas/BitsNPicas.jar; then
@@ -23,6 +24,7 @@ else
 	exit 1
 fi
 
+# Find ttf2eot
 if command -v ttf2eot >/dev/null 2>&1; then
 	TTF2EOT="ttf2eot"
 else
@@ -45,6 +47,12 @@ $BITSNPICAS convertbitmap \
 	-o FairfaxSMBold.ttf -f ttf FairfaxBold.kbits \
 	-o FairfaxSMItalic.ttf -f ttf FairfaxItalic.kbits \
 	-o FairfaxSerifSM.ttf -f ttf FairfaxSerif.kbits
+
+# Inject PUAA table
+$BITSNPICAS injectpuaa \
+	-D ../FairfaxHD/Blocks.txt ../FairfaxHD/UnicodeData.txt \
+	-I Fairfax.ttf FairfaxBold.ttf FairfaxItalic.ttf FairfaxSerif.ttf \
+	-I FairfaxSM.ttf FairfaxSMBold.ttf FairfaxSMItalic.ttf FairfaxSerifSM.ttf
 
 # Convert to eot
 $TTF2EOT < Fairfax.ttf > Fairfax.eot
