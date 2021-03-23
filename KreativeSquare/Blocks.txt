@@ -1,0 +1,32 @@
+# Property: Block
+#
+# @missing: E000..F8FF; No_Block
+# @missing: F0000..10FFFF; No_Block
+
+EE00..EE7F; Block Sextants (Compatible with ZVBI)
+EE80..EEFF; Block Sextants (Compatible with Unscii)
+EF00..EFFF; Hex Byte Pictures
+F000..F0FF; Modular Font Elements
+F100..F1FF; Modular Font Elements Extended
+F200..F20F; Box Drawing Extended
+F210..F23F; Fill Patterns
+F240..F27F; Shade Quadrants
+F280..F2BF; Sixel Graphics
+F2C0..F2FF; Block Sextants
+F300..F3FF; Block Octants
+F400..F43F; C1 Control Pictures
+F590..F5BF; C64-OS Symbols
+F5C0..F5FF; Commander X16 Symbols
+F600..F61F; Kreative Software Private Use-F6
+F680..F69F; Apple MouseText Characters
+F700..F7FF; Kreative Software Private Use-F7
+F800..F89F; Kreative Software Private Use-F8
+F8D0..F8FF; Klingon
+FF000..FF02F; Kreative Software Private Use-FF0
+FF030..FF09F; Domino Tiles Extended
+FF0A0..FF0DF; Powerline Symbols
+FF0E0..FF0FF; Rayalaka Color Symbols
+FF100..FF1FF; Kreative Software Private Use-FF1
+FF700..FF7FF; Seven-Segment Display Patterns
+
+# EOF
