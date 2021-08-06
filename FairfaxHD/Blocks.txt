@@ -86,6 +86,7 @@ F8D0..F8FF; Klingon
 F0000..F0E6F; Kinya Syllables
 F0E70..F16AF; Pikto
 F1700..F18FF; Semtog
+F1900..F1AFF; Sitelen Pona
 FA720..FA7FF; Latin Presentation Forms
 FB000..FB00F; Betty Boop
 FE000..FE07F; Tengwar Presentation Forms
