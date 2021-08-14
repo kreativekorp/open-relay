@@ -61,6 +61,7 @@ ED00..ED3F; Deini
 ED40..ED7F; Niji
 F000..F1FF; Kamakawi
 F4C0..F4EF; Ath
+F560..F56F; Camp Duodecimal Numerals
 F600..F61F; Kreative Software Private Use-F6
 F700..F7FF; Kreative Software Private Use-F7
 F800..F89F; Kreative Software Private Use-F8

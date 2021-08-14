@@ -72,6 +72,7 @@ F300..F3FF; Block Octants
 F400..F43F; C1 Control Pictures
 F4C0..F4EF; Ath
 F500..F54F; Kodo Symbols
+F560..F56F; Camp Duodecimal Numerals
 F580..F58F; Geomantic Figures
 F590..F5BF; C64-OS Symbols
 F5C0..F5FF; Commander X16 Symbols
