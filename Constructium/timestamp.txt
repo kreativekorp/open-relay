@@ -1,0 +1,21 @@
+==%Copyright: Gentium copyright (c) SIL International 2003-2005 under the Open Font License.\nConstructium copyright (c) Kreative Software 2008-%Y under the Open Font License.
+==%Version: %Y.%m.%d
+
+StartChar: uniF800
+@@@RemoveSplines 0
+@@@AppendSplines u10FFC0
+@@%AppendSplines u10FF4%(Ch)d u10FF5%(Cl)d
+@@%AppendSplines u10FF6%(yh)d u10FF7%(yl)d
+@@%AppendSplines u10FF8%(mh)d u10FF9%(ml)d
+@@%AppendSplines u10FFA%(dh)d u10FFB%(dl)d
+EndChar
+
+---StartChar: u10FFC0
+---StartChar: u10FF40 u10FF41 u10FF42 u10FF43 u10FF44 u10FF45 u10FF46 u10FF47 u10FF48 u10FF49
+---StartChar: u10FF50 u10FF51 u10FF52 u10FF53 u10FF54 u10FF55 u10FF56 u10FF57 u10FF58 u10FF59
+---StartChar: u10FF60 u10FF61 u10FF62 u10FF63 u10FF64 u10FF65 u10FF66 u10FF67 u10FF68 u10FF69
+---StartChar: u10FF70 u10FF71 u10FF72 u10FF73 u10FF74 u10FF75 u10FF76 u10FF77 u10FF78 u10FF79
+---StartChar: u10FF80 u10FF81 u10FF82 u10FF83 u10FF84 u10FF85 u10FF86 u10FF87 u10FF88 u10FF89
+---StartChar: u10FF90 u10FF91 u10FF92 u10FF93 u10FF94 u10FF95 u10FF96 u10FF97 u10FF98 u10FF99
+---StartChar: u10FFA0 u10FFA1 u10FFA2 u10FFA3 u10FFA4 u10FFA5 u10FFA6 u10FFA7 u10FFA8 u10FFA9
+---StartChar: u10FFB0 u10FFB1 u10FFB2 u10FFB3 u10FFB4 u10FFB5 u10FFB6 u10FFB7 u10FFB8 u10FFB9

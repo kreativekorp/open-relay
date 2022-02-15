@@ -43,12 +43,17 @@ else
 fi
 
 # Clean
-rm -f Constructium.sfd-* Constructium.ttf Constructium.eot Constructium.zip
+rm -f Constructium.sfd-* Constructium.ttf Constructium.eot Constructium.zip ConstructiumTmp.*
 rm -rf constructium
+
+# Make timestamped version
+python ../bin/sfdpatch.py Constructium.sfd timestamp.txt > ConstructiumTmp.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
-	Constructium.sfd
+	ConstructiumTmp.sfd
+mv ConstructiumTmp.ttf Constructium.ttf
+rm ConstructiumTmp.sfd
 
 # Inject PUAA table
 $BITSNPICAS injectpuaa \

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-rm -f FairfaxHD.sfd-* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHaxHD.* FairfaxSMHD.*
+rm -f FairfaxHD.sfd-* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxTmpHD.* FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd

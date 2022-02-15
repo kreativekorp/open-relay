@@ -70,7 +70,8 @@ F8D0..F8FF; Klingon
 F0000..F0E6F; Kinya Syllables
 F0E70..F16AF; Pikto
 F1700..F18FF; Semtog
-F1900..F1AFF; Sitelen Pona
+F1900..F19FF; Sitelen Pona
+F1B00..F1C3F; Shidinn
 FA720..FA7FF; Latin Presentation Forms
 FB000..FB00F; Betty Boop
 FE000..FE07F; Tengwar Presentation Forms
@@ -85,5 +86,6 @@ FF100..FF1FF; Kreative Software Private Use-FF1
 FF3C0..FF3FF; Aliphbepf
 FF400..FF51F; Voynich
 FF8A0..FF8CF; Aiha Presentation Forms
+FF900..FFABF; Sitelen Pona Presentation Forms
 
 # EOF

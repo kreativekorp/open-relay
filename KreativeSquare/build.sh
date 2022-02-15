@@ -43,15 +43,20 @@ else
 fi
 
 # Clean
-rm -f KreativeSquare.sfd-* KreativeSquare.ttf KreativeSquare.eot KreativeSquare.zip KreativeSquareSM.*
+rm -f KreativeSquare.sfd-* KreativeSquare.ttf KreativeSquare.eot KreativeSquare.zip KreativeSquareTmp.* KreativeSquareSM.*
 rm -rf kreativesquare
 
+# Make timestamped version
+python ../bin/sfdpatch.py KreativeSquare.sfd timestamp.txt > KreativeSquareTmp.sfd
+
 # Make strict monospace version
-python sfdpatch.py KreativeSquare.sfd strictmono.txt > KreativeSquareSM.sfd
+python ../bin/sfdpatch.py KreativeSquareTmp.sfd strictmono.txt > KreativeSquareSM.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
-	KreativeSquare.sfd KreativeSquareSM.sfd
+	KreativeSquareTmp.sfd KreativeSquareSM.sfd
+mv KreativeSquareTmp.ttf KreativeSquare.ttf
+rm KreativeSquareTmp.sfd
 
 # Inject PUAA table
 $BITSNPICAS injectpuaa \

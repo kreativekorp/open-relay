@@ -43,18 +43,23 @@ else
 fi
 
 # Clean
-rm -f FairfaxHD.sfd-* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHaxHD.* FairfaxSMHD.*
+rm -f FairfaxHD.sfd-* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxTmpHD.* FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd
 
+# Make timestamped version
+python ../bin/sfdpatch.py FairfaxHD.sfd timestamp.txt > FairfaxTmpHD.sfd
+
 # Make programming ligature version
-python sfdpatch.py FairfaxHD.sfd ligatures.txt > FairfaxHaxHD.sfd
+python ../bin/sfdpatch.py FairfaxTmpHD.sfd ligatures.txt > FairfaxHaxHD.sfd
 
 # Make strict monospace version
-python sfdpatch.py FairfaxHD.sfd strictmono.txt > FairfaxSMHD.sfd
+python ../bin/sfdpatch.py FairfaxTmpHD.sfd strictmono.txt > FairfaxSMHD.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
-	FairfaxHD.sfd FairfaxHaxHD.sfd FairfaxSMHD.sfd
+	FairfaxTmpHD.sfd FairfaxHaxHD.sfd FairfaxSMHD.sfd
+mv FairfaxTmpHD.ttf FairfaxHD.ttf
+rm FairfaxTmpHD.sfd
 
 # Inject PUAA table
 $BITSNPICAS injectpuaa \

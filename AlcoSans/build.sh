@@ -43,12 +43,17 @@ else
 fi
 
 # Clean
-rm -f AlcoSans.sfd-* AlcoSans.ttf AlcoSans.eot AlcoSans.zip
+rm -f AlcoSans.sfd-* AlcoSans.ttf AlcoSans.eot AlcoSans.zip AlcoSansTmp.*
 rm -rf alcosans
+
+# Make timestamped version
+python ../bin/sfdpatch.py AlcoSans.sfd timestamp.txt > AlcoSansTmp.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
-	AlcoSans.sfd
+	AlcoSansTmp.sfd
+mv AlcoSansTmp.ttf AlcoSans.ttf
+rm AlcoSansTmp.sfd
 
 # Inject PUAA table
 $BITSNPICAS injectpuaa \
