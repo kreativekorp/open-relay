@@ -1,0 +1,460 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem grek dflt;
+languagesystem cyrl dflt;
+
+
+# all sitelen pona ideographs, including joined compounds,
+# but excluding cartouche and long glyph extensions
+@spIdeograph = [
+  uF1900 uF1901 uF1902 uF1903 uF1904 uF1905 uF1906 uF1907
+  uF1908 uF1909 uF190A uF190B uF190C uF190D uF190E uF190F
+  uF1910 uF1910.rand01 uF1910.rand02 uF1910.rand03 uF1910.rand04
+  uF1911 uF1912 uF1913 uF1914 uF1915 uF1916 uF1917 uF1918 uF1919 uF191A
+  uF191B uF191C uF191D uF191E uF191F uF1920 uF1921 uF1922 uF1923 uF1924
+  uF1925 uF1926 uF1927 uF1928 uF1929 uF192A uF192B uF192C uF192D uF192E
+  uF192F uF1930 uF1931 uF1932 uF1933 uF1934 uF1935 uF1936 uF1937 uF1938
+  uF1939 uF193A uF193B uF193C uF193D uF193E uF193F uF1940 uF1941 uF1942
+  uF1943 uF1944 uF1945 uF1946 uF1947 uF1948 uF1949 uF194A uF194B uF194C
+  uF194D uF194E uF194F uF1950 uF1951 uF1952 uF1953 uF1954 uF1955 uF1956
+  uF1957 uF1958 uF1959 uF195A uF195B uF195C uF195D uF195E uF195F uF1960
+  uF1961 uF1962 uF1963 uF1964 uF1965 uF1966 uF1967 uF1968 uF1969 uF196A
+  uF196B uF196C uF196D uF196E uF196F uF1970 uF1971 uF1972 uF1973 uF1974
+  uF1975 uF1976 uF1977 uF1978 uF1979 uF197A uF197B uF197C uF197D uF197E
+  uF197F uF1980 uF1981 uF1982 uF1983 uF1984 uF1985 uF1986 uF1987 uF1988
+  uF199C uF199D uF19A0 uF19A1 uF19A2 uF19A3 uFF900 uFF901 uFF902 uFF903
+  uFF904 uFF905 uFF906 uFF907 uFF908 uFF909 uFF90A uFF90B uFF90C uFF90D
+  uFF90E uFF90F uFF910 uFF911 uFF912 uFF913 uFF914 uFF915 uFF916 uFF917
+  uFF918 uFF919 uFF91A uFF91B uFF91C uFF91D uFF91E uFF91F uFF920 uFF921
+  uFF922 uFF923 uFF924 uFF925 uFF926 uFF927 uFF928 uFF929 uFF92A uFF92B
+  uFF92C uFF92D uFF92E uFF92F uFF930 uFF931 uFF932 uFF933 uFF934 uFF935
+  uFF936 uFF937 uFF938 uFF939 uFF93A uFF93B uFF93C uFF93D uFF93E uFF93F
+  uFF940 uFF941 uFF942 uFF943 uFF944 uFF945 uFF946 uFF947 uFF948 uFF949
+  uFF94A uFF94B uFF94C uFF94D uFF94E uFF94F uFF950 uFF951 uFF952 uFF953
+  uFF954 uFF955 uFF956 uFF957 uFF958 uFF959 uFF95A uFF95B uFF95C uFF95D
+  uFF95E uFF95F uFF960 uFF961 uFF962 uFF963 uFF964 uFF965 uFF966 uFF967
+  uFF968 uFF969 uFF96A uFF96B uFF96C uFF96D uFF96E uFF96F uFF970 uFF971
+  uFF972 uFF973 uFF974 uFF975 uFF976 uFF977 uFF978 uFF979 uFF97A uFF97B
+  uFF97C uFF97D uFF97E uFF97F uFF980 uFF981 uFF982 uFF983 uFF984 uFF985
+  uFF986 uFF987 uFF988 uFF989 uFF98A uFF98B uFF98C uFF98D uFF98E uFF98F
+  uFF990 uFF991 uFF992 uFF993 uFF994 uFF995 uFF996 uFF997 uFF998 uFF999
+  uFF99A uFF99B uFF99C uFF99D uFF99E uFF99F uFF9A0 uFF9A1 uFF9A2 uFF9A3
+  uFF9A4 uFF9A5 uFF9A6 uFF9A7 uFF9A8 uFF9A9 uFF9AA uFF9AB uFF9AC uFF9AD
+  uFF9AE uFF9AF uFF9B0 uFF9B1 uFF9B2 uFF9B3 uFF9B4 uFF9B5 uFF9B6 uFF9B7
+  uFF9B8 uFF9B9 uFF9BA uFF9BB uFF9BC uFF9BD uFF9BE uFF9BF uFF9C0 uFF9C1
+  uFF9C2 uFF9C3 uFF9C4 uFF9C5 uFF9C6 uFF9C7 uFF9C8 uFF9C9 uFF9CA uFF9CB
+  uFF9CC uFF9CD uFF9CE uFF9CF uFF9D0 uFF9D1 uFF9D2 uFF9D3 uFF9D4 uFF9D5
+  uFF9D6 uFF9D7 uFF9D8 uFF9D9 uFF9DA uFF9DB uFF9DC uFF9DD uFF9DE uFF9DF
+  uFF9E0 uFF9E1 uFF9E2 uFF9E3 uFF9E4 uFF9E5 uFF9E6 uFF9E7 uFF9E8 uFF9E9
+  uFF9EA uFF9EB uFF9EC uFF9ED uFF9EE uFF9EF uFF9F0 uFF9F1 uFF9F2 uFF9F3
+  uFF9F4 uFF9F5 uFF9F6 uFF9F7 uFF9F8 uFF9F9 uFF9FA uFF9FB uFF9FC uFF9FD
+  uFF9FE uFF9FF uFFA00 uFFA01 uFFA02 uFFA03 uFFA04 uFFA05 uFFA06 uFFA07
+  uFFA08 uFFA09 uFFA0A uFFA0B uFFA0C uFFA0D uFFA0E uFFA0F uFFA10 uFFA11
+  uFFA12 uFFA13 uFFA14 uFFA15 uFFA16 uFFA17 uFFA18 uFFA19 uFFA1A uFFA1B
+  uFFA1C uFFA1D uFFA1E uFFA1F uFFA20 uFFA21 uFFA22 uFFA23 uFFA24 uFFA25
+  uFFA26 uFFA27 uFFA28 uFFA29 uFFA2A uFFA2B uFFA2C uFFA2D uFFA2E uFFA2F
+  uFFA30 uFFA31 uFFA32 uFFA33 uFFA34 uFFA35 uFFA36 uFFA37 uFFA38 uFFA39
+  uFFA3A uFFA3B uFFA3C uFFA3D uFFA3E uFFA3F uFFA40 uFFA41 uFFA42 uFFA43
+  uFFA44 uFFA45 uFFA46 uFFA47 uFFA48 uFFA49 uFFA4A uFFA4B uFFA4C uFFA4D
+  uFFA4E uFFA4F uFFAA0 uFFAA1 uFFAA2 uFFAA3 uFFAA4 uFFAA5 uFFAA6 uFFAA7
+  uFFAA8 uFFAA9 uFFAAA uFFAAB uFFAAC uFFAAD uFFAAE uFFAAF uFFAB0 uFFAB1
+  uFFAB2 uFFAB3 uFFAB8 uFFABE uFFABF
+];
+
+# corresponding glyphs with cartouche extension
+@spCartouche = [
+  uF1900.cartouche uF1901.cartouche uF1902.cartouche uF1903.cartouche uF1904.cartouche uF1905.cartouche uF1906.cartouche uF1907.cartouche
+  uF1908.cartouche uF1909.cartouche uF190A.cartouche uF190B.cartouche uF190C.cartouche uF190D.cartouche uF190E.cartouche uF190F.cartouche
+  uF1910.cartouche uF1910.rand01.cartouche uF1910.rand02.cartouche uF1910.rand03.cartouche uF1910.rand04.cartouche
+  uF1911.cartouche uF1912.cartouche uF1913.cartouche uF1914.cartouche uF1915.cartouche uF1916.cartouche uF1917.cartouche uF1918.cartouche uF1919.cartouche uF191A.cartouche
+  uF191B.cartouche uF191C.cartouche uF191D.cartouche uF191E.cartouche uF191F.cartouche uF1920.cartouche uF1921.cartouche uF1922.cartouche uF1923.cartouche uF1924.cartouche
+  uF1925.cartouche uF1926.cartouche uF1927.cartouche uF1928.cartouche uF1929.cartouche uF192A.cartouche uF192B.cartouche uF192C.cartouche uF192D.cartouche uF192E.cartouche
+  uF192F.cartouche uF1930.cartouche uF1931.cartouche uF1932.cartouche uF1933.cartouche uF1934.cartouche uF1935.cartouche uF1936.cartouche uF1937.cartouche uF1938.cartouche
+  uF1939.cartouche uF193A.cartouche uF193B.cartouche uF193C.cartouche uF193D.cartouche uF193E.cartouche uF193F.cartouche uF1940.cartouche uF1941.cartouche uF1942.cartouche
+  uF1943.cartouche uF1944.cartouche uF1945.cartouche uF1946.cartouche uF1947.cartouche uF1948.cartouche uF1949.cartouche uF194A.cartouche uF194B.cartouche uF194C.cartouche
+  uF194D.cartouche uF194E.cartouche uF194F.cartouche uF1950.cartouche uF1951.cartouche uF1952.cartouche uF1953.cartouche uF1954.cartouche uF1955.cartouche uF1956.cartouche
+  uF1957.cartouche uF1958.cartouche uF1959.cartouche uF195A.cartouche uF195B.cartouche uF195C.cartouche uF195D.cartouche uF195E.cartouche uF195F.cartouche uF1960.cartouche
+  uF1961.cartouche uF1962.cartouche uF1963.cartouche uF1964.cartouche uF1965.cartouche uF1966.cartouche uF1967.cartouche uF1968.cartouche uF1969.cartouche uF196A.cartouche
+  uF196B.cartouche uF196C.cartouche uF196D.cartouche uF196E.cartouche uF196F.cartouche uF1970.cartouche uF1971.cartouche uF1972.cartouche uF1973.cartouche uF1974.cartouche
+  uF1975.cartouche uF1976.cartouche uF1977.cartouche uF1978.cartouche uF1979.cartouche uF197A.cartouche uF197B.cartouche uF197C.cartouche uF197D.cartouche uF197E.cartouche
+  uF197F.cartouche uF1980.cartouche uF1981.cartouche uF1982.cartouche uF1983.cartouche uF1984.cartouche uF1985.cartouche uF1986.cartouche uF1987.cartouche uF1988.cartouche
+  uF199C.cartouche uF199D.cartouche uF19A0.cartouche uF19A1.cartouche uF19A2.cartouche uF19A3.cartouche uFF900.cartouche uFF901.cartouche uFF902.cartouche uFF903.cartouche
+  uFF904.cartouche uFF905.cartouche uFF906.cartouche uFF907.cartouche uFF908.cartouche uFF909.cartouche uFF90A.cartouche uFF90B.cartouche uFF90C.cartouche uFF90D.cartouche
+  uFF90E.cartouche uFF90F.cartouche uFF910.cartouche uFF911.cartouche uFF912.cartouche uFF913.cartouche uFF914.cartouche uFF915.cartouche uFF916.cartouche uFF917.cartouche
+  uFF918.cartouche uFF919.cartouche uFF91A.cartouche uFF91B.cartouche uFF91C.cartouche uFF91D.cartouche uFF91E.cartouche uFF91F.cartouche uFF920.cartouche uFF921.cartouche
+  uFF922.cartouche uFF923.cartouche uFF924.cartouche uFF925.cartouche uFF926.cartouche uFF927.cartouche uFF928.cartouche uFF929.cartouche uFF92A.cartouche uFF92B.cartouche
+  uFF92C.cartouche uFF92D.cartouche uFF92E.cartouche uFF92F.cartouche uFF930.cartouche uFF931.cartouche uFF932.cartouche uFF933.cartouche uFF934.cartouche uFF935.cartouche
+  uFF936.cartouche uFF937.cartouche uFF938.cartouche uFF939.cartouche uFF93A.cartouche uFF93B.cartouche uFF93C.cartouche uFF93D.cartouche uFF93E.cartouche uFF93F.cartouche
+  uFF940.cartouche uFF941.cartouche uFF942.cartouche uFF943.cartouche uFF944.cartouche uFF945.cartouche uFF946.cartouche uFF947.cartouche uFF948.cartouche uFF949.cartouche
+  uFF94A.cartouche uFF94B.cartouche uFF94C.cartouche uFF94D.cartouche uFF94E.cartouche uFF94F.cartouche uFF950.cartouche uFF951.cartouche uFF952.cartouche uFF953.cartouche
+  uFF954.cartouche uFF955.cartouche uFF956.cartouche uFF957.cartouche uFF958.cartouche uFF959.cartouche uFF95A.cartouche uFF95B.cartouche uFF95C.cartouche uFF95D.cartouche
+  uFF95E.cartouche uFF95F.cartouche uFF960.cartouche uFF961.cartouche uFF962.cartouche uFF963.cartouche uFF964.cartouche uFF965.cartouche uFF966.cartouche uFF967.cartouche
+  uFF968.cartouche uFF969.cartouche uFF96A.cartouche uFF96B.cartouche uFF96C.cartouche uFF96D.cartouche uFF96E.cartouche uFF96F.cartouche uFF970.cartouche uFF971.cartouche
+  uFF972.cartouche uFF973.cartouche uFF974.cartouche uFF975.cartouche uFF976.cartouche uFF977.cartouche uFF978.cartouche uFF979.cartouche uFF97A.cartouche uFF97B.cartouche
+  uFF97C.cartouche uFF97D.cartouche uFF97E.cartouche uFF97F.cartouche uFF980.cartouche uFF981.cartouche uFF982.cartouche uFF983.cartouche uFF984.cartouche uFF985.cartouche
+  uFF986.cartouche uFF987.cartouche uFF988.cartouche uFF989.cartouche uFF98A.cartouche uFF98B.cartouche uFF98C.cartouche uFF98D.cartouche uFF98E.cartouche uFF98F.cartouche
+  uFF990.cartouche uFF991.cartouche uFF992.cartouche uFF993.cartouche uFF994.cartouche uFF995.cartouche uFF996.cartouche uFF997.cartouche uFF998.cartouche uFF999.cartouche
+  uFF99A.cartouche uFF99B.cartouche uFF99C.cartouche uFF99D.cartouche uFF99E.cartouche uFF99F.cartouche uFF9A0.cartouche uFF9A1.cartouche uFF9A2.cartouche uFF9A3.cartouche
+  uFF9A4.cartouche uFF9A5.cartouche uFF9A6.cartouche uFF9A7.cartouche uFF9A8.cartouche uFF9A9.cartouche uFF9AA.cartouche uFF9AB.cartouche uFF9AC.cartouche uFF9AD.cartouche
+  uFF9AE.cartouche uFF9AF.cartouche uFF9B0.cartouche uFF9B1.cartouche uFF9B2.cartouche uFF9B3.cartouche uFF9B4.cartouche uFF9B5.cartouche uFF9B6.cartouche uFF9B7.cartouche
+  uFF9B8.cartouche uFF9B9.cartouche uFF9BA.cartouche uFF9BB.cartouche uFF9BC.cartouche uFF9BD.cartouche uFF9BE.cartouche uFF9BF.cartouche uFF9C0.cartouche uFF9C1.cartouche
+  uFF9C2.cartouche uFF9C3.cartouche uFF9C4.cartouche uFF9C5.cartouche uFF9C6.cartouche uFF9C7.cartouche uFF9C8.cartouche uFF9C9.cartouche uFF9CA.cartouche uFF9CB.cartouche
+  uFF9CC.cartouche uFF9CD.cartouche uFF9CE.cartouche uFF9CF.cartouche uFF9D0.cartouche uFF9D1.cartouche uFF9D2.cartouche uFF9D3.cartouche uFF9D4.cartouche uFF9D5.cartouche
+  uFF9D6.cartouche uFF9D7.cartouche uFF9D8.cartouche uFF9D9.cartouche uFF9DA.cartouche uFF9DB.cartouche uFF9DC.cartouche uFF9DD.cartouche uFF9DE.cartouche uFF9DF.cartouche
+  uFF9E0.cartouche uFF9E1.cartouche uFF9E2.cartouche uFF9E3.cartouche uFF9E4.cartouche uFF9E5.cartouche uFF9E6.cartouche uFF9E7.cartouche uFF9E8.cartouche uFF9E9.cartouche
+  uFF9EA.cartouche uFF9EB.cartouche uFF9EC.cartouche uFF9ED.cartouche uFF9EE.cartouche uFF9EF.cartouche uFF9F0.cartouche uFF9F1.cartouche uFF9F2.cartouche uFF9F3.cartouche
+  uFF9F4.cartouche uFF9F5.cartouche uFF9F6.cartouche uFF9F7.cartouche uFF9F8.cartouche uFF9F9.cartouche uFF9FA.cartouche uFF9FB.cartouche uFF9FC.cartouche uFF9FD.cartouche
+  uFF9FE.cartouche uFF9FF.cartouche uFFA00.cartouche uFFA01.cartouche uFFA02.cartouche uFFA03.cartouche uFFA04.cartouche uFFA05.cartouche uFFA06.cartouche uFFA07.cartouche
+  uFFA08.cartouche uFFA09.cartouche uFFA0A.cartouche uFFA0B.cartouche uFFA0C.cartouche uFFA0D.cartouche uFFA0E.cartouche uFFA0F.cartouche uFFA10.cartouche uFFA11.cartouche
+  uFFA12.cartouche uFFA13.cartouche uFFA14.cartouche uFFA15.cartouche uFFA16.cartouche uFFA17.cartouche uFFA18.cartouche uFFA19.cartouche uFFA1A.cartouche uFFA1B.cartouche
+  uFFA1C.cartouche uFFA1D.cartouche uFFA1E.cartouche uFFA1F.cartouche uFFA20.cartouche uFFA21.cartouche uFFA22.cartouche uFFA23.cartouche uFFA24.cartouche uFFA25.cartouche
+  uFFA26.cartouche uFFA27.cartouche uFFA28.cartouche uFFA29.cartouche uFFA2A.cartouche uFFA2B.cartouche uFFA2C.cartouche uFFA2D.cartouche uFFA2E.cartouche uFFA2F.cartouche
+  uFFA30.cartouche uFFA31.cartouche uFFA32.cartouche uFFA33.cartouche uFFA34.cartouche uFFA35.cartouche uFFA36.cartouche uFFA37.cartouche uFFA38.cartouche uFFA39.cartouche
+  uFFA3A.cartouche uFFA3B.cartouche uFFA3C.cartouche uFFA3D.cartouche uFFA3E.cartouche uFFA3F.cartouche uFFA40.cartouche uFFA41.cartouche uFFA42.cartouche uFFA43.cartouche
+  uFFA44.cartouche uFFA45.cartouche uFFA46.cartouche uFFA47.cartouche uFFA48.cartouche uFFA49.cartouche uFFA4A.cartouche uFFA4B.cartouche uFFA4C.cartouche uFFA4D.cartouche
+  uFFA4E.cartouche uFFA4F.cartouche uFFAA0.cartouche uFFAA1.cartouche uFFAA2.cartouche uFFAA3.cartouche uFFAA4.cartouche uFFAA5.cartouche uFFAA6.cartouche uFFAA7.cartouche
+  uFFAA8.cartouche uFFAA9.cartouche uFFAAA.cartouche uFFAAB.cartouche uFFAAC.cartouche uFFAAD.cartouche uFFAAE.cartouche uFFAAF.cartouche uFFAB0.cartouche uFFAB1.cartouche
+  uFFAB2.cartouche uFFAB3.cartouche uFFAB8.cartouche uFFABE.cartouche uFFABF.cartouche
+];
+
+# corresponding glyphs with long glyph extension
+@spExtension = [
+  uF1900.extension uF1901.extension uF1902.extension uF1903.extension uF1904.extension uF1905.extension uF1906.extension uF1907.extension
+  uF1908.extension uF1909.extension uF190A.extension uF190B.extension uF190C.extension uF190D.extension uF190E.extension uF190F.extension
+  uF1910.extension uF1910.rand01.extension uF1910.rand02.extension uF1910.rand03.extension uF1910.rand04.extension
+  uF1911.extension uF1912.extension uF1913.extension uF1914.extension uF1915.extension uF1916.extension uF1917.extension uF1918.extension uF1919.extension uF191A.extension
+  uF191B.extension uF191C.extension uF191D.extension uF191E.extension uF191F.extension uF1920.extension uF1921.extension uF1922.extension uF1923.extension uF1924.extension
+  uF1925.extension uF1926.extension uF1927.extension uF1928.extension uF1929.extension uF192A.extension uF192B.extension uF192C.extension uF192D.extension uF192E.extension
+  uF192F.extension uF1930.extension uF1931.extension uF1932.extension uF1933.extension uF1934.extension uF1935.extension uF1936.extension uF1937.extension uF1938.extension
+  uF1939.extension uF193A.extension uF193B.extension uF193C.extension uF193D.extension uF193E.extension uF193F.extension uF1940.extension uF1941.extension uF1942.extension
+  uF1943.extension uF1944.extension uF1945.extension uF1946.extension uF1947.extension uF1948.extension uF1949.extension uF194A.extension uF194B.extension uF194C.extension
+  uF194D.extension uF194E.extension uF194F.extension uF1950.extension uF1951.extension uF1952.extension uF1953.extension uF1954.extension uF1955.extension uF1956.extension
+  uF1957.extension uF1958.extension uF1959.extension uF195A.extension uF195B.extension uF195C.extension uF195D.extension uF195E.extension uF195F.extension uF1960.extension
+  uF1961.extension uF1962.extension uF1963.extension uF1964.extension uF1965.extension uF1966.extension uF1967.extension uF1968.extension uF1969.extension uF196A.extension
+  uF196B.extension uF196C.extension uF196D.extension uF196E.extension uF196F.extension uF1970.extension uF1971.extension uF1972.extension uF1973.extension uF1974.extension
+  uF1975.extension uF1976.extension uF1977.extension uF1978.extension uF1979.extension uF197A.extension uF197B.extension uF197C.extension uF197D.extension uF197E.extension
+  uF197F.extension uF1980.extension uF1981.extension uF1982.extension uF1983.extension uF1984.extension uF1985.extension uF1986.extension uF1987.extension uF1988.extension
+  uF199C.extension uF199D.extension uF19A0.extension uF19A1.extension uF19A2.extension uF19A3.extension uFF900.extension uFF901.extension uFF902.extension uFF903.extension
+  uFF904.extension uFF905.extension uFF906.extension uFF907.extension uFF908.extension uFF909.extension uFF90A.extension uFF90B.extension uFF90C.extension uFF90D.extension
+  uFF90E.extension uFF90F.extension uFF910.extension uFF911.extension uFF912.extension uFF913.extension uFF914.extension uFF915.extension uFF916.extension uFF917.extension
+  uFF918.extension uFF919.extension uFF91A.extension uFF91B.extension uFF91C.extension uFF91D.extension uFF91E.extension uFF91F.extension uFF920.extension uFF921.extension
+  uFF922.extension uFF923.extension uFF924.extension uFF925.extension uFF926.extension uFF927.extension uFF928.extension uFF929.extension uFF92A.extension uFF92B.extension
+  uFF92C.extension uFF92D.extension uFF92E.extension uFF92F.extension uFF930.extension uFF931.extension uFF932.extension uFF933.extension uFF934.extension uFF935.extension
+  uFF936.extension uFF937.extension uFF938.extension uFF939.extension uFF93A.extension uFF93B.extension uFF93C.extension uFF93D.extension uFF93E.extension uFF93F.extension
+  uFF940.extension uFF941.extension uFF942.extension uFF943.extension uFF944.extension uFF945.extension uFF946.extension uFF947.extension uFF948.extension uFF949.extension
+  uFF94A.extension uFF94B.extension uFF94C.extension uFF94D.extension uFF94E.extension uFF94F.extension uFF950.extension uFF951.extension uFF952.extension uFF953.extension
+  uFF954.extension uFF955.extension uFF956.extension uFF957.extension uFF958.extension uFF959.extension uFF95A.extension uFF95B.extension uFF95C.extension uFF95D.extension
+  uFF95E.extension uFF95F.extension uFF960.extension uFF961.extension uFF962.extension uFF963.extension uFF964.extension uFF965.extension uFF966.extension uFF967.extension
+  uFF968.extension uFF969.extension uFF96A.extension uFF96B.extension uFF96C.extension uFF96D.extension uFF96E.extension uFF96F.extension uFF970.extension uFF971.extension
+  uFF972.extension uFF973.extension uFF974.extension uFF975.extension uFF976.extension uFF977.extension uFF978.extension uFF979.extension uFF97A.extension uFF97B.extension
+  uFF97C.extension uFF97D.extension uFF97E.extension uFF97F.extension uFF980.extension uFF981.extension uFF982.extension uFF983.extension uFF984.extension uFF985.extension
+  uFF986.extension uFF987.extension uFF988.extension uFF989.extension uFF98A.extension uFF98B.extension uFF98C.extension uFF98D.extension uFF98E.extension uFF98F.extension
+  uFF990.extension uFF991.extension uFF992.extension uFF993.extension uFF994.extension uFF995.extension uFF996.extension uFF997.extension uFF998.extension uFF999.extension
+  uFF99A.extension uFF99B.extension uFF99C.extension uFF99D.extension uFF99E.extension uFF99F.extension uFF9A0.extension uFF9A1.extension uFF9A2.extension uFF9A3.extension
+  uFF9A4.extension uFF9A5.extension uFF9A6.extension uFF9A7.extension uFF9A8.extension uFF9A9.extension uFF9AA.extension uFF9AB.extension uFF9AC.extension uFF9AD.extension
+  uFF9AE.extension uFF9AF.extension uFF9B0.extension uFF9B1.extension uFF9B2.extension uFF9B3.extension uFF9B4.extension uFF9B5.extension uFF9B6.extension uFF9B7.extension
+  uFF9B8.extension uFF9B9.extension uFF9BA.extension uFF9BB.extension uFF9BC.extension uFF9BD.extension uFF9BE.extension uFF9BF.extension uFF9C0.extension uFF9C1.extension
+  uFF9C2.extension uFF9C3.extension uFF9C4.extension uFF9C5.extension uFF9C6.extension uFF9C7.extension uFF9C8.extension uFF9C9.extension uFF9CA.extension uFF9CB.extension
+  uFF9CC.extension uFF9CD.extension uFF9CE.extension uFF9CF.extension uFF9D0.extension uFF9D1.extension uFF9D2.extension uFF9D3.extension uFF9D4.extension uFF9D5.extension
+  uFF9D6.extension uFF9D7.extension uFF9D8.extension uFF9D9.extension uFF9DA.extension uFF9DB.extension uFF9DC.extension uFF9DD.extension uFF9DE.extension uFF9DF.extension
+  uFF9E0.extension uFF9E1.extension uFF9E2.extension uFF9E3.extension uFF9E4.extension uFF9E5.extension uFF9E6.extension uFF9E7.extension uFF9E8.extension uFF9E9.extension
+  uFF9EA.extension uFF9EB.extension uFF9EC.extension uFF9ED.extension uFF9EE.extension uFF9EF.extension uFF9F0.extension uFF9F1.extension uFF9F2.extension uFF9F3.extension
+  uFF9F4.extension uFF9F5.extension uFF9F6.extension uFF9F7.extension uFF9F8.extension uFF9F9.extension uFF9FA.extension uFF9FB.extension uFF9FC.extension uFF9FD.extension
+  uFF9FE.extension uFF9FF.extension uFFA00.extension uFFA01.extension uFFA02.extension uFFA03.extension uFFA04.extension uFFA05.extension uFFA06.extension uFFA07.extension
+  uFFA08.extension uFFA09.extension uFFA0A.extension uFFA0B.extension uFFA0C.extension uFFA0D.extension uFFA0E.extension uFFA0F.extension uFFA10.extension uFFA11.extension
+  uFFA12.extension uFFA13.extension uFFA14.extension uFFA15.extension uFFA16.extension uFFA17.extension uFFA18.extension uFFA19.extension uFFA1A.extension uFFA1B.extension
+  uFFA1C.extension uFFA1D.extension uFFA1E.extension uFFA1F.extension uFFA20.extension uFFA21.extension uFFA22.extension uFFA23.extension uFFA24.extension uFFA25.extension
+  uFFA26.extension uFFA27.extension uFFA28.extension uFFA29.extension uFFA2A.extension uFFA2B.extension uFFA2C.extension uFFA2D.extension uFFA2E.extension uFFA2F.extension
+  uFFA30.extension uFFA31.extension uFFA32.extension uFFA33.extension uFFA34.extension uFFA35.extension uFFA36.extension uFFA37.extension uFFA38.extension uFFA39.extension
+  uFFA3A.extension uFFA3B.extension uFFA3C.extension uFFA3D.extension uFFA3E.extension uFFA3F.extension uFFA40.extension uFFA41.extension uFFA42.extension uFFA43.extension
+  uFFA44.extension uFFA45.extension uFFA46.extension uFFA47.extension uFFA48.extension uFFA49.extension uFFA4A.extension uFFA4B.extension uFFA4C.extension uFFA4D.extension
+  uFFA4E.extension uFFA4F.extension uFFAA0.extension uFFAA1.extension uFFAA2.extension uFFAA3.extension uFFAA4.extension uFFAA5.extension uFFAA6.extension uFFAA7.extension
+  uFFAA8.extension uFFAA9.extension uFFAAA.extension uFFAAB.extension uFFAAC.extension uFFAAD.extension uFFAAE.extension uFFAAF.extension uFFAB0.extension uFFAB1.extension
+  uFFAB2.extension uFFAB3.extension uFFAB8.extension uFFABE.extension uFFABF.extension
+];
+
+
+# sitelen pona ideographs that can be made long on both sides
+@spDualExtendable = [
+  uF1902  # ala
+  uF1908  # awen
+  uF1918  # ken
+  uF1925  # len
+  uF192C  # lon
+  uF1933  # meli
+  uF1935  # mije
+  uF193C  # mute
+  uF193D  # nanpa
+  uF1940  # nena
+  uF1950  # pini
+  uF1958  # selo
+  uF195B  # sijelo
+  uF1962  # soweli
+  uF1965  # supa
+  uF1976  # weka
+  uF1982  # meso
+  uF1986  # n
+  uFFAA4  # sewi (alt)
+  uFFAA9  # meso (alt)
+];
+
+# corresponding glyphs made long on the right side
+@spDualExtendedNormal = [
+  uFFA53  # ala
+  uFFA56  # awen
+  uFFA5B  # ken
+  uFFA5F  # len
+  uFFA63  # lon
+  uFFA67  # meli
+  uFFA6B  # mije
+  uFFA70  # mute
+  uFFA73  # nanpa
+  uFFA76  # nena
+  uFFA7D  # pini
+  uFFA80  # selo
+  uFFA84  # sijelo
+  uFFA88  # soweli
+  uFFA8B  # supa
+  uFFA92  # weka
+  uFFA99  # meso
+  uFFA9D  # n
+  uFFAB4  # sewi (alt)
+  uFFA99  # meso (alt)
+];
+
+# corresponding glyphs made long on the left side
+@spDualExtendedReverse = [
+  uFFA54  # ala
+  uFFA57  # awen
+  uFFA5C  # ken
+  uFFA60  # len
+  uFFA64  # lon
+  uFFA68  # meli
+  uFFA6C  # mije
+  uFFA71  # mute
+  uFFA74  # nanpa
+  uFFA77  # nena
+  uFFA7E  # pini
+  uFFA81  # selo
+  uFFA85  # sijelo
+  uFFA89  # soweli
+  uFFA8C  # supa
+  uFFA93  # weka
+  uFFA9A  # meso
+  uFFA9E  # n
+  uFFAB5  # sewi (alt)
+  uFFA9A  # meso (alt)
+];
+
+# corresponding glyphs made long on both sides
+@spDualExtendedBoth = [
+  uFFA55  # ala
+  uFFA58  # awen
+  uFFA5D  # ken
+  uFFA61  # len
+  uFFA65  # lon
+  uFFA69  # meli
+  uFFA6D  # mije
+  uFFA72  # mute
+  uFFA75  # nanpa
+  uFFA78  # nena
+  uFFA7F  # pini
+  uFFA82  # selo
+  uFFA86  # sijelo
+  uFFA8A  # soweli
+  uFFA8D  # supa
+  uFFA94  # weka
+  uFFA9B  # meso
+  uFFA9F  # n
+  uFFAB6  # sewi (alt)
+  uFFA9B  # meso (alt)
+];
+
+# sitelen pona ideographs that can be made long on the right side
+@spExtendable = [
+  uF1900  # a
+  uF190B  # esun
+  uF1919  # kepeken
+  uF1929  # linja
+  uF192D  # luka
+  uF1936  # moku
+  uF1938  # monsi
+  uF1949  # pali
+  uF194C  # pana
+  uF194D  # pi
+  uF195A  # sewi
+  uF1968  # taso
+  uF1969  # tawa
+  uF197A  # oko
+  uF1980  # kijetesantakalu
+  uF1985  # lanpan
+  uFFAAF  # lanpan (alt)
+  uFFAB0  # lanpan (alt)
+  @spDualExtendable
+  @spDualExtendedReverse
+];
+
+# corresponding glyphs made long on the right side
+@spExtended = [
+  uFFA52  # a
+  uFFA59  # esun
+  uFFA5E  # kepeken
+  uFFA62  # linja
+  uFFA66  # luka
+  uFFA6E  # moku
+  uFFA6F  # monsi
+  uFFA7A  # pali
+  uFFA7B  # pana
+  uFFA7C  # pi
+  uFFA83  # sewi
+  uFFA8E  # taso
+  uFFA8F  # tawa
+  uFFA95  # oko
+  uFFA98  # kijetesantakalu
+  uFFA9C  # lanpan
+  uFFA9C  # lanpan (alt)
+  uFFAB7  # lanpan (alt)
+  @spDualExtendedNormal
+  @spDualExtendedBoth
+];
+
+# sitelen pona ideographs that can be made long on the left side
+@spReverseExtendable = [
+  uF1916  # kama
+  uF1934  # mi
+  uF1946  # ona
+  uF195F  # sinpin
+  uF196A  # telo
+  uF1974  # waso
+  uF197B  # kipisi
+  uF197F  # jasima
+  @spDualExtendable
+  @spDualExtendedNormal
+];
+
+# corresponding glyphs made long on the left side
+@spReverseExtended = [
+  uFFA5A  # kama
+  uFFA6A  # mi
+  uFFA79  # ona
+  uFFA87  # sinpin
+  uFFA90  # telo
+  uFFA91  # waso
+  uFFA96  # kipisi
+  uFFA97  # jasima
+  @spDualExtendedReverse
+  @spDualExtendedBoth
+];
+
+
+# randomized jaki
+feature rand {
+  sub uF1910 from [
+    uF1910
+    uF1910.rand01
+    uF1910.rand02
+    uF1910.rand03
+    uF1910.rand04
+  ];
+} rand;
+
+
+# character variants
+feature cv80 { sub uF1914 by uFFAA0; } cv80; # kala with eyes
+feature cv81 { sub uF1933 by uFFAA1; } cv81; # female symbol for meli
+feature cv82 { sub uF1935 by uFFAA2; } cv82; # male symbol for mije
+feature cv83 { sub uF1945 by uFFAA3; } cv83; # pilin with emitters for olin
+feature cv84 { sub uF195A by uFFAA4; } cv84; # secularized sewi
+feature cv85 { sub uF1970 by uFFAA5; } cv85; # dotless uta
+feature cv86 { sub uF1977 by uFFAA6; } cv86; # turned pilin for wile
+feature cv87 { sub uF1978 by uFFAA7; } cv87; # four rays for namako
+feature cv88 { sub uF1978 by uFFAA8; } cv88; # pepper with emitters for namako
+feature cv89 { sub uF1982 by uFFAA9; } cv89; # vertical lines with dot for meso
+feature cv90 { sub uF1982 by uFFAAA; } cv90; # ante with dot for meso
+feature cv91 { sub uF1983 by uFFAAB; } cv91; # up arrow for epiku
+feature cv92 { sub uF1983 by uFFAAC; } cv92; # pona with emitters for epiku
+feature cv93 { sub uF1984 by uFFAAD; } cv93; # toki with stroke for kokosila
+feature cv94 { sub uF1984 by uFFAAE; } cv94; # star for kokosila
+feature cv95 { sub uF1985 by uFFAAF; } cv95; # lanpan with head
+feature cv96 { sub uF1985 by uFFAB0; } cv96; # lanpan with hook
+feature cv97 { sub uF1985 by uFFAB1; } cv97; # turned pana for lanpan
+feature cv98 { sub uF19A2 by uFFAB2; } cv98; # three rays for majuna
+feature cv99 { sub uF19A2 by uFFAB3; } cv99; # five rays for majuna
+
+
+feature liga {
+
+  lookup spCompositeGlyphs {
+
+    # using zero-width joiner, four glyphs
+    sub uF192D uni200D uF192D uni200D uF196E uni200D uF196E by uFFA4E; # luka luka tu tu
+    sub uF192D uni200D uF192D uni200D uF196E uni200D uF1973 by uFFA4C; # luka luka tu wan
+    sub uF192D uni200D uF192D uni200D uF1973 uni200D uF196E by uFFA4D; # luka luka wan tu
+
+    # using zero-width joiner, three glyphs
+    sub uF192D uni200D uF192D uni200D uF192D by uFFA4F; # luka luka luka
+    sub uF192D uni200D uF192D uni200D uF196E by uFFA4B; # luka luka tu
+    sub uF192D uni200D uF192D uni200D uF1973 by uFFA4A; # luka luka wan
+    sub uF192D uni200D uF196E uni200D uF196E by uFFA48; # luka tu tu
+    sub uF192D uni200D uF196E uni200D uF1973 by uFFA46; # luka tu wan
+    sub uF192D uni200D uF1973 uni200D uF196E by uFFA47; # luka wan tu
+
+    sub uF1933 uni200D uF191E uni200D uF191E by uFFABF; # meli + kule + kule = melinjakulekule
+
+    # using zero-width joiner, two glyphs
+    sub uF192D uni200D uF192D by uFFA49; # luka luka
+    sub uF192D uni200D uF196E by uFFA44; # luka tu
+    sub uF192D uni200D uF1973 by uFFA42; # luka wan
+    sub uF196C uni200D uF1954 by uFFA31; # toki pona
+    sub uF196E uni200D uF192D by uFFA45; # tu luka
+    sub uF196E uni200D uF196E by uFFA3F; # tu tu
+    sub uF196E uni200D uF1973 by uFFA40; # tu wan
+    sub uF1973 uni200D uF192D by uFFA43; # wan luka
+    sub uF1973 uni200D uF196E by uFFA41; # wan tu
+
+    sub uF1939 uni200D u1F5E7  by uFFAB8; # mu + three rays right = emitters
+    sub uF1980 uni200D uni2721 by uFFABE; # kijetesantakalu + star of david = lipamanka
+    sub uF1933 uni200D u1F431  by uFFABF; # meli + cat face = melinjakulekule
+
+    # using stacking and scaling joiners, two glyphs
+    sub uF192D uF1995 uF192D by uFF9E3; # luka luka (alt)
+    sub uF196C uF1996 uF1954 by uFFA31; # toki pona
+
+  } spCompositeGlyphs;
+
+} liga;
+
+
+feature calt {
+
+  # extend cartouches across ideographs to the right
+  lookup spCartoucheForward {
+    sub [uF1990 uF1992 uFFA50 @spCartouche] @spIdeograph' by @spCartouche;
+  } spCartoucheForward;
+
+  # extend cartouches across ideographs to the left
+  lookup spCartoucheBackward {
+    rsub @spIdeograph' [@spCartouche uFFA50 uF1991] by @spCartouche;
+  } spCartoucheBackward;
+
+  # replace ideograph + start of long glyph with glyph extended to the right
+  lookup spExtensionNormal {
+    sub @spExtendable' uF1997 by @spExtended;
+  } spExtensionNormal;
+
+  # replace end of reverse long glyph + ideograph with glyph extended to the left
+  lookup spExtensionReverse {
+    sub uF199B @spReverseExtendable' by @spReverseExtended;
+  } spExtensionReverse;
+
+  # extend long glyphs across ideographs to the right
+  lookup spExtensionForward {
+    sub [uF1997 uF1999 uF199A uFFA51 @spExtension] @spIdeograph' by @spExtension;
+  } spExtensionForward;
+
+  # extend long glyphs across ideographs to the left
+  lookup spExtensionBackward {
+    rsub @spIdeograph' [@spExtension uFFA51 uF1998 uF199B] by @spExtension;
+  } spExtensionBackward;
+
+} calt;
