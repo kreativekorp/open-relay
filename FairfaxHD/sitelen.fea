@@ -7,6 +7,7 @@ languagesystem cyrl dflt;
 # all sitelen pona ideographs, including joined compounds,
 # but excluding cartouche and long glyph extensions
 @spIdeograph = [
+  space uni00A0 uni3000
   uF1900 uF1901 uF1902 uF1903 uF1904 uF1905 uF1906 uF1907
   uF1908 uF1909 uF190A uF190B uF190C uF190D uF190E uF190F
   uF1910 uF1910.rand01 uF1910.rand02 uF1910.rand03 uF1910.rand04
@@ -58,11 +59,12 @@ languagesystem cyrl dflt;
   uFFA44 uFFA45 uFFA46 uFFA47 uFFA48 uFFA49 uFFA4A uFFA4B uFFA4C uFFA4D
   uFFA4E uFFA4F uFFAA0 uFFAA1 uFFAA2 uFFAA3 uFFAA4 uFFAA5 uFFAA6 uFFAA7
   uFFAA8 uFFAA9 uFFAAA uFFAAB uFFAAC uFFAAD uFFAAE uFFAAF uFFAB0 uFFAB1
-  uFFAB2 uFFAB3 uFFAB8 uFFABE uFFABF
+  uFFAB2 uFFAB3 uFFAB8 uFFABD uFFABE uFFABF
 ];
 
 # corresponding glyphs with cartouche extension
 @spCartouche = [
+  space.cartouche uni00A0.cartouche uni3000.cartouche
   uF1900.cartouche uF1901.cartouche uF1902.cartouche uF1903.cartouche uF1904.cartouche uF1905.cartouche uF1906.cartouche uF1907.cartouche
   uF1908.cartouche uF1909.cartouche uF190A.cartouche uF190B.cartouche uF190C.cartouche uF190D.cartouche uF190E.cartouche uF190F.cartouche
   uF1910.cartouche uF1910.rand01.cartouche uF1910.rand02.cartouche uF1910.rand03.cartouche uF1910.rand04.cartouche
@@ -114,11 +116,12 @@ languagesystem cyrl dflt;
   uFFA44.cartouche uFFA45.cartouche uFFA46.cartouche uFFA47.cartouche uFFA48.cartouche uFFA49.cartouche uFFA4A.cartouche uFFA4B.cartouche uFFA4C.cartouche uFFA4D.cartouche
   uFFA4E.cartouche uFFA4F.cartouche uFFAA0.cartouche uFFAA1.cartouche uFFAA2.cartouche uFFAA3.cartouche uFFAA4.cartouche uFFAA5.cartouche uFFAA6.cartouche uFFAA7.cartouche
   uFFAA8.cartouche uFFAA9.cartouche uFFAAA.cartouche uFFAAB.cartouche uFFAAC.cartouche uFFAAD.cartouche uFFAAE.cartouche uFFAAF.cartouche uFFAB0.cartouche uFFAB1.cartouche
-  uFFAB2.cartouche uFFAB3.cartouche uFFAB8.cartouche uFFABE.cartouche uFFABF.cartouche
+  uFFAB2.cartouche uFFAB3.cartouche uFFAB8.cartouche uFFABD.cartouche uFFABE.cartouche uFFABF.cartouche
 ];
 
 # corresponding glyphs with long glyph extension
 @spExtension = [
+  space.extension uni00A0.extension uni3000.extension
   uF1900.extension uF1901.extension uF1902.extension uF1903.extension uF1904.extension uF1905.extension uF1906.extension uF1907.extension
   uF1908.extension uF1909.extension uF190A.extension uF190B.extension uF190C.extension uF190D.extension uF190E.extension uF190F.extension
   uF1910.extension uF1910.rand01.extension uF1910.rand02.extension uF1910.rand03.extension uF1910.rand04.extension
@@ -170,7 +173,7 @@ languagesystem cyrl dflt;
   uFFA44.extension uFFA45.extension uFFA46.extension uFFA47.extension uFFA48.extension uFFA49.extension uFFA4A.extension uFFA4B.extension uFFA4C.extension uFFA4D.extension
   uFFA4E.extension uFFA4F.extension uFFAA0.extension uFFAA1.extension uFFAA2.extension uFFAA3.extension uFFAA4.extension uFFAA5.extension uFFAA6.extension uFFAA7.extension
   uFFAA8.extension uFFAA9.extension uFFAAA.extension uFFAAB.extension uFFAAC.extension uFFAAD.extension uFFAAE.extension uFFAAF.extension uFFAB0.extension uFFAB1.extension
-  uFFAB2.extension uFFAB3.extension uFFAB8.extension uFFABE.extension uFFABF.extension
+  uFFAB2.extension uFFAB3.extension uFFAB8.extension uFFABD.extension uFFABE.extension uFFABF.extension
 ];
 
 
@@ -290,6 +293,7 @@ languagesystem cyrl dflt;
   uF1985  # lanpan
   uFFAAF  # lanpan (alt)
   uFFAB0  # lanpan (alt)
+  uFFABB  # kijetesantakalu (reverse-extended)
   @spDualExtendable
   @spDualExtendedReverse
 ];
@@ -314,6 +318,7 @@ languagesystem cyrl dflt;
   uFFA9C  # lanpan
   uFFA9C  # lanpan (alt)
   uFFAB7  # lanpan (alt)
+  uFFABC  # kijetesantakalu (reverse-extended)
   @spDualExtendedNormal
   @spDualExtendedBoth
 ];
@@ -345,6 +350,14 @@ languagesystem cyrl dflt;
   @spDualExtendedReverse
   @spDualExtendedBoth
 ];
+
+
+# reverse long glyph extension for kijetesantakalu
+@spKijeIdeograph = [space uni00A0 uni3000];
+@spKijeExtension = [space.kijext uni00A0.kijext uni3000.kijext];
+@spKijeExtendEnd = [space.kijend uni00A0.kijend uni3000.kijend];
+@spKijeExtendable = [uF1980 uFFA98];
+@spKijeExtended = [uFFABB uFFABC];
 
 
 # randomized jaki
@@ -405,6 +418,10 @@ feature liga {
     sub uF192D uni200D uF192D by uFFA49; # luka luka
     sub uF192D uni200D uF196E by uFFA44; # luka tu
     sub uF192D uni200D uF1973 by uFFA42; # luka wan
+    sub uF1960 uni200D uF190D by uFFA16; # sitelen ike
+    sub uF1960 uni200D uF1954 by uFFA19; # sitelen pona
+    sub uF1960 uni200D uF1960 by uFFA1A; # sitelen sitelen
+    sub uF196C uni200D uF190D by uFFA30; # toki ike
     sub uF196C uni200D uF1954 by uFFA31; # toki pona
     sub uF196E uni200D uF192D by uFFA45; # tu luka
     sub uF196E uni200D uF196E by uFFA3F; # tu tu
@@ -418,6 +435,10 @@ feature liga {
 
     # using stacking and scaling joiners, two glyphs
     sub uF192D uF1995 uF192D by uFF9E3; # luka luka (alt)
+    sub uF1960 uF1996 uF190D by uFFA16; # sitelen ike
+    sub uF1960 uF1996 uF1954 by uFFA19; # sitelen pona
+    sub uF1960 uF1996 uF1960 by uFFA1A; # sitelen sitelen
+    sub uF196C uF1996 uF190D by uFFA30; # toki ike
     sub uF196C uF1996 uF1954 by uFFA31; # toki pona
 
   } spCompositeGlyphs;
@@ -426,6 +447,8 @@ feature liga {
 
 
 feature calt {
+
+  # CARTOUCHES
 
   # extend cartouches across ideographs to the right
   lookup spCartoucheForward {
@@ -436,6 +459,25 @@ feature calt {
   lookup spCartoucheBackward {
     rsub @spIdeograph' [@spCartouche uFFA50 uF1991] by @spCartouche;
   } spCartoucheBackward;
+
+
+  # REVERSE EXTENDED KIJETESANTAKALU
+
+  lookup spExtensionKijeStart {
+    sub @spKijeIdeograph' uF199B [@spKijeExtendable @spKijeExtended] by @spKijeExtension;
+    sub [@spKijeIdeograph @spKijeExtension] uF199B @spKijeExtendable' by @spKijeExtended;
+  } spExtensionKijeStart;
+
+  lookup spExtensionKijeContinue {
+    rsub @spKijeIdeograph' @spKijeExtension by @spKijeExtension;
+  } spExtensionKijeContinue;
+
+  lookup spExtensionKijeEnd {
+    sub uF199A @spKijeExtension' by @spKijeExtendEnd;
+  } spExtensionKijeEnd;
+
+
+  # LONG GLYPHS
 
   # replace ideograph + start of long glyph with glyph extended to the right
   lookup spExtensionNormal {
