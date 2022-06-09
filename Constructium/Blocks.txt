@@ -59,6 +59,7 @@ EC00..EC2F; Cylenian
 EC30..EC6F; Syrrin
 ED00..ED3F; Deini
 ED40..ED7F; Niji
+ED80..EDAF; Iranic
 F000..F1FF; Kamakawi
 F4C0..F4EF; Ath
 F560..F56F; Camp Duodecimal Numerals

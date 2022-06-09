@@ -59,6 +59,7 @@ EC00..EC2F; Cylenian
 EC30..EC6F; Syrrin
 ED00..ED3F; Deini
 ED40..ED7F; Niji
+ED80..EDAF; Iranic
 EE00..EE7F; Block Sextants (Compatible with ZVBI)
 EE80..EEFF; Block Sextants (Compatible with Unscii)
 EF00..EFFF; Hex Byte Pictures
