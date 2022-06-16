@@ -10,6 +10,14 @@ else
 	exit 1
 fi
 
+# Find fonttools
+if command -v fonttools >/dev/null 2>&1; then
+	FONTTOOLS="fonttools"
+else
+	echo "Could not find fonttools."
+	exit 1
+fi
+
 # Find Bits'n'Picas
 if test -f BitsNPicas.jar; then
 	BITSNPICAS="java -jar BitsNPicas.jar"
@@ -43,23 +51,35 @@ else
 fi
 
 # Clean
-rm -f FairfaxHD.sfd-* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxTmpHD.* FairfaxHaxHD.* FairfaxSMHD.*
+rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd
 
 # Make timestamped version
-python ../bin/sfdpatch.py FairfaxHD.sfd timestamp.txt > FairfaxTmpHD.sfd
+python ../bin/sfdpatch.py FairfaxHD.sfd timestamp.txt > FairfaxHD_base.sfd
 
 # Make programming ligature version
-python ../bin/sfdpatch.py FairfaxTmpHD.sfd ligatures.txt > FairfaxHaxHD.sfd
+python ../bin/sfdpatch.py FairfaxHD_base.sfd ligatures.txt > FairfaxHaxHD_base.sfd
 
 # Make strict monospace version
-python ../bin/sfdpatch.py FairfaxTmpHD.sfd strictmono.txt > FairfaxSMHD.sfd
+python ../bin/sfdpatch.py FairfaxHD_base.sfd strictmono.txt > FairfaxSMHD_base.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
-	FairfaxTmpHD.sfd FairfaxHaxHD.sfd FairfaxSMHD.sfd
-mv FairfaxTmpHD.ttf FairfaxHD.ttf
-rm FairfaxTmpHD.sfd
+	FairfaxHD_base.sfd FairfaxHaxHD_base.sfd FairfaxSMHD_base.sfd
+
+rm *_base.sfd
+
+# Add OpenType features (FontForge completely fouls this up on its own)
+cat languages.fea sequences.fea sitelen.fea > FairfaxHD_base.fea
+$FONTTOOLS feaLib -o FairfaxHD.ttf FairfaxHD_base.fea FairfaxHD_base.ttf
+
+cat languages.fea sequences.fea ligatures.fea sitelen.fea > FairfaxHaxHD_base.fea
+$FONTTOOLS feaLib -o FairfaxHaxHD.ttf FairfaxHaxHD_base.fea FairfaxHaxHD_base.ttf
+
+cp FairfaxSMHD_base.ttf FairfaxSMHD.ttf
+
+rm *_base.fea
+rm *_base.ttf
 
 # Inject PUAA table
 $BITSNPICAS injectpuaa \
