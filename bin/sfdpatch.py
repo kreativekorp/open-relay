@@ -275,6 +275,19 @@ class Sfd:
 				self.chars.pop(i)
 		self.renumber()
 
+	def sortByCodePoint(self):
+		def getCodePoint(ch):
+			encline = ch.get('Encoding')
+			if encline is not None:
+				encline = encline.split(' ')
+				if not encline[-2].startswith('-'):
+					return int(encline[-2])
+				if not encline[-1].startswith('-'):
+					return 0x20000000 + int(encline[-1])
+			return 0x40000000
+		self.chars.sort(key=getCodePoint)
+		self.renumber()
+
 	def strictMonospace(self):
 		wline = None
 		spidx = self.charIndex('space')
@@ -327,6 +340,8 @@ class Sfd:
 					self.removeChar(line[14:])
 				elif line == '@@@StrictMonospace':
 					self.strictMonospace()
+				elif line == '@@@SortByCodePoint':
+					self.sortByCodePoint()
 				elif line == '@@@Renumber':
 					self.renumber()
 				elif line.startswith('++%'):
@@ -373,10 +388,48 @@ class Sfd:
 
 def main():
 	sfd = Sfd()
-	for arg in sys.argv[1:]:
-		print(('Patching %s...' % arg), file=sys.stderr)
-		with open(arg, 'r') as lines:
+	parseOpts = True
+	argType = 'file'
+	def parseFile(f):
+		print(('Patching %s...' % f), file=sys.stderr)
+		with open(f, 'r') as lines:
 			sfd.parse(lines)
+	for arg in sys.argv[1:]:
+		if parseOpts and arg.startswith('-'):
+			if arg == '--':
+				parseOpts = False
+			elif arg == '-f' or arg == '--file':
+				argType = 'file'
+			elif arg == '-c' or arg == '--command':
+				argType = 'command'
+			elif arg == '-r' or arg == '--removeChar':
+				argType = 'removeChar'
+			elif arg == '-n' or arg == '--renumber':
+				sfd.renumber()
+			elif arg == '-s' or arg == '--sortByCodePoint':
+				sfd.sortByCodePoint()
+			elif arg == '-m' or arg == '--strictMonospace':
+				sfd.strictMonospace()
+			elif arg.startswith('-f='):
+				parseFile(arg[3:])
+			elif arg.startswith("--file="):
+				parseFile(arg[7:])
+			elif arg.startswith('-c='):
+				sfd.parse(arg[3:].split(';'))
+			elif arg.startswith('--command='):
+				sfd.parse(arg[10:].split(';'))
+			elif arg.startswith('-r='):
+				sfd.removeChar(arg[3:])
+			elif arg.startswith('--removeChar='):
+				sfd.removeChar(arg[13:])
+			else:
+				print(('Unknown option: %s' % arg), file=sys.stderr)
+		elif argType == 'removeChar':
+			sfd.removeChar(arg)
+		elif argType == 'command':
+			sfd.parse(arg.split(';'))
+		else:
+			parseFile(arg)
 	sfd.print()
 
 if __name__ == '__main__':
