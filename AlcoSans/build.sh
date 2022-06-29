@@ -47,7 +47,7 @@ rm -f AlcoSans.sfd-* AlcoSans.ttf AlcoSans.eot AlcoSans.zip AlcoSansTmp.*
 rm -rf alcosans
 
 # Make timestamped version
-python ../bin/sfdpatch.py AlcoSans.sfd timestamp.txt > AlcoSansTmp.sfd
+python ../bin/sfdpatch.py AlcoSans.sfd patches/timestamp.txt > AlcoSansTmp.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
@@ -56,9 +56,12 @@ mv AlcoSansTmp.ttf AlcoSans.ttf
 rm AlcoSansTmp.sfd
 
 # Inject PUAA table
+python ../bin/blocks.py cwadkkypqvt > Blocks.txt
+python ../bin/unicodedata.py cwadkkypqvt > UnicodeData.txt
 $BITSNPICAS injectpuaa \
-	-D ../Constructium/Blocks.txt ../Constructium/UnicodeData.txt \
+	-D Blocks.txt UnicodeData.txt \
 	-I AlcoSans.ttf
+rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < AlcoSans.ttf > AlcoSans.eot

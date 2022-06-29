@@ -47,7 +47,7 @@ rm -f Constructium.sfd-* Constructium.ttf Constructium.eot Constructium.zip Cons
 rm -rf constructium
 
 # Make timestamped version
-python ../bin/sfdpatch.py Constructium.sfd timestamp.txt > ConstructiumTmp.sfd
+python ../bin/sfdpatch.py Constructium.sfd patches/timestamp.txt > ConstructiumTmp.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
@@ -56,9 +56,12 @@ mv ConstructiumTmp.ttf Constructium.ttf
 rm ConstructiumTmp.sfd
 
 # Inject PUAA table
+python ../bin/blocks.py cwadkkypqvt > Blocks.txt
+python ../bin/unicodedata.py cwadkkypqvt > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I Constructium.ttf
+rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < Constructium.ttf > Constructium.eot

@@ -55,13 +55,13 @@ rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHa
 rm -rf fairfaxhd
 
 # Make timestamped version
-python ../bin/sfdpatch.py FairfaxHD.sfd timestamp.txt > FairfaxHD_base.sfd
+python ../bin/sfdpatch.py FairfaxHD.sfd patches/timestamp.txt > FairfaxHD_base.sfd
 
 # Make programming ligature version
-python ../bin/sfdpatch.py FairfaxHD_base.sfd ligatures.txt > FairfaxHaxHD_base.sfd
+python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/ligatures.txt > FairfaxHaxHD_base.sfd
 
 # Make strict monospace version
-python ../bin/sfdpatch.py FairfaxHD_base.sfd strictmono.txt > FairfaxSMHD_base.sfd
+python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/strictmono.txt > FairfaxSMHD_base.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
@@ -70,21 +70,25 @@ $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv
 rm *_base.sfd
 
 # Add OpenType features (FontForge completely fouls this up on its own)
-cat languages.fea sequences.fea sitelen.fea > FairfaxHD_base.fea
+cd features
+cat languages.fea sequences.fea sitelen.fea > ../FairfaxHD_base.fea
+cat languages.fea sequences.fea ligatures.fea sitelen.fea > ../FairfaxHaxHD_base.fea
+cd ..
+
 $FONTTOOLS feaLib -o FairfaxHD.ttf FairfaxHD_base.fea FairfaxHD_base.ttf
-
-cat languages.fea sequences.fea ligatures.fea sitelen.fea > FairfaxHaxHD_base.fea
 $FONTTOOLS feaLib -o FairfaxHaxHD.ttf FairfaxHaxHD_base.fea FairfaxHaxHD_base.ttf
-
 cp FairfaxSMHD_base.ttf FairfaxSMHD.ttf
 
 rm *_base.fea
 rm *_base.ttf
 
 # Inject PUAA table
+python ../bin/blocks.py czuowbanxkkfeypqvst > Blocks.txt
+python ../bin/unicodedata.py czuowbanxkkfeypqvst > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I FairfaxHD.ttf FairfaxHaxHD.ttf FairfaxSMHD.ttf
+rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < FairfaxHD.ttf > FairfaxHD.eot

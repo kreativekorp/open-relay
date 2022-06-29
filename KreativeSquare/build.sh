@@ -47,10 +47,10 @@ rm -f KreativeSquare.sfd-* KreativeSquare.ttf KreativeSquare.eot KreativeSquare.
 rm -rf kreativesquare
 
 # Make timestamped version
-python ../bin/sfdpatch.py KreativeSquare.sfd timestamp.txt > KreativeSquareTmp.sfd
+python ../bin/sfdpatch.py KreativeSquare.sfd patches/timestamp.txt > KreativeSquareTmp.sfd
 
 # Make strict monospace version
-python ../bin/sfdpatch.py KreativeSquareTmp.sfd strictmono.txt > KreativeSquareSM.sfd
+python ../bin/sfdpatch.py KreativeSquareTmp.sfd patches/strictmono.txt > KreativeSquareSM.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
@@ -59,9 +59,12 @@ mv KreativeSquareTmp.ttf KreativeSquare.ttf
 rm KreativeSquareTmp.sfd
 
 # Inject PUAA table
+python ../bin/blocks.py zuombxkkehs > Blocks.txt
+python ../bin/unicodedata.py zuombxkkehs > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I KreativeSquare.ttf KreativeSquareSM.ttf
+rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < KreativeSquare.ttf > KreativeSquare.eot

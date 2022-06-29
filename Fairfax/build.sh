@@ -49,10 +49,13 @@ $BITSNPICAS convertbitmap \
 	-o FairfaxSerifSM.ttf -f ttf FairfaxSerif.kbits
 
 # Inject PUAA table
+python ../bin/blocks.py czuowbanxkkfeypqvst > Blocks.txt
+python ../bin/unicodedata.py czuowbanxkkfeypqvst > UnicodeData.txt
 $BITSNPICAS injectpuaa \
-	-D ../FairfaxHD/Blocks.txt ../FairfaxHD/UnicodeData.txt \
+	-D Blocks.txt UnicodeData.txt \
 	-I Fairfax.ttf FairfaxBold.ttf FairfaxItalic.ttf FairfaxSerif.ttf \
 	-I FairfaxSM.ttf FairfaxSMBold.ttf FairfaxSMItalic.ttf FairfaxSerifSM.ttf
+rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < Fairfax.ttf > Fairfax.eot
