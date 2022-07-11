@@ -59,8 +59,8 @@ mv KreativeSquareTmp.ttf KreativeSquare.ttf
 rm KreativeSquareTmp.sfd
 
 # Inject PUAA table
-python ../bin/blocks.py zuombxkkehs > Blocks.txt
-python ../bin/unicodedata.py zuombxkkehs > UnicodeData.txt
+python ../bin/blocks.py zuombxkkehsl > Blocks.txt
+python ../bin/unicodedata.py zuombxkkehsl > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I KreativeSquare.ttf KreativeSquareSM.ttf

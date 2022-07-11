@@ -193,6 +193,10 @@ if 'k' in args: # Kreative
 	print('FF100..FF1FF; Kreative Software Private Use-FF1')
 
 # cf
+if 'j' in args: # tahano veno (aJeri)
+	print('FF380..FF3BF; Tahano Veno')
+
+# cf
 if 'q' in args: # QolumbiareQords
 	print('FF3C0..FF3FF; Aliphbepf')
 
@@ -216,6 +220,6 @@ if 't' in args: # Tokipona
 	else:
 		print('FF900..FFABF; Sitelen Pona Presentation Forms')
 
-# nothing yet
+# fs
 if 'l' in args: # Legacycomputing
 	print('FFC00..FFCFF; Symbols for Legacy Computing Appendix')

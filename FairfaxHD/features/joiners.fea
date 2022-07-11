@@ -1,0 +1,873 @@
+feature liga {
+
+  # Sequences of length 5, using zero width joiners
+  sub uF192D uni200D uF192D uni200D uF192D uni200D uF196E uni200D uF196E by uFFBC9;  # luka luka luka tu tu
+  sub uF192D uni200D uF192D uni200D uF192D uni200D uF196E uni200D uF1973 by uFFBCA;  # luka luka luka tu wan
+  sub uF192D uni200D uF192D uni200D uF192D uni200D uF1973 uni200D uF196E by uFFBCC;  # luka luka luka wan tu
+  sub uF1930 uni200D uF1954 uni200D uF194D uni200D uF196C uni200D uF1954 by uFFBF0;  # ma pona pi toki pona
+
+  sub uF1944 uni200D uF1936 uni200D uF1909 uni200D uF1914 uni200D uF1954 by uFFB3B;  # o + moku + e + kala + pona = omekapo
+
+  # Sequences of length 4, using zero width joiners
+  sub uF190C uni200D uF1941 uni200D uF1927 uni200D uF1959 by uFFBFF;  # ijo ni li seme
+  sub uF192D uni200D uF192D uni200D uF192D uni200D uF196E by uFFBC8;  # luka luka luka tu
+  sub uF192D uni200D uF192D uni200D uF192D uni200D uF1973 by uFFBCB;  # luka luka luka wan
+  sub uF192D uni200D uF192D uni200D uF196E uni200D uF196E by uFFA4E;  # luka luka tu tu
+  sub uF192D uni200D uF192D uni200D uF196E uni200D uF1973 by uFFA4C;  # luka luka tu wan
+  sub uF192D uni200D uF192D uni200D uF1973 uni200D uF196E by uFFA4D;  # luka luka wan tu
+  sub uF1930 uni200D uF194D uni200D uF193F uni200D uF1960 by uFFBF1;  # ma pi nasin sitelen
+
+  sub uF1915 uni200D uF193B uni200D uF1967 uni200D uF1970 by uFFAD0;  # kalama + musi + tan + uta = kmtu = kuntu
+  sub uF1916 uni200D uF194D uni200D uF1924 uni200D uF1902 by uFFADA;  # kama + pi + lawa + ala = kamalawala
+  sub uF1933 uni200D uF194D uni200D uF1945 uni200D uF1933 by uFFB32;  # meli + pi + olin + meli = melome
+  sub uF1933 uni200D uFFB60 uni200D uF191E uni200D uF191E by uFFABF;  # meli + nja + kule + kule = melinjakulekule
+  sub uF1935 uni200D uF194D uni200D uF1945 uni200D uF1935 by uFFB36;  # mije + pi + olin + mije = mijomi
+  sub uF1944 uni200D uF1937 uni200D uF1909 uni200D uF1934 by uFFB62;  # o + moli + e + mi = omem = omen
+  sub uF194C uni200D uF1909 uni200D uF196A uni200D uF197A by uFFAE6;  # pana + e + telo + oko = peto
+
+  # Sequences of length 3, using zero width joiners
+  sub uF192D uni200D uF192D uni200D uF192D by uFFA4F;  # luka luka luka
+  sub uF192D uni200D uF192D uni200D uF196E by uFFA4B;  # luka luka tu
+  sub uF192D uni200D uF192D uni200D uF1973 by uFFA4A;  # luka luka wan
+  sub uF192D uni200D uF196E uni200D uF196E by uFFA48;  # luka tu tu
+  sub uF192D uni200D uF196E uni200D uF1973 by uFFA46;  # luka tu wan
+  sub uF192D uni200D uF1973 uni200D uF196E by uFFA47;  # luka wan tu
+  sub uF1960 uni200D uF1957 uni200D uF191B by uFFBF9;  # sitelen seli kiwen
+
+  sub uF1911 uni200D uF1911 uni200D uF1911 by uFFB93;  # jan + jan + jan = jan Jan
+  sub uF191F uni200D uF191A uni200D uF1930 by uFFB95;  # kulupu + kili + ma = kulupu Kilima
+  sub uF1933 uni200D uF191E uni200D uF191E by uFFABF;  # meli + kule + kule = melinjakulekule
+
+  # Sequences of length 2, using zero width joiners
+  sub uF1905 uni200D uF1924 by uFF900;  # anpa lawa, stacked
+  sub uF190C uni200D uF1901 by uFF901;  # ijo akesi, scaled
+  sub uF190C uni200D uF1902 by uFF902;  # ijo ala, scaled
+  sub uF190C uni200D uF1903 by uFF903;  # ijo alasa, scaled
+  sub uF190C uni200D uF1904 by uFF904;  # ijo ale, synonym of ijo ali, scaled
+  sub uF190C uni200D uF1905 by uFF905;  # ijo anpa, scaled
+  sub uF190C uni200D uF1906 by uFF906;  # ijo ante, scaled
+  sub uF190C uni200D uF1907 by uFF907;  # ijo anu, scaled
+  sub uF190C uni200D uF1908 by uFF909;  # ijo awen, scaled
+  sub uF190C uni200D uF190A by uFF90A;  # ijo en, scaled
+  sub uF190C uni200D uF190B by uFF90B;  # ijo esun, scaled
+  sub uF190C uni200D uF190D by uFF90C;  # ijo ike, scaled
+  sub uF190C uni200D uF190E by uFF90D;  # ijo ilo, scaled
+  sub uF190C uni200D uF190F by uFF90E;  # ijo insa, scaled
+  sub uF190C uni200D uF1910 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uni200D uF1910.rand01 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uni200D uF1910.rand02 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uni200D uF1910.rand03 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uni200D uF1910.rand04 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uni200D uF1911 by uFF910;  # ijo jan, scaled
+  sub uF190C uni200D uF1912 by uFF911;  # ijo jelo, scaled
+  sub uF190C uni200D uF1913 by uFF912;  # ijo jo, scaled
+  sub uF190C uni200D uF1914 by uFF913;  # ijo kala, default, scaled
+  sub uF190C uni200D uF1915 by uFF914;  # ijo kalama, scaled
+  sub uF190C uni200D uF1916 by uFF915;  # ijo kama, scaled
+  sub uF190C uni200D uF1917 by uFF916;  # ijo kasi, scaled
+  sub uF190C uni200D uF1918 by uFF917;  # ijo ken, scaled
+  sub uF190C uni200D uF1919 by uFF918;  # ijo kepeken, scaled
+  sub uF190C uni200D uF191A by uFF91A;  # ijo kili, scaled
+  sub uF190C uni200D uF191B by uFF91D;  # ijo kiwen, scaled
+  sub uF190C uni200D uF191C by uFF91E;  # ijo ko, scaled
+  sub uF190C uni200D uF191D by uFF91F;  # ijo kon, scaled
+  sub uF190C uni200D uF191E by uFF920;  # ijo kule, scaled
+  sub uF190C uni200D uF191F by uFF921;  # ijo kulupu, scaled
+  sub uF190C uni200D uF1920 by uFF922;  # ijo kute, scaled
+  sub uF190C uni200D uF1922 by uFF923;  # ijo lape, scaled
+  sub uF190C uni200D uF1923 by uFF924;  # ijo laso, scaled
+  sub uF190C uni200D uF1924 by uFF925;  # ijo lawa, scaled
+  sub uF190C uni200D uF1925 by uFF927;  # ijo len, scaled
+  sub uF190C uni200D uF1926 by uFF928;  # ijo lete, scaled
+  sub uF190C uni200D uF1928 by uFF929;  # ijo lili, scaled
+  sub uF190C uni200D uF1929 by uFF92A;  # ijo linja, scaled
+  sub uF190C uni200D uF192A by uFF92B;  # ijo lipu, scaled
+  sub uF190C uni200D uF192B by uFF92C;  # ijo loje, scaled
+  sub uF190C uni200D uF192C by uFF92D;  # ijo lon, scaled
+  sub uF190C uni200D uF192D by uFF92E;  # ijo luka, scaled
+  sub uF190C uni200D uF192E by uFF92F;  # ijo lukin, scaled
+  sub uF190C uni200D uF192F by uFF930;  # ijo lupa, scaled
+  sub uF190C uni200D uF1930 by uFF931;  # ijo ma, scaled
+  sub uF190C uni200D uF1931 by uFF932;  # ijo mama, scaled
+  sub uF190C uni200D uF1932 by uFF933;  # ijo mani, scaled
+  sub uF190C uni200D uF1933 by uFF934;  # ijo meli, default, scaled
+  sub uF190C uni200D uF1934 by uFF935;  # ijo mi, default, scaled
+  sub uF190C uni200D uF1935 by uFF936;  # ijo mije, default, scaled
+  sub uF190C uni200D uF1936 by uFF937;  # ijo moku, scaled
+  sub uF190C uni200D uF1937 by uFF938;  # ijo moli, scaled
+  sub uF190C uni200D uF1938 by uFF939;  # ijo monsi, scaled
+  sub uF190C uni200D uF1939 by uFF93B;  # ijo mu, scaled
+  sub uF190C uni200D uF193A by uFF93C;  # ijo mun, scaled
+  sub uF190C uni200D uF193B by uFF93D;  # ijo musi, scaled
+  sub uF190C uni200D uF193C by uFF93E;  # ijo mute, scaled
+  sub uF190C uni200D uF193D by uFF940;  # ijo nanpa, scaled
+  sub uF190C uni200D uF193E by uFF941;  # ijo nasa, scaled
+  sub uF190C uni200D uF193F by uFF942;  # ijo nasin, scaled
+  sub uF190C uni200D uF1940 by uFF943;  # ijo nena, scaled
+  sub uF190C uni200D uF1941 by uFF944;  # ijo ni, scaled
+  sub uF190C uni200D uF1942 by uFF945;  # ijo nimi, scaled
+  sub uF190C uni200D uF1943 by uFF946;  # ijo noka, scaled
+  sub uF190C uni200D uF1945 by uFF948;  # ijo olin, default, scaled
+  sub uF190C uni200D uF1946 by uFF949;  # ijo ona, default, scaled
+  sub uF190C uni200D uF1947 by uFF94A;  # ijo open, scaled
+  sub uF190C uni200D uF1948 by uFF94B;  # ijo pakala, scaled
+  sub uF190C uni200D uF1949 by uFF94D;  # ijo pali, scaled
+  sub uF190C uni200D uF194A by uFF94E;  # ijo palisa, scaled
+  sub uF190C uni200D uF194B by uFF94F;  # ijo pan, scaled
+  sub uF190C uni200D uF194C by uFF950;  # ijo pana, scaled
+  sub uF190C uni200D uF194E by uFF951;  # ijo pilin, scaled
+  sub uF190C uni200D uF194F by uFF952;  # ijo pimeja, scaled
+  sub uF190C uni200D uF1950 by uFF953;  # ijo pini, scaled
+  sub uF190C uni200D uF1951 by uFF954;  # ijo pipi, scaled
+  sub uF190C uni200D uF1952 by uFF955;  # ijo poka, scaled
+  sub uF190C uni200D uF1953 by uFF956;  # ijo poki, scaled
+  sub uF190C uni200D uF1954 by uFF957;  # ijo pona, scaled
+  sub uF190C uni200D uF1955 by uFF958;  # ijo pu, scaled
+  sub uF190C uni200D uF1956 by uFF959;  # ijo sama, scaled
+  sub uF190C uni200D uF1957 by uFF95A;  # ijo seli, scaled
+  sub uF190C uni200D uF1958 by uFF95B;  # ijo selo, scaled
+  sub uF190C uni200D uF1959 by uFF95C;  # ijo seme, scaled
+  sub uF190C uni200D uF195A by uFF95D;  # ijo sewi, default, scaled
+  sub uF190C uni200D uF195B by uFF95E;  # ijo sijelo, scaled
+  sub uF190C uni200D uF195C by uFF95F;  # ijo sike, scaled
+  sub uF190C uni200D uF195D by uFF960;  # ijo sin, scaled
+  sub uF190C uni200D uF195E by uFF961;  # ijo sina, default, scaled
+  sub uF190C uni200D uF195F by uFF962;  # ijo sinpin, scaled
+  sub uF190C uni200D uF1960 by uFF963;  # ijo sitelen, scaled
+  sub uF190C uni200D uF1961 by uFF964;  # ijo sona, scaled
+  sub uF190C uni200D uF1962 by uFF965;  # ijo soweli, scaled
+  sub uF190C uni200D uF1963 by uFF966;  # ijo suli, scaled
+  sub uF190C uni200D uF1964 by uFF967;  # ijo suno, scaled
+  sub uF190C uni200D uF1965 by uFF968;  # ijo supa, scaled
+  sub uF190C uni200D uF1966 by uFF969;  # ijo suwi, scaled
+  sub uF190C uni200D uF1967 by uFF96A;  # ijo tan, scaled
+  sub uF190C uni200D uF1968 by uFF96B;  # ijo taso, scaled
+  sub uF190C uni200D uF1969 by uFF96C;  # ijo tawa, scaled
+  sub uF190C uni200D uF196A by uFF96D;  # ijo telo, scaled
+  sub uF190C uni200D uF196B by uFF96E;  # ijo tenpo, scaled
+  sub uF190C uni200D uF196C by uFF96F;  # ijo toki, scaled
+  sub uF190C uni200D uF196D by uFF970;  # ijo tomo, scaled
+  sub uF190C uni200D uF196E by uFF972;  # ijo tu, scaled
+  sub uF190C uni200D uF196F by uFF973;  # ijo unpa, scaled
+  sub uF190C uni200D uF1970 by uFF974;  # ijo uta, default, scaled
+  sub uF190C uni200D uF1971 by uFF975;  # ijo utala, scaled
+  sub uF190C uni200D uF1972 by uFF976;  # ijo walo, scaled
+  sub uF190C uni200D uF1973 by uFF977;  # ijo wan, scaled
+  sub uF190C uni200D uF1974 by uFF978;  # ijo waso, scaled
+  sub uF190C uni200D uF1975 by uFF979;  # ijo wawa, scaled
+  sub uF190C uni200D uF1976 by uFF97A;  # ijo weka, scaled
+  sub uF190C uni200D uF1977 by uFF97B;  # ijo wile, default, scaled
+  sub uF190C uni200D uF1978 by uFF93F;  # ijo namako, default, scaled
+  sub uF190C uni200D uF1979 by uFF91B;  # ijo kin, scaled
+  sub uF190C uni200D uF197A by uFF947;  # ijo oko, scaled
+  sub uF190C uni200D uF197B by uFF91C;  # ijo kipisi, scaled
+  sub uF190C uni200D uF197C by uFF926;  # ijo leko, scaled
+  sub uF190C uni200D uF197D by uFF93A;  # ijo monsuta, scaled
+  sub uF190C uni200D uF197E by uFF971;  # ijo tonsi, scaled
+  sub uF190C uni200D uF1980 by uFF919;  # ijo kijetesantakalu, scaled
+  sub uF190C uni200D uF19A0 by uFF94C;  # ijo pake, scaled
+  sub uF190C uni200D uF19A1 by uFF908;  # ijo apeja, scaled
+  sub uF190C uni200D uFFAA0 by uFF913;  # ijo kala, with eyes, scaled
+  sub uF190C uni200D uFFAA1 by uFFBB0;  # ijo meli, female sign, scaled
+  sub uF190C uni200D uFFAA2 by uFFBB1;  # ijo mije, male sign, scaled
+  sub uF190C uni200D uFFAA3 by uFFBB3;  # ijo olin, pilin with emitters, scaled
+  sub uF190C uni200D uFFAA4 by uFFBB4;  # ijo sewi, secularized, scaled
+  sub uF190C uni200D uFFAA5 by uFFBB5;  # ijo uta, dotless, scaled
+  sub uF190C uni200D uFFAA6 by uFFBB6;  # ijo wile, turned pilin, scaled
+  sub uF190C uni200D uFFAA7 by uFF93F;  # ijo namako, four rays, scaled
+  sub uF190C uni200D uFFAA8 by uFFBB2;  # ijo namako, pepper with emitters, scaled
+  sub uF190C uni200D uFFB04 by uFF935;  # ijo mi, straight, scaled
+  sub uF190C uni200D uFFB05 by uFF935;  # ijo mi, curved, scaled
+  sub uF190C uni200D uFFB06 by uFF961;  # ijo sina, straight, scaled
+  sub uF190C uni200D uFFB07 by uFF961;  # ijo sina, curved, scaled
+  sub uF190C uni200D uFFB08 by uFF949;  # ijo ona, straight, scaled
+  sub uF190C uni200D uFFB09 by uFF949;  # ijo ona, curved, scaled
+  sub uF190D uni200D uF1902 by uFF97C;  # ike ala, stacked
+  sub uF190D uni200D uF1928 by uFF97D;  # ike lili, stacked
+  sub uF190D uni200D uF192E by uFF97E;  # ike lukin, stacked
+  sub uF190E uni200D uF1922 by uFF980;  # ilo lape, stacked
+  sub uF190E uni200D uF192E by uFF981;  # ilo lukin, stacked
+  sub uF190E uni200D uF1937 by uFF982;  # ilo moli, stacked
+  sub uF190E uni200D uF193B by uFF983;  # ilo musi, stacked
+  sub uF190E uni200D uF193D by uFF984;  # ilo nanpa, stacked
+  sub uF190E uni200D uF1947 by uFF986;  # ilo open, stacked
+  sub uF190E uni200D uF1964 by uFF987;  # ilo suno, stacked
+  sub uF190E uni200D uF196C by uFF988;  # ilo toki, stacked
+  sub uF190E uni200D uF197A by uFF985;  # ilo oko, stacked
+  sub uF190E uni200D uF197B by uFF97F;  # ilo kipisi, stacked
+  sub uF1911 uni200D uF1902 by uFF989;  # jan ala, scaled
+  sub uF1911 uni200D uF1903 by uFF98A;  # jan alasa, scaled
+  sub uF1911 uni200D uF1904 by uFF98B;  # jan ale, synonym of jan ali, scaled
+  sub uF1911 uni200D uF1906 by uFF98C;  # jan ante, scaled
+  sub uF1911 uni200D uF190D by uFF98D;  # jan ike, scaled
+  sub uF1911 uni200D uF1914 by uFF98E;  # jan kala, default, scaled
+  sub uF1911 uni200D uF1915 by uFF98F;  # jan kalama, scaled
+  sub uF1911 uni200D uF1917 by uFF990;  # jan kasi, scaled
+  sub uF1911 uni200D uF191F by uFF991;  # jan kulupu, scaled
+  sub uF1911 uni200D uF1924 by uFF992;  # jan lawa, scaled
+  sub uF1911 uni200D uF1928 by uFF993;  # jan lili, scaled
+  sub uF1911 uni200D uF193C by uFF995;  # jan mute, scaled
+  sub uF1911 uni200D uF193E by uFF996;  # jan nasa, scaled
+  sub uF1911 uni200D uF1945 by uFF997;  # jan olin, default, scaled
+  sub uF1911 uni200D uF1948 by uFF998;  # jan pakala, scaled
+  sub uF1911 uni200D uF1949 by uFF999;  # jan pali, scaled
+  sub uF1911 uni200D uF1952 by uFF99A;  # jan poka, scaled
+  sub uF1911 uni200D uF1954 by uFF99B;  # jan pona, scaled
+  sub uF1911 uni200D uF1956 by uFF99C;  # jan sama, scaled
+  sub uF1911 uni200D uF1959 by uFF99D;  # jan seme, scaled
+  sub uF1911 uni200D uF195A by uFF99E;  # jan sewi, default, scaled
+  sub uF1911 uni200D uF195D by uFF99F;  # jan sin, scaled
+  sub uF1911 uni200D uF1961 by uFF9A0;  # jan sona, scaled
+  sub uF1911 uni200D uF1963 by uFF9A1;  # jan suli, scaled
+  sub uF1911 uni200D uF1966 by uFF9A2;  # jan suwi, scaled
+  sub uF1911 uni200D uF196C by uFF9A3;  # jan toki, scaled
+  sub uF1911 uni200D uF196F by uFF9A4;  # jan unpa, scaled
+  sub uF1911 uni200D uF1971 by uFF9A5;  # jan utala, scaled
+  sub uF1911 uni200D uF1975 by uFF9A6;  # jan wawa, scaled
+  sub uF1911 uni200D uF197D by uFF994;  # jan monsuta, scaled
+  sub uF1911 uni200D uFFAA0 by uFF98E;  # jan kala, with eyes, scaled
+  sub uF1911 uni200D uFFAA3 by uFFBB7;  # jan olin, pilin with emitters, scaled
+  sub uF1911 uni200D uFFAA4 by uFFBB8;  # jan sewi, secularized, scaled
+  sub uF1914 uni200D uF1926 by uFF9A7;  # kala lete, default, default
+  sub uF1914 uni200D uF1928 by uFF9A8;  # kala lili, default, default
+  sub uF1915 uni200D uF193B by uFF9A9;  # kalama musi, stacked
+  sub uF1917 uni200D uF1912 by uFF9AA;  # kesi jelo, stacked
+  sub uF1917 uni200D uF191E by uFF9AB;  # kasi kule, stacked
+  sub uF1917 uni200D uF1923 by uFF9AC;  # kasi laso, stacked
+  sub uF1917 uni200D uF1928 by uFF9AD;  # kasi lili, stacked
+  sub uF1917 uni200D uF192B by uFF9AE;  # kasi loje, stacked
+  sub uF1917 uni200D uF194F by uFF9AF;  # kasi pimeja, stacked
+  sub uF1917 uni200D uF1972 by uFF9B0;  # kasi walo, stacked
+  sub uF191A uni200D uF1912 by uFF9B1;  # kili jelo, scaled
+  sub uF191A uni200D uF1923 by uFF9B2;  # kili laso, scaled
+  sub uF191A uni200D uF1928 by uFF9B3;  # kili lili, scaled
+  sub uF191A uni200D uF192B by uFF9B4;  # kili loje, scaled
+  sub uF191A uni200D uF194A by uFF9B5;  # kili palisa, scaled
+  sub uF191A uni200D uF194F by uFF9B6;  # kili pimeja, scaled
+  sub uF191A uni200D uF1966 by uFF9B7;  # kili suwi, scaled
+  sub uF191A uni200D uF1972 by uFF9B8;  # kili walo, scaled
+  sub uF191B uni200D uF1912 by uFF9B9;  # kiwen jelo, scaled
+  sub uF191B uni200D uF1917 by uFF9BA;  # kiwen kasi, scaled
+  sub uF191B uni200D uF1923 by uFF9BB;  # kiwen laso, scaled
+  sub uF191B uni200D uF1926 by uFF9BC;  # kiwen lete, scaled
+  sub uF191B uni200D uF1928 by uFF9BD;  # kiwen lili, scaled
+  sub uF191B uni200D uF192B by uFF9BE;  # kiwen loje, scaled
+  sub uF191B uni200D uF193A by uFF9BF;  # kiwen mun, scaled
+  sub uF191B uni200D uF194F by uFF9C0;  # kiwen pimeja, scaled
+  sub uF191B uni200D uF1957 by uFF9C1;  # kiwen seli, scaled
+  sub uF191B uni200D uF1964 by uFF9C2;  # kiwen suno, scaled
+  sub uF191B uni200D uF1972 by uFF9C3;  # kiwen walo, scaled
+  sub uF191C uni200D uF1910 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uni200D uF1910.rand01 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uni200D uF1910.rand02 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uni200D uF1910.rand03 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uni200D uF1910.rand04 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uni200D uF1912 by uFF9C5;  # ko jelo, scaled
+  sub uF191C uni200D uF1917 by uFF9C6;  # ko kasi, scaled
+  sub uF191C uni200D uF191E by uFF9C7;  # ko kule, scaled
+  sub uF191C uni200D uF1923 by uFF9C8;  # ko laso, scaled
+  sub uF191C uni200D uF1926 by uFF9C9;  # ko lete, scaled
+  sub uF191C uni200D uF1928 by uFF9CA;  # ko lili, scaled
+  sub uF191C uni200D uF192B by uFF9CB;  # ko loje, scaled
+  sub uF191C uni200D uF193E by uFF9CC;  # ko nasa, scaled
+  sub uF191C uni200D uF194F by uFF9CD;  # ko pimeja, scaled
+  sub uF191C uni200D uF1957 by uFF9CE;  # ko seli, scaled
+  sub uF191C uni200D uF1972 by uFF9CF;  # ko walo, scaled
+  sub uF191D uni200D uF1926 by uFF9D0;  # kon lete, scaled
+  sub uF1923 uni200D uF1917 by uFFBBD;  # laso kasi, stacked
+  sub uF1923 uni200D uF193A by uFFBBE;  # laso mun, stacked
+  sub uF1923 uni200D uF195A by uFFBBF;  # laso sewi, default, stacked
+  sub uF1923 uni200D uF196A by uFFBC1;  # laso telo, stacked
+  sub uF1923 uni200D uFFAA4 by uFFBC0;  # laso sewi, secularized, stacked
+  sub uF1925 uni200D uF1911 by uFF9D1;  # len jan, scaled
+  sub uF1925 uni200D uF1912 by uFF9D2;  # len jelo, scaled
+  sub uF1925 uni200D uF1923 by uFF9D3;  # len laso, scaled
+  sub uF1925 uni200D uF1924 by uFF9D4;  # len lawa, scaled
+  sub uF1925 uni200D uF1928 by uFF9D5;  # len lili, scaled
+  sub uF1925 uni200D uF192B by uFF9D6;  # len loje, scaled
+  sub uF1925 uni200D uF192D by uFF9D7;  # len luka, scaled
+  sub uF1925 uni200D uF1943 by uFF9D8;  # len noka, scaled
+  sub uF1925 uni200D uF194F by uFF9D9;  # len pimeja, scaled
+  sub uF1925 uni200D uF195D by uFF9DA;  # len sin, scaled
+  sub uF1925 uni200D uF1972 by uFF9DB;  # len walo, scaled
+  sub uF1929 uni200D uF1928 by uFF9DC;  # linja lili, stacked
+  sub uF1929 uni200D uF1954 by uFF9DD;  # linja pona, stacked
+  sub uF1929 uni200D uF195C by uFFBF4;  # linja sike, stacked
+  sub uF1929 uni200D uF1966 by uFFBF5;  # linja suwi, stacked
+  sub uF192A uni200D uF1917 by uFF9DE;  # lipu kasi, scaled
+  sub uF192A uni200D uF193D by uFF9DF;  # lipu nanpa, scaled
+  sub uF192A uni200D uF1942 by uFFBC2;  # lipu nimi, scaled
+  sub uF192A uni200D uF195A by uFF9E0;  # lipu sewi, default, scaled
+  sub uF192A uni200D uF1961 by uFF9E1;  # lipu sona, scaled
+  sub uF192A uni200D uF196B by uFFBC4;  # lipu tenpo, scaled
+  sub uF192A uni200D uF196C by uFF9E2;  # lipu toki, scaled
+  sub uF192A uni200D uFFAA4 by uFFBC3;  # lipu sewi, secularized, scaled
+  sub uF192B uni200D uF1912 by uFFBC5;  # loje jelo, stacked
+  sub uF192B uni200D uF1972 by uFFBC6;  # loje walo, stacked
+  sub uF192D uni200D uF192D by uFFA49;  # luka luka, default
+  sub uF192D uni200D uF196E by uFFA44;  # luka tu, default
+  sub uF192D uni200D uF1973 by uFFA42;  # luka wan, default
+  sub uF192F uni200D uF1910 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uni200D uF1910.rand01 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uni200D uF1910.rand02 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uni200D uF1910.rand03 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uni200D uF1910.rand04 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uni200D uF191B by uFF9E5;  # lupa kiwen, scaled
+  sub uF192F uni200D uF1920 by uFF9E6;  # lupa kute, scaled
+  sub uF192F uni200D uF1928 by uFF9E7;  # lupa lili, scaled
+  sub uF192F uni200D uF1933 by uFF9E8;  # lupa meli, default, scaled
+  sub uF192F uni200D uF1938 by uFF9E9;  # lupa monsi, scaled
+  sub uF192F uni200D uF1940 by uFF9EA;  # lupa nena, scaled
+  sub uF192F uni200D uF196D by uFF9EB;  # lupa tomo, scaled
+  sub uF192F uni200D uFFAA1 by uFFBCF;  # lupa meli, female sign, scaled
+  sub uF1930 uni200D uF1904 by uFF9EC;  # ma ale, synonym of ma ali, stacked
+  sub uF1930 uni200D uF1917 by uFF9ED;  # ma kasi, stacked
+  sub uF1930 uni200D uF196D by uFF9EE;  # ma tomo, stacked
+  sub uF1931 uni200D uF1931 by uFF9EF;  # mama mama, scaled
+  sub uF1931 uni200D uF1933 by uFF9F0;  # mama meli, default, scaled
+  sub uF1931 uni200D uF1935 by uFF9F1;  # mama mije, default, scaled
+  sub uF1931 uni200D uF197E by uFFBD2;  # mama tonsi, scaled
+  sub uF1931 uni200D uFFAA1 by uFFBD0;  # mama meli, female sign, scaled
+  sub uF1931 uni200D uFFAA2 by uFFBD1;  # mama mije, male sign, scaled
+  sub uF1933 uni200D uF190D by uFF9F2;  # meli ike, default, scaled
+  sub uF1933 uni200D uF1928 by uFF9F3;  # meli lili, default, scaled
+  sub uF1933 uni200D uF1954 by uFF9F4;  # meli pona, default, scaled
+  sub uF1933 uni200D uF1956 by uFF9F5;  # meli sama, default, scaled
+  sub uF1933 uni200D uF196F by uFF9F6;  # meli unpa, default, scaled
+  sub uF1933 uni200D uF1975 by uFFBDA;  # meli wawa, default, scaled
+  sub uF1933 uni200D uF197E by uFFBD7;  # meli tonsi, default, scaled
+  sub uF1935 uni200D uF190D by uFF9F7;  # mije ike, default, scaled
+  sub uF1935 uni200D uF1928 by uFF9F8;  # mije lili, default, scaled
+  sub uF1935 uni200D uF1954 by uFF9F9;  # mije pona, default, scaled
+  sub uF1935 uni200D uF1956 by uFF9FA;  # mije sama, default, scaled
+  sub uF1935 uni200D uF196F by uFF9FB;  # mije unpa, default, scaled
+  sub uF1935 uni200D uF1975 by uFF9FC;  # mije wawa, default, scaled
+  sub uF1935 uni200D uF197E by uFFBE0;  # mije tonsi, default, scaled
+  sub uF193B uni200D uF1928 by uFF9FD;  # musi lili, scaled
+  sub uF193F uni200D uF193D by uFFBF6;  # nasin nanpa, default
+  sub uF193F uni200D uF1960 by uFFBF8;  # nasin sitelen, stacked
+  sub uF1940 uni200D uF191D by uFF9FE;  # nena kon, scaled
+  sub uF1940 uni200D uF1920 by uFF9FF;  # nena kute, scaled
+  sub uF1940 uni200D uF1928 by uFFA00;  # nena lili, scaled
+  sub uF1940 uni200D uF1931 by uFFA01;  # nena mama, scaled
+  sub uF1940 uni200D uF1933 by uFFA02;  # nena meli, default, scaled
+  sub uF1940 uni200D uFFAA1 by uFFBE4;  # nena meli, female sign, scaled
+  sub uF1942 uni200D uF195D by uFFBFA;  # nimi sin, default
+  sub uF194A uni200D uF1928 by uFFA03;  # palisa lili, scaled
+  sub uF194E uni200D uF1902 by uFFA04;  # pilin ala, scaled
+  sub uF194E uni200D uF190D by uFFA05;  # pilin ike, scaled
+  sub uF194E uni200D uF193E by uFFA06;  # pilin nasa, scaled
+  sub uF194E uni200D uF1948 by uFFA07;  # pilin pakala, scaled
+  sub uF194E uni200D uF1954 by uFFA08;  # pilin pona, scaled
+  sub uF194E uni200D uF1956 by uFFA09;  # pilin sama, scaled
+  sub uF1953 uni200D uF191D by uFFA0A;  # poki kon, scaled
+  sub uF1953 uni200D uF1925 by uFFA0B;  # poki len, scaled
+  sub uF1953 uni200D uF1926 by uFFA0C;  # poki lete, scaled
+  sub uF1953 uni200D uF1928 by uFFA0D;  # poki lili, scaled
+  sub uF1953 uni200D uF1957 by uFFA0E;  # poki seli, scaled
+  sub uF1953 uni200D uF196A by uFFA0F;  # poki telo, scaled
+  sub uF1953 uni200D uFFBAE by uFFBAF;  # poki tona, scaled
+  sub uF1954 uni200D uF1902 by uFFA10;  # pona ala, stacked
+  sub uF1954 uni200D uF1928 by uFFA11;  # pona lili, stacked
+  sub uF1954 uni200D uF192E by uFFA12;  # pona lukin, stacked
+  sub uF1958 uni200D uF1925 by uFFA13;  # selo len, stacked
+  sub uF1958 uni200D uF1962 by uFFA14;  # selo soweli, stacked
+  sub uF195C uni200D uF1928 by uFFA15;  # sike lili, scaled
+  sub uF1960 uni200D uF190D by uFFA16;  # sitelen ike, scaled
+  sub uF1960 uni200D uF1930 by uFFA17;  # sitelen ma, scaled
+  sub uF1960 uni200D uF1954 by uFFA19;  # sitelen pona, scaled
+  sub uF1960 uni200D uF1960 by uFFA1A;  # sitelen sitelen, scaled
+  sub uF1960 uni200D uF1969 by uFFA1B;  # sitelen tawa, scaled
+  sub uF1960 uni200D uF196C by uFFA1C;  # sitelen toki, scaled
+  sub uF1960 uni200D uF197D by uFFA18;  # sitelen monsuta, scaled
+  sub uF1961 uni200D uF1902 by uFFA1D;  # sona ala, scaled
+  sub uF1961 uni200D uF190D by uFFA1E;  # sona ike, scaled
+  sub uF1961 uni200D uF1928 by uFFA1F;  # sona lili, scaled
+  sub uF1961 uni200D uF1930 by uFFA20;  # sona ma, scaled
+  sub uF1961 uni200D uF193D by uFFA21;  # sona nanpa, scaled
+  sub uF1961 uni200D uF1954 by uFFA22;  # sona pona, scaled
+  sub uF1961 uni200D uF195B by uFFA23;  # sona sijelo, scaled
+  sub uF1961 uni200D uF196B by uFFA24;  # sona tenpo, scaled
+  sub uF1961 uni200D uF196C by uFFA25;  # sona toki, scaled
+  sub uF1961 uni200D uF1971 by uFFA26;  # sona utala, scaled
+  sub uF1965 uni200D uF1922 by uFFA27;  # supa lape, stacked
+  sub uF1965 uni200D uF1924 by uFFA28;  # supa lawa, stacked
+  sub uF1965 uni200D uF192F by uFFA29;  # supa lupa, stacked
+  sub uF1965 uni200D uF1936 by uFFA2A;  # supa moku, stacked
+  sub uF1965 uni200D uF1938 by uFFA2B;  # supa monsi, stacked
+  sub uF1965 uni200D uF1949 by uFFA2C;  # supa pali, stacked
+  sub uF196A uni200D uF1926 by uFFA2D;  # telo lete, scaled
+  sub uF196A uni200D uF1928 by uFFA2E;  # telo lili, scaled
+  sub uF196C uni200D uF1902 by uFFA2F;  # toki ala, scaled
+  sub uF196C uni200D uF190D by uFFA30;  # toki ike, scaled
+  sub uF196C uni200D uF1954 by uFFA31;  # toki pona, scaled
+  sub uF196C uni200D uF195D by uFFA32;  # toki sin, scaled
+  sub uF196C uni200D uF1961 by uFFA33;  # toki sona, scaled
+  sub uF196C uni200D uF1971 by uFFA34;  # toki utala, scaled
+  sub uF196D uni200D uF1922 by uFFA35;  # tomo lape, scaled
+  sub uF196D uni200D uF1932 by uFFA36;  # tomo mani, scaled
+  sub uF196D uni200D uF1936 by uFFA37;  # tomo moku, scaled
+  sub uF196D uni200D uF193F by uFFA39;  # tomo nasin, scaled
+  sub uF196D uni200D uF1949 by uFFA3A;  # tomo pali, scaled
+  sub uF196D uni200D uF1961 by uFFA3B;  # tomo sona, scaled
+  sub uF196D uni200D uF1969 by uFFA3C;  # tomo tawa, scaled
+  sub uF196D uni200D uF196F by uFFA3D;  # tomo unpa, scaled
+  sub uF196D uni200D uF1971 by uFFA3E;  # tomo utala, scaled
+  sub uF196D uni200D uF197D by uFFA38;  # tomo monsuta, scaled
+  sub uF196E uni200D uF192D by uFFA45;  # tu luka, horizontal
+  sub uF196E uni200D uF196E by uFFA3F;  # tu tu, horizontal
+  sub uF196E uni200D uF1973 by uFFA40;  # tu wan, horizontal
+  sub uF1972 uni200D uF194F by uFFBEC;  # walo pimeja, scaled
+  sub uF1973 uni200D uF192D by uFFA43;  # wan luka, horizontal
+  sub uF1973 uni200D uF196E by uFFA41;  # wan tu, horizontal
+  sub uF1975 uni200D uF196B by uFFBED;  # wawa tenpo, scaled
+  sub uF197E uni200D uF190D by uFFBE5;  # tonsi ike, scaled
+  sub uF197E uni200D uF1928 by uFFBE6;  # tonsi lili, scaled
+  sub uF197E uni200D uF1954 by uFFBE7;  # tonsi pona, scaled
+  sub uF197E uni200D uF1956 by uFFBE8;  # tonsi sama, scaled
+  sub uF197E uni200D uF195D by uFFBE9;  # tonsi sin, scaled
+  sub uF197E uni200D uF196F by uFFBEA;  # tonsi unpa, scaled
+  sub uF197E uni200D uF1975 by uFFBEB;  # tonsi wawa, scaled
+  sub uFFAA0 uni200D uF1926 by uFF9A7;  # kala lete, with eyes, default
+  sub uFFAA0 uni200D uF1928 by uFF9A8;  # kala lili, with eyes, default
+  sub uFFAA1 uni200D uF190D by uFFBD3;  # meli ike, female sign, scaled
+  sub uFFAA1 uni200D uF1928 by uFFBD4;  # meli lili, female sign, scaled
+  sub uFFAA1 uni200D uF1954 by uFFBD5;  # meli pona, female sign, scaled
+  sub uFFAA1 uni200D uF1956 by uFFBD6;  # meli sama, female sign, scaled
+  sub uFFAA1 uni200D uF196F by uFFBD9;  # meli unpa, female sign, scaled
+  sub uFFAA1 uni200D uF1975 by uFFBDB;  # meli wawa, female sign, scaled
+  sub uFFAA1 uni200D uF197E by uFFBD8;  # meli tonsi, female sign, scaled
+  sub uFFAA2 uni200D uF190D by uFFBDC;  # mije ike, male sign, scaled
+  sub uFFAA2 uni200D uF1928 by uFFBDD;  # mije lili, male sign, scaled
+  sub uFFAA2 uni200D uF1954 by uFFBDE;  # mije pona, male sign, scaled
+  sub uFFAA2 uni200D uF1956 by uFFBDF;  # mije sama, male sign, scaled
+  sub uFFAA2 uni200D uF196F by uFFBE2;  # mije unpa, male sign, scaled
+  sub uFFAA2 uni200D uF1975 by uFFBE3;  # mije wawa, male sign, scaled
+  sub uFFAA2 uni200D uF197E by uFFBE1;  # mije tonsi, male sign, scaled
+
+  sub germandbls uni200D uF1980 by uFFBEF;  # sharp s + kijetesantakalu
+  sub s uni200D uF1922 by uFFB8D;  # s + lape = slape
+  sub uF191F uni200D ampersand by uFFB96;  # kulupu + ampersand = The & System
+  sub uF191F uni200D u1F331 by uFFB97;  # kulupu + seedling = kulupu kasi
+  sub uF1933 uni200D u1F431 by uFFABF;  # meli + cat face = melinjakulekule
+  sub uF1939 uni200D u1F5E7 by uFFAB8;  # mu + three rays right = emitters
+  sub uF1941 uni200D arrowdown by uFFB03;  # ni + down arrow = ni pointing down
+  sub uF1941 uni200D arrowleft by uFFB00;  # ni + left arrow = ni pointing left
+  sub uF1941 uni200D arrowright by uFFB02;  # ni + right arrow = ni pointing right
+  sub uF1941 uni200D arrowup by uFFB01;  # ni + up arrow = ni pointing up
+  sub uF1974 uni200D u1F47D by uFFB91;  # waso + extraterrestrial alien = jan waso Asuto
+  sub uF1980 uni200D germandbls by uFFBEF;  # sharp s + kijetesantakalu
+  sub uF1980 uni200D u1F607 by uFFB99;  # kijetesantakalu + smiling face with halo = jan Wija / Wyub
+  sub uF1980 uni200D uni1E9E by uFFBEE;  # sharp s + kijetesantakalu
+  sub uF1980 uni200D uni2721 by uFFABE;  # kijetesantakalu + star of david = lipamanka
+  sub uni1E9E uni200D uF1980 by uFFBEE;  # sharp s + kijetesantakalu
+
+  # Sequences of length 2, using stacking or scaling joiners
+  sub uF1905 uF1995 uF1924 by uFF900;  # anpa lawa, stacked
+  sub uF190C uF1996 uF1901 by uFF901;  # ijo akesi, scaled
+  sub uF190C uF1996 uF1902 by uFF902;  # ijo ala, scaled
+  sub uF190C uF1996 uF1903 by uFF903;  # ijo alasa, scaled
+  sub uF190C uF1996 uF1904 by uFF904;  # ijo ale, synonym of ijo ali, scaled
+  sub uF190C uF1996 uF1905 by uFF905;  # ijo anpa, scaled
+  sub uF190C uF1996 uF1906 by uFF906;  # ijo ante, scaled
+  sub uF190C uF1996 uF1907 by uFF907;  # ijo anu, scaled
+  sub uF190C uF1996 uF1908 by uFF909;  # ijo awen, scaled
+  sub uF190C uF1996 uF190A by uFF90A;  # ijo en, scaled
+  sub uF190C uF1996 uF190B by uFF90B;  # ijo esun, scaled
+  sub uF190C uF1996 uF190D by uFF90C;  # ijo ike, scaled
+  sub uF190C uF1996 uF190E by uFF90D;  # ijo ilo, scaled
+  sub uF190C uF1996 uF190F by uFF90E;  # ijo insa, scaled
+  sub uF190C uF1996 uF1910 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uF1996 uF1910.rand01 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uF1996 uF1910.rand02 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uF1996 uF1910.rand03 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uF1996 uF1910.rand04 by uFF90F;  # ijo jaki, scaled
+  sub uF190C uF1996 uF1911 by uFF910;  # ijo jan, scaled
+  sub uF190C uF1996 uF1912 by uFF911;  # ijo jelo, scaled
+  sub uF190C uF1996 uF1913 by uFF912;  # ijo jo, scaled
+  sub uF190C uF1996 uF1914 by uFF913;  # ijo kala, default, scaled
+  sub uF190C uF1996 uF1915 by uFF914;  # ijo kalama, scaled
+  sub uF190C uF1996 uF1916 by uFF915;  # ijo kama, scaled
+  sub uF190C uF1996 uF1917 by uFF916;  # ijo kasi, scaled
+  sub uF190C uF1996 uF1918 by uFF917;  # ijo ken, scaled
+  sub uF190C uF1996 uF1919 by uFF918;  # ijo kepeken, scaled
+  sub uF190C uF1996 uF191A by uFF91A;  # ijo kili, scaled
+  sub uF190C uF1996 uF191B by uFF91D;  # ijo kiwen, scaled
+  sub uF190C uF1996 uF191C by uFF91E;  # ijo ko, scaled
+  sub uF190C uF1996 uF191D by uFF91F;  # ijo kon, scaled
+  sub uF190C uF1996 uF191E by uFF920;  # ijo kule, scaled
+  sub uF190C uF1996 uF191F by uFF921;  # ijo kulupu, scaled
+  sub uF190C uF1996 uF1920 by uFF922;  # ijo kute, scaled
+  sub uF190C uF1996 uF1922 by uFF923;  # ijo lape, scaled
+  sub uF190C uF1996 uF1923 by uFF924;  # ijo laso, scaled
+  sub uF190C uF1996 uF1924 by uFF925;  # ijo lawa, scaled
+  sub uF190C uF1996 uF1925 by uFF927;  # ijo len, scaled
+  sub uF190C uF1996 uF1926 by uFF928;  # ijo lete, scaled
+  sub uF190C uF1996 uF1928 by uFF929;  # ijo lili, scaled
+  sub uF190C uF1996 uF1929 by uFF92A;  # ijo linja, scaled
+  sub uF190C uF1996 uF192A by uFF92B;  # ijo lipu, scaled
+  sub uF190C uF1996 uF192B by uFF92C;  # ijo loje, scaled
+  sub uF190C uF1996 uF192C by uFF92D;  # ijo lon, scaled
+  sub uF190C uF1996 uF192D by uFF92E;  # ijo luka, scaled
+  sub uF190C uF1996 uF192E by uFF92F;  # ijo lukin, scaled
+  sub uF190C uF1996 uF192F by uFF930;  # ijo lupa, scaled
+  sub uF190C uF1996 uF1930 by uFF931;  # ijo ma, scaled
+  sub uF190C uF1996 uF1931 by uFF932;  # ijo mama, scaled
+  sub uF190C uF1996 uF1932 by uFF933;  # ijo mani, scaled
+  sub uF190C uF1996 uF1933 by uFF934;  # ijo meli, default, scaled
+  sub uF190C uF1996 uF1934 by uFF935;  # ijo mi, default, scaled
+  sub uF190C uF1996 uF1935 by uFF936;  # ijo mije, default, scaled
+  sub uF190C uF1996 uF1936 by uFF937;  # ijo moku, scaled
+  sub uF190C uF1996 uF1937 by uFF938;  # ijo moli, scaled
+  sub uF190C uF1996 uF1938 by uFF939;  # ijo monsi, scaled
+  sub uF190C uF1996 uF1939 by uFF93B;  # ijo mu, scaled
+  sub uF190C uF1996 uF193A by uFF93C;  # ijo mun, scaled
+  sub uF190C uF1996 uF193B by uFF93D;  # ijo musi, scaled
+  sub uF190C uF1996 uF193C by uFF93E;  # ijo mute, scaled
+  sub uF190C uF1996 uF193D by uFF940;  # ijo nanpa, scaled
+  sub uF190C uF1996 uF193E by uFF941;  # ijo nasa, scaled
+  sub uF190C uF1996 uF193F by uFF942;  # ijo nasin, scaled
+  sub uF190C uF1996 uF1940 by uFF943;  # ijo nena, scaled
+  sub uF190C uF1996 uF1941 by uFF944;  # ijo ni, scaled
+  sub uF190C uF1996 uF1942 by uFF945;  # ijo nimi, scaled
+  sub uF190C uF1996 uF1943 by uFF946;  # ijo noka, scaled
+  sub uF190C uF1996 uF1945 by uFF948;  # ijo olin, default, scaled
+  sub uF190C uF1996 uF1946 by uFF949;  # ijo ona, default, scaled
+  sub uF190C uF1996 uF1947 by uFF94A;  # ijo open, scaled
+  sub uF190C uF1996 uF1948 by uFF94B;  # ijo pakala, scaled
+  sub uF190C uF1996 uF1949 by uFF94D;  # ijo pali, scaled
+  sub uF190C uF1996 uF194A by uFF94E;  # ijo palisa, scaled
+  sub uF190C uF1996 uF194B by uFF94F;  # ijo pan, scaled
+  sub uF190C uF1996 uF194C by uFF950;  # ijo pana, scaled
+  sub uF190C uF1996 uF194E by uFF951;  # ijo pilin, scaled
+  sub uF190C uF1996 uF194F by uFF952;  # ijo pimeja, scaled
+  sub uF190C uF1996 uF1950 by uFF953;  # ijo pini, scaled
+  sub uF190C uF1996 uF1951 by uFF954;  # ijo pipi, scaled
+  sub uF190C uF1996 uF1952 by uFF955;  # ijo poka, scaled
+  sub uF190C uF1996 uF1953 by uFF956;  # ijo poki, scaled
+  sub uF190C uF1996 uF1954 by uFF957;  # ijo pona, scaled
+  sub uF190C uF1996 uF1955 by uFF958;  # ijo pu, scaled
+  sub uF190C uF1996 uF1956 by uFF959;  # ijo sama, scaled
+  sub uF190C uF1996 uF1957 by uFF95A;  # ijo seli, scaled
+  sub uF190C uF1996 uF1958 by uFF95B;  # ijo selo, scaled
+  sub uF190C uF1996 uF1959 by uFF95C;  # ijo seme, scaled
+  sub uF190C uF1996 uF195A by uFF95D;  # ijo sewi, default, scaled
+  sub uF190C uF1996 uF195B by uFF95E;  # ijo sijelo, scaled
+  sub uF190C uF1996 uF195C by uFF95F;  # ijo sike, scaled
+  sub uF190C uF1996 uF195D by uFF960;  # ijo sin, scaled
+  sub uF190C uF1996 uF195E by uFF961;  # ijo sina, default, scaled
+  sub uF190C uF1996 uF195F by uFF962;  # ijo sinpin, scaled
+  sub uF190C uF1996 uF1960 by uFF963;  # ijo sitelen, scaled
+  sub uF190C uF1996 uF1961 by uFF964;  # ijo sona, scaled
+  sub uF190C uF1996 uF1962 by uFF965;  # ijo soweli, scaled
+  sub uF190C uF1996 uF1963 by uFF966;  # ijo suli, scaled
+  sub uF190C uF1996 uF1964 by uFF967;  # ijo suno, scaled
+  sub uF190C uF1996 uF1965 by uFF968;  # ijo supa, scaled
+  sub uF190C uF1996 uF1966 by uFF969;  # ijo suwi, scaled
+  sub uF190C uF1996 uF1967 by uFF96A;  # ijo tan, scaled
+  sub uF190C uF1996 uF1968 by uFF96B;  # ijo taso, scaled
+  sub uF190C uF1996 uF1969 by uFF96C;  # ijo tawa, scaled
+  sub uF190C uF1996 uF196A by uFF96D;  # ijo telo, scaled
+  sub uF190C uF1996 uF196B by uFF96E;  # ijo tenpo, scaled
+  sub uF190C uF1996 uF196C by uFF96F;  # ijo toki, scaled
+  sub uF190C uF1996 uF196D by uFF970;  # ijo tomo, scaled
+  sub uF190C uF1996 uF196E by uFF972;  # ijo tu, scaled
+  sub uF190C uF1996 uF196F by uFF973;  # ijo unpa, scaled
+  sub uF190C uF1996 uF1970 by uFF974;  # ijo uta, default, scaled
+  sub uF190C uF1996 uF1971 by uFF975;  # ijo utala, scaled
+  sub uF190C uF1996 uF1972 by uFF976;  # ijo walo, scaled
+  sub uF190C uF1996 uF1973 by uFF977;  # ijo wan, scaled
+  sub uF190C uF1996 uF1974 by uFF978;  # ijo waso, scaled
+  sub uF190C uF1996 uF1975 by uFF979;  # ijo wawa, scaled
+  sub uF190C uF1996 uF1976 by uFF97A;  # ijo weka, scaled
+  sub uF190C uF1996 uF1977 by uFF97B;  # ijo wile, default, scaled
+  sub uF190C uF1996 uF1978 by uFF93F;  # ijo namako, default, scaled
+  sub uF190C uF1996 uF1979 by uFF91B;  # ijo kin, scaled
+  sub uF190C uF1996 uF197A by uFF947;  # ijo oko, scaled
+  sub uF190C uF1996 uF197B by uFF91C;  # ijo kipisi, scaled
+  sub uF190C uF1996 uF197C by uFF926;  # ijo leko, scaled
+  sub uF190C uF1996 uF197D by uFF93A;  # ijo monsuta, scaled
+  sub uF190C uF1996 uF197E by uFF971;  # ijo tonsi, scaled
+  sub uF190C uF1996 uF1980 by uFF919;  # ijo kijetesantakalu, scaled
+  sub uF190C uF1996 uF19A0 by uFF94C;  # ijo pake, scaled
+  sub uF190C uF1996 uF19A1 by uFF908;  # ijo apeja, scaled
+  sub uF190C uF1996 uFFAA0 by uFF913;  # ijo kala, with eyes, scaled
+  sub uF190C uF1996 uFFAA1 by uFFBB0;  # ijo meli, female sign, scaled
+  sub uF190C uF1996 uFFAA2 by uFFBB1;  # ijo mije, male sign, scaled
+  sub uF190C uF1996 uFFAA3 by uFFBB3;  # ijo olin, pilin with emitters, scaled
+  sub uF190C uF1996 uFFAA4 by uFFBB4;  # ijo sewi, secularized, scaled
+  sub uF190C uF1996 uFFAA5 by uFFBB5;  # ijo uta, dotless, scaled
+  sub uF190C uF1996 uFFAA6 by uFFBB6;  # ijo wile, turned pilin, scaled
+  sub uF190C uF1996 uFFAA7 by uFF93F;  # ijo namako, four rays, scaled
+  sub uF190C uF1996 uFFAA8 by uFFBB2;  # ijo namako, pepper with emitters, scaled
+  sub uF190C uF1996 uFFB04 by uFF935;  # ijo mi, straight, scaled
+  sub uF190C uF1996 uFFB05 by uFF935;  # ijo mi, curved, scaled
+  sub uF190C uF1996 uFFB06 by uFF961;  # ijo sina, straight, scaled
+  sub uF190C uF1996 uFFB07 by uFF961;  # ijo sina, curved, scaled
+  sub uF190C uF1996 uFFB08 by uFF949;  # ijo ona, straight, scaled
+  sub uF190C uF1996 uFFB09 by uFF949;  # ijo ona, curved, scaled
+  sub uF190D uF1995 uF1902 by uFF97C;  # ike ala, stacked
+  sub uF190D uF1995 uF1928 by uFF97D;  # ike lili, stacked
+  sub uF190D uF1995 uF192E by uFF97E;  # ike lukin, stacked
+  sub uF190E uF1995 uF1922 by uFF980;  # ilo lape, stacked
+  sub uF190E uF1995 uF192E by uFF981;  # ilo lukin, stacked
+  sub uF190E uF1995 uF1937 by uFF982;  # ilo moli, stacked
+  sub uF190E uF1995 uF193B by uFF983;  # ilo musi, stacked
+  sub uF190E uF1995 uF193D by uFF984;  # ilo nanpa, stacked
+  sub uF190E uF1995 uF1947 by uFF986;  # ilo open, stacked
+  sub uF190E uF1995 uF1964 by uFF987;  # ilo suno, stacked
+  sub uF190E uF1995 uF196C by uFF988;  # ilo toki, stacked
+  sub uF190E uF1995 uF197A by uFF985;  # ilo oko, stacked
+  sub uF190E uF1995 uF197B by uFF97F;  # ilo kipisi, stacked
+  sub uF1911 uF1996 uF1902 by uFF989;  # jan ala, scaled
+  sub uF1911 uF1996 uF1903 by uFF98A;  # jan alasa, scaled
+  sub uF1911 uF1996 uF1904 by uFF98B;  # jan ale, synonym of jan ali, scaled
+  sub uF1911 uF1996 uF1906 by uFF98C;  # jan ante, scaled
+  sub uF1911 uF1996 uF190D by uFF98D;  # jan ike, scaled
+  sub uF1911 uF1996 uF1914 by uFF98E;  # jan kala, default, scaled
+  sub uF1911 uF1996 uF1915 by uFF98F;  # jan kalama, scaled
+  sub uF1911 uF1996 uF1917 by uFF990;  # jan kasi, scaled
+  sub uF1911 uF1996 uF191F by uFF991;  # jan kulupu, scaled
+  sub uF1911 uF1996 uF1924 by uFF992;  # jan lawa, scaled
+  sub uF1911 uF1996 uF1928 by uFF993;  # jan lili, scaled
+  sub uF1911 uF1996 uF193C by uFF995;  # jan mute, scaled
+  sub uF1911 uF1996 uF193E by uFF996;  # jan nasa, scaled
+  sub uF1911 uF1996 uF1945 by uFF997;  # jan olin, default, scaled
+  sub uF1911 uF1996 uF1948 by uFF998;  # jan pakala, scaled
+  sub uF1911 uF1996 uF1949 by uFF999;  # jan pali, scaled
+  sub uF1911 uF1996 uF1952 by uFF99A;  # jan poka, scaled
+  sub uF1911 uF1996 uF1954 by uFF99B;  # jan pona, scaled
+  sub uF1911 uF1996 uF1956 by uFF99C;  # jan sama, scaled
+  sub uF1911 uF1996 uF1959 by uFF99D;  # jan seme, scaled
+  sub uF1911 uF1996 uF195A by uFF99E;  # jan sewi, default, scaled
+  sub uF1911 uF1996 uF195D by uFF99F;  # jan sin, scaled
+  sub uF1911 uF1996 uF1961 by uFF9A0;  # jan sona, scaled
+  sub uF1911 uF1996 uF1963 by uFF9A1;  # jan suli, scaled
+  sub uF1911 uF1996 uF1966 by uFF9A2;  # jan suwi, scaled
+  sub uF1911 uF1996 uF196C by uFF9A3;  # jan toki, scaled
+  sub uF1911 uF1996 uF196F by uFF9A4;  # jan unpa, scaled
+  sub uF1911 uF1996 uF1971 by uFF9A5;  # jan utala, scaled
+  sub uF1911 uF1996 uF1975 by uFF9A6;  # jan wawa, scaled
+  sub uF1911 uF1996 uF197D by uFF994;  # jan monsuta, scaled
+  sub uF1911 uF1996 uFFAA0 by uFF98E;  # jan kala, with eyes, scaled
+  sub uF1911 uF1996 uFFAA3 by uFFBB7;  # jan olin, pilin with emitters, scaled
+  sub uF1911 uF1996 uFFAA4 by uFFBB8;  # jan sewi, secularized, scaled
+  sub uF1914 uF1995 uF1926 by uFFBB9;  # kala lete, default, stacked
+  sub uF1914 uF1995 uF1928 by uFFBBB;  # kala lili, default, stacked
+  sub uF1914 uF1996 uF1926 by uFF9A7;  # kala lete, default, scaled
+  sub uF1914 uF1996 uF1928 by uFF9A8;  # kala lili, default, scaled
+  sub uF1915 uF1995 uF193B by uFF9A9;  # kalama musi, stacked
+  sub uF1917 uF1995 uF1912 by uFF9AA;  # kesi jelo, stacked
+  sub uF1917 uF1995 uF191E by uFF9AB;  # kasi kule, stacked
+  sub uF1917 uF1995 uF1923 by uFF9AC;  # kasi laso, stacked
+  sub uF1917 uF1995 uF1928 by uFF9AD;  # kasi lili, stacked
+  sub uF1917 uF1995 uF192B by uFF9AE;  # kasi loje, stacked
+  sub uF1917 uF1995 uF194F by uFF9AF;  # kasi pimeja, stacked
+  sub uF1917 uF1995 uF1972 by uFF9B0;  # kasi walo, stacked
+  sub uF191A uF1996 uF1912 by uFF9B1;  # kili jelo, scaled
+  sub uF191A uF1996 uF1923 by uFF9B2;  # kili laso, scaled
+  sub uF191A uF1996 uF1928 by uFF9B3;  # kili lili, scaled
+  sub uF191A uF1996 uF192B by uFF9B4;  # kili loje, scaled
+  sub uF191A uF1996 uF194A by uFF9B5;  # kili palisa, scaled
+  sub uF191A uF1996 uF194F by uFF9B6;  # kili pimeja, scaled
+  sub uF191A uF1996 uF1966 by uFF9B7;  # kili suwi, scaled
+  sub uF191A uF1996 uF1972 by uFF9B8;  # kili walo, scaled
+  sub uF191B uF1996 uF1912 by uFF9B9;  # kiwen jelo, scaled
+  sub uF191B uF1996 uF1917 by uFF9BA;  # kiwen kasi, scaled
+  sub uF191B uF1996 uF1923 by uFF9BB;  # kiwen laso, scaled
+  sub uF191B uF1996 uF1926 by uFF9BC;  # kiwen lete, scaled
+  sub uF191B uF1996 uF1928 by uFF9BD;  # kiwen lili, scaled
+  sub uF191B uF1996 uF192B by uFF9BE;  # kiwen loje, scaled
+  sub uF191B uF1996 uF193A by uFF9BF;  # kiwen mun, scaled
+  sub uF191B uF1996 uF194F by uFF9C0;  # kiwen pimeja, scaled
+  sub uF191B uF1996 uF1957 by uFF9C1;  # kiwen seli, scaled
+  sub uF191B uF1996 uF1964 by uFF9C2;  # kiwen suno, scaled
+  sub uF191B uF1996 uF1972 by uFF9C3;  # kiwen walo, scaled
+  sub uF191C uF1996 uF1910 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uF1996 uF1910.rand01 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uF1996 uF1910.rand02 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uF1996 uF1910.rand03 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uF1996 uF1910.rand04 by uFF9C4;  # ko jaki, scaled
+  sub uF191C uF1996 uF1912 by uFF9C5;  # ko jelo, scaled
+  sub uF191C uF1996 uF1917 by uFF9C6;  # ko kasi, scaled
+  sub uF191C uF1996 uF191E by uFF9C7;  # ko kule, scaled
+  sub uF191C uF1996 uF1923 by uFF9C8;  # ko laso, scaled
+  sub uF191C uF1996 uF1926 by uFF9C9;  # ko lete, scaled
+  sub uF191C uF1996 uF1928 by uFF9CA;  # ko lili, scaled
+  sub uF191C uF1996 uF192B by uFF9CB;  # ko loje, scaled
+  sub uF191C uF1996 uF193E by uFF9CC;  # ko nasa, scaled
+  sub uF191C uF1996 uF194F by uFF9CD;  # ko pimeja, scaled
+  sub uF191C uF1996 uF1957 by uFF9CE;  # ko seli, scaled
+  sub uF191C uF1996 uF1972 by uFF9CF;  # ko walo, scaled
+  sub uF191D uF1996 uF1926 by uFF9D0;  # kon lete, scaled
+  sub uF1923 uF1995 uF1917 by uFFBBD;  # laso kasi, stacked
+  sub uF1923 uF1995 uF193A by uFFBBE;  # laso mun, stacked
+  sub uF1923 uF1995 uF195A by uFFBBF;  # laso sewi, default, stacked
+  sub uF1923 uF1995 uF196A by uFFBC1;  # laso telo, stacked
+  sub uF1923 uF1995 uFFAA4 by uFFBC0;  # laso sewi, secularized, stacked
+  sub uF1925 uF1996 uF1911 by uFF9D1;  # len jan, scaled
+  sub uF1925 uF1996 uF1912 by uFF9D2;  # len jelo, scaled
+  sub uF1925 uF1996 uF1923 by uFF9D3;  # len laso, scaled
+  sub uF1925 uF1996 uF1924 by uFF9D4;  # len lawa, scaled
+  sub uF1925 uF1996 uF1928 by uFF9D5;  # len lili, scaled
+  sub uF1925 uF1996 uF192B by uFF9D6;  # len loje, scaled
+  sub uF1925 uF1996 uF192D by uFF9D7;  # len luka, scaled
+  sub uF1925 uF1996 uF1943 by uFF9D8;  # len noka, scaled
+  sub uF1925 uF1996 uF194F by uFF9D9;  # len pimeja, scaled
+  sub uF1925 uF1996 uF195D by uFF9DA;  # len sin, scaled
+  sub uF1925 uF1996 uF1972 by uFF9DB;  # len walo, scaled
+  sub uF1929 uF1995 uF1928 by uFF9DC;  # linja lili, stacked
+  sub uF1929 uF1995 uF1954 by uFF9DD;  # linja pona, stacked
+  sub uF1929 uF1995 uF195C by uFFBF4;  # linja sike, stacked
+  sub uF1929 uF1995 uF1966 by uFFBF5;  # linja suwi, stacked
+  sub uF192A uF1996 uF1917 by uFF9DE;  # lipu kasi, scaled
+  sub uF192A uF1996 uF193D by uFF9DF;  # lipu nanpa, scaled
+  sub uF192A uF1996 uF1942 by uFFBC2;  # lipu nimi, scaled
+  sub uF192A uF1996 uF195A by uFF9E0;  # lipu sewi, default, scaled
+  sub uF192A uF1996 uF1961 by uFF9E1;  # lipu sona, scaled
+  sub uF192A uF1996 uF196B by uFFBC4;  # lipu tenpo, scaled
+  sub uF192A uF1996 uF196C by uFF9E2;  # lipu toki, scaled
+  sub uF192A uF1996 uFFAA4 by uFFBC3;  # lipu sewi, secularized, scaled
+  sub uF192B uF1995 uF1912 by uFFBC5;  # loje jelo, stacked
+  sub uF192B uF1995 uF1972 by uFFBC6;  # loje walo, stacked
+  sub uF192D uF1995 uF192D by uFF9E3;  # luka luka, stacked
+  sub uF192D uF1995 uF196E by uFFBCD;  # luka tu, stacked
+  sub uF192D uF1995 uF1973 by uFFBCE;  # luka wan, stacked
+  sub uF192D uF1996 uF192D by uFFBC7;  # luka luka, scaled
+  sub uF192F uF1996 uF1910 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uF1996 uF1910.rand01 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uF1996 uF1910.rand02 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uF1996 uF1910.rand03 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uF1996 uF1910.rand04 by uFF9E4;  # lupa jaki, scaled
+  sub uF192F uF1996 uF191B by uFF9E5;  # lupa kiwen, scaled
+  sub uF192F uF1996 uF1920 by uFF9E6;  # lupa kute, scaled
+  sub uF192F uF1996 uF1928 by uFF9E7;  # lupa lili, scaled
+  sub uF192F uF1996 uF1933 by uFF9E8;  # lupa meli, default, scaled
+  sub uF192F uF1996 uF1938 by uFF9E9;  # lupa monsi, scaled
+  sub uF192F uF1996 uF1940 by uFF9EA;  # lupa nena, scaled
+  sub uF192F uF1996 uF196D by uFF9EB;  # lupa tomo, scaled
+  sub uF192F uF1996 uFFAA1 by uFFBCF;  # lupa meli, female sign, scaled
+  sub uF1930 uF1995 uF1904 by uFF9EC;  # ma ale, synonym of ma ali, stacked
+  sub uF1930 uF1995 uF1917 by uFF9ED;  # ma kasi, stacked
+  sub uF1930 uF1995 uF196D by uFF9EE;  # ma tomo, stacked
+  sub uF1931 uF1996 uF1931 by uFF9EF;  # mama mama, scaled
+  sub uF1931 uF1996 uF1933 by uFF9F0;  # mama meli, default, scaled
+  sub uF1931 uF1996 uF1935 by uFF9F1;  # mama mije, default, scaled
+  sub uF1931 uF1996 uF197E by uFFBD2;  # mama tonsi, scaled
+  sub uF1931 uF1996 uFFAA1 by uFFBD0;  # mama meli, female sign, scaled
+  sub uF1931 uF1996 uFFAA2 by uFFBD1;  # mama mije, male sign, scaled
+  sub uF1933 uF1996 uF190D by uFF9F2;  # meli ike, default, scaled
+  sub uF1933 uF1996 uF1928 by uFF9F3;  # meli lili, default, scaled
+  sub uF1933 uF1996 uF1954 by uFF9F4;  # meli pona, default, scaled
+  sub uF1933 uF1996 uF1956 by uFF9F5;  # meli sama, default, scaled
+  sub uF1933 uF1996 uF196F by uFF9F6;  # meli unpa, default, scaled
+  sub uF1933 uF1996 uF1975 by uFFBDA;  # meli wawa, default, scaled
+  sub uF1933 uF1996 uF197E by uFFBD7;  # meli tonsi, default, scaled
+  sub uF1935 uF1996 uF190D by uFF9F7;  # mije ike, default, scaled
+  sub uF1935 uF1996 uF1928 by uFF9F8;  # mije lili, default, scaled
+  sub uF1935 uF1996 uF1954 by uFF9F9;  # mije pona, default, scaled
+  sub uF1935 uF1996 uF1956 by uFF9FA;  # mije sama, default, scaled
+  sub uF1935 uF1996 uF196F by uFF9FB;  # mije unpa, default, scaled
+  sub uF1935 uF1996 uF1975 by uFF9FC;  # mije wawa, default, scaled
+  sub uF1935 uF1996 uF197E by uFFBE0;  # mije tonsi, default, scaled
+  sub uF193B uF1996 uF1928 by uFF9FD;  # musi lili, scaled
+  sub uF193F uF1995 uF193D by uFFBF7;  # nasin nanpa, stacked
+  sub uF193F uF1995 uF1960 by uFFBF8;  # nasin sitelen, stacked
+  sub uF1940 uF1996 uF191D by uFF9FE;  # nena kon, scaled
+  sub uF1940 uF1996 uF1920 by uFF9FF;  # nena kute, scaled
+  sub uF1940 uF1996 uF1928 by uFFA00;  # nena lili, scaled
+  sub uF1940 uF1996 uF1931 by uFFA01;  # nena mama, scaled
+  sub uF1940 uF1996 uF1933 by uFFA02;  # nena meli, default, scaled
+  sub uF1940 uF1996 uFFAA1 by uFFBE4;  # nena meli, female sign, scaled
+  sub uF1942 uF1995 uF195D by uFFBFA;  # nimi sin, stacked
+  sub uF1942 uF1996 uF195D by uFFBFB;  # nimi sin, scaled
+  sub uF194A uF1996 uF1928 by uFFA03;  # palisa lili, scaled
+  sub uF194E uF1996 uF1902 by uFFA04;  # pilin ala, scaled
+  sub uF194E uF1996 uF190D by uFFA05;  # pilin ike, scaled
+  sub uF194E uF1996 uF193E by uFFA06;  # pilin nasa, scaled
+  sub uF194E uF1996 uF1948 by uFFA07;  # pilin pakala, scaled
+  sub uF194E uF1996 uF1954 by uFFA08;  # pilin pona, scaled
+  sub uF194E uF1996 uF1956 by uFFA09;  # pilin sama, scaled
+  sub uF1953 uF1996 uF191D by uFFA0A;  # poki kon, scaled
+  sub uF1953 uF1996 uF1925 by uFFA0B;  # poki len, scaled
+  sub uF1953 uF1996 uF1926 by uFFA0C;  # poki lete, scaled
+  sub uF1953 uF1996 uF1928 by uFFA0D;  # poki lili, scaled
+  sub uF1953 uF1996 uF1957 by uFFA0E;  # poki seli, scaled
+  sub uF1953 uF1996 uF196A by uFFA0F;  # poki telo, scaled
+  sub uF1953 uF1996 uFFBAE by uFFBAF;  # poki tona, scaled
+  sub uF1954 uF1995 uF1902 by uFFA10;  # pona ala, stacked
+  sub uF1954 uF1995 uF1928 by uFFA11;  # pona lili, stacked
+  sub uF1954 uF1995 uF192E by uFFA12;  # pona lukin, stacked
+  sub uF1958 uF1995 uF1925 by uFFA13;  # selo len, stacked
+  sub uF1958 uF1995 uF1962 by uFFA14;  # selo soweli, stacked
+  sub uF195C uF1996 uF1928 by uFFA15;  # sike lili, scaled
+  sub uF1960 uF1996 uF190D by uFFA16;  # sitelen ike, scaled
+  sub uF1960 uF1996 uF1930 by uFFA17;  # sitelen ma, scaled
+  sub uF1960 uF1996 uF1954 by uFFA19;  # sitelen pona, scaled
+  sub uF1960 uF1996 uF1960 by uFFA1A;  # sitelen sitelen, scaled
+  sub uF1960 uF1996 uF1969 by uFFA1B;  # sitelen tawa, scaled
+  sub uF1960 uF1996 uF196C by uFFA1C;  # sitelen toki, scaled
+  sub uF1960 uF1996 uF197D by uFFA18;  # sitelen monsuta, scaled
+  sub uF1961 uF1996 uF1902 by uFFA1D;  # sona ala, scaled
+  sub uF1961 uF1996 uF190D by uFFA1E;  # sona ike, scaled
+  sub uF1961 uF1996 uF1928 by uFFA1F;  # sona lili, scaled
+  sub uF1961 uF1996 uF1930 by uFFA20;  # sona ma, scaled
+  sub uF1961 uF1996 uF193D by uFFA21;  # sona nanpa, scaled
+  sub uF1961 uF1996 uF1954 by uFFA22;  # sona pona, scaled
+  sub uF1961 uF1996 uF195B by uFFA23;  # sona sijelo, scaled
+  sub uF1961 uF1996 uF196B by uFFA24;  # sona tenpo, scaled
+  sub uF1961 uF1996 uF196C by uFFA25;  # sona toki, scaled
+  sub uF1961 uF1996 uF1971 by uFFA26;  # sona utala, scaled
+  sub uF1965 uF1995 uF1922 by uFFA27;  # supa lape, stacked
+  sub uF1965 uF1995 uF1924 by uFFA28;  # supa lawa, stacked
+  sub uF1965 uF1995 uF192F by uFFA29;  # supa lupa, stacked
+  sub uF1965 uF1995 uF1936 by uFFA2A;  # supa moku, stacked
+  sub uF1965 uF1995 uF1938 by uFFA2B;  # supa monsi, stacked
+  sub uF1965 uF1995 uF1949 by uFFA2C;  # supa pali, stacked
+  sub uF196A uF1996 uF1926 by uFFA2D;  # telo lete, scaled
+  sub uF196A uF1996 uF1928 by uFFA2E;  # telo lili, scaled
+  sub uF196C uF1996 uF1902 by uFFA2F;  # toki ala, scaled
+  sub uF196C uF1996 uF190D by uFFA30;  # toki ike, scaled
+  sub uF196C uF1996 uF1954 by uFFA31;  # toki pona, scaled
+  sub uF196C uF1996 uF195D by uFFA32;  # toki sin, scaled
+  sub uF196C uF1996 uF1961 by uFFA33;  # toki sona, scaled
+  sub uF196C uF1996 uF1971 by uFFA34;  # toki utala, scaled
+  sub uF196D uF1996 uF1922 by uFFA35;  # tomo lape, scaled
+  sub uF196D uF1996 uF1932 by uFFA36;  # tomo mani, scaled
+  sub uF196D uF1996 uF1936 by uFFA37;  # tomo moku, scaled
+  sub uF196D uF1996 uF193F by uFFA39;  # tomo nasin, scaled
+  sub uF196D uF1996 uF1949 by uFFA3A;  # tomo pali, scaled
+  sub uF196D uF1996 uF1961 by uFFA3B;  # tomo sona, scaled
+  sub uF196D uF1996 uF1969 by uFFA3C;  # tomo tawa, scaled
+  sub uF196D uF1996 uF196F by uFFA3D;  # tomo unpa, scaled
+  sub uF196D uF1996 uF1971 by uFFA3E;  # tomo utala, scaled
+  sub uF196D uF1996 uF197D by uFFA38;  # tomo monsuta, scaled
+  sub uF1972 uF1996 uF194F by uFFBEC;  # walo pimeja, scaled
+  sub uF1975 uF1996 uF196B by uFFBED;  # wawa tenpo, scaled
+  sub uF197E uF1996 uF190D by uFFBE5;  # tonsi ike, scaled
+  sub uF197E uF1996 uF1928 by uFFBE6;  # tonsi lili, scaled
+  sub uF197E uF1996 uF1954 by uFFBE7;  # tonsi pona, scaled
+  sub uF197E uF1996 uF1956 by uFFBE8;  # tonsi sama, scaled
+  sub uF197E uF1996 uF195D by uFFBE9;  # tonsi sin, scaled
+  sub uF197E uF1996 uF196F by uFFBEA;  # tonsi unpa, scaled
+  sub uF197E uF1996 uF1975 by uFFBEB;  # tonsi wawa, scaled
+  sub uFFAA0 uF1995 uF1926 by uFFBBA;  # kala lete, with eyes, stacked
+  sub uFFAA0 uF1995 uF1928 by uFFBBC;  # kala lili, with eyes, stacked
+  sub uFFAA0 uF1996 uF1926 by uFF9A7;  # kala lete, with eyes, scaled
+  sub uFFAA0 uF1996 uF1928 by uFF9A8;  # kala lili, with eyes, scaled
+  sub uFFAA1 uF1996 uF190D by uFFBD3;  # meli ike, female sign, scaled
+  sub uFFAA1 uF1996 uF1928 by uFFBD4;  # meli lili, female sign, scaled
+  sub uFFAA1 uF1996 uF1954 by uFFBD5;  # meli pona, female sign, scaled
+  sub uFFAA1 uF1996 uF1956 by uFFBD6;  # meli sama, female sign, scaled
+  sub uFFAA1 uF1996 uF196F by uFFBD9;  # meli unpa, female sign, scaled
+  sub uFFAA1 uF1996 uF1975 by uFFBDB;  # meli wawa, female sign, scaled
+  sub uFFAA1 uF1996 uF197E by uFFBD8;  # meli tonsi, female sign, scaled
+  sub uFFAA2 uF1996 uF190D by uFFBDC;  # mije ike, male sign, scaled
+  sub uFFAA2 uF1996 uF1928 by uFFBDD;  # mije lili, male sign, scaled
+  sub uFFAA2 uF1996 uF1954 by uFFBDE;  # mije pona, male sign, scaled
+  sub uFFAA2 uF1996 uF1956 by uFFBDF;  # mije sama, male sign, scaled
+  sub uFFAA2 uF1996 uF196F by uFFBE2;  # mije unpa, male sign, scaled
+  sub uFFAA2 uF1996 uF1975 by uFFBE3;  # mije wawa, male sign, scaled
+  sub uFFAA2 uF1996 uF197E by uFFBE1;  # mije tonsi, male sign, scaled
+
+} liga;

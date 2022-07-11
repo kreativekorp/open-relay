@@ -28,6 +28,27 @@ feature rlig {
     sub X uni0304 by uFF124;
     sub x uni0304 by uFF125;
 
+    # Symbols for Legacy Computing
+    sub quotedbl uni200D period by uFFC1D;
+    sub quotesingle uni200D period by uFFC1C;
+    sub quotesingle uni200D s by uFFC13;
+    sub parenleft uni200D parenright by uFFC14;
+    sub parenright uni200D arrowleft by uFFC11;
+    sub hyphen uni200D V by uFFC1E;
+    sub period uni200D quotedbl by uFFC1D;
+    sub period uni200D quotesingle by uFFC1C;
+    sub C uni200D r by uFFC24;
+    sub C uni200D z by uFFC25;
+    sub V uni200D hyphen by uFFC1E;
+    sub quoteright uni200D s by uFFC13;
+    sub uni2088 uni200D uni2077 by uFFC87;
+    sub arrowright uni200D parenleft by uFFC10;
+    sub uniA7F3 uni200D uni2081 by uFFC31;
+    sub uniA7F3 uni200D uni2082 by uFFC32;
+    sub uniA7F3 uni200D uni2083 by uFFC33;
+    sub uniA7F3 uni200D uni2084 by uFFC34;
+    sub uniA7F3 uni200D uni2085 by uFFC35;
+
     # Tengwar Presentation Forms
     sub uniE024 uniE044 uniE051 by uFE01A;
     sub uniE024 uniE051 uniE044 by uFE01A;

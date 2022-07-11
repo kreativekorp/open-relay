@@ -1,0 +1,54 @@
+feature calt {
+
+  # CARTOUCHES
+
+  # extend cartouches across ideographs to the right
+  lookup spCartoucheForward {
+    sub [uF1990 uF1992 uFFA50 @spCartouche] @spCartoucheless' by @spCartouche;
+  } spCartoucheForward;
+
+  # extend cartouches across ideographs to the left
+  lookup spCartoucheBackward {
+    rsub @spCartoucheless' [@spCartouche uFFA50 uF1991] by @spCartouche;
+  } spCartoucheBackward;
+
+
+  # REVERSE EXTENDED KIJETESANTAKALU
+
+  lookup spExtensionKijeStart {
+    sub @spKijeExtensionless' uF199B [@spKijeExtendable @spKijeExtended] by @spKijeExtension;
+    sub [@spKijeExtensionless @spKijeExtension] uF199B @spKijeExtendable' by @spKijeExtended;
+  } spExtensionKijeStart;
+
+  lookup spExtensionKijeContinue {
+    rsub @spKijeExtensionless' @spKijeExtension by @spKijeExtension;
+  } spExtensionKijeContinue;
+
+  lookup spExtensionKijeEnd {
+    sub uF199A @spKijeExtension' by @spKijeExtensionEnd;
+  } spExtensionKijeEnd;
+
+
+  # LONG GLYPHS
+
+  # replace ideograph + start of long glyph with glyph extended to the right
+  lookup spExtensionNormal {
+    sub @spExtendable' uF1997 by @spExtended;
+  } spExtensionNormal;
+
+  # replace end of reverse long glyph + ideograph with glyph extended to the left
+  lookup spExtensionReverse {
+    sub uF199B @spReverseExtendable' by @spReverseExtended;
+  } spExtensionReverse;
+
+  # extend long glyphs across ideographs to the right
+  lookup spExtensionForward {
+    sub [uF1997 uF1999 uF199A uFFA51 @spExtension] @spExtensionless' by @spExtension;
+  } spExtensionForward;
+
+  # extend long glyphs across ideographs to the left
+  lookup spExtensionBackward {
+    rsub @spExtensionless' [@spExtension uFFA51 uF1998 uF199B] by @spExtension;
+  } spExtensionBackward;
+
+} calt;

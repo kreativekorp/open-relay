@@ -56,8 +56,8 @@ mv ConstructiumTmp.ttf Constructium.ttf
 rm ConstructiumTmp.sfd
 
 # Inject PUAA table
-python ../bin/blocks.py cwadkkypqvt > Blocks.txt
-python ../bin/unicodedata.py cwadkkypqvt > UnicodeData.txt
+python ../bin/blocks.py cwadkkypjqvtt > Blocks.txt
+python ../bin/unicodedata.py cwadkkypjqvtt > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I Constructium.ttf

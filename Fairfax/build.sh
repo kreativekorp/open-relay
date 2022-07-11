@@ -38,19 +38,23 @@ rm -rf fairfax
 
 # Generate ttf
 $BITSNPICAS convertbitmap \
-	-o Fairfax.ttf -f ttf Fairfax.kbits \
-	-o FairfaxBold.ttf -f ttf FairfaxBold.kbits \
-	-o FairfaxItalic.ttf -f ttf FairfaxItalic.kbits \
-	-o FairfaxSerif.ttf -f ttf FairfaxSerif.kbits \
+	-f ttf -t 0xF800 -d 0x10FF40-0x10FFC0 \
+	-s '20XX[.]XX[.]XX' -r `python ../bin/strftime.py '%Y.%m.%d'` \
+	-s '20XXXXXX' -r `python ../bin/strftime.py '%Y%m%d'` \
+	-s '20XX' -r `python ../bin/strftime.py '%Y'` \
+	-o Fairfax.ttf Fairfax.kbits \
+	-o FairfaxBold.ttf FairfaxBold.kbits \
+	-o FairfaxItalic.ttf FairfaxItalic.kbits \
+	-o FairfaxSerif.ttf FairfaxSerif.kbits \
 	-s 'Fairfax( Serif)?' -r '$0 SM' -c \
-	-o FairfaxSM.ttf -f ttf Fairfax.kbits \
-	-o FairfaxSMBold.ttf -f ttf FairfaxBold.kbits \
-	-o FairfaxSMItalic.ttf -f ttf FairfaxItalic.kbits \
-	-o FairfaxSerifSM.ttf -f ttf FairfaxSerif.kbits
+	-o FairfaxSM.ttf Fairfax.kbits \
+	-o FairfaxSMBold.ttf FairfaxBold.kbits \
+	-o FairfaxSMItalic.ttf FairfaxItalic.kbits \
+	-o FairfaxSerifSM.ttf FairfaxSerif.kbits
 
 # Inject PUAA table
-python ../bin/blocks.py czuowbanxkkfeypqvst > Blocks.txt
-python ../bin/unicodedata.py czuowbanxkkfeypqvst > UnicodeData.txt
+python ../bin/blocks.py czuowbanxkkfeypjqvsttl > Blocks.txt
+python ../bin/unicodedata.py czuowbanxkkfeypjqvsttl > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I Fairfax.ttf FairfaxBold.ttf FairfaxItalic.ttf FairfaxSerif.ttf \

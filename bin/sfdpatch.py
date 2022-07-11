@@ -2,6 +2,8 @@
 
 from __future__ import print_function
 from datetime import datetime
+from psname import psResolve, psUnicode
+import re
 import sys
 
 def dicttime(now=datetime.now()):
@@ -229,6 +231,7 @@ class Sfd:
 	def renumber(self):
 		unimap = {}
 		ordmap = {}
+		slotcp = 0x110000
 		for i in range(len(self.chars)):
 			self.charindex[self.chars[i].name] = i
 			encline = self.chars[i].get('Encoding')
@@ -239,6 +242,9 @@ class Sfd:
 				if not encline[-1].startswith('-'):
 					ordmap[encline[-1]] = str(i)
 				encline[-1] = str(i)
+				if encline[-2].startswith('-'):
+					encline[-3] = str(slotcp)
+					slotcp += 1
 				self.chars[i].set(' '.join(encline))
 		# Fix references.
 		for i in range(len(self.chars)):
@@ -281,10 +287,14 @@ class Sfd:
 			if encline is not None:
 				encline = encline.split(' ')
 				if not encline[-2].startswith('-'):
-					return int(encline[-2])
+					return (0, int(encline[-2]), ch.name)
+				if '.' in ch.name:
+					cp = psUnicode(ch.name.split('.')[0])
+					if cp >= 0:
+						return (1, cp, ch.name)
 				if not encline[-1].startswith('-'):
-					return 0x20000000 + int(encline[-1])
-			return 0x40000000
+					return (2, int(encline[-1]), ch.name)
+			return (99, -1, ch.name)
 		self.chars.sort(key=getCodePoint)
 		self.renumber()
 
@@ -304,6 +314,22 @@ class Sfd:
 				for j in range(len(self.chars[i].properties)-1,-1,-1):
 					if '2: ' in self.chars[i].properties[j]:
 						self.chars[i].properties.pop(j)
+		self.renumber()
+
+	def subsetRemap(self, sr):
+		newChars = []
+		for o, n in sr:
+			ocp, ogn = psResolve(n if o is None else o)
+			ncp, ngn = psResolve(o if n is None else n)
+			oci = self.charIndex(ogn)
+			if oci >= 0:
+				oldChar = self.chars[oci]
+				newChar = SfdChar(ngn)
+				for prop in oldChar.properties:
+					newChar.append(prop)
+				newChar.set('Encoding: %d %d %d' % (ncp, ncp, len(newChars)))
+				newChars.append(newChar)
+		self.chars = newChars
 		self.renumber()
 
 	def print(self):
@@ -394,6 +420,16 @@ def main():
 		print(('Patching %s...' % f), file=sys.stderr)
 		with open(f, 'r') as lines:
 			sfd.parse(lines)
+	def parseSubsetRemap(f):
+		print(('Patching %s...' % f), file=sys.stderr)
+		with open(f, 'r') as lines:
+			for line in lines:
+				line = line.split('#')[0].strip()
+				if line:
+					line = re.split(r'\s+', line)
+					f0 = line[0] if len(line) > 0 else None
+					f1 = line[1] if len(line) > 1 else None
+					yield f0, f1
 	for arg in sys.argv[1:]:
 		if parseOpts and arg.startswith('-'):
 			if arg == '--':
@@ -404,6 +440,8 @@ def main():
 				argType = 'command'
 			elif arg == '-r' or arg == '--removeChar':
 				argType = 'removeChar'
+			elif arg == '-sr' or arg == '--subsetRemap':
+				argType = 'subsetRemap'
 			elif arg == '-n' or arg == '--renumber':
 				sfd.renumber()
 			elif arg == '-s' or arg == '--sortByCodePoint':
@@ -422,8 +460,14 @@ def main():
 				sfd.removeChar(arg[3:])
 			elif arg.startswith('--removeChar='):
 				sfd.removeChar(arg[13:])
+			elif arg.startswith('-sr='):
+				sfd.subsetRemap(parseSubsetRemap(arg[4:]))
+			elif arg.startswith('--subsetRemap='):
+				sfd.subsetRemap(parseSubsetRemap(arg[14:]))
 			else:
 				print(('Unknown option: %s' % arg), file=sys.stderr)
+		elif argType == 'subsetRemap':
+			sfd.subsetRemap(parseSubsetRemap(arg))
 		elif argType == 'removeChar':
 			sfd.removeChar(arg)
 		elif argType == 'command':
