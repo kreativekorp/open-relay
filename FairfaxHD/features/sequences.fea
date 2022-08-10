@@ -40,6 +40,7 @@ feature rlig {
     sub C uni200D r by uFFC24;
     sub C uni200D z by uFFC25;
     sub V uni200D hyphen by uFFC1E;
+    sub z uni200D lslash by uFFC26;
     sub quoteright uni200D s by uFFC13;
     sub uni2088 uni200D uni2077 by uFFC87;
     sub arrowright uni200D parenleft by uFFC10;

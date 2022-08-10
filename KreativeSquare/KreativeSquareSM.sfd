@@ -5,7 +5,7 @@ FamilyName: Kreative Square SM
 Weight: Medium
 Copyright: Kreative Square copyright (c) Kreative Software 2017-2022 under the Open Font License.
 UComments: "2017-9-3: Created with FontForge (http://fontforge.org)"
-Version: 2022.07.10
+Version: 2022.08.10
 ItalicAngle: 0
 UnderlinePosition: -72
 UnderlineWidth: 36
@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1504498285
-ModificationTime: 1657513595
+ModificationTime: 1660114585
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -53,10 +53,10 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1047616 16 16
+WinInfo: 1047520 16 16
 BeginPrivate: 0
 EndPrivate
-BeginChars: 1114112 5889
+BeginChars: 1114112 5890
 
 StartChar: space
 Encoding: 32 32 0
@@ -100889,14 +100889,25 @@ SplineSet
  372 -22 377 -15 377 -6 c 0
  377 3 372 10 365 10 c 0
  358 10 353 3 353 -6 c 0
-395 18 m 1
- 435 18 l 1
- 435 13 l 1
- 409 -30 l 1
- 400 -30 l 1
- 424 10 l 1
- 395 10 l 1
- 395 18 l 1
+415 0 m 0
+ 422 0 427 2 427 5 c 0
+ 427 8 422 10 415 10 c 0
+ 408 10 403 8 403 5 c 0
+ 403 2 408 0 415 0 c 0
+395 5 m 0
+ 395 12 404 18 415 18 c 0
+ 426 18 435 12 435 5 c 0
+ 435 1 433 -2 429 -4 c 1
+ 433 -7 435 -11 435 -15 c 0
+ 435 -23 426 -30 415 -30 c 0
+ 404 -30 395 -23 395 -15 c 0
+ 395 -11 397 -7 401 -4 c 1
+ 397 -2 395 1 395 5 c 0
+403 -15 m 0
+ 403 -19 408 -22 415 -22 c 0
+ 422 -22 427 -19 427 -15 c 0
+ 427 -11 422 -8 415 -8 c 0
+ 408 -8 403 -11 403 -15 c 0
 502 8 m 1
  522 18 l 1
  527 18 l 1
@@ -209689,6 +209700,47 @@ SplineSet
  0 512 l 1
 EndSplineSet
 Validated: 1
+EndChar
+
+StartChar: uFFC26
+Encoding: 1047590 1047590 5889
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+400 520 m 1
+ 560 520 l 1
+ 560 376 l 1
+ 612 428 l 1
+ 668 372 l 1
+ 560 264 l 1
+ 560 80 l 1
+ 640 80 l 1
+ 640 0 l 1
+ 400 0 l 1
+ 400 80 l 1
+ 480 80 l 1
+ 480 184 l 1
+ 428 132 l 1
+ 372 188 l 1
+ 480 296 l 1
+ 480 440 l 1
+ 400 440 l 1
+ 400 520 l 1
+320 351 m 1
+ 185 80 l 1
+ 320 80 l 1
+ 320 0 l 1
+ 80 0 l 1
+ 80 49 l 1
+ 215 320 l 1
+ 80 320 l 1
+ 80 400 l 1
+ 320 400 l 1
+ 320 351 l 1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont

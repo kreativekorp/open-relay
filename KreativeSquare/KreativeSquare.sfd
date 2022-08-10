@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1504498285
-ModificationTime: 1657513595
+ModificationTime: 1660114585
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -53,10 +53,10 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1047616 16 16
+WinInfo: 1047520 16 16
 BeginPrivate: 0
 EndPrivate
-BeginChars: 1114112 6169
+BeginChars: 1114112 6170
 
 StartChar: space
 Encoding: 32 32 0
@@ -192945,6 +192945,7 @@ SplineSet
  377 200 l 1
  148 -28 l 1
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" arrowright uni200D parenleft 
 EndChar
 
 StartChar: uFFC11
@@ -192973,6 +192974,7 @@ SplineSet
  343 200 l 1
  572 428 l 1
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" parenright uni200D arrowleft
 EndChar
 
 StartChar: uFFC12
@@ -193023,6 +193025,8 @@ SplineSet
  0 360 l 5
  80 360 l 5
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" quoteright uni200D s
+Ligature2: "Combining Sequences 0-1" quotesingle uni200D s
 EndChar
 
 StartChar: uFFC14
@@ -193048,6 +193052,7 @@ SplineSet
  229 444 160 330 160 200 c 0
  160 70 229 -44 332 -107 c 1
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" parenleft uni200D parenright 
 EndChar
 
 StartChar: uFFC16
@@ -193094,6 +193099,8 @@ SplineSet
  410 22 388 0 360 0 c 0
  332 0 310 22 310 50 c 0
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" period uni200D quotesingle 
+Ligature2: "Combining Sequences 0-1" quotesingle uni200D period
 EndChar
 
 StartChar: uFFC1D
@@ -193120,6 +193127,8 @@ SplineSet
  410 22 388 0 360 0 c 0
  332 0 310 22 310 50 c 0
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" period uni200D quotedbl
+Ligature2: "Combining Sequences 0-1" quotedbl uni200D period
 EndChar
 
 StartChar: uFFC1E
@@ -193152,6 +193161,8 @@ SplineSet
  360 148 l 1
  397 240 l 1
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" V uni200D hyphen
+Ligature2: "Combining Sequences 0-1" hyphen uni200D V
 EndChar
 
 StartChar: uFFC1F
@@ -193370,6 +193381,7 @@ SplineSet
  720 320 l 1
  654 320 560 200 560 200 c 1
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" C uni200D r
 EndChar
 
 StartChar: uFFC25
@@ -193403,6 +193415,7 @@ SplineSet
  418 56 335 0 240 0 c 0
  108 0 0 108 0 240 c 0
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" C uni200D z
 EndChar
 
 StartChar: uFFC31
@@ -196182,6 +196195,7 @@ SplineSet
  207 140 180 131 180 120 c 0
  180 109 207 100 240 100 c 0
 EndSplineSet
+Ligature2: "Combining Sequences 0-1" uni2088 uni200D uni2077
 EndChar
 
 StartChar: uFFC88
@@ -214697,6 +214711,48 @@ SplineSet
  640 320 l 1
  354 320 l 1
 EndSplineSet
+EndChar
+
+StartChar: uFFC26
+Encoding: 1047590 1047590 6169
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+400 520 m 1
+ 560 520 l 1
+ 560 376 l 1
+ 612 428 l 1
+ 668 372 l 1
+ 560 264 l 1
+ 560 80 l 1
+ 640 80 l 1
+ 640 0 l 1
+ 400 0 l 1
+ 400 80 l 1
+ 480 80 l 1
+ 480 184 l 1
+ 428 132 l 1
+ 372 188 l 1
+ 480 296 l 1
+ 480 440 l 1
+ 400 440 l 1
+ 400 520 l 1
+320 351 m 1
+ 185 80 l 1
+ 320 80 l 1
+ 320 0 l 1
+ 80 0 l 1
+ 80 49 l 1
+ 215 320 l 1
+ 80 320 l 1
+ 80 400 l 1
+ 320 400 l 1
+ 320 351 l 1
+EndSplineSet
+Ligature2: "Combining Sequences 0-1" z uni200D lslash
 EndChar
 EndChars
 EndSplineFont
