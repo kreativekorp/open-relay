@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-rm -f Fairfax*.ttf Fairfax*.eot Fairfax*.zip
+rm -f *_base.* Fairfax*.ttf Fairfax*.eot Fairfax*.zip
 rm -rf fairfax

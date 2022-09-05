@@ -73,12 +73,11 @@ $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv
 rm *_base.sfd
 
 # Add OpenType features (FontForge completely fouls this up on its own)
-cd features
-python build.py
-cat languages.fea sequences.fea joiners.fea variants.fea extendable.fea extensions.fea > ../FairfaxHD_base.fea
-cat languages.fea sequences.fea joiners.fea asuki.fea variants.fea extendable.fea extensions.fea > ../FairfaxPonaHD_base.fea
-cat languages.fea sequences.fea joiners.fea ligatures.fea variants.fea extendable.fea extensions.fea > ../FairfaxHaxHD_base.fea
-cd ..
+python ../bin/sitelenpona.py -a ../features/asuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g FairfaxHD.sfd
+cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPonaHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHaxHD_base.fea
+rm asuki.fea extendable.fea joiners.fea
 
 $FONTTOOLS feaLib -o FairfaxHD.ttf FairfaxHD_base.fea FairfaxHD_base.ttf
 $FONTTOOLS feaLib -o FairfaxPonaHD.ttf FairfaxPonaHD_base.fea FairfaxPonaHD_base.ttf

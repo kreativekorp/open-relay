@@ -101,7 +101,7 @@ psNameTable = {
 	0x007C: 'bar',
 	0x007D: 'braceright',
 	0x007E: 'asciitilde',
-	0x00A0: 'nonbreakingspace',
+	0x00A0: 'uni00A0', # nonbreakingspace
 	0x00A1: 'exclamdown',
 	0x00A2: 'cent',
 	0x00A3: 'sterling',
@@ -341,6 +341,11 @@ psNameTable = {
 	0x02DB: 'ogonek',
 	0x02DC: 'tilde',
 	0x02DD: 'hungarumlaut',
+	0x0300: 'gravecomb',
+	0x0301: 'acutecomb',
+	0x0303: 'tildecomb',
+	0x0309: 'hookabovecomb',
+	0x0323: 'dotbelowcomb',
 	0x0384: 'tonos',
 	0x0385: 'dieresistonos',
 	0x0386: 'Alphatonos',
@@ -669,6 +674,8 @@ except:
 	psUnicodeTable = {v: k for k, v in psNameTable.iteritems()}
 
 def psName(cp):
+	if type(cp) is not int:
+		cp = ord(cp)
 	if cp < 0 or cp >= 0x110000:
 		return '.notdef'
 	if cp in psNameTable:
@@ -676,6 +683,12 @@ def psName(cp):
 	if cp < 0x10000:
 		return 'uni%04X' % cp
 	return 'u%05X' % cp
+
+def psNames(s):
+	try:
+		return [psName(cp) for cp in unicode(s, 'utf8')]
+	except:
+		return [psName(cp) for cp in s]
 
 def psUnicode(name):
 	if name in psUnicodeTable:

@@ -1,0 +1,93 @@
+# These are in addition to the compounds listed in asuki.txt.
+# It is recommended for these to be either three or more logographs
+# or a single logograph and a single non-logograph character.
+
+uFFAB8	mu-\u1F5E7	# mu + three rays right = emitters
+
+uFFABE	kijetesantakalu-\uni2721	# kijetesantakalu + star of david = lipamanka
+
+uFFABF	meli-\u1F431	# meli + cat face = melinjakulekule
+uFFABF	meli-kule-kule	# meli + kule + kule = melinjakulekule
+uFFABF	meli-nja-kule-kule	# meli + nja + kule + kule = melinjakulekule
+
+uFFAD0	kalama-musi-tan-uta	# kalama + musi + tan + uta = kmtu = kuntu
+uFFADA	kama-pi-lawa-ala	# kama + pi + lawa + ala = kamalawala
+uFFAE6	pana-e-telo-oko	# pana + e + telo + oko = peto
+
+uFFB00	ni-\arrowleft	# ni + left arrow = ni pointing left
+uFFB01	ni-\arrowup	# ni + up arrow = ni pointing up
+uFFB02	ni-\arrowright	# ni + right arrow = ni pointing right
+uFFB03	ni-\arrowdown	# ni + down arrow = ni pointing down
+
+uFFB32	meli-pi-olin-meli	# meli + pi + olin + meli = melome
+uFFB36	mije-pi-olin-mije	# mije + pi + olin + mije = mijomi
+uFFB3B	o-moku-e-kala-pona	# o + moku + e + kala + pona = omekapo
+uFFD84	o-moku-e-kala-ike	# o + moku + e + kala + ike = omekalike
+uFFB62	o-moli-e-mi	# o + moli + e + mi = omem = omen
+uFFB8D	\s-lape	# s + lape = slape
+
+uFFB91	waso-\u1F47D	# waso + extraterrestrial alien = jan waso Asuto
+
+uFFB93	jan-jan-jan	# jan + jan + jan = jan Jan
+
+uFFB95	kulupu-kili-ma	# kulupu + kili + ma = kulupu Kilima
+uFFB96	kulupu-\ampersand	# kulupu + ampersand = The & System
+uFFB97	kulupu-\u1F344	# kulupu + mushroom = kulupu kasi, mushroom
+uFFDE1	kulupu-\u1F331	# kulupu + seedling = kulupu kasi, seedling
+
+uFFB99	kijetesantakalu-\u1F607	# kijetesantakalu + smiling face with halo = jan Wija / Wyub
+
+uFFBEE	kijetesantakalu-\uni1E9E	# sharp s + kijetesantakalu
+uFFBEF	kijetesantakalu-\germandbls	# sharp s + kijetesantakalu
+
+uFFBEE	\uni1E9E-kijetesantakalu	# sharp s + kijetesantakalu
+uFFBEF	\germandbls-kijetesantakalu	# sharp s + kijetesantakalu
+
+uFFBF0	ma-pona-pi-toki-pona	# ma pona pi toki pona
+uFFBF1	ma-pi-nasin-sitelen	# ma pi nasin sitelen
+uFFBF9	sitelen-seli-kiwen	# sitelen seli kiwen
+
+uFFDE0	ijo-tan-anpa-nanpa	# ijo + tan + anpa + nanpa = jan Itan
+
+# Compounds with randomized jaki.
+# It is easier to add these as special cases here
+# than write the code to handle these specially.
+
+uFF90F	ijo-\uF1910.rand01	# ijo jaki, scaled
+uFF90F	ijo+\uF1910.rand01	# ijo jaki, scaled
+uFF90F	ijo*\uF1910.rand01	# ijo jaki, scaled
+uFF90F	ijo-\uF1910.rand02	# ijo jaki, scaled
+uFF90F	ijo+\uF1910.rand02	# ijo jaki, scaled
+uFF90F	ijo*\uF1910.rand02	# ijo jaki, scaled
+uFF90F	ijo-\uF1910.rand03	# ijo jaki, scaled
+uFF90F	ijo+\uF1910.rand03	# ijo jaki, scaled
+uFF90F	ijo*\uF1910.rand03	# ijo jaki, scaled
+uFF90F	ijo-\uF1910.rand04	# ijo jaki, scaled
+uFF90F	ijo+\uF1910.rand04	# ijo jaki, scaled
+uFF90F	ijo*\uF1910.rand04	# ijo jaki, scaled
+
+uFF9C4	ko-\uF1910.rand01	# ko jaki, scaled
+uFF9C4	ko+\uF1910.rand01	# ko jaki, scaled
+uFF9C4	ko*\uF1910.rand01	# ko jaki, scaled
+uFF9C4	ko-\uF1910.rand02	# ko jaki, scaled
+uFF9C4	ko+\uF1910.rand02	# ko jaki, scaled
+uFF9C4	ko*\uF1910.rand02	# ko jaki, scaled
+uFF9C4	ko-\uF1910.rand03	# ko jaki, scaled
+uFF9C4	ko+\uF1910.rand03	# ko jaki, scaled
+uFF9C4	ko*\uF1910.rand03	# ko jaki, scaled
+uFF9C4	ko-\uF1910.rand04	# ko jaki, scaled
+uFF9C4	ko+\uF1910.rand04	# ko jaki, scaled
+uFF9C4	ko*\uF1910.rand04	# ko jaki, scaled
+
+uFF9E4	lupa-\uF1910.rand01	# lupa jaki, scaled
+uFF9E4	lupa+\uF1910.rand01	# lupa jaki, scaled
+uFF9E4	lupa*\uF1910.rand01	# lupa jaki, scaled
+uFF9E4	lupa-\uF1910.rand02	# lupa jaki, scaled
+uFF9E4	lupa+\uF1910.rand02	# lupa jaki, scaled
+uFF9E4	lupa*\uF1910.rand02	# lupa jaki, scaled
+uFF9E4	lupa-\uF1910.rand03	# lupa jaki, scaled
+uFF9E4	lupa+\uF1910.rand03	# lupa jaki, scaled
+uFF9E4	lupa*\uF1910.rand03	# lupa jaki, scaled
+uFF9E4	lupa-\uF1910.rand04	# lupa jaki, scaled
+uFF9E4	lupa+\uF1910.rand04	# lupa jaki, scaled
+uFF9E4	lupa*\uF1910.rand04	# lupa jaki, scaled

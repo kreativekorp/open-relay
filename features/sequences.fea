@@ -1,0 +1,321 @@
+feature rlig {
+
+  lookup CombiningSequences {
+
+    # Latin Letters with Diacritics
+    sub A uni030A uni0308 by uFF128;
+    sub a uni030A uni0308 by uFF129;
+    sub Aring uni0308 by uFF128;
+    sub aring uni0308 by uFF129;
+    sub G uni0308 by uFF120;
+    sub g uni0308 by uFF121;
+    sub K tildecomb by uniF700;
+    sub k tildecomb by uniF701;
+    sub L tildecomb by uFF122;
+    sub l tildecomb by uFF123;
+    sub M tildecomb by uniF704;
+    sub m tildecomb by uniF705;
+    sub N uni0308 by uFF126;
+    sub n uni0308 by uFF127;
+    sub Oslash uni0308 by uFF12A;
+    sub oslash uni0308 by uFF12B;
+    sub P uni0302 by uFF130;
+    sub p uni0302 by uFF131;
+    sub Q uni0302 by uFF138;
+    sub q uni0302 by uFF139;
+    sub R tildecomb by uFF13A;
+    sub r tildecomb by uFF13B;
+    sub X uni0304 by uFF124;
+    sub x uni0304 by uFF125;
+
+    # Symbols for Legacy Computing
+    sub quotedbl uni200D period by uFFC1D;
+    sub quotesingle uni200D period by uFFC1C;
+    sub quotesingle uni200D s by uFFC13;
+    sub parenleft uni200D parenright by uFFC14;
+    sub parenright uni200D arrowleft by uFFC11;
+    sub hyphen uni200D V by uFFC1E;
+    sub period uni200D quotedbl by uFFC1D;
+    sub period uni200D quotesingle by uFFC1C;
+    sub C uni200D r by uFFC24;
+    sub C uni200D z by uFFC25;
+    sub V uni200D hyphen by uFFC1E;
+    sub z uni200D lslash by uFFC26;
+    sub quoteright uni200D s by uFFC13;
+    sub uni2088 uni200D uni2077 by uFFC87;
+    sub arrowright uni200D parenleft by uFFC10;
+    sub uniA7F3 uni200D uni2081 by uFFC31;
+    sub uniA7F3 uni200D uni2082 by uFFC32;
+    sub uniA7F3 uni200D uni2083 by uFFC33;
+    sub uniA7F3 uni200D uni2084 by uFFC34;
+    sub uniA7F3 uni200D uni2085 by uFFC35;
+
+    # Tengwar Presentation Forms
+    sub uniE024 uniE044 uniE051 by uFE01A;
+    sub uniE024 uniE051 uniE044 by uFE01A;
+    sub uniE025 uniE045 uniE050 by uFE01B;
+    sub uniE025 uniE050 uniE045 by uFE01B;
+    sub uniE050 uniE040 uniE040 by uFE03A;
+    sub uniE051 uniE041 uniE041 by uFE03B;
+    sub uniE052 uniE040 uniE040 by uFE04F;
+    sub uniE022 uniE051 by uFE01C;
+    sub uniE023 uniE051 by uFE01D;
+    sub uniE024 uniE044 by uFE018;
+    sub uniE025 uniE045 by uFE019;
+    sub uniE026 uniE041 by uFE001;
+    sub uniE026 uniE043 by uFE003;
+    sub uniE026 uniE045 by uFE005;
+    sub uniE026 uniE047 by uFE007;
+    sub uniE026 uniE049 by uFE009;
+    sub uniE026 uniE04B by uFE00B;
+    sub uniE026 uniE04D by uFE00D;
+    sub uniE026 uniE051 by uFE011;
+    sub uniE026 uniE057 by uFE017;
+    sub uniE027 uniE040 by uFE000;
+    sub uniE027 uniE042 by uFE002;
+    sub uniE027 uniE044 by uFE004;
+    sub uniE027 uniE046 by uFE006;
+    sub uniE027 uniE048 by uFE008;
+    sub uniE027 uniE04A by uFE00A;
+    sub uniE027 uniE04C by uFE00C;
+    sub uniE027 uniE04E by uFE00E;
+    sub uniE027 uniE04F by uFE00F;
+    sub uniE027 uniE050 by uFE010;
+    sub uniE027 uniE052 by uFE012;
+    sub uniE027 uniE053 by uFE013;
+    sub uniE027 uniE054 by uFE014;
+    sub uniE027 uniE055 by uFE015;
+    sub uniE027 uniE056 by uFE016;
+    sub uniE040 uniE040 by uFE038;
+    sub uniE041 uniE041 by uFE039;
+    sub uniE050 uniE040 by uFE020;
+    sub uniE050 uniE042 by uFE022;
+    sub uniE050 uniE044 by uFE024;
+    sub uniE050 uniE046 by uFE026;
+    sub uniE050 uniE048 by uFE028;
+    sub uniE050 uniE04A by uFE02A;
+    sub uniE050 uniE04C by uFE02C;
+    sub uniE050 uniE04E by uFE02E;
+    sub uniE050 uniE04F by uFE02F;
+    sub uniE050 uniE050 by uFE030;
+    sub uniE050 uniE052 by uFE032;
+    sub uniE050 uniE053 by uFE033;
+    sub uniE050 uniE054 by uFE034;
+    sub uniE050 uniE055 by uFE035;
+    sub uniE050 uniE056 by uFE036;
+    sub uniE051 uniE041 by uFE021;
+    sub uniE051 uniE043 by uFE023;
+    sub uniE051 uniE045 by uFE025;
+    sub uniE051 uniE047 by uFE027;
+    sub uniE051 uniE049 by uFE029;
+    sub uniE051 uniE04B by uFE02B;
+    sub uniE051 uniE04D by uFE02D;
+    sub uniE051 uniE051 by uFE031;
+    sub uniE051 uniE057 by uFE037;
+    sub uniE052 uniE040 by uFE040;
+    sub uniE052 uniE042 by uFE041;
+    sub uniE052 uniE044 by uFE042;
+    sub uniE052 uniE046 by uFE043;
+    sub uniE052 uniE048 by uFE044;
+    sub uniE052 uniE04A by uFE045;
+    sub uniE052 uniE04C by uFE046;
+    sub uniE052 uniE04E by uFE047;
+    sub uniE052 uniE04F by uFE048;
+    sub uniE052 uniE050 by uFE049;
+    sub uniE052 uniE052 by uFE04A;
+    sub uniE052 uniE053 by uFE04B;
+    sub uniE052 uniE054 by uFE04C;
+    sub uniE052 uniE055 by uFE04D;
+    sub uniE052 uniE056 by uFE04E;
+
+    # Niskloz Presentation Forms
+    sub uniE41A uniE415 uniE415 by uFE42A;
+    sub uniE41A uniE415 uniE41D by uFE420;
+    sub uniE41A uniE415 uniE41E by uFE425;
+    sub uniE41A uniE416 uniE416 by uFE42B;
+    sub uniE41A uniE416 uniE41D by uFE421;
+    sub uniE41A uniE416 uniE41E by uFE426;
+    sub uniE41A uniE417 uniE417 by uFE42C;
+    sub uniE41A uniE417 uniE41D by uFE422;
+    sub uniE41A uniE417 uniE41E by uFE427;
+    sub uniE41A uniE418 uniE418 by uFE42D;
+    sub uniE41A uniE418 uniE41D by uFE423;
+    sub uniE41A uniE418 uniE41E by uFE428;
+    sub uniE41A uniE419 uniE419 by uFE42E;
+    sub uniE41A uniE419 uniE41D by uFE424;
+    sub uniE41A uniE419 uniE41E by uFE429;
+    sub uniE400 uniE41B by uFE400;
+    sub uniE401 uniE41B by uFE401;
+    sub uniE405 uniE41B by uFE402;
+    sub uniE406 uniE41B by uFE403;
+    sub uniE408 uniE41B by uFE404;
+    sub uniE40B uniE41B by uFE405;
+    sub uniE40C uniE41B by uFE406;
+    sub uniE40E uniE41B by uFE407;
+    sub uniE40F uniE41B by uFE408;
+    sub uniE40F uniE41C by uFE40C;
+    sub uniE413 uniE41B by uFE409;
+    sub uniE415 uniE415 by uFE41A;
+    sub uniE415 uniE41D by uFE410;
+    sub uniE415 uniE41E by uFE415;
+    sub uniE416 uniE416 by uFE41B;
+    sub uniE416 uniE41D by uFE411;
+    sub uniE416 uniE41E by uFE416;
+    sub uniE417 uniE417 by uFE41C;
+    sub uniE417 uniE41D by uFE412;
+    sub uniE417 uniE41E by uFE417;
+    sub uniE418 uniE418 by uFE41D;
+    sub uniE418 uniE41D by uFE413;
+    sub uniE418 uniE41E by uFE418;
+    sub uniE419 uniE419 by uFE41E;
+    sub uniE419 uniE41D by uFE414;
+    sub uniE419 uniE41E by uFE419;
+    sub uniE41A uFE410 by uFE420;
+    sub uniE41A uFE411 by uFE421;
+    sub uniE41A uFE412 by uFE422;
+    sub uniE41A uFE413 by uFE423;
+    sub uniE41A uFE414 by uFE424;
+    sub uniE41A uFE415 by uFE425;
+    sub uniE41A uFE416 by uFE426;
+    sub uniE41A uFE417 by uFE427;
+    sub uniE41A uFE418 by uFE428;
+    sub uniE41A uFE419 by uFE429;
+    sub uniE41A uFE41A by uFE42A;
+    sub uniE41A uFE41B by uFE42B;
+    sub uniE41A uFE41C by uFE42C;
+    sub uniE41A uFE41D by uFE42D;
+    sub uniE41A uFE41E by uFE42E;
+    sub uniE41A uniE415 by uniE42A;
+    sub uniE41A uniE416 by uniE42B;
+    sub uniE41A uniE417 by uniE42C;
+    sub uniE41A uniE418 by uniE42D;
+    sub uniE41A uniE419 by uniE42E;
+    sub uniE42A uniE415 by uFE42A;
+    sub uniE42A uniE41D by uFE420;
+    sub uniE42A uniE41E by uFE425;
+    sub uniE42B uniE416 by uFE42B;
+    sub uniE42B uniE41D by uFE421;
+    sub uniE42B uniE41E by uFE426;
+    sub uniE42C uniE417 by uFE42C;
+    sub uniE42C uniE41D by uFE422;
+    sub uniE42C uniE41E by uFE427;
+    sub uniE42D uniE418 by uFE42D;
+    sub uniE42D uniE41D by uFE423;
+    sub uniE42D uniE41E by uFE428;
+    sub uniE42E uniE419 by uFE42E;
+    sub uniE42E uniE41D by uFE424;
+    sub uniE42E uniE41E by uFE429;
+
+    # Ophidian Presentation Forms
+    sub uniE5E1 uniE5E1 by uFE5E0;
+    sub uniE5E1 uniE5E3 by uFE5E1;
+    sub uniE5E3 uniE5E1 by uFE5E2;
+    sub uniE5E3 uniE5E3 by uFE5E3;
+    sub uniE5E5 uniE5E5 by uFE5E4;
+    sub uniE5E5 uniE5E7 by uFE5E5;
+    sub uniE5E7 uniE5E5 by uFE5E6;
+    sub uniE5E7 uniE5E7 by uFE5E7;
+    sub uniE5E9 uniE5E9 by uFE5E8;
+    sub uniE5E9 uniE5EB by uFE5E9;
+    sub uniE5EB uniE5E9 by uFE5EA;
+    sub uniE5EB uniE5EB by uFE5EB;
+    sub uniE5ED uniE5ED by uFE5EC;
+    sub uniE5ED uniE5EF by uFE5ED;
+    sub uniE5EF uniE5ED by uFE5EE;
+    sub uniE5EF uniE5EF by uFE5EF;
+    sub uniE5F3 uniE5F3 by uFE5F2;
+    sub uniE5F3 uniE5F5 by uFE5F3;
+    sub uniE5F5 uniE5F3 by uFE5F4;
+    sub uniE5F5 uniE5F5 by uFE5F5;
+    sub uniE5F7 uniE5F7 by uFE5F6;
+    sub uniE5F7 uniE5F9 by uFE5F7;
+    sub uniE5F9 uniE5F7 by uFE5F8;
+    sub uniE5F9 uniE5F9 by uFE5F9;
+
+    # Ewellic Presentation Forms
+    sub uniE684 acutecomb by uFE684;
+    sub uniE685 acutecomb by uFE685;
+    sub uniE686 acutecomb by uFE686;
+    sub uniE687 acutecomb by uFE687;
+    sub uniE68D acutecomb by uFE68D;
+    sub uniE68E acutecomb by uFE68E;
+    sub uniE6AF acutecomb by uFE6AF;
+    sub uniE6B0 acutecomb by uFE6B0;
+    sub uniE6B1 acutecomb by uFE6B1;
+    sub uniE6B2 acutecomb by uFE6B2;
+    sub uniE6B3 acutecomb by uFE6B3;
+    sub uniE6B4 acutecomb by uFE6B4;
+    sub uniE6B5 acutecomb by uFE6B5;
+    sub uniE6B6 acutecomb by uFE6B6;
+    sub uniE6B7 acutecomb by uFE6B7;
+    sub uniE6B8 acutecomb by uFE6B8;
+    sub uniE6B9 acutecomb by uFE6B9;
+    sub uniE6BA acutecomb by uFE6BA;
+    sub uniE6BB acutecomb by uFE6BB;
+    sub uniE6BC acutecomb by uFE6BC;
+    sub uniE6BD acutecomb by uFE6BD;
+    sub uniE6BE acutecomb by uFE6BE;
+    sub uniE6BF acutecomb by uFE6BF;
+
+    # Aiha Presentation Forms
+    sub uniF8A0 uniF8C8 by uFF8A0;
+    sub uniF8A0 uniF8CF by uFF8B4;
+    sub uniF8A1 uniF8C8 by uFF8A1;
+    sub uniF8A1 uniF8CF by uFF8B5;
+    sub uniF8A2 uniF8C8 by uFF8A2;
+    sub uniF8A2 uniF8CF by uFF8B6;
+    sub uniF8A3 uniF8C8 by uFF8A3;
+    sub uniF8A3 uniF8CF by uFF8B7;
+    sub uniF8A4 uniF8C8 by uFF8A4;
+    sub uniF8A4 uniF8CF by uFF8B8;
+    sub uniF8A5 uniF8C8 by uFF8A5;
+    sub uniF8A5 uniF8CF by uFF8B9;
+    sub uniF8A6 uniF8C8 by uFF8A6;
+    sub uniF8A6 uniF8CF by uFF8BA;
+    sub uniF8A7 uniF8C8 by uFF8A7;
+    sub uniF8A7 uniF8CF by uFF8BB;
+    sub uniF8A8 uniF8C8 by uFF8A8;
+    sub uniF8A8 uniF8CF by uFF8BC;
+    sub uniF8A9 uniF8C8 by uFF8A9;
+    sub uniF8A9 uniF8CF by uFF8BD;
+    sub uniF8AA uniF8C8 by uFF8AA;
+    sub uniF8AA uniF8CF by uFF8BE;
+    sub uniF8AB uniF8C8 by uFF8AB;
+    sub uniF8AB uniF8CF by uFF8BF;
+    sub uniF8AC uniF8C8 by uFF8AC;
+    sub uniF8AC uniF8CF by uFF8C0;
+    sub uniF8AD uniF8C8 by uFF8AD;
+    sub uniF8AD uniF8CF by uFF8C1;
+    sub uniF8AE uniF8C8 by uFF8AE;
+    sub uniF8AE uniF8CF by uFF8C2;
+    sub uniF8AF uniF8C8 by uFF8AF;
+    sub uniF8AF uniF8CF by uFF8C3;
+    sub uniF8B0 uniF8C8 by uFF8B0;
+    sub uniF8B0 uniF8CF by uFF8C4;
+    sub uniF8B1 uniF8C8 by uFF8B1;
+    sub uniF8B1 uniF8CF by uFF8C5;
+    sub uniF8B2 uniF8C8 by uFF8B2;
+    sub uniF8B2 uniF8CF by uFF8C6;
+    sub uniF8C9 uniF8C8 by uFF8C9;
+    sub uniF8C9 uniF8CF by uFF8CD;
+    sub uniF8CA uniF8C8 by uFF8CA;
+    sub uniF8CA uniF8CF by uFF8CE;
+
+    # QID Emoji
+    sub u1F194 uE0051 uE0033 uE0035 uE0039 uE0032 uE0035 uE0032 uE0038 uE007F by uFF00F; # Q3592528 = seven-pointed star
+    sub u1F194 uE0051 uE0031 uE0038 uE0038 uE0037 uE0030 uE0039 uE0034 uE007F by uFF00F; # Q1887094 = heptagram
+    sub u1F194 uE0051 uE0031 uE0033 uE0033 uE0032 uE0030 uE0038 uE0038 uE007F by uFF185; # Q1332088 = pelican eel
+    sub u1F194 uE0051 uE0031 uE0031 uE0033 uE0038 uE0037 uE0033 uE0037 uE007F by uFF180; # Q1138737 = lamp
+    sub u1F194 uE0051 uE0036 uE0038 uE0035 uE0033 uE0032 uE0038 uE007F by uFF184; # Q685328 = Shibuya 109
+    sub u1F194 uE0051 uE0032 uE0037 uE0034 uE0037 uE0038 uE0032 uE007F by uFF1C0; # Q274782 = dignity
+    sub u1F194 uE0051 uE0032 uE0037 uE0031 uE0035 uE0033 uE0034 uE007F by uFF141; # Q271534 = pansexuality
+    sub u1F194 uE0051 uE0031 uE0037 uE0031 uE0038 uE0038 uE0038 uE007F by uFF181; # Q171888 = eraser
+    sub u1F194 uE0051 uE0038 uE0030 uE0038 uE0033 uE0031 uE007F by uFF182;  # Q80831 = integrated circuit
+    sub u1F194 uE0051 uE0034 uE0038 uE0033 uE0033 uE0037 uE007F by uniF85F; # Q48337 = Morgan Freeman
+    sub u1F194 uE0051 uE0031 uE0039 uE0038 uE0034 uE0037 uE007F by uFF010;  # Q19847 = Poké Ball
+    sub u1F194 uE0051 uE0031 uE0031 uE0033 uE0030 uE0033 uE007F by uFF183;  # Q11303 = skyscraper
+    sub u1F194 uE0051 uE0037 uE0035 uE0034 uE0032 uE007F by uFF00B; # Q7542 = Prince
+
+  } CombiningSequences;
+
+} rlig;

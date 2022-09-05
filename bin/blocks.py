@@ -223,3 +223,8 @@ if 't' in args: # Tokipona
 # fs
 if 'l' in args: # Legacycomputing
 	print('FFC00..FFCFF; Symbols for Legacy Computing Appendix')
+
+# cf
+if 't' in args: # Tokipona
+	if 'tt' in args:
+		print('FFD00..FFDFF; Sitelen Pona Presentation Forms-C')
