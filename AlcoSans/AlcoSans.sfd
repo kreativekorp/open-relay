@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 1
 OS2_UseTypoMetrics: 0
 CreationTime: 1571230327
-ModificationTime: 1660115696
+ModificationTime: 1666159437
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -1087,11 +1087,11 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1047488 16 18
+WinInfo: 62784 16 18
 BeginPrivate: 0
 EndPrivate
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning lookup 3 subtable" "Anchor-1" "'mark' Mark Positioning lookup 3 subtable" "Anchor-2" "'mark' Mark Positioning lookup 3 subtable" "Anchor-3" "'mark' Mark Positioning lookup 3 subtable" "Anchor-4" "'mark' Mark Positioning lookup 4 subtable" "Anchor-5" "'mark' Mark Positioning lookup 4 subtable" "Anchor-6" "'mark' Mark Positioning lookup 4 subtable" "Anchor-7" "'mkmk' Mark to Mark lookup 5 subtable" "Anchor-8" "'mkmk' Mark to Mark lookup 6 subtable" "Anchor-9" "'mkmk' Mark to Mark lookup 7 subtable" "Anchor-10" "'mkmk' Mark to Mark lookup 8 subtable"
-BeginChars: 1114590 4877
+BeginChars: 1114590 4879
 
 StartChar: .notdef
 Encoding: 1114112 -1 0
@@ -146185,6 +146185,83 @@ Refer: 259 322 N 1 0 0 1 470 0 2
 Refer: 93 122 N 1 0 0 1 0 0 2
 Ligature2: "Combining Sequences 0-1" z uni200D lslash
 Decomposition: "z+AUIA"
+EndChar
+
+StartChar: uFFC2F
+Encoding: 1047599 1047599 4877
+Width: 549
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+51 690 m 1,0,1
+ 123 724 123 724 243.5 724 c 128,-1,2
+ 364 724 364 724 433 671 c 128,-1,3
+ 502 618 502 618 502 523 c 0,4,5
+ 502 467 502 467 479.5 430 c 128,-1,6
+ 457 393 457 393 413.5 366.5 c 128,-1,7
+ 370 340 370 340 309.5 317.5 c 128,-1,8
+ 249 295 249 295 215 276 c 128,-1,9
+ 181 257 181 257 166 233 c 128,-1,10
+ 151 209 151 209 151 167.5 c 128,-1,11
+ 151 126 151 126 185 97.5 c 128,-1,12
+ 219 69 219 69 294 69 c 128,-1,13
+ 369 69 369 69 457 107 c 1,14,-1
+ 485 30 l 1,15,16
+ 396 -10 396 -10 288 -10 c 0,17,18
+ 221 -10 221 -10 169.5 12 c 128,-1,19
+ 118 34 118 34 89 74.5 c 128,-1,20
+ 60 115 60 115 60 172 c 0,21,22
+ 60 255 60 255 106.5 303 c 128,-1,23
+ 153 351 153 351 231 379 c 128,-1,24
+ 309 407 309 407 345.5 427.5 c 128,-1,25
+ 382 448 382 448 397 472 c 128,-1,26
+ 412 496 412 496 412 531 c 0,27,28
+ 412 584 412 584 371.5 615 c 128,-1,29
+ 331 646 331 646 238 646 c 128,-1,30
+ 145 646 145 646 51 604 c 1,31,-1
+ 51 690 l 1,0,1
+230.5 -198 m 128,-1,33
+ 213 -182 213 -182 213 -145.5 c 128,-1,34
+ 213 -109 213 -109 230.5 -94 c 128,-1,35
+ 248 -79 248 -79 274 -79 c 128,-1,36
+ 300 -79 300 -79 318 -94 c 128,-1,37
+ 336 -109 336 -109 336 -145.5 c 128,-1,38
+ 336 -182 336 -182 318 -198 c 128,-1,39
+ 300 -214 300 -214 274 -214 c 128,-1,32
+ 248 -214 248 -214 230.5 -198 c 128,-1,33
+EndSplineSet
+EndChar
+
+StartChar: uniF55E
+Encoding: 62814 62814 4878
+Width: 659
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+91 474 m 0,0,1
+ 77 474 77 474 65.5 471 c 128,-1,2
+ 54 468 54 468 47 464 c 1,3,-1
+ 47 533 l 1,4,5
+ 55 537 55 537 72.5 541.5 c 128,-1,6
+ 90 546 90 546 113 546 c 0,7,8
+ 224 546 224 546 224 418 c 2,9,-1
+ 224 73 l 1,10,-1
+ 451 73 l 1,11,-1
+ 451 536 l 1,12,-1
+ 538 536 l 1,13,-1
+ 538 73 l 1,14,-1
+ 647 73 l 1,15,-1
+ 647 35 l 1,16,-1
+ 575 0 l 1,17,-1
+ 32 0 l 1,18,-1
+ 32 73 l 1,19,-1
+ 137 73 l 1,20,-1
+ 137 412 l 2,21,22
+ 137 447 137 447 124 460.5 c 128,-1,23
+ 111 474 111 474 91 474 c 0,0,1
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
