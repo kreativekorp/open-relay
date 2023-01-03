@@ -3,9 +3,9 @@ FontName: KreativeSquareSM
 FullName: Kreative Square SM
 FamilyName: Kreative Square SM
 Weight: Medium
-Copyright: Kreative Square copyright (c) Kreative Software 2017-2022 under the Open Font License.
+Copyright: Kreative Square copyright (c) Kreative Software 2017-2023 under the Open Font License.
 UComments: "2017-9-3: Created with FontForge (http://fontforge.org)"
-Version: 2022.10.20
+Version: 2023.01.02
 ItalicAngle: 0
 UnderlinePosition: -72
 UnderlineWidth: 36
@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1504498285
-ModificationTime: 1666165411
+ModificationTime: 1666561382
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -53,10 +53,10 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 9584 16 16
+WinInfo: 8816 16 16
 BeginPrivate: 0
 EndPrivate
-BeginChars: 1114113 5973
+BeginChars: 1114113 5977
 
 StartChar: space
 Encoding: 32 32 0
@@ -100866,58 +100866,64 @@ SplineSet
  397 103 405 108 415 108 c 0
  426 108 435 102 435 95 c 0
  435 84 409 68 409 68 c 1
-459 68 m 1
- 485 68 l 1
- 485 60 l 1
- 445 60 l 1
- 445 68 l 1
- 445 68 477 87 477 95 c 0
+453 74 m 2
+ 454 71 459 68 465 68 c 0
+ 472 68 477 71 477 75 c 0
+ 477 79 472 82 465 82 c 2
+ 461 82 l 1
+ 461 90 l 1
+ 465 90 l 2
+ 472 90 477 92 477 95 c 0
  477 98 472 100 465 100 c 0
  459 100 454 98 453 96 c 2
  445 97 l 1
  447 103 455 108 465 108 c 0
  476 108 485 102 485 95 c 0
- 485 84 459 68 459 68 c 1
-352 8 m 1
- 372 18 l 1
- 377 18 l 1
- 377 -30 l 1
- 369 -30 l 1
- 369 8 l 1
- 355 1 l 1
- 352 8 l 1
-395 -6 m 0
- 395 7 404 18 415 18 c 0
- 426 18 435 7 435 -6 c 0
- 435 -19 426 -30 415 -30 c 0
- 404 -30 395 -19 395 -6 c 0
-403 -6 m 0
- 403 -15 408 -22 415 -22 c 0
- 422 -22 427 -15 427 -6 c 0
- 427 3 422 10 415 10 c 0
- 408 10 403 3 403 -6 c 0
-509 -22 m 1
- 535 -22 l 1
- 535 -30 l 1
- 495 -30 l 1
- 495 -22 l 1
- 495 -22 527 -3 527 5 c 0
- 527 8 522 10 515 10 c 0
- 509 10 504 8 503 6 c 2
- 495 7 l 1
- 497 13 505 18 515 18 c 0
- 526 18 535 12 535 5 c 0
- 535 -6 509 -22 509 -22 c 1
-545 -6 m 0
- 545 7 554 18 565 18 c 0
- 576 18 585 7 585 -6 c 0
- 585 -19 576 -30 565 -30 c 0
- 554 -30 545 -19 545 -6 c 0
-553 -6 m 0
- 553 -15 558 -22 565 -22 c 0
- 572 -22 577 -15 577 -6 c 0
- 577 3 572 10 565 10 c 0
- 558 10 553 3 553 -6 c 0
+ 485 91 483 88 479 86 c 1
+ 483 83 485 79 485 75 c 0
+ 485 67 476 60 465 60 c 0
+ 455 60 446 66 445 73 c 1
+ 453 74 l 2
+345 -6 m 0
+ 345 7 354 18 365 18 c 0
+ 376 18 385 7 385 -6 c 0
+ 385 -19 376 -30 365 -30 c 0
+ 354 -30 345 -19 345 -6 c 0
+353 -6 m 0
+ 353 -15 358 -22 365 -22 c 0
+ 372 -22 377 -15 377 -6 c 0
+ 377 3 372 10 365 10 c 0
+ 358 10 353 3 353 -6 c 0
+402 8 m 1
+ 422 18 l 1
+ 427 18 l 1
+ 427 -30 l 1
+ 419 -30 l 1
+ 419 8 l 1
+ 405 1 l 1
+ 402 8 l 1
+495 -6 m 0
+ 495 7 504 18 515 18 c 0
+ 526 18 535 7 535 -6 c 0
+ 535 -19 526 -30 515 -30 c 0
+ 504 -30 495 -19 495 -6 c 0
+503 -6 m 0
+ 503 -15 508 -22 515 -22 c 0
+ 522 -22 527 -15 527 -6 c 0
+ 527 3 522 10 515 10 c 0
+ 508 10 503 3 503 -6 c 0
+559 -22 m 1
+ 585 -22 l 1
+ 585 -30 l 1
+ 545 -30 l 1
+ 545 -22 l 1
+ 545 -22 577 -3 577 5 c 0
+ 577 8 572 10 565 10 c 0
+ 559 10 554 8 553 6 c 2
+ 545 7 l 1
+ 547 13 555 18 565 18 c 0
+ 576 18 585 12 585 5 c 0
+ 585 -6 559 -22 559 -22 c 1
 EndSplineSet
 EndChar
 
@@ -216177,6 +216183,86 @@ SplineSet
  480 80 l 1
  560 80 l 1
  560 -0 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22A2
+Encoding: 8866 8866 5973
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+720 160 m 1
+ 80 160 l 1
+ 80 -160 l 1
+ 0 -160 l 1
+ 0 560 l 1
+ 80 560 l 1
+ 80 240 l 1
+ 720 240 l 1
+ 720 160 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22A3
+Encoding: 8867 8867 5974
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 240 m 1
+ 640 240 l 1
+ 640 560 l 1
+ 720 560 l 1
+ 720 -160 l 1
+ 640 -160 l 1
+ 640 160 l 1
+ 0 160 l 1
+ 0 240 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22A4
+Encoding: 8868 8868 5975
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+320 -160 m 1
+ 320 480 l 1
+ 0 480 l 1
+ 0 560 l 1
+ 720 560 l 1
+ 720 480 l 1
+ 400 480 l 1
+ 400 -160 l 1
+ 320 -160 l 1
+EndSplineSet
+EndChar
+
+StartChar: perpendicular
+Encoding: 8869 8869 5976
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+400 560 m 1
+ 400 -80 l 1
+ 720 -80 l 1
+ 720 -160 l 1
+ 0 -160 l 1
+ 0 -80 l 1
+ 320 -80 l 1
+ 320 560 l 1
+ 400 560 l 1
 EndSplineSet
 EndChar
 EndChars

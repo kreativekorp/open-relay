@@ -361,6 +361,8 @@ uFFD81	jule	# jule
 uFFD82	nalanja	# nalanja
 uFFD83	ojuta	# ojuta
 uFFD84	omekalike	# omekalike
+uFFD86	wowujiti	# wowujiti/wuwojiti
+uFFD86	wuwojiti	# wuwojiti/wowujiti
 
 # single words - linja sike
 uFFB84	oki	# oki
@@ -1319,12 +1321,18 @@ uFF9EC	ma^ale	# ma ale, synonym of ma ali, stacked
 uFF9EC	ma-ali	# ma ali, synonym of ma ale, stacked
 uFF9EC	ma+ali	# ma ali, synonym of ma ale, stacked
 uFF9EC	ma^ali	# ma ali, synonym of ma ale, stacked
+uFFD05	ma-ike	# ma ike, stacked
+uFFD05	ma+ike	# ma ike, stacked
+uFFD05	ma^ike	# ma ike, stacked
 uFF9ED	ma-kasi	# ma kasi, stacked
 uFF9ED	ma+kasi	# ma kasi, stacked
 uFF9ED	ma^kasi	# ma kasi, stacked
 uFFD02	ma-ni	# ma ni, stacked
 uFFD02	ma+ni	# ma ni, stacked
 uFFD02	ma^ni	# ma ni, stacked
+uFFD06	ma-pona	# ma pona, stacked
+uFFD06	ma+pona	# ma pona, stacked
+uFFD06	ma^pona	# ma pona, stacked
 uFF9EE	ma-tomo	# ma tomo, stacked
 uFF9EE	ma+tomo	# ma tomo, stacked
 uFF9EE	ma^tomo	# ma tomo, stacked

@@ -448,6 +448,20 @@ def main():
 				sfd.sortByCodePoint()
 			elif arg == '-m' or arg == '--strictMonospace':
 				sfd.strictMonospace()
+			elif arg == '--marks':
+				for ch in sfd.chars:
+					zw = False
+					hg = False
+					for prop in ch.properties:
+						if prop == 'Width: 0':
+							zw = True
+						if prop == 'SplineSet':
+							hg = True
+						if prop.startswith('Refer: '):
+							hg = True
+					if zw and hg:
+						print(ch.name)
+				sys.exit()
 			elif arg.startswith('-f='):
 				parseFile(arg[3:])
 			elif arg.startswith("--file="):

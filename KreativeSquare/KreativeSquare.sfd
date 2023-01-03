@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1504498285
-ModificationTime: 1666165411
+ModificationTime: 1666561382
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -53,10 +53,10 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 9584 16 16
+WinInfo: 8816 16 16
 BeginPrivate: 0
 EndPrivate
-BeginChars: 1114113 6253
+BeginChars: 1114113 6257
 
 StartChar: space
 Encoding: 32 32 0
@@ -221196,6 +221196,86 @@ SplineSet
  480 80 l 1
  560 80 l 1
  560 -0 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22A2
+Encoding: 8866 8866 6253
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+720 160 m 1
+ 80 160 l 1
+ 80 -160 l 1
+ 0 -160 l 1
+ 0 560 l 1
+ 80 560 l 1
+ 80 240 l 1
+ 720 240 l 1
+ 720 160 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22A3
+Encoding: 8867 8867 6254
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+0 240 m 1
+ 640 240 l 1
+ 640 560 l 1
+ 720 560 l 1
+ 720 -160 l 1
+ 640 -160 l 1
+ 640 160 l 1
+ 0 160 l 1
+ 0 240 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni22A4
+Encoding: 8868 8868 6255
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+320 -160 m 1
+ 320 480 l 1
+ 0 480 l 1
+ 0 560 l 1
+ 720 560 l 1
+ 720 480 l 1
+ 400 480 l 1
+ 400 -160 l 1
+ 320 -160 l 1
+EndSplineSet
+EndChar
+
+StartChar: perpendicular
+Encoding: 8869 8869 6256
+Width: 720
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+400 560 m 1
+ 400 -80 l 1
+ 720 -80 l 1
+ 720 -160 l 1
+ 0 -160 l 1
+ 0 -80 l 1
+ 320 -80 l 1
+ 320 560 l 1
+ 400 560 l 1
 EndSplineSet
 EndChar
 EndChars

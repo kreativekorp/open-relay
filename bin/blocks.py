@@ -62,6 +62,7 @@ EBA0..EBDF; Cistercian Numerals
 EBE0..EBFF; Kaktovik Numerals
 EC00..EC2F; Cylenian
 EC30..EC6F; Syrrin
+EC70..ECEF; Graflect
 ED00..ED3F; Deini
 ED40..ED7F; Niji
 ED80..EDAF; Iranic
@@ -161,6 +162,7 @@ if 'c' in args: # uCsur
 	print("""
 F0000..F0E6F; Kinya Syllables
 F0E70..F16AF; Pikto
+F16B0..F16DF; Derani
 F1700..F18FF; Semtog
 F1900..F19FF; Sitelen Pona
 F1B00..F1C3F; Shidinn
@@ -203,6 +205,10 @@ if 'q' in args: # QolumbiareQords
 # cf
 if 'v' in args: # Voynich
 	print('FF400..FF51F; Voynich')
+
+# cf
+if 'p' in args: # Presentationforms
+	print('FF6B0..FF6DF; Derani Presentation Forms')
 
 # fs
 if 's' in args: # SevenSegment
