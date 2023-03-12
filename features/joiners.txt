@@ -47,6 +47,10 @@ uFFBF0	ma-pona-pi-toki-pona	# ma pona pi toki pona
 uFFBF1	ma-pi-nasin-sitelen	# ma pi nasin sitelen
 uFFBF9	sitelen-seli-kiwen	# sitelen seli kiwen
 
+uFFD60	a-\exclamdbl	# a + double exclamation mark
+uFFD61	a-seli	# a + seli (triple exclamation mark)
+uFFD62	a-\uni203D	# a + interrobang
+
 uFFDE0	ijo-tan-anpa-nanpa	# ijo + tan + anpa + nanpa = jan Itan
 
 # Compounds with randomized jaki.

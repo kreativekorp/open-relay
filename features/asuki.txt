@@ -2,8 +2,15 @@
 uF1900	a	# a, default
 uFFB10	a1	# a, straight exclamation radical
 uFFB11	a2	# a, diagonal exclamation radical
-uF1901	akesi	# akesi, upright
-uFFAFF	akesiv	# akesi, turned
+uFFD60	a3	# a, double exclamation
+uFFD61	a4	# a, triple exclamation
+uFFD62	a5	# a, interrobang
+uF1901	akesi	# akesi, default, upright
+uF1901	akesi1	# akesi, six-legged, upright
+uFFD63	akesi2	# akesi, four-legged, upright
+uFFAFF	akesiv	# akesi, default, turned
+uFFAFF	akesiv1	# akesi, six-legged, turned
+uFFD64	akesiv2	# akesi, four-legged, turned
 uF1902	ala	# ala
 uF1903	alasa	# alasa
 uF1904	ale	# ale, synonym of ali
@@ -185,7 +192,9 @@ uF1978	namako	# namako, default
 uFFAA7	namako1	# namako, four rays
 uFFAA8	namako2	# namako, pepper with emitters
 uF197A	oko	# oko
-uF1981	soko	# soko
+uF1981	soko	# soko, default
+uFFD65	soko1	# soko, thick stem
+uFFD66	soko2	# soko, thin stem
 uF197E	tonsi	# tonsi
 
 # single words - nimi ku lili
@@ -320,13 +329,18 @@ uFFB65	owe	# owe
 uFFB66	pa	# pa
 uFFB67	pasila	# pasila
 uFFB69	peta	# peta
-uFFB6A	pika	# pika
+uFFB6A	pika	# pika, default
+uFFB6A	pika1	# pika, lightning bolt
+uFFD9D	pika2	# pika, electric plug
 uFFB6B	pipo	# pipo
 uFFB6C	sikomo	# sikomo
 uF196B	ten	# ten, default
 uF196B	ten1	# ten, synonym of tenpo
 uFFBAD	ten2	# ten, the number
-uFFB70	tokana	# tokana
+uFFB70	tokana	# tokana, default
+uFFB70	tokana1	# tokana, magnifying glass
+uFFDA9	tokana2	# tokana, rotated ante with dot
+uFFDAA	tokana3	# tokana, four rays with dot
 uFFB71	wawajete	# wawajete
 uFFB72	we	# we
 uFFB8C	yutu	# yutu
@@ -374,13 +388,49 @@ uFFB8F	jew	# jew
 # single words - linja suwi
 uFFBA0	kalijopilale	# kalijopilale
 uFFBA1	kijosin	# kijosin
-uFFBA9	mamasi	# mamasi
+uFFBA9	mamasi	# mamasi, synonym of mamasina
+uFFBA9	mamasina	# mamasina, synonym of mamasi
 uFFBAA	waken	# waken
 
 # single words - other sources
 uFFBAB	lansan	# lansan
 uFFBAC	wiki	# wiki
 uFFBAE	tona	# tona
+uFFD87	aku	# aku
+uFFD88	ani	# ani
+uFFD89	anta	# anta
+uFFD8A	apelo	# apelo
+uFFD8B	elen	# elen
+uFFD8C	iseki	# iseki
+uFFD8D	kalapisituwi	# kalapisituwi
+uFFD8E	kana	# kana
+uFFD8F	kikolo	# kikolo
+uFFD90	kikulo	# kikulo
+uFFD91	kokoliko	# kokoliko
+uFFD92	koni	# koni
+uFFD93	kosikosa	# kosikosa
+uFFD94	masalo	# masalo
+uFFD95	matula	# matula
+uFFD96	nimisin	# nimisin
+uFFD97	nowi	# nowi
+uFFD98	olala	# olala
+uFFD99	opasan	# opasan
+uFFD9A	pakola	# pakola, default
+uFFD9A	pakola1	# pakola, pakala-like with emitters
+uFFD9B	pakola2	# pakola, H
+uFFD9C	panke	# panke
+uFFD9E	pipolo	# pipolo
+uFFD9F	sapelipope	# sapelipope
+uFFDA0	sikako	# sikako
+uFFDA1	silapa	# silapa
+uFFDA2	sipije	# sipije
+uFFDA3	sisi	# sisi
+uFFDA4	siwala	# siwala
+uFFDA5	snoweli	# snoweli
+uFFDA6	soni	# soni
+uFFDA7	ta	# ta
+uFFDA8	tasun	# tasun
+uFFDAB	wiwi	# wiwi
 
 # names of people
 uFFB90	a+suli	# jan Asuli
@@ -446,6 +496,12 @@ uFF900	anpa^lawa	# anpa lawa, stacked
 uFF901	ijo-akesi	# ijo akesi, scaled
 uFF901	ijo+akesi	# ijo akesi, scaled
 uFF901	ijo*akesi	# ijo akesi, scaled
+uFF901	ijo-akesi1	# ijo akesi, scaled
+uFF901	ijo+akesi1	# ijo akesi, scaled
+uFF901	ijo*akesi1	# ijo akesi, scaled
+uFF901	ijo-akesi2	# ijo akesi, scaled
+uFF901	ijo+akesi2	# ijo akesi, scaled
+uFF901	ijo*akesi2	# ijo akesi, scaled
 uFF902	ijo-ala	# ijo ala, scaled
 uFF902	ijo+ala	# ijo ala, scaled
 uFF902	ijo*ala	# ijo ala, scaled
@@ -1516,9 +1572,8 @@ uFFA02	nena*meli1	# nena meli, head with hair, scaled
 uFFBE4	nena-meli2	# nena meli, female sign, scaled
 uFFBE4	nena+meli2	# nena meli, female sign, scaled
 uFFBE4	nena*meli2	# nena meli, female sign, scaled
-uFFBFA	nimisin	# nimi sin, default
-uFFBFA	nimi-sin	# nimi sin, default
-uFFBFA	nimi+sin	# nimi sin, default
+uFFD96	nimi-sin	# nimi sin, default
+uFFD96	nimi+sin	# nimi sin, default
 uFFBFA	nimi^sin	# nimi sin, stacked
 uFFBFB	nimi*sin	# nimi sin, scaled
 uFFA03	palisa-lili	# palisa lili, scaled

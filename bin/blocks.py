@@ -214,6 +214,10 @@ if 'p' in args: # Presentationforms
 if 's' in args: # SevenSegment
 	print('FF700..FF7FF; Seven-Segment Display Patterns')
 
+# f
+if 'i' in args: # pIco-eIght
+	print('FF800..FF80F; PICO-8 Symbols')
+
 # cf
 if 'p' in args: # Presentationforms
 	print('FF8A0..FF8CF; Aiha Presentation Forms')
