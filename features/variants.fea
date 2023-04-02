@@ -77,14 +77,24 @@ feature cv70 {
   sub uFFAFF by uFFD64;  # akesi, turned
 } cv70;
 
+# alternate moli
+feature cv71 {
+  sub uF1937 by uFFD68;  # moli, X eyes and mouth
+} cv71;
+
 # thick stem soko
-feature cv78 {
+feature cv77 {
   sub uF1981 by uFFD65;  # soko, thick stem
-} cv78;
+} cv77;
 
 # thin stem soko
-feature cv79 {
+feature cv78 {
   sub uF1981 by uFFD66;  # soko, thin stem
+} cv78;
+
+# thin stem soko with annulus
+feature cv79 {
+  sub uF1981 by uFFD67;  # soko, thin stem with annulus
 } cv79;
 
 # kala with eyes

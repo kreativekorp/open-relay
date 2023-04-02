@@ -73,7 +73,9 @@ uF1935	mije	# mije, default
 uF1935	mije1	# mije, head and shoulders
 uFFAA2	mije2	# mije, male sign
 uF1936	moku	# moku
-uF1937	moli	# moli
+uF1937	moli	# moli, default
+uF1937	moli1	# moli, head with X eyes
+uFFD68	moli2	# moli, X eyes and mouth
 uF1938	monsi	# monsi
 uF1939	mu	# mu, default
 uF1939	mu1	# mu, mouse face
@@ -195,6 +197,7 @@ uF197A	oko	# oko
 uF1981	soko	# soko, default
 uFFD65	soko1	# soko, thick stem
 uFFD66	soko2	# soko, thin stem
+uFFD67	soko3	# soko, thin stem with annulus
 uF197E	tonsi	# tonsi
 
 # single words - nimi ku lili
@@ -694,6 +697,12 @@ uFF937	ijo*moku	# ijo moku, scaled
 uFF938	ijo-moli	# ijo moli, scaled
 uFF938	ijo+moli	# ijo moli, scaled
 uFF938	ijo*moli	# ijo moli, scaled
+uFF938	ijo-moli1	# ijo moli, scaled
+uFF938	ijo+moli1	# ijo moli, scaled
+uFF938	ijo*moli1	# ijo moli, scaled
+uFF938	ijo-moli2	# ijo moli, scaled
+uFF938	ijo+moli2	# ijo moli, scaled
+uFF938	ijo*moli2	# ijo moli, scaled
 uFF939	ijo-monsi	# ijo monsi, scaled
 uFF939	ijo+monsi	# ijo monsi, scaled
 uFF939	ijo*monsi	# ijo monsi, scaled
@@ -959,6 +968,12 @@ uFF981	ilo^lukin	# ilo lukin, stacked
 uFF982	ilo-moli	# ilo moli, stacked
 uFF982	ilo+moli	# ilo moli, stacked
 uFF982	ilo^moli	# ilo moli, stacked
+uFF982	ilo-moli1	# ilo moli, stacked
+uFF982	ilo+moli1	# ilo moli, stacked
+uFF982	ilo^moli1	# ilo moli, stacked
+uFF982	ilo-moli2	# ilo moli, stacked
+uFF982	ilo+moli2	# ilo moli, stacked
+uFF982	ilo^moli2	# ilo moli, stacked
 uFF983	ilo-musi	# ilo musi, stacked
 uFF983	ilo+musi	# ilo musi, stacked
 uFF983	ilo^musi	# ilo musi, stacked

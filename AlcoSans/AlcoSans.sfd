@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 1
 OS2_UseTypoMetrics: 0
 CreationTime: 1571230327
-ModificationTime: 1678757562
+ModificationTime: 1679544631
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -1087,11 +1087,11 @@ NameList: AGL For New Fonts
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1044720 16 18
+WinInfo: 62784 16 8
 BeginPrivate: 0
 EndPrivate
 AnchorClass2: "Anchor-0" "'mark' Mark Positioning lookup 3 subtable" "Anchor-1" "'mark' Mark Positioning lookup 3 subtable" "Anchor-2" "'mark' Mark Positioning lookup 3 subtable" "Anchor-3" "'mark' Mark Positioning lookup 3 subtable" "Anchor-4" "'mark' Mark Positioning lookup 4 subtable" "Anchor-5" "'mark' Mark Positioning lookup 4 subtable" "Anchor-6" "'mark' Mark Positioning lookup 4 subtable" "Anchor-7" "'mkmk' Mark to Mark lookup 5 subtable" "Anchor-8" "'mkmk' Mark to Mark lookup 6 subtable" "Anchor-9" "'mkmk' Mark to Mark lookup 7 subtable" "Anchor-10" "'mkmk' Mark to Mark lookup 8 subtable"
-BeginChars: 1114590 4885
+BeginChars: 1114590 4886
 
 StartChar: .notdef
 Encoding: 1114112 -1 0
@@ -146585,6 +146585,43 @@ SplineSet
  337 407 337 407 332 354 c 1,57,-1
  550 354 l 1,58,53
  549 404 549 404 524.5 435.5 c 128,-1,54
+EndSplineSet
+EndChar
+
+StartChar: uniF55F
+Encoding: 62815 62815 4885
+Width: 829
+Flags: W
+AnchorPoint: "Anchor-1" 415 536 basechar 0
+AnchorPoint: "Anchor-0" 415 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+738 62 m 0,0,1
+ 752 62 752 62 763.5 65 c 128,-1,2
+ 775 68 775 68 782 72 c 1,3,-1
+ 782 3 l 1,4,5
+ 774 -1 774 -1 756.5 -5.5 c 128,-1,6
+ 739 -10 739 -10 716 -10 c 0,7,8
+ 605 -10 605 -10 605 118 c 2,9,-1
+ 605 463 l 1,10,-1
+ 450 463 l 1,11,-1
+ 450 0 l 1,12,-1
+ 363 0 l 1,13,-1
+ 363 463 l 1,14,-1
+ 208 463 l 1,15,-1
+ 208 0 l 1,16,-1
+ 121 0 l 1,17,-1
+ 121 463 l 1,18,-1
+ 12 463 l 1,19,-1
+ 12 501 l 1,20,-1
+ 84 536 l 1,21,-1
+ 797 536 l 1,22,-1
+ 797 463 l 1,23,-1
+ 692 463 l 1,24,-1
+ 692 124 l 2,25,26
+ 692 89 692 89 705 75.5 c 128,-1,27
+ 718 62 718 62 738 62 c 0,0,1
 EndSplineSet
 EndChar
 EndChars

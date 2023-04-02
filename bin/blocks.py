@@ -66,6 +66,7 @@ EC70..ECEF; Graflect
 ED00..ED3F; Deini
 ED40..ED7F; Niji
 ED80..EDAF; Iranic
+EDB0..EDDF; Tassarunese
 """)
 
 # fs
