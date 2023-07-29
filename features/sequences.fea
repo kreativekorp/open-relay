@@ -39,6 +39,7 @@ feature rlig {
     sub period uni200D quotesingle by uFFC1C;
     sub C uni200D r by uFFC24;
     sub C uni200D z by uFFC25;
+    sub F uni200D t by uFFC27;
     sub V uni200D hyphen by uFFC1E;
     sub z uni200D lslash by uFFC26;
     sub quoteright uni200D s by uFFC13;
