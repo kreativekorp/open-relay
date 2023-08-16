@@ -59,14 +59,18 @@ EB00..EB3F; Orokin
 EB40..EB5F; Standard Galactic
 EB60..EB9F; Braille Extended
 EBA0..EBDF; Cistercian Numerals
-EBE0..EBFF; Kaktovik Numerals
+EBE0..EBEF; Lapointe Hexadecimal Numerals
+EBF0..EBFF; Martin Hexadecimal Numerals
 EC00..EC2F; Cylenian
 EC30..EC6F; Syrrin
 EC70..ECEF; Graflect
+ECF0..ECFF; Whitaker Hexadecimal Numerals
 ED00..ED3F; Deini
 ED40..ED7F; Niji
 ED80..EDAF; Iranic
 EDB0..EDDF; Tassarunese
+EDE0..EDEF; Zese
+EDF0..EDFF; Grawlixes
 """)
 
 # fs
