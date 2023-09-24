@@ -37,7 +37,8 @@ uF1915	kalama	# kalama
 uF1916	kama	# kama
 uF1917	kasi	# kasi
 uF1918	ken	# ken
-uF1919	kepeken	# kepeken
+uF1919	kepeken	# kepeken, synonym of kepen
+uF1919	kepen	# kepen, synonym of kepeken
 uF191A	kili	# lili
 uF191B	kiwen	# kiwen
 uF191C	ko	# ko
@@ -435,6 +436,16 @@ uFFDA7	ta	# ta
 uFFDA8	tasun	# tasun
 uFFDAB	wiwi	# wiwi
 
+# single words - 2023
+uFFDAC	eliki	# eliki
+uFFDAD	enepi	# enepi
+uFFDAE	nasin+mani	# nasin mani (capitalism)
+uFFDAF	wiju	# wiju
+uFFDB0	saja	# saja
+uFFDB1	ana	# ana
+uFFDB2	eni	# eni, synonym of ene
+uFFDB2	ene	# ene, synonym of eni
+
 # names of people
 uFFB90	a+suli	# jan Asuli
 uFFB91	Asuto	# jan waso Asuto
@@ -580,9 +591,12 @@ uFF916	ijo*kasi	# ijo kasi, scaled
 uFF917	ijo-ken	# ijo ken, scaled
 uFF917	ijo+ken	# ijo ken, scaled
 uFF917	ijo*ken	# ijo ken, scaled
-uFF918	ijo-kepeken	# ijo kepeken, scaled
-uFF918	ijo+kepeken	# ijo kepeken, scaled
-uFF918	ijo*kepeken	# ijo kepeken, scaled
+uFF918	ijo-kepeken	# ijo kepeken, synonym of ijo kepen, scaled
+uFF918	ijo+kepeken	# ijo kepeken, synonym of ijo kepen, scaled
+uFF918	ijo*kepeken	# ijo kepeken, synonym of ijo kepen, scaled
+uFF918	ijo-kepen	# ijo kepen, synonym of ijo kepeken, scaled
+uFF918	ijo+kepen	# ijo kepen, synonym of ijo kepeken, scaled
+uFF918	ijo*kepen	# ijo kepen, synonym of ijo kepeken, scaled
 uFF919	ijo-kijetesantakalu	# ijo kijetesantakalu, scaled
 uFF919	ijo+kijetesantakalu	# ijo kijetesantakalu, scaled
 uFF919	ijo*kijetesantakalu	# ijo kijetesantakalu, scaled
