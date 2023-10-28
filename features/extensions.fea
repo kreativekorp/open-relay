@@ -1,5 +1,18 @@
 feature calt {
 
+  # LONG TASUN
+
+  # extend tasun to the right
+  lookup spTasunForward {
+    sub [uFFDF5 uFFDF6 uFFDFA] uF1900' by uFFDF6;
+  } spTasunForward;
+
+  # extend tasun to the left
+  lookup spTasunBackward {
+    rsub uF1900' [uFFDF6 uFFDF7 uFFDFB] by uFFDF6;
+  } spTasunBackward;
+
+
   # CARTOUCHES
 
   # extend cartouches across ideographs to the right

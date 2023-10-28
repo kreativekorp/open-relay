@@ -445,6 +445,32 @@ uFFDB0	saja	# saja
 uFFDB1	ana	# ana
 uFFDB2	eni	# eni, synonym of ene
 uFFDB2	ene	# ene, synonym of eni
+uFFDB3	masu	# masu
+uFFDB4	lato	# lato
+uFFDB5	topo	# topo
+
+# long silapa and tasun
+uFFDF0	silapa1	# silapa, top part
+uFFDF1	silapa2	# silapa, middle part
+uFFDF2	silapa3	# silapa, bottom part
+uFFDF3	silapa4	# silapa, two lines tall
+uFFDF4	silapa5	# silapa, three lines tall
+uFFDF0	si\	# silapa, top part
+uFFDF1	i\	# silapa, middle part
+uFFDF2	ilapa	# silapa, bottom part
+uFFDF3	siilapa	# silapa, two lines tall
+uFFDF4	siiilapa	# silapa, three lines tall
+uFFDF5	tasun1	# tasun, left part
+uFFDF6	tasun2	# tasun, center part
+uFFDF7	tasun3	# tasun, right part
+uFFDF8	tasun4	# tasun, two ideographs wide
+uFFDF9	tasun5	# tasun, three ideographs wide
+uFFDFA	tasun6	# tasun, left part, two ideographs wide
+uFFDFB	tasun7	# tasun, right part, two ideographs wide
+uFFDF8	taasun	# tasun, two ideographs wide
+uFFDF9	taaasun	# tasun, three ideographs wide
+uFFDFA	taa	# tasun, left part, two ideographs wide
+uFFDFB	aasun	# tasun, right part, two ideographs wide
 
 # names of people
 uFFB90	a+suli	# jan Asuli
