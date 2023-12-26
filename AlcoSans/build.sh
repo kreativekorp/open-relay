@@ -56,8 +56,8 @@ mv AlcoSansTmp.ttf AlcoSans.ttf
 rm AlcoSansTmp.sfd
 
 # Inject PUAA table
-python ../bin/blocks.py cwadkkypjqvtt > Blocks.txt
-python ../bin/unicodedata.py cwadkkypjqvtt > UnicodeData.txt
+python ../bin/blocks.py cwadkkypjqvgtt > Blocks.txt
+python ../bin/unicodedata.py cwadkkypjqvgtt > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I AlcoSans.ttf

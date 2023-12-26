@@ -23,6 +23,7 @@ uF1949	uFFA7A	------	------	------	------	# pali
 uF194C	uFFA7B	------	------	------	------	# pana
 uF194D	uFFA7C	------	------	------	------	# pi
 uF1950	uFFA7D	uFFA7E	uFFA7F	------	------	# pini
+uF1956	uFFDFC	uFFDFD	uFFDFE	------	------	# sama
 uF1958	uFFA80	uFFA81	uFFA82	------	------	# selo
 uF195A	uFFA83	------	------	------	------	# sewi
 uF195B	uFFA84	uFFA85	uFFA86	------	------	# sijelo

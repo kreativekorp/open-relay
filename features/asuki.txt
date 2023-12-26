@@ -93,6 +93,10 @@ uFFB03	ni1	# ni, downwards
 uFFB02	ni2	# ni, rightwards
 uFFB01	ni3	# ni, upwards
 uFFB00	ni4	# ni, leftwards
+uFFD72	ni5	# ni, southeast
+uFFD71	ni6	# ni, northeast
+uFFD70	ni7	# ni, northwest
+uFFD73	ni8	# ni, southwest
 uF1942	nimi	# nimi
 uF1943	noka	# noka
 uF1944	o	# o, default
@@ -261,7 +265,6 @@ uFFAEF	teje	# teje
 uFFAEB	tuli	# tuli
 uFFAF1	to	# to, default
 uFFAF1	to1	# to, right corner bracket
-uFFB85	to2	# to, capital H
 uFFAF2	umesu	# umesu
 uFFAF6	usawi	# usawi
 uFFAF7	wasoweli	# wasoweli
@@ -346,7 +349,9 @@ uFFB70	tokana1	# tokana, magnifying glass
 uFFDA9	tokana2	# tokana, rotated ante with dot
 uFFDAA	tokana3	# tokana, four rays with dot
 uFFB71	wawajete	# wawajete
-uFFB72	we	# we
+uFFB72	we1	# we, particle
+uFFDB7	we2	# we, content word
+uFFDB7	we	# we, content word
 uFFB8C	yutu	# yutu
 
 # single words - nimi Linku
@@ -376,7 +381,9 @@ uFFB8E	jans	# jans
 # single words - nimi Linku 2022
 uFFD80	alente	# alente
 uFFD81	jule	# jule
-uFFD82	nalanja	# nalanja
+uFFD82	nalanja1	# nalanja, orange slice
+uFFDB6	nalanja2	# nalanja, kili
+uFFDB6	nalanja	# nalanja, default
 uFFD83	ojuta	# ojuta
 uFFD84	omekalike	# omekalike
 uFFD86	wowujiti	# wowujiti/wuwojiti
@@ -479,27 +486,89 @@ uFFB92	Eko	# ilo Eko
 uFFDE0	ijo+tan+anpa+nanpa	# jan Itan
 uFFB93	Jan	# jan Jan
 uFFB94	Kapilu	# jan Kapilu
+uFFDE2	Keli	# waso Keli
+uFFDE3	KeTami	# jan Ke Tami
 uFFB95	kili+ma	# kulupu Kilima
+uFFDE4	Kita	# jan Kita
 uFFB96	kulupu+en	# The & System
 uFFDE1	kulupu+kasi	# kulupu kasi, default
 uFFB97	kulupu+kasi1	# kulupu kasi, mushroom
 uFFDE1	kulupu+kasi2	# kulupu kasi, seedling
 uFFABE	lipamanka	# lipamanka
 uFFABE	Lipamanka	# lipamanka
+uFFABF	Lepeka	# jan Lepeka
 uFFABF	melinjakulekule	# jan Lepeka
 uFFABD	nata	# soweli nata
 uFFB98	Nili	# jan Nili Koloto
+uFFB85	To	# mute To
+uFFB85	to2	# mute To
 uFFB99	unikijetesantakalu	# jan Wija / Wyub
 uFFB9A	waso+pimeja	# waso Atemi / waso pimeja
 uFFB9B	Weko	# jan Kita / jan Weko
+uFFD30	Aja	# jan Aja
+uFFD31	AkesiKon	# akesi kon Nalasuni
+uFFD32	Amelin	# jan Amelin
+uFFD33	Ansu	# jan Ansu
+uFFD34	Antepan	# jan Antepan
+uFFD35	Asiku	# jan Asiku
+uFFD36	Atu	# waso Atu
+uFFD37	Esile	# jan Esile
+uFFD38	Eweke	# soweli Eweke
+uFFD39	Ipawi	# jan Ipawi
+uFFD3A	Iseja	# jan Iseja
+uFFD3B	Jalepu	# jan Alepu
+uFFD3C	Jasun	# jan Jasun
+uFFD3D	Jonatan	# jan Jonatan
+uFFD3E	Jules	# Jules
+uFFD3F	Kemu	# jan Kemu
+uFFD40	Kepi	# jan Kepi (Kirby)
+uFFD41	Kijan	# Kijan
+uFFD42	Koko	# jan Koko
+uFFD43	Lewi	# jan Lewi
+uFFD44	Luke	# jan Luke
+uFFD45	Luna	# jan Luna
+uFFD46	Maki	# jan Maki
+uFFD47	Mako	# jan Mako
+uFFD48	Mekuwi	# jan Mekuwi
+uFFD49	Mila	# jan Mila
+uFFD4A	Mimuki	# ilo Mimuki
+uFFD4B	motan	# motan
+uFFD4C	Nalasuni	# akesi kon Nalasuni
+uFFD4D	nano	# nano
+uFFD4E	Niko	# jan Niko
+uFFD4F	Nlsn	# akesi kon Nalasuni
+uFFD50	Opa	# jan Opa
+uFFD51	Palensi	# jan Palensi
+uFFD52	Pami	# jan Pami
+uFFD53	Poman	# jan Poman
+uFFD54	Sijala	# jan Sijala
+uFFD55	Silani	# jan Silani
+uFFD56	Siwan	# jan Siwan
+uFFD57	Temi	# jan Temi
+uFFD58	Tensi	# jan Tensi
+uFFD59	Tonyu	# kala pona Tonyu
+uFFD5A	Usawi	# jan Usawi
+uFFD5B	Vriska	# Vriska
+uFFD5C	Waje	# jan Waje
+uFFD5D	Wen	# waso Wen
 
 # names of communities
-uFFBF2	Linku	# Linku
+uFFBF2	Linku	# kulupu Linku
 uFFBF3	lipu+Wesi+pi+toki+pona	# lipu Wesi pi toki pona
 uFFBF1	ma+pi+nasin+sitelen	# ma pi nasin sitelen
 uFFBF0	ma+pona+pi+toki+pona	# ma pona pi toki pona
+uFFDE5	ma+toki+pona+wile+jan	# Ma Toki Pona VR
+uFFDE5	ma+toki+pona+VR	# Ma Toki Pona VR
+uFFDE6	pali+pali+ale+pona+epiku	# pali Pape (Project Babel)
+uFFDE6	pali+Pape	# pali Pape (Project Babel)
+uFFDE7	Seka	# ma Seka
 
 # names of other things
+uFFDE8	Losupan	# Losupan (Lojban)
+uFFDE9	Towan	# Towan (Toaq)
+uFF1E0	Votgil	# Votgil (I'm a bit excited)
+uFFDEA	suno+pi+toki+pona	# suno pi toki pona
+uFFDEB	Wakalito	# Wakalito
 uFFB9D	juniko	# juniko (Unicode)
 uFFB9D	Juniko	# Juniko (Unicode)
 uFFB9F	jusijesuwa	# jusijesuwa (UCSUR)
@@ -512,6 +581,7 @@ uFFB9E	sisa	# sisa (CSUR)
 uFFB9E	Sisa	# Sisa (CSUR)
 uFFB9C	nasulin	# nasulin (Touhou hijack)
 uFFB9C	Nasulin	# Nasulin (Touhou hijack)
+uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
@@ -1489,6 +1559,12 @@ uFF9F3	meli1*lili	# meli lili, head with hair, scaled
 uFFBD4	meli2-lili	# meli lili, female sign, scaled
 uFFBD4	meli2+lili	# meli lili, female sign, scaled
 uFFBD4	meli2*lili	# meli lili, female sign, scaled
+uFFD07	meli-mije	# meli mije, head with hair and shoulders, combined
+uFFD07	meli+mije	# meli mije, head with hair and shoulders, combined
+uFFD07	meli1-mije1	# meli mije, head with hair and shoulders, combined
+uFFD07	meli1+mije1	# meli mije, head with hair and shoulders, combined
+uFFD08	meli2-mije2	# meli mije, male and female sign, combined
+uFFD08	meli2+mije2	# meli mije, male and female sign, combined
 uFF9F4	meli-pona	# meli pona, default, scaled
 uFF9F4	meli+pona	# meli pona, default, scaled
 uFF9F4	meli*pona	# meli pona, default, scaled
@@ -1552,6 +1628,12 @@ uFF9F8	mije1*lili	# mije lili, head and shoulders, scaled
 uFFBDD	mije2-lili	# mije lili, male sign, scaled
 uFFBDD	mije2+lili	# mije lili, male sign, scaled
 uFFBDD	mije2*lili	# mije lili, male sign, scaled
+uFFD07	mije-meli	# mije meli, head with hair and shoulders, combined
+uFFD07	mije+meli	# mije meli, head with hair and shoulders, combined
+uFFD07	mije1-meli1	# mije meli, head with hair and shoulders, combined
+uFFD07	mije1+meli1	# mije meli, head with hair and shoulders, combined
+uFFD08	mije2-meli2	# mije meli, male and female sign, combined
+uFFD08	mije2+meli2	# mije meli, male and female sign, combined
 uFF9F9	mije-pona	# mije pona, default, scaled
 uFF9F9	mije+pona	# mije pona, default, scaled
 uFF9F9	mije*pona	# mije pona, default, scaled
@@ -1652,6 +1734,12 @@ uFFA08	pilin*pona	# pilin pona, scaled
 uFFA09	pilin-sama	# pilin sama, scaled
 uFFA09	pilin+sama	# pilin sama, scaled
 uFFA09	pilin*sama	# pilin sama, scaled
+uFFD09	pimeja-jelo	# pimeja jelo, combined
+uFFD09	pimeja+jelo	# pimeja jelo, combined
+uFFD0A	pimeja-laso	# pimeja laso, combined
+uFFD0A	pimeja+laso	# pimeja laso, combined
+uFFD0B	pimeja-loje	# pimeja loje, combined
+uFFD0B	pimeja+loje	# pimeja loje, combined
 uFFA0A	poki-kon	# poki kon, scaled
 uFFA0A	poki+kon	# poki kon, scaled
 uFFA0A	poki*kon	# poki kon, scaled
@@ -1766,6 +1854,9 @@ uFFA2D	telo*lete	# telo lete, scaled
 uFFA2E	telo-lili	# telo lili, scaled
 uFFA2E	telo+lili	# telo lili, scaled
 uFFA2E	telo*lili	# telo lili, scaled
+uFFD0C	telo-sitelen	# telo sitelen, scaled
+uFFD0C	telo+sitelen	# telo sitelen, scaled
+uFFD0C	telo*sitelen	# telo sitelen, scaled
 uFFD03	tenpo-ni	# tenpo ni, stacked
 uFFD03	tenpo+ni	# tenpo ni, stacked
 uFFD03	tenpo^ni	# tenpo ni, stacked
@@ -1847,6 +1938,12 @@ uFFA3F	tu-tu	# tu tu, horizontal
 uFFA3F	tu+tu	# tu tu, horizontal
 uFFA40	tu-wan	# tu wan, horizontal
 uFFA40	tu+wan	# tu wan, horizontal
+uFFD0D	walo-jelo	# walo jelo, combined
+uFFD0D	walo+jelo	# walo jelo, combined
+uFFD0E	walo-laso	# walo laso, combined
+uFFD0E	walo+laso	# walo laso, combined
+uFFD0F	walo-loje	# walo loje, combined
+uFFD0F	walo+loje	# walo loje, combined
 uFFBEC	walo-pimeja	# walo pimeja, scaled
 uFFBEC	walo+pimeja	# walo pimeja, scaled
 uFFBEC	walo*pimeja	# walo pimeja, scaled

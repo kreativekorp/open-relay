@@ -18,6 +18,10 @@ uFFB00	ni-\arrowleft	# ni + left arrow = ni pointing left
 uFFB01	ni-\arrowup	# ni + up arrow = ni pointing up
 uFFB02	ni-\arrowright	# ni + right arrow = ni pointing right
 uFFB03	ni-\arrowdown	# ni + down arrow = ni pointing down
+uFFD70	ni-\uni2196	# ni + northwest arrow = ni pointing northwest
+uFFD71	ni-\uni2197	# ni + northeast arrow = ni pointing northeast
+uFFD72	ni-\uni2198	# ni + southeast arrow = ni pointing southeast
+uFFD73	ni-\uni2199	# ni + southwest arrow = ni pointing southwest
 
 uFFB32	meli-pi-olin-meli	# meli + pi + olin + meli = melome
 uFFB36	mije-pi-olin-mije	# mije + pi + olin + mije = mijomi
@@ -27,6 +31,7 @@ uFFB62	o-moli-e-mi	# o + moli + e + mi = omem = omen
 uFFB8D	\s-lape	# s + lape = slape
 
 uFFB91	waso-\u1F47D	# waso + extraterrestrial alien = jan waso Asuto
+uFFDE2	waso-\u1F380	# waso + ribbon = waso Keli
 
 uFFB93	jan-jan-jan	# jan + jan + jan = jan Jan
 
@@ -45,6 +50,9 @@ uFFBEF	\germandbls-kijetesantakalu	# sharp s + kijetesantakalu
 
 uFFBF0	ma-pona-pi-toki-pona	# ma pona pi toki pona
 uFFBF1	ma-pi-nasin-sitelen	# ma pi nasin sitelen
+uFFDE5	ma-toki-pona-wile-jan	# Ma Toki Pona VR
+uFFDE6	pali-pali-ale-pona-epiku	# pali Pape (Project Babel)
+uFFDEA	suno-pi-toki-pona	# suno pi toki pona
 uFFBF9	sitelen-seli-kiwen	# sitelen seli kiwen
 
 uFFD60	a-\exclamdbl	# a + double exclamation mark

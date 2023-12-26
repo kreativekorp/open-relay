@@ -212,6 +212,10 @@ if 'v' in args: # Voynich
 	print('FF400..FF51F; Voynich')
 
 # cf
+if 'g' in args: # jurGenschmidt
+	print('FF600..FF64F; Jurgenschmidt')
+
+# cf
 if 'p' in args: # Presentationforms
 	print('FF6B0..FF6DF; Derani Presentation Forms')
 
@@ -219,9 +223,14 @@ if 'p' in args: # Presentationforms
 if 's' in args: # SevenSegment
 	print('FF700..FF7FF; Seven-Segment Display Patterns')
 
-# f
-if 'i' in args: # pIco-eIght
+# cfs
+if 'i' in args and 'k' in args: # pIco-eIght, Kreative
 	print('FF800..FF80F; PICO-8 Symbols')
+	print('FF810..FF89F; Number Forms Appendix')
+elif 'i' in args: # pIco-eIght
+	print('FF800..FF81F; PICO-8 Symbols')
+elif 'k' in args: # Kreative
+	print('FF810..FF89F; Number Forms Appendix')
 
 # cf
 if 'p' in args: # Presentationforms
