@@ -92,8 +92,8 @@ rm *_base.fea
 rm *_base.ttf
 
 # Inject PUAA table
-python ../bin/blocks.py czuowbanxkkfeypjqvsittl > Blocks.txt
-python ../bin/unicodedata.py czuowbanxkkfeypjqvsittl > UnicodeData.txt
+python ../bin/blocks.py czuowbanxkkfeypjqvgsittl > Blocks.txt
+python ../bin/unicodedata.py czuowbanxkkfeypjqvgsittl > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
 	-I Fairfax.ttf FairfaxBold.ttf FairfaxItalic.ttf FairfaxSerif.ttf \
