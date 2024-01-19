@@ -83,7 +83,9 @@ uF1939	mu1	# mu, mouse face
 uFFAB8	mu2	# mu, emitters
 uF193A	mun	# mun
 uF193B	musi	# musi
-uF193C	mute	# mute
+uF193C	mute	# mute, default
+uF193C	mute1	# mute, three lines
+uFFD69	mute2	# mute, four hands
 uF193D	nanpa	# nanpa
 uF193E	nasa	# nasa
 uF193F	nasin	# nasin
@@ -103,7 +105,8 @@ uF1944	o	# o, default
 uFFB12	o1	# o, straight exclamation radical
 uFFB13	o2	# o, diagonal exclamation radical
 uF1945	olin	# olin, default
-uF1945	olin1	# olin, doubled pilin
+uFFD74	olin0	# olin, disconnected double pilin
+uFFD75	olin1	# olin, overlapping double pilin
 uFFAA3	olin2	# olin, pilin with emitters
 uF1946	ona	# ona, default
 uFFB08	ona1	# ona, straight
@@ -181,7 +184,14 @@ uF197B	kipisi	# kipisi
 uF1984	kokosila	# kokosila, default
 uFFAAD	kokosila1	# kokosila, toki with stroke
 uFFAAE	kokosila2	# kokosila, star
-uF1988	ku	# ku
+uF1988	ku	# ku, default
+uF1988	ku1	# ku, dot
+uFFD76	ku2	# ku, dot with emitters
+uFFD77	ku3	# ku, toki
+uFFD78	ku4	# ku, toki pona
+uFFD79	ku5	# ku, ijo pona
+uFFD7A	ku6	# ku, fermata
+uFFD7B	ku7	# ku, ijo
 uF1985	lanpan	# lanpan, default
 uFFAAF	lanpan1	# lanpan, with head
 uFFAB0	lanpan2	# lanpan, with hook
@@ -190,7 +200,9 @@ uF197C	leko	# leko
 uF1982	meso	# meso, default
 uFFAA9	meso1	# meso, vertical lines with dot
 uFFAAA	meso2	# meso, ante with dot
-uF1987	misikeke	# misikeke
+uF1987	misikeke	# misikeke, default
+uF1987	misikeke1	# misikeke, pill
+uFFD6A	misikeke2	# misikeke, mortar and pestle
 uF197D	monsuta	# monsuta
 uF1986	n	# n, default
 uFFB16	n1	# n, straight exclamation radical
@@ -211,10 +223,16 @@ uFFAC0	isipin	# isipin
 uFFAC1	kapesi	# kapesi, default
 uFFAC1	kapesi1	# kapesi, triangle with ma above
 uFFAC2	kapesi2	# kapesi, triangle with horizontal and vertical
-uFFAC3	kiki	# kiki
+uFFAC3	kiki	# kiki, default
+uFFAC3	kiki1	# kiki, kiki-bouba experiment
+uFFD6D	kiki2	# kiki, hyperbolic squarrel
+uFFD6E	kiki3	# kiki, deltoid
+uFFD6F	kiki4	# kiki, hazard sign
 uFFAC4	linluwi	# linluwi, default
-uFFAC4	linluwi1	# linluwi, without emitters
-uFFBA5	linluwi2	# linluwi, with emitters
+uFFAC4	linluwi1	# linluwi, sitelen-len-linja
+uFFBA5	linluwi2	# linluwi, len-linja-en with emitters
+uFFD6B	linluwi3	# linluwi, len-linja with emitters
+uFFD6C	linluwi4	# linluwi, connected kulupu
 uF19A2	majuna	# majuna, default
 uFFAB2	majuna1	# majuna, three rays
 uFFAB3	majuna2	# majuna, five rays
@@ -265,7 +283,9 @@ uFFAEF	teje	# teje
 uFFAEB	tuli	# tuli
 uFFAF1	to	# to, default
 uFFAF1	to1	# to, right corner bracket
-uFFAF2	umesu	# umesu
+uFFAF2	umesu	# umesu, default
+uFFAF2	umesu1	# umesu, podium
+uFFDB8	umesu2	# umesu, trophy (Here, The Cheat, have a trophy!)
 uFFAF6	usawi	# usawi
 uFFAF7	wasoweli	# wasoweli
 uFFAFB	sutopatikuna	# sutopatikuna
@@ -456,6 +476,9 @@ uFFDB3	masu	# masu
 uFFDB4	lato	# lato
 uFFDB5	topo	# topo
 
+# single words - 2024
+uFFDB9	teken	# teken (same as sitelen; full writeup coming soon)
+
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
 uFFDF1	silapa2	# silapa, middle part
@@ -551,8 +574,13 @@ uFFD5A	Usawi	# jan Usawi
 uFFD5B	Vriska	# Vriska
 uFFD5C	Waje	# jan Waje
 uFFD5D	Wen	# waso Wen
+uFFD5E	tenpi	# tonsi tenpi
+uFFD5F	kekantesantakalu	# jan Kekan San
+uFFDEE	Enki	# kije Enki
+uFFDEF	KekanSan	# jan Kekan San
 
 # names of communities
+uFFDED	kama+sona	# kama sona
 uFFBF2	Linku	# kulupu Linku
 uFFBF3	lipu+Wesi+pi+toki+pona	# lipu Wesi pi toki pona
 uFFBF1	ma+pi+nasin+sitelen	# ma pi nasin sitelen
@@ -569,6 +597,8 @@ uFFDE9	Towan	# Towan (Toaq)
 uFF1E0	Votgil	# Votgil (I'm a bit excited)
 uFFDEA	suno+pi+toki+pona	# suno pi toki pona
 uFFDEB	Wakalito	# Wakalito
+uFFDEC	asuki	# asuki (ASCII) (simplified form of ASCII chart from MIL-STD-188-100)
+uFFDEC	Asuki	# Asuki (ASCII) (simplified form of ASCII chart from MIL-STD-188-100)
 uFFB9D	juniko	# juniko (Unicode)
 uFFB9D	Juniko	# Juniko (Unicode)
 uFFB9F	jusijesuwa	# jusijesuwa (UCSUR)
@@ -586,6 +616,7 @@ uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
 uFFBF9	sitelen+seli+kiwen	# sitelen seli kiwen
+uFFDFF	aAANUSEMEmailMahjong	# aAANUSEMEmailMahjong
 
 # punctuation and format controls
 uF1990	[	# start of cartouche
@@ -1228,9 +1259,9 @@ uFF9A7	kala2-lete	# kala lete, with eyes, default
 uFF9A7	kala2+lete	# kala lete, with eyes, default
 uFF9A7	kala2*lete	# kala lete, with eyes, scaled
 uFFBBA	kala2^lete	# kala lete, with eyes, stacked
-uFF9A8	kala-lili	# kala lili, default, default	
-uFF9A8	kala+lili	# kala lili, default, default	
-uFF9A8	kala*lili	# kala lili, default, scaled	
+uFF9A8	kala-lili	# kala lili, default, default
+uFF9A8	kala+lili	# kala lili, default, default
+uFF9A8	kala*lili	# kala lili, default, scaled
 uFFBBB	kala^lili	# kala lili, default, stacked
 uFF9A8	kala1-lili	# kala lili, without eyes, default
 uFF9A8	kala1+lili	# kala lili, without eyes, default
@@ -1426,6 +1457,14 @@ uFFBF5	linja^suwi	# linja suwi, stacked
 uFF9DE	lipu-kasi	# lipu kasi, scaled
 uFF9DE	lipu+kasi	# lipu kasi, scaled
 uFF9DE	lipu*kasi	# lipu kasi, scaled
+uFFD11	lipu-majuna	# lipu majuna, default, default
+uFFD11	lipu+majuna	# lipu majuna, default, default
+uFFD11	lipu*majuna	# lipu majuna, default, scaled
+uFFD10	lipu^majuna	# lipu majuna, default, stacked
+uFFD11	lipu-majuna2	# lipu majuna, lotus, default
+uFFD11	lipu+majuna2	# lipu majuna, lotus, default
+uFFD11	lipu*majuna2	# lipu majuna, lotus, scaled
+uFFD10	lipu^majuna2	# lipu majuna, lotus, stacked
 uFF9DF	lipu-nanpa	# lipu nanpa, scaled
 uFF9DF	lipu+nanpa	# lipu nanpa, scaled
 uFF9DF	lipu*nanpa	# lipu nanpa, scaled
@@ -1961,6 +2000,8 @@ uFFBFF	ijo-ni-li-seme	# ijo ni li seme
 uFFBFF	ijo+ni+li+seme	# ijo ni li seme
 uFFA4F	luka-luka-luka	# luka luka luka
 uFFA4F	luka+luka+luka	# luka luka luka
+uFFD69	luka-luka-luka-luka	# luka luka luka luka
+uFFD69	luka+luka+luka+luka	# luka luka luka luka
 uFFBC8	luka-luka-luka-tu	# luka luka luka tu
 uFFBC8	luka+luka+luka+tu	# luka luka luka tu
 uFFBC9	luka-luka-luka-tu-tu	# luka luka luka tu tu

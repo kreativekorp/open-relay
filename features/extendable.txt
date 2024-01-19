@@ -6,6 +6,7 @@ uF190B	uFFA59	------	------	------	------	# esun
 uF1916	------	uFFA5A	------	------	------	# kama
 uF1918	uFFA5B	uFFA5C	uFFA5D	------	------	# ken
 uF1919	uFFA5E	------	------	------	------	# kepeken
+uF1921	------	uFFD7D	------	------	------	# la
 uF1925	uFFA5F	uFFA60	uFFA61	------	------	# len
 uF1929	uFFA62	------	------	------	------	# linja
 uF192C	uFFA63	uFFA64	uFFA65	------	------	# lon
@@ -62,6 +63,7 @@ uFFB24	uFFB25	uFFB26	uFFB27	------	------	# ke, diagonal exclamation radical
 uFFB32	uFFB33	uFFB34	uFFB35	------	------	# melome
 uFFB36	uFFB37	uFFB38	uFFB39	------	------	# mijomi
 uFFB3E	------	uFFB3F	------	------	------	# wekama
+uFFB40	uFFD7C	------	------	------	------	# alu
 uFFB41	uFFB42	------	------	------	------	# awase
 uFFB49	uFFB4A	uFFB4B	uFFB4C	------	------	# itomi
 uFFB4F	------	uFFB50	------	------	------	# jonke

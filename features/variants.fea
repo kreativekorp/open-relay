@@ -11,6 +11,10 @@ feature rand {
 
 # straight a/o/kin/n
 feature ss16 {
+  featureNames {
+    name 3 1 1033 "straight a/o/kin/n";
+    name 1 0 0 "straight a/o/kin/n";
+  };
   sub uF1900 by uFFB10;  # a
   sub uF1944 by uFFB12;  # o
   sub uF1979 by uFFB14;  # kin
@@ -29,6 +33,10 @@ feature ss16 {
 
 # diagonal a/o/kin/n
 feature ss17 {
+  featureNames {
+    name 3 1 1033 "diagonal a/o/kin/n";
+    name 1 0 0 "diagonal a/o/kin/n";
+  };
   sub uF1900 by uFFB11;  # a
   sub uF1944 by uFFB13;  # o
   sub uF1979 by uFFB15;  # kin
@@ -47,6 +55,10 @@ feature ss17 {
 
 # straight mi/sina/ona
 feature ss18 {
+  featureNames {
+    name 3 1 1033 "straight mi/sina/ona";
+    name 1 0 0 "straight mi/sina/ona";
+  };
   sub uF1934 by uFFB04;  # mi
   sub uF195E by uFFB06;  # sina
   sub uF1946 by uFFB08;  # ona
@@ -57,6 +69,10 @@ feature ss18 {
 
 # curved mi/sina/ona
 feature ss19 {
+  featureNames {
+    name 3 1 1033 "curved mi/sina/ona";
+    name 1 0 0 "curved mi/sina/ona";
+  };
   sub uF1934 by uFFB05;  # mi
   sub uF195E by uFFB07;  # sina
   sub uF1946 by uFFB09;  # ona
@@ -67,38 +83,87 @@ feature ss19 {
 
 # latin letter sharp s kijetesantakalu
 feature ss20 {
+  featureNames {
+    name 3 1 1033 "sharp s kijetesantakalu";
+    name 1 0 0 "sharp s kijetesantakalu";
+  };
   sub uni1E9E by uFFBEE;
   sub germandbls by uFFBEF;
 } ss20;
 
 # four-legged akesi
 feature cv70 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "four-legged akesi";
+      name 1 0 0 "four-legged akesi";
+    };
+    Character 0xF1901;
+    Character 0xFFAFF;
+  };
   sub uF1901 by uFFD63;  # akesi, upright
   sub uFFAFF by uFFD64;  # akesi, turned
 } cv70;
 
-# alternate moli
+# headless moli
 feature cv71 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "headless moli";
+      name 1 0 0 "headless moli";
+    };
+    Character 0xF1937;
+  };
   sub uF1937 by uFFD68;  # moli, X eyes and mouth
 } cv71;
 
-# thick stem soko
+# thick-stem soko
 feature cv77 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "thick-stem soko";
+      name 1 0 0 "thick-stem soko";
+    };
+    Character 0xF1981;
+  };
   sub uF1981 by uFFD65;  # soko, thick stem
 } cv77;
 
-# thin stem soko
+# thin-stem soko
 feature cv78 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "thin-stem soko";
+      name 1 0 0 "thin-stem soko";
+    };
+    Character 0xF1981;
+  };
   sub uF1981 by uFFD66;  # soko, thin stem
 } cv78;
 
-# thin stem soko with annulus
+# annulus soko
 feature cv79 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "annulus soko";
+      name 1 0 0 "annulus soko";
+    };
+    Character 0xF1981;
+  };
   sub uF1981 by uFFD67;  # soko, thin stem with annulus
 } cv79;
 
 # kala with eyes
 feature cv80 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "kala with eyes";
+      name 1 0 0 "kala with eyes";
+    };
+    Character 0xF1914;
+    Character 0xFFBB9;
+    Character 0xFFBBB;
+  };
   sub uF1914 by uFFAA0;  # kala
   sub uFFBB9 by uFFBBA;  # kala lete, stacked
   sub uFFBBB by uFFBBC;  # kala lili, stacked
@@ -106,6 +171,24 @@ feature cv80 {
 
 # female symbol for meli
 feature cv81 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "Venus meli";
+      name 1 0 0 "Venus meli";
+    };
+    Character 0xF1933;
+    Character 0xFF934;
+    Character 0xFF9E8;
+    Character 0xFF9F0;
+    Character 0xFF9F2;
+    Character 0xFF9F3;
+    Character 0xFF9F4;
+    Character 0xFF9F5;
+    Character 0xFFBD7;
+    Character 0xFF9F6;
+    Character 0xFFBDA;
+    Character 0xFFA02;
+  };
   sub uF1933 by uFFAA1;  # meli
   sub uFF934 by uFFBB0;  # ijo meli
   sub uFF9E8 by uFFBCF;  # lupa meli
@@ -122,6 +205,22 @@ feature cv81 {
 
 # male symbol for mije
 feature cv82 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "Mars mije";
+      name 1 0 0 "Mars mije";
+    };
+    Character 0xF1935;
+    Character 0xFF936;
+    Character 0xFF9F1;
+    Character 0xFF9F7;
+    Character 0xFF9F8;
+    Character 0xFF9F9;
+    Character 0xFF9FA;
+    Character 0xFFBE0;
+    Character 0xFF9FB;
+    Character 0xFF9FC;
+  };
   sub uF1935 by uFFAA2;  # mije
   sub uFF936 by uFFBB1;  # ijo mije
   sub uFF9F1 by uFFBD1;  # mama mije
@@ -136,6 +235,15 @@ feature cv82 {
 
 # pilin with emitters for olin
 feature cv83 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "emitters olin";
+      name 1 0 0 "emitters olin";
+    };
+    Character 0xF1945;
+    Character 0xFF948;
+    Character 0xFF997;
+  };
   sub uF1945 by uFFAA3;  # olin
   sub uFF948 by uFFBB3;  # ijo olin
   sub uFF997 by uFFBB7;  # jan olin
@@ -143,6 +251,17 @@ feature cv83 {
 
 # secularized sewi
 feature cv84 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "secular sewi";
+      name 1 0 0 "secular sewi";
+    };
+    Character 0xF195A;
+    Character 0xFF95D;
+    Character 0xFF99E;
+    Character 0xFFBBF;
+    Character 0xFF9E0;
+  };
   sub uF195A by uFFAA4;  # sewi
   sub uFF95D by uFFBB4;  # ijo sewi
   sub uFF99E by uFFBB8;  # jan sewi
@@ -152,78 +271,186 @@ feature cv84 {
 
 # dotless uta
 feature cv85 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "dotless uta";
+      name 1 0 0 "dotless uta";
+    };
+    Character 0xF1970;
+    Character 0xFF974;
+  };
   sub uF1970 by uFFAA5;  # uta
   sub uFF974 by uFFBB5;  # ijo uta
 } cv85;
 
 # turned pilin for wile
 feature cv86 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "closed wile";
+      name 1 0 0 "closed wile";
+    };
+    Character 0xF1977;
+    Character 0xFF97B;
+  };
   sub uF1977 by uFFAA6;  # wile
   sub uFF97B by uFFBB6;  # ijo wile
 } cv86;
 
 # four rays for namako
 feature cv87 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "crosshair namako";
+      name 1 0 0 "crosshair namako";
+    };
+    Character 0xF1978;
+  };
   sub uF1978 by uFFAA7;  # namako
 } cv87;
 
 # pepper with emitters for namako
 feature cv88 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "pepper namako";
+      name 1 0 0 "pepper namako";
+    };
+    Character 0xF1978;
+    Character 0xFF93F;
+  };
   sub uF1978 by uFFAA8;  # namako
   sub uFF93F by uFFBB2;  # ijo namako
 } cv88;
 
 # vertical lines with dot for meso
 feature cv89 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "vertical meso";
+      name 1 0 0 "vertical meso";
+    };
+    Character 0xF1982;
+  };
   sub uF1982 by uFFAA9;  # meso
 } cv89;
 
 # ante with dot for meso
 feature cv90 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "ante meso";
+      name 1 0 0 "ante meso";
+    };
+    Character 0xF1982;
+  };
   sub uF1982 by uFFAAA;  # meso
 } cv90;
 
 # up arrow for epiku
 feature cv91 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "up arrow epiku";
+      name 1 0 0 "up arrow epiku";
+    };
+    Character 0xF1983;
+  };
   sub uF1983 by uFFAAB;  # epiku
 } cv91;
 
 # pona with emitters for epiku
 feature cv92 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "pona epiku";
+      name 1 0 0 "pona epiku";
+    };
+    Character 0xF1983;
+  };
   sub uF1983 by uFFAAC;  # epiku
 } cv92;
 
 # toki with stroke for kokosila
 feature cv93 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "toki kokosila";
+      name 1 0 0 "toki kokosila";
+    };
+    Character 0xF1984;
+  };
   sub uF1984 by uFFAAD;  # kokosila
 } cv93;
 
 # star for kokosila
 feature cv94 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "star kokosila";
+      name 1 0 0 "star kokosila";
+    };
+    Character 0xF1984;
+  };
   sub uF1984 by uFFAAE;  # kokosila
 } cv94;
 
 # lanpan with head
 feature cv95 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "jo lanpan";
+      name 1 0 0 "jo lanpan";
+    };
+    Character 0xF1985;
+  };
   sub uF1985 by uFFAAF;  # lanpan
 } cv95;
 
-# lanpan with hook
+# mistake lanpan
 feature cv96 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "mistake lanpan";
+      name 1 0 0 "mistake lanpan";
+    };
+    Character 0xF1985;
+  };
   sub uF1985 by uFFAB0;  # lanpan
 } cv96;
 
 # turned pana for lanpan
 feature cv97 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "pana lanpan";
+      name 1 0 0 "pana lanpan";
+    };
+    Character 0xF1985;
+  };
   sub uF1985 by uFFAB1;  # lanpan
 } cv97;
 
-# three rays for majuna
+# sin majuna
 feature cv98 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "sin majuna";
+      name 1 0 0 "sin majuna";
+    };
+    Character 0xF19A2;
+  };
   sub uF19A2 by uFFAB2;  # majuna
 } cv98;
 
-# five rays for majuna
+# lotus majuna
 feature cv99 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "lotus majuna";
+      name 1 0 0 "lotus majuna";
+    };
+    Character 0xF19A2;
+  };
   sub uF19A2 by uFFAB3;  # majuna
 } cv99;
