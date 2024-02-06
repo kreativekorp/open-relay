@@ -56,6 +56,8 @@ uFFADF	------	uFFAE0	------	------	------	# kese
 uFFAE9	uFFAEA	------	------	------	------	# pomotolo
 uFFAF2	uFFAF3	uFFAF4	uFFAF5	------	------	# umesu
 uFFAF7	uFFAF8	uFFAF9	uFFAFA	------	------	# wasoweli
+uFFB10	uFFD7E	------	------	------	------	# a, straight exclamation radical
+uFFB11	uFFD7F	------	------	------	------	# a, diagonal exclamation radical
 uFFB16	uFFB17	uFFB18	uFFB19	------	------	# n, straight exclamation radical
 uFFB1A	uFFB1B	uFFB1C	uFFB1D	------	------	# n, diagonal exclamation radical
 uFFB20	uFFB21	uFFB22	uFFB23	------	------	# ke, straight exclamation radical

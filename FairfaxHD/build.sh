@@ -51,7 +51,7 @@ else
 fi
 
 # Clean
-rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxPonaHD.* FairfaxHaxHD.* FairfaxSMHD.*
+rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxPonaHD.* FairfaxPulaHD.* FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd
 
 # Make timestamped version
@@ -59,6 +59,9 @@ python ../bin/sfdpatch.py FairfaxHD.sfd patches/timestamp.txt > FairfaxHD_base.s
 
 # Make sitelen pona version
 python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/asuki.txt > FairfaxPonaHD_base.sfd
+
+# Make titi pula version
+python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/atuki.txt > FairfaxPulaHD_base.sfd
 
 # Make programming ligature version
 python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/ligatures.txt > FairfaxHaxHD_base.sfd
@@ -68,19 +71,21 @@ python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/strictmono.txt > FairfaxSMH
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
-	FairfaxHD_base.sfd FairfaxPonaHD_base.sfd FairfaxHaxHD_base.sfd FairfaxSMHD_base.sfd
+	FairfaxHD_base.sfd FairfaxPonaHD_base.sfd FairfaxPulaHD_base.sfd FairfaxHaxHD_base.sfd FairfaxSMHD_base.sfd
 
 rm *_base.sfd
 
 # Add OpenType features (FontForge completely fouls this up on its own)
-python ../bin/sitelenpona.py -a ../features/asuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g FairfaxHD.sfd
+python ../bin/sitelenpona.py -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g FairfaxHD.sfd
 cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHD_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPonaHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPulaHD_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHaxHD_base.fea
-rm asuki.fea extendable.fea joiners.fea
+rm asuki.fea atuki.fea extendable.fea joiners.fea
 
 $FONTTOOLS feaLib -o FairfaxHD.ttf FairfaxHD_base.fea FairfaxHD_base.ttf
 $FONTTOOLS feaLib -o FairfaxPonaHD.ttf FairfaxPonaHD_base.fea FairfaxPonaHD_base.ttf
+$FONTTOOLS feaLib -o FairfaxPulaHD.ttf FairfaxPulaHD_base.fea FairfaxPulaHD_base.ttf
 $FONTTOOLS feaLib -o FairfaxHaxHD.ttf FairfaxHaxHD_base.fea FairfaxHaxHD_base.ttf
 cp FairfaxSMHD_base.ttf FairfaxSMHD.ttf
 
@@ -92,20 +97,24 @@ python ../bin/blocks.py czuowbanxkkfeypjqvgsittl > Blocks.txt
 python ../bin/unicodedata.py czuowbanxkkfeypjqvgsittl > UnicodeData.txt
 $BITSNPICAS injectpuaa \
 	-D Blocks.txt UnicodeData.txt \
-	-I FairfaxHD.ttf FairfaxPonaHD.ttf FairfaxHaxHD.ttf FairfaxSMHD.ttf
+	-I FairfaxHD.ttf \
+	-I FairfaxPonaHD.ttf FairfaxPulaHD.ttf \
+	-I FairfaxHaxHD.ttf FairfaxSMHD.ttf
 rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < FairfaxHD.ttf > FairfaxHD.eot
 $TTF2EOT < FairfaxPonaHD.ttf > FairfaxPonaHD.eot
+$TTF2EOT < FairfaxPulaHD.ttf > FairfaxPulaHD.eot
 $TTF2EOT < FairfaxHaxHD.ttf > FairfaxHaxHD.eot
 $TTF2EOT < FairfaxSMHD.ttf > FairfaxSMHD.eot
 
 # Create zip
-zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
-zip FairfaxPonaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
-zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
-zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
+zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
+zip FairfaxPonaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
+zip FairfaxPulaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
+zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
+zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot
 
 # Create lowercase versions
 mkdir fairfaxhd
@@ -115,6 +124,9 @@ cp FairfaxHD.zip fairfaxhd/fairfaxhd.zip
 cp FairfaxPonaHD.ttf fairfaxhd/fairfaxponahd.ttf
 cp FairfaxPonaHD.eot fairfaxhd/fairfaxponahd.eot
 cp FairfaxPonaHD.zip fairfaxhd/fairfaxponahd.zip
+cp FairfaxPulaHD.ttf fairfaxhd/fairfaxpulahd.ttf
+cp FairfaxPulaHD.eot fairfaxhd/fairfaxpulahd.eot
+cp FairfaxPulaHD.zip fairfaxhd/fairfaxpulahd.zip
 cp FairfaxHaxHD.ttf fairfaxhd/fairfaxhaxhd.ttf
 cp FairfaxHaxHD.eot fairfaxhd/fairfaxhaxhd.eot
 cp FairfaxHaxHD.zip fairfaxhd/fairfaxhaxhd.zip

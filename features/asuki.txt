@@ -67,12 +67,14 @@ uF1932	mani	# mani
 uF1933	meli	# meli, default
 uF1933	meli1	# meli, head with hair
 uFFAA1	meli2	# meli, female sign
+uFFD19	meli3	# meli, circle with letter L
 uF1934	mi	# mi, default
 uFFB04	mi1	# mi, straight
 uFFB05	mi2	# mi, curved
 uF1935	mije	# mije, default
 uF1935	mije1	# mije, head and shoulders
 uFFAA2	mije2	# mije, male sign
+uFFD18	mije3	# mije, circle with letter J
 uF1936	moku	# moku
 uF1937	moli	# moli, default
 uF1937	moli1	# moli, head with X eyes
@@ -215,7 +217,10 @@ uF1981	soko	# soko, default
 uFFD65	soko1	# soko, thick stem
 uFFD66	soko2	# soko, thin stem
 uFFD67	soko3	# soko, thin stem with annulus
-uF197E	tonsi	# tonsi
+uF197E	tonsi	# tonsi, default
+uF197E	tonsi1	# tonsi, circle with three spokes
+uFFD08	tonsi2	# tonsi, male and female sign
+uFFD1A	tonsi3	# tonsi, circle with letter T
 
 # single words - nimi ku lili
 uF19A1	apeja	# apeja
@@ -229,10 +234,15 @@ uFFD6D	kiki2	# kiki, hyperbolic squarrel
 uFFD6E	kiki3	# kiki, deltoid
 uFFD6F	kiki4	# kiki, hazard sign
 uFFAC4	linluwi	# linluwi, default
-uFFAC4	linluwi1	# linluwi, sitelen-len-linja
-uFFBA5	linluwi2	# linluwi, len-linja-en with emitters
-uFFD6B	linluwi3	# linluwi, len-linja with emitters
-uFFD6C	linluwi4	# linluwi, connected kulupu
+uFFAC4	linluwi1	# linluwi, synonym of linuwi, sitelen-len-linja
+uFFBA5	linluwi2	# linluwi, synonym of linuwi, len-linja-en with emitters
+uFFD6B	linluwi3	# linluwi, synonym of linuwi, len-linja with emitters
+uFFD6C	linluwi4	# linluwi, synonym of linuwi, connected kulupu
+uFFAC4	linuwi	# linuwi, synonym of linluwi, default
+uFFAC4	linuwi1	# linuwi, synonym of linluwi, sitelen-len-linja
+uFFBA5	linuwi2	# linuwi, synonym of linluwi, len-linja-en with emitters
+uFFD6B	linuwi3	# linuwi, synonym of linluwi, len-linja with emitters
+uFFD6C	linuwi4	# linuwi, synonym of linluwi, connected kulupu
 uF19A2	majuna	# majuna, default
 uFFAB2	majuna1	# majuna, three rays
 uFFAB3	majuna2	# majuna, five rays
@@ -478,6 +488,12 @@ uFFDB5	topo	# topo
 
 # single words - 2024
 uFFDB9	teken	# teken (same as sitelen; full writeup coming soon)
+uFFDBB	api	# api, default
+uFFDBB	api1	# api, pi noka ala, read as wings
+uFFDBC	api2	# api, pi noka ala, read as antennae
+uFFDBD	api3	# api, Menasewian
+uFFDBA	api4	# api, tawa sinpin
+uFFDBE	kolo	# kolo
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
@@ -514,9 +530,6 @@ uFFDE3	KeTami	# jan Ke Tami
 uFFB95	kili+ma	# kulupu Kilima
 uFFDE4	Kita	# jan Kita
 uFFB96	kulupu+en	# The & System
-uFFDE1	kulupu+kasi	# kulupu kasi, default
-uFFB97	kulupu+kasi1	# kulupu kasi, mushroom
-uFFDE1	kulupu+kasi2	# kulupu kasi, seedling
 uFFABE	lipamanka	# lipamanka
 uFFABE	Lipamanka	# lipamanka
 uFFABF	Lepeka	# jan Lepeka
@@ -537,6 +550,8 @@ uFFD35	Asiku	# jan Asiku
 uFFD36	Atu	# waso Atu
 uFFD37	Esile	# jan Esile
 uFFD38	Eweke	# soweli Eweke
+uFFD38	Eweke1	# soweli Eweke
+uFFDDA	Eweke2	# soweli Eweke
 uFFD39	Ipawi	# jan Ipawi
 uFFD3A	Iseja	# jan Iseja
 uFFD3B	Jalepu	# jan Alepu
@@ -590,15 +605,19 @@ uFFDE5	ma+toki+pona+VR	# Ma Toki Pona VR
 uFFDE6	pali+pali+ale+pona+epiku	# pali Pape (Project Babel)
 uFFDE6	pali+Pape	# pali Pape (Project Babel)
 uFFDE7	Seka	# ma Seka
+uFFDDF	Seki	# toki pona chess community
 
 # names of other things
 uFFDE8	Losupan	# Losupan (Lojban)
 uFFDE9	Towan	# Towan (Toaq)
 uFF1E0	Votgil	# Votgil (I'm a bit excited)
+uFFDDE	mun+pi+ante+toki	# mun pi ante toki
 uFFDEA	suno+pi+toki+pona	# suno pi toki pona
+uFFDDD	Token	# Token
 uFFDEB	Wakalito	# Wakalito
 uFFDEC	asuki	# asuki (ASCII) (simplified form of ASCII chart from MIL-STD-188-100)
 uFFDEC	Asuki	# Asuki (ASCII) (simplified form of ASCII chart from MIL-STD-188-100)
+uFFB97	mono	# mono
 uFFB9D	juniko	# juniko (Unicode)
 uFFB9D	Juniko	# Juniko (Unicode)
 uFFB9F	jusijesuwa	# jusijesuwa (UCSUR)
@@ -615,6 +634,8 @@ uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
+uFFDDC	CraftyPE	# CraftyPE
+uFFDDB	ParanormalChickenScratch	# ParanormalChickenScratch (PCS)
 uFFBF9	sitelen+seli+kiwen	# sitelen seli kiwen
 uFFDFF	aAANUSEMEmailMahjong	# aAANUSEMEmailMahjong
 
@@ -1457,6 +1478,10 @@ uFFBF5	linja^suwi	# linja suwi, stacked
 uFF9DE	lipu-kasi	# lipu kasi, scaled
 uFF9DE	lipu+kasi	# lipu kasi, scaled
 uFF9DE	lipu*kasi	# lipu kasi, scaled
+uFFD13	lipu-kule	# lipu kule, default
+uFFD13	lipu+kule	# lipu kule, default
+uFFD13	lipu*kule	# lipu kule, scaled
+uFFD12	lipu^kule	# lipu kule, stacked
 uFFD11	lipu-majuna	# lipu majuna, default, default
 uFFD11	lipu+majuna	# lipu majuna, default, default
 uFFD11	lipu*majuna	# lipu majuna, default, scaled
@@ -1483,12 +1508,17 @@ uFFBC3	lipu*sewi2	# lipu sewi, secularized, scaled
 uFF9E1	lipu-sona	# lipu sona, scaled
 uFF9E1	lipu+sona	# lipu sona, scaled
 uFF9E1	lipu*sona	# lipu sona, scaled
-uFFBC4	lipu-tenpo	# lipu tenpo, scaled
-uFFBC4	lipu+tenpo	# lipu tenpo, scaled
-uFFBC4	lipu*tenpo	# lipu tenpo, scaled
+uFFBC4	lipu-tenpo	# lipu tenpo, default
+uFFBC4	lipu+tenpo	# lipu tenpo, magazine logo
+uFFD15	lipu*tenpo	# lipu tenpo, scaled
+uFFD14	lipu^tenpo	# lipu tenpo, stacked
 uFF9E2	lipu-toki	# lipu toki, scaled
 uFF9E2	lipu+toki	# lipu toki, scaled
 uFF9E2	lipu*toki	# lipu toki, scaled
+uFFD17	lipu-unpa	# lipu unpa, default
+uFFD17	lipu+unpa	# lipu unpa, default
+uFFD17	lipu*unpa	# lipu unpa, scaled
+uFFD16	lipu^unpa	# lipu unpa, stacked
 uFFBC5	loje-jelo	# loje jelo, stacked
 uFFBC5	loje+jelo	# loje jelo, stacked
 uFFBC5	loje^jelo	# loje jelo, stacked

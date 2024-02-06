@@ -37,8 +37,6 @@ uFFB93	jan-jan-jan	# jan + jan + jan = jan Jan
 
 uFFB95	kulupu-kili-ma	# kulupu + kili + ma = kulupu Kilima
 uFFB96	kulupu-\ampersand	# kulupu + ampersand = The & System
-uFFB97	kulupu-\u1F344	# kulupu + mushroom = kulupu kasi, mushroom
-uFFDE1	kulupu-\u1F331	# kulupu + seedling = kulupu kasi, seedling
 
 uFFB99	kijetesantakalu-\u1F607	# kijetesantakalu + smiling face with halo = jan Wija / Wyub
 
@@ -54,6 +52,7 @@ uFFBF1	ma-pi-nasin-sitelen	# ma pi nasin sitelen
 uFFDE5	ma-toki-pona-wile-jan	# Ma Toki Pona VR
 uFFDE6	pali-pali-ale-pona-epiku	# pali Pape (Project Babel)
 uFFDEA	suno-pi-toki-pona	# suno pi toki pona
+uFFDDE	mun-pi-ante-toki	# mun pi ante toki
 uFFBF9	sitelen-seli-kiwen	# sitelen seli kiwen
 
 uFFD60	a-\exclamdbl	# a + double exclamation mark

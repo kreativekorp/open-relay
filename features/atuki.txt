@@ -1,0 +1,49 @@
+uF1C40	a	# a
+uF1C41	ala	# ala
+uF1C42	i	# i
+uF1C43	iku	# iku
+uF1C44	ilu	# ilu
+uF1C45	ka	# ka
+uF1C46	kati	# kati
+uF1C47	ki	# ki
+uF1C48	kiku	# kiku
+uF1C49	ku	# ku
+uF1C4A	la	# la
+uF1C4B	lapi	# lapi
+uF1C4C	li	# li
+uF1C4D	lika	# lika
+uF1C4E	lili	# lili
+uF1C4F	lu	# lu
+uF1C50	lupa	# lupa
+uF1C51	mi	# mi
+uF1C52	muku	# muku
+uF1C53	muti	# muti
+uF1C54	paka	# paka
+uF1C55	pali	# pali
+uF1C56	puka	# puka
+uF1C57	pula	# pula
+uF1C58	taka	# taka
+uF1C59	tama	# tama
+uF1C5A	tiki	# tiki
+uF1C5B	tiku	# tiku
+uF1C5C	tila	# tila
+uF1C5D	tilu	# tilu
+uF1C5E	timi	# timi
+uF1C5F	tipi	# tipi
+uF1C60	titi	# titi
+uF1C61	tu	# tu
+uF1C62	tuki	# tuki
+uF1C63	tula	# tula
+uF1C64	tulu	# tulu
+uF1C65	uli	# uli
+uF1C66	upi	# upi
+
+# punctuation and format controls
+uF1990	[	# start of cartouche
+uF1991	]	# end of cartouche
+uF1997	(	# start of extended glyph
+uF1998	)	# end of extended glyph
+uF199A	{	# start of reverse extended glyph
+uF199B	}	# end of reverse extended glyph
+uF199C	..	# interpunct
+uF199D	::	# colon

@@ -91,72 +91,14 @@ feature ss20 {
   sub germandbls by uFFBEF;
 } ss20;
 
-# four-legged akesi
-feature cv70 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "four-legged akesi";
-      name 1 0 0 "four-legged akesi";
-    };
-    Character 0xF1901;
-    Character 0xFFAFF;
-  };
-  sub uF1901 by uFFD63;  # akesi, upright
-  sub uFFAFF by uFFD64;  # akesi, turned
-} cv70;
-
-# headless moli
-feature cv71 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "headless moli";
-      name 1 0 0 "headless moli";
-    };
-    Character 0xF1937;
-  };
-  sub uF1937 by uFFD68;  # moli, X eyes and mouth
-} cv71;
-
-# thick-stem soko
-feature cv77 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "thick-stem soko";
-      name 1 0 0 "thick-stem soko";
-    };
-    Character 0xF1981;
-  };
-  sub uF1981 by uFFD65;  # soko, thick stem
-} cv77;
-
-# thin-stem soko
-feature cv78 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "thin-stem soko";
-      name 1 0 0 "thin-stem soko";
-    };
-    Character 0xF1981;
-  };
-  sub uF1981 by uFFD66;  # soko, thin stem
-} cv78;
-
-# annulus soko
-feature cv79 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "annulus soko";
-      name 1 0 0 "annulus soko";
-    };
-    Character 0xF1981;
-  };
-  sub uF1981 by uFFD67;  # soko, thin stem with annulus
-} cv79;
-
-# kala with eyes
+# alternate kala
 feature cv80 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate kala";
+      name 1 0 0 "alternate kala";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "kala with eyes";
       name 1 0 0 "kala with eyes";
     };
@@ -169,12 +111,20 @@ feature cv80 {
   sub uFFBBB by uFFBBC;  # kala lili, stacked
 } cv80;
 
-# female symbol for meli
+# alternate meli
 feature cv81 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate meli";
+      name 1 0 0 "alternate meli";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "Venus meli";
       name 1 0 0 "Venus meli";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "Latin letter meli";
+      name 1 0 0 "Latin letter meli";
     };
     Character 0xF1933;
     Character 0xFF934;
@@ -189,7 +139,7 @@ feature cv81 {
     Character 0xFFBDA;
     Character 0xFFA02;
   };
-  sub uF1933 by uFFAA1;  # meli
+  sub uF1933 from [uFFAA1 uFFD19];  # meli
   sub uFF934 by uFFBB0;  # ijo meli
   sub uFF9E8 by uFFBCF;  # lupa meli
   sub uFF9F0 by uFFBD0;  # mama meli
@@ -203,12 +153,20 @@ feature cv81 {
   sub uFFA02 by uFFBE4;  # nena meli
 } cv81;
 
-# male symbol for mije
+# alternate mije
 feature cv82 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate mije";
+      name 1 0 0 "alternate mije";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "Mars mije";
       name 1 0 0 "Mars mije";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "Latin letter mije";
+      name 1 0 0 "Latin letter mije";
     };
     Character 0xF1935;
     Character 0xFF936;
@@ -221,7 +179,7 @@ feature cv82 {
     Character 0xFF9FB;
     Character 0xFF9FC;
   };
-  sub uF1935 by uFFAA2;  # mije
+  sub uF1935 from [uFFAA2 uFFD18];  # mije
   sub uFF936 by uFFBB1;  # ijo mije
   sub uFF9F1 by uFFBD1;  # mama mije
   sub uFF9F7 by uFFBDC;  # mije ike
@@ -233,26 +191,42 @@ feature cv82 {
   sub uFF9FC by uFFBE3;  # mije wawa
 } cv82;
 
-# pilin with emitters for olin
+# alternate olin
 feature cv83 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate olin";
+      name 1 0 0 "alternate olin";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "emitters olin";
       name 1 0 0 "emitters olin";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "overlapping olin";
+      name 1 0 0 "overlapping olin";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "disconnected olin";
+      name 1 0 0 "disconnected olin";
     };
     Character 0xF1945;
     Character 0xFF948;
     Character 0xFF997;
   };
-  sub uF1945 by uFFAA3;  # olin
-  sub uFF948 by uFFBB3;  # ijo olin
-  sub uFF997 by uFFBB7;  # jan olin
+  sub uF1945 from [uFFAA3 uFFD75 uFFD74];  # olin
+  sub uFF948 from [uFFBB3 uFF948 uFF948];  # ijo olin
+  sub uFF997 from [uFFBB7 uFF997 uFF997];  # jan olin
 } cv83;
 
-# secularized sewi
+# alternate sewi
 feature cv84 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate sewi";
+      name 1 0 0 "alternate sewi";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "secular sewi";
       name 1 0 0 "secular sewi";
     };
@@ -269,10 +243,14 @@ feature cv84 {
   sub uFF9E0 by uFFBC3;  # lipu sewi
 } cv84;
 
-# dotless uta
+# alternate uta
 feature cv85 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate uta";
+      name 1 0 0 "alternate uta";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "dotless uta";
       name 1 0 0 "dotless uta";
     };
@@ -283,10 +261,14 @@ feature cv85 {
   sub uFF974 by uFFBB5;  # ijo uta
 } cv85;
 
-# turned pilin for wile
+# alternate wile
 feature cv86 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate wile";
+      name 1 0 0 "alternate wile";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "closed wile";
       name 1 0 0 "closed wile";
     };
@@ -297,160 +279,304 @@ feature cv86 {
   sub uFF97B by uFFBB6;  # ijo wile
 } cv86;
 
-# four rays for namako
+# alternate tonsi
 feature cv87 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate tonsi";
+      name 1 0 0 "alternate tonsi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "Venus-Mars tonsi";
+      name 1 0 0 "Venus-Mars tonsi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "Latin letter tonsi";
+      name 1 0 0 "Latin letter tonsi";
+    };
+    Character 0xF197E;
+  };
+  sub uF197E from [uFFD08 uFFD1A];  # tonsi
+} cv87;
+
+# alternate namako
+feature cv88 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "alternate namako";
+      name 1 0 0 "alternate namako";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "pepper namako";
+      name 1 0 0 "pepper namako";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "crosshair namako";
       name 1 0 0 "crosshair namako";
     };
     Character 0xF1978;
-  };
-  sub uF1978 by uFFAA7;  # namako
-} cv87;
-
-# pepper with emitters for namako
-feature cv88 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "pepper namako";
-      name 1 0 0 "pepper namako";
-    };
-    Character 0xF1978;
     Character 0xFF93F;
   };
-  sub uF1978 by uFFAA8;  # namako
-  sub uFF93F by uFFBB2;  # ijo namako
+  sub uF1978 from [uFFAA8 uFFAA7];  # namako
+  sub uFF93F from [uFFBB2 uFF93F];  # ijo namako
 } cv88;
 
-# vertical lines with dot for meso
+# alternate soko
 feature cv89 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate soko";
+      name 1 0 0 "alternate soko";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "thick-stem soko";
+      name 1 0 0 "thick-stem soko";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "thin-stem soko";
+      name 1 0 0 "thin-stem soko";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "annulus soko";
+      name 1 0 0 "annulus soko";
+    };
+    Character 0xF1981;
+  };
+  sub uF1981 from [uFFD65 uFFD66 uFFD67];  # soko
+} cv89;
+
+# alternate meso
+feature cv90 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "alternate meso";
+      name 1 0 0 "alternate meso";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "ante meso";
+      name 1 0 0 "ante meso";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "vertical meso";
       name 1 0 0 "vertical meso";
     };
     Character 0xF1982;
   };
-  sub uF1982 by uFFAA9;  # meso
-} cv89;
-
-# ante with dot for meso
-feature cv90 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "ante meso";
-      name 1 0 0 "ante meso";
-    };
-    Character 0xF1982;
-  };
-  sub uF1982 by uFFAAA;  # meso
+  sub uF1982 from [uFFAAA uFFAA9];  # meso
 } cv90;
 
-# up arrow for epiku
+# alternate epiku
 feature cv91 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate epiku";
+      name 1 0 0 "alternate epiku";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "up arrow epiku";
       name 1 0 0 "up arrow epiku";
     };
-    Character 0xF1983;
-  };
-  sub uF1983 by uFFAAB;  # epiku
-} cv91;
-
-# pona with emitters for epiku
-feature cv92 {
-  cvParameters {
-    FeatUILabelNameID {
+    ParamUILabelNameID {
       name 3 1 1033 "pona epiku";
       name 1 0 0 "pona epiku";
     };
     Character 0xF1983;
   };
-  sub uF1983 by uFFAAC;  # epiku
+  sub uF1983 from [uFFAAB uFFAAC];  # epiku
+} cv91;
+
+# alternate akesi
+feature cv92 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "alternate akesi";
+      name 1 0 0 "alternate akesi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "four-legged akesi";
+      name 1 0 0 "four-legged akesi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "six-legged akesi";
+      name 1 0 0 "six-legged akesi";
+    };
+    Character 0xF1901;
+    Character 0xFFAFF;
+  };
+  sub uF1901 from [uFFD63 uF1901];  # akesi, upright
+  sub uFFAFF from [uFFD64 uFFAFF];  # akesi, turned
 } cv92;
 
-# toki with stroke for kokosila
+# alternate moli
 feature cv93 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate moli";
+      name 1 0 0 "alternate moli";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "headless moli";
+      name 1 0 0 "headless moli";
+    };
+    Character 0xF1937;
+  };
+  sub uF1937 by uFFD68;  # moli
+} cv93;
+
+# alternate kokosila
+feature cv94 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "alternate kokosila";
+      name 1 0 0 "alternate kokosila";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "star kokosila";
+      name 1 0 0 "star kokosila";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "toki kokosila";
       name 1 0 0 "toki kokosila";
     };
     Character 0xF1984;
   };
-  sub uF1984 by uFFAAD;  # kokosila
-} cv93;
-
-# star for kokosila
-feature cv94 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "star kokosila";
-      name 1 0 0 "star kokosila";
-    };
-    Character 0xF1984;
-  };
-  sub uF1984 by uFFAAE;  # kokosila
+  sub uF1984 from [uFFAAE uFFAAD];  # kokosila
 } cv94;
 
-# lanpan with head
+# alternate kiki
 feature cv95 {
   cvParameters {
     FeatUILabelNameID {
-      name 3 1 1033 "jo lanpan";
-      name 1 0 0 "jo lanpan";
+      name 3 1 1033 "alternate kiki";
+      name 1 0 0 "alternate kiki";
     };
-    Character 0xF1985;
+    ParamUILabelNameID {
+      name 3 1 1033 "five-cusp kiki";
+      name 1 0 0 "five-cusp kiki";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "three-cusp kiki";
+      name 1 0 0 "three-cusp kiki";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "triangle kiki";
+      name 1 0 0 "triangle kiki";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "spike ball kiki";
+      name 1 0 0 "spike ball kiki";
+    };
   };
-  sub uF1985 by uFFAAF;  # lanpan
+  sub uFFAC3 from [uFFD6D uFFD6E uFFD6F uFFAC3];  # kiki
 } cv95;
 
-# mistake lanpan
+# alternate linluwi
 feature cv96 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate linluwi";
+      name 1 0 0 "alternate linluwi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "len-linja-en linluwi";
+      name 1 0 0 "len-linja-en linluwi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "len-linja linluwi";
+      name 1 0 0 "len-linja linluwi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "kulupu linluwi";
+      name 1 0 0 "kulupu linluwi";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "sitelen-len-linja linluwi";
+      name 1 0 0 "sitelen-len-linja linluwi";
+    };
+  };
+  sub uFFAC4 from [uFFBA5 uFFD6B uFFD6C uFFAC4];  # linluwi
+} cv96;
+
+# alternate lanpan
+feature cv97 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "alternate lanpan";
+      name 1 0 0 "alternate lanpan";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "pana lanpan";
+      name 1 0 0 "pana lanpan";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "jo lanpan";
+      name 1 0 0 "jo lanpan";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "mistake lanpan";
       name 1 0 0 "mistake lanpan";
     };
     Character 0xF1985;
   };
-  sub uF1985 by uFFAB0;  # lanpan
-} cv96;
-
-# turned pana for lanpan
-feature cv97 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "pana lanpan";
-      name 1 0 0 "pana lanpan";
-    };
-    Character 0xF1985;
-  };
-  sub uF1985 by uFFAB1;  # lanpan
+  sub uF1985 from [uFFAB1 uFFAAF uFFAB0];  # lanpan
 } cv97;
 
-# sin majuna
+# alternate ku
 feature cv98 {
   cvParameters {
     FeatUILabelNameID {
+      name 3 1 1033 "alternate ku";
+      name 1 0 0 "alternate ku";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "dot-emitters ku";
+      name 1 0 0 "dot-emitters ku";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "toki ku";
+      name 1 0 0 "toki ku";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "toki-pona ku";
+      name 1 0 0 "toki-pona ku";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "ijo-pona ku";
+      name 1 0 0 "ijo-pona ku";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "fermata ku";
+      name 1 0 0 "fermata ku";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "circle ku";
+      name 1 0 0 "circle ku";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "dot ku";
+      name 1 0 0 "dot ku";
+    };
+    Character 0xF1988;
+  };
+  sub uF1988 from [uFFD76 uFFD77 uFFD78 uFFD79 uFFD7A uFFD7B uF1988];  # ku
+} cv98;
+
+# alternate majuna
+feature cv99 {
+  cvParameters {
+    FeatUILabelNameID {
+      name 3 1 1033 "alternate majuna";
+      name 1 0 0 "alternate majuna";
+    };
+    ParamUILabelNameID {
+      name 3 1 1033 "lotus majuna";
+      name 1 0 0 "lotus majuna";
+    };
+    ParamUILabelNameID {
       name 3 1 1033 "sin majuna";
       name 1 0 0 "sin majuna";
     };
     Character 0xF19A2;
   };
-  sub uF19A2 by uFFAB2;  # majuna
-} cv98;
-
-# lotus majuna
-feature cv99 {
-  cvParameters {
-    FeatUILabelNameID {
-      name 3 1 1033 "lotus majuna";
-      name 1 0 0 "lotus majuna";
-    };
-    Character 0xF19A2;
-  };
-  sub uF19A2 by uFFAB3;  # majuna
+  sub uF19A2 from [uFFAB3 uFFAB2];  # majuna
 } cv99;

@@ -244,6 +244,8 @@ def main(args):
 	# Default arguments
 	asukiSrc = 'asuki.txt'
 	asukiOut = 'asuki.fea'
+	atukiSrc = 'atuki.txt'
+	atukiOut = 'atuki.fea'
 	extendableSrc = 'extendable.txt'
 	extendableOut = 'extendable.fea'
 	joinerSrc = 'joiners.txt'
@@ -257,6 +259,10 @@ def main(args):
 				asukiSrc = arg
 			if argType == '-A':
 				asukiOut = arg
+			if argType == '-t':
+				atukiSrc = arg
+			if argType == '-T':
+				atukiOut = arg
 			if argType == '-e':
 				extendableSrc = arg
 			if argType == '-E':
@@ -269,7 +275,7 @@ def main(args):
 				glyphNameSrc = arg
 			argType = None
 		elif arg.startswith('-'):
-			if arg in ['-a', '-A', '-e', '-E', '-j', '-J', '-g']:
+			if arg in ['-a', '-A', '-t', '-T', '-e', '-E', '-j', '-J', '-g']:
 				argType = arg
 			else:
 				print(('Unknown option: %s' % arg), file=sys.stderr)
@@ -281,6 +287,8 @@ def main(args):
 	else:
 		asuki = readAsukiSource(asukiSrc)
 		writeAsukiFeatures(asukiOut, asuki)
+		atuki = readAsukiSource(atukiSrc)
+		writeAsukiFeatures(atukiOut, atuki)
 		glyphNames = readGlyphNames(glyphNameSrc)
 		extendable = readExtendableSource(extendableSrc)
 		writeExtendableFeatures(extendableOut, glyphNames, extendable)
