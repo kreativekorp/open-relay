@@ -154,7 +154,9 @@ uF1967	tan	# tan
 uF1968	taso	# taso
 uF1969	tawa	# tawa
 uF196A	telo	# telo
-uF196B	tenpo	# tenpo
+uF196B	tenpo	# tenpo, default
+uF196B	tenpo1	# tenpo, clock
+uFFBAD	tenpo2	# tenpo, hourglass
 uF196C	toki	# toki
 uF196D	tomo	# tomo
 uF196D	toma	# toma, typo of tomo
