@@ -176,6 +176,7 @@ F1C40..F1C7F; Titi Pula
 
 # cf
 if 'p' in args: # Presentationforms
+	print('FA700..FA71F; Modifier Tone Letter Presentation Forms')
 	print('FA720..FA7FF; Latin Presentation Forms')
 
 # cf
