@@ -294,9 +294,13 @@ feature cv87 {
       name 3 1 1033 "Latin letter tonsi";
       name 1 0 0 "Latin letter tonsi";
     };
+    ParamUILabelNameID {
+      name 3 1 1033 "antimony tonsi";
+      name 1 0 0 "antimony tonsi";
+    };
     Character 0xF197E;
   };
-  sub uF197E from [uFFD08 uFFD1A];  # tonsi
+  sub uF197E from [uFFD08 uFFD1A uFFD1B];  # tonsi
 } cv87;
 
 # alternate namako

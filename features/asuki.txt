@@ -223,6 +223,7 @@ uF197E	tonsi	# tonsi, default
 uF197E	tonsi1	# tonsi, circle with three spokes
 uFFD08	tonsi2	# tonsi, male and female sign
 uFFD1A	tonsi3	# tonsi, circle with letter T
+uFFD1B	tonsi4	# tonsi, antimony symbol
 
 # single words - nimi ku lili
 uF19A1	apeja	# apeja
@@ -276,7 +277,9 @@ uFFADB	ke	# ke, default
 uFFB20	ke1	# ke, straight exclamation radical
 uFFB24	ke2	# ke, diagonal exclamation radical
 uFFADF	kese	# kese
-uFFAE1	kulijo	# kulijo
+uFFAE1	kulijo	# kulijo, default
+uFFAE1	kulijo1	# kulijo, lete with emitters
+uFFDBF	kulijo2	# kulijo, thumbs up
 uFFAE2	likujo	# likujo
 uFFAE3	neja	# neja
 uFFAE4	oke	# oke
@@ -496,6 +499,9 @@ uFFDBC	api2	# api, pi noka ala, read as antennae
 uFFDBD	api3	# api, Menasewian
 uFFDBA	api4	# api, tawa sinpin
 uFFDBE	kolo	# kolo
+uFFDC0	lisana	# lisana, default
+uFFDC0	lisana1	# lisana, tongue
+uFFDC1	lisana2	# lisana, uvula
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
@@ -593,6 +599,9 @@ uFFD5C	Waje	# jan Waje
 uFFD5D	Wen	# waso Wen
 uFFD5E	tenpi	# tonsi tenpi
 uFFD5F	kekantesantakalu	# jan Kekan San
+uFFDD7	lenlen	# len len
+uFFDD8	Pensa	# jan Pensa
+uFFDD9	Tonpite	# nanpa Tonpite
 uFFDEE	Enki	# kije Enki
 uFFDEF	KekanSan	# jan Kekan San
 
