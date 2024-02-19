@@ -599,6 +599,7 @@ uFFD5C	Waje	# jan Waje
 uFFD5D	Wen	# waso Wen
 uFFD5E	tenpi	# tonsi tenpi
 uFFD5F	kekantesantakalu	# jan Kekan San
+uFFDD6	Kalu	# jan Kalu
 uFFDD7	lenlen	# len len
 uFFDD8	Pensa	# jan Pensa
 uFFDD9	Tonpite	# nanpa Tonpite
