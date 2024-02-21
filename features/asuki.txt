@@ -647,8 +647,6 @@ uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
-uFFDDC	CraftyPE	# CraftyPE
-uFFDDB	ParanormalChickenScratch	# ParanormalChickenScratch (PCS)
 uFFBF9	sitelen+seli+kiwen	# sitelen seli kiwen
 uFFDFF	aAANUSEMEmailMahjong	# aAANUSEMEmailMahjong
 
