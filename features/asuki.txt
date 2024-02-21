@@ -502,6 +502,7 @@ uFFDBE	kolo	# kolo
 uFFDC0	lisana	# lisana, default
 uFFDC0	lisana1	# lisana, tongue
 uFFDC1	lisana2	# lisana, uvula
+uFFDE1	kankuli	# kankuli (scrunkly)
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
@@ -1130,6 +1131,9 @@ uFF97D	ike^lili	# ike lili, stacked
 uFF97E	ike-lukin	# ike lukin, stacked
 uFF97E	ike+lukin	# ike lukin, stacked
 uFF97E	ike^lukin	# ike lukin, stacked
+uFFD1C	ike-mute	# ike mute, stacked
+uFFD1C	ike+mute	# ike mute, stacked
+uFFD1C	ike^mute	# ike mute, stacked
 uFF97F	ilo-kipisi	# ilo kipisi, stacked
 uFF97F	ilo+kipisi	# ilo kipisi, stacked
 uFF97F	ilo^kipisi	# ilo kipisi, stacked
@@ -1328,6 +1332,9 @@ uFF9AF	kasi^pimeja	# kasi pimeja, stacked
 uFF9B0	kasi-walo	# kasi walo, stacked
 uFF9B0	kasi+walo	# kasi walo, stacked
 uFF9B0	kasi^walo	# kasi walo, stacked
+uFFD28	kijetesantakalu-soweli	# kijetesantakalu soweli, stacked
+uFFD28	kijetesantakalu+soweli	# kijetesantakalu soweli, stacked
+uFFD28	kijetesantakalu^soweli	# kijetesantakalu soweli, stacked
 uFF9B1	kili-jelo	# kili jelo, scaled
 uFF9B1	kili+jelo	# kili jelo, scaled
 uFF9B1	kili*jelo	# kili jelo, scaled
@@ -1424,6 +1431,39 @@ uFF9CF	ko*walo	# ko walo, scaled
 uFF9D0	kon-lete	# kon lete, scaled
 uFF9D0	kon+lete	# kon lete, scaled
 uFF9D0	kon*lete	# kon lete, scaled
+uFFD1F	kule-ma	# kule ma, stacked
+uFFD1F	kule+ma	# kule ma, stacked
+uFFD1F	kule^ma	# kule ma, stacked
+uFFD20	kule-uta	# kule uta, stacked
+uFFD20	kule+uta	# kule uta, stacked
+uFFD20	kule^uta	# kule uta, stacked
+uFFD21	kule-kili	# kule kili, stacked
+uFFD21	kule+kili	# kule kili, stacked
+uFFD21	kule^kili	# kule kili, stacked
+uFFD22	kule-suno	# kule suno, stacked
+uFFD22	kule+suno	# kule suno, stacked
+uFFD22	kule^suno	# kule suno, stacked
+uFFD23	kule-kasi	# kule kasi, stacked
+uFFD23	kule+kasi	# kule kasi, stacked
+uFFD23	kule^kasi	# kule kasi, stacked
+uFFD24	kule-sewi	# kule sewi, stacked
+uFFD24	kule+sewi	# kule sewi, stacked
+uFFD24	kule^sewi	# kule sewi, stacked
+uFFD24	kule-sewi1	# kule sewi, stacked
+uFFD24	kule+sewi1	# kule sewi, stacked
+uFFD24	kule^sewi1	# kule sewi, stacked
+uFFD24	kule-sewi2	# kule sewi, stacked
+uFFD24	kule+sewi2	# kule sewi, stacked
+uFFD24	kule^sewi2	# kule sewi, stacked
+uFFD25	kule-telo	# kule telo, stacked
+uFFD25	kule+telo	# kule telo, stacked
+uFFD25	kule^telo	# kule telo, stacked
+uFFD26	kule-mun	# kule mun, stacked
+uFFD26	kule+mun	# kule mun, stacked
+uFFD26	kule^mun	# kule mun, stacked
+uFFD27	kule-pilin	# kule pilin, stacked
+uFFD27	kule+pilin	# kule pilin, stacked
+uFFD27	kule^pilin	# kule pilin, stacked
 uFFBBD	laso-kasi	# laso kasi, stacked
 uFFBBD	laso+kasi	# laso kasi, stacked
 uFFBBD	laso^kasi	# laso kasi, stacked
@@ -1763,6 +1803,9 @@ uFFBE3	mije2*wawa	# mije wawa, male sign, scaled
 uFF9FD	musi-lili	# musi lili, scaled
 uFF9FD	musi+lili	# musi lili, scaled
 uFF9FD	musi*lili	# musi lili, scaled
+uFFD1D	mute-mute	# mute mute, stacked
+uFFD1D	mute+mute	# mute mute, stacked
+uFFD1D	mute^mute	# mute mute, stacked
 uFFBF6	nasin-nanpa	# nasin nanpa, default
 uFFBF6	nasin+nanpa	# nasin nanpa, horizontal
 uFFBF7	nasin^nanpa	# nasin nanpa, stacked
@@ -1851,6 +1894,9 @@ uFFA11	pona^lili	# pona lili, stacked
 uFFA12	pona-lukin	# pona lukin, stacked
 uFFA12	pona+lukin	# pona lukin, stacked
 uFFA12	pona^lukin	# pona lukin, stacked
+uFFD1E	pona-mute	# pona mute, stacked
+uFFD1E	pona+mute	# pona mute, stacked
+uFFD1E	pona^mute	# pona mute, stacked
 uFFA13	selo-len	# selo len, stacked
 uFFA13	selo+len	# selo len, stacked
 uFFA13	selo^len	# selo len, stacked
@@ -1911,6 +1957,9 @@ uFFA25	sona*toki	# sona toki, scaled
 uFFA26	sona-utala	# sona utala, scaled
 uFFA26	sona+utala	# sona utala, scaled
 uFFA26	sona*utala	# sona utala, scaled
+uFFD29	soweli-kijetesantakalu	# soweli kijetesantakalu, stacked
+uFFD29	soweli+kijetesantakalu	# soweli kijetesantakalu, stacked
+uFFD29	soweli^kijetesantakalu	# soweli kijetesantakalu, stacked
 uFFA27	supa-lape	# supa lape, stacked
 uFFA27	supa+lape	# supa lape, stacked
 uFFA27	supa^lape	# supa lape, stacked
