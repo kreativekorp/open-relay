@@ -647,6 +647,11 @@ uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
+uFFDDB	Fairfax	# Fairfax
+uFFA19	Pona	# Pona
+uF1C7F	Pula	# Pula
+uFFDDC	HD	# HD
+uF1982	Medium	# Medium
 uFFBF9	sitelen+seli+kiwen	# sitelen seli kiwen
 uFFDFF	aAANUSEMEmailMahjong	# aAANUSEMEmailMahjong
 
