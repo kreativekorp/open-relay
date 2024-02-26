@@ -2,7 +2,7 @@
 
 from __future__ import print_function
 from datetime import datetime
-from psname import psResolve, psUnicode
+from psname import psName, psResolve, psUnicode
 import re
 import sys
 
@@ -332,6 +332,25 @@ class Sfd:
 		self.chars = newChars
 		self.renumber()
 
+	def sitelenPonaRename(self):
+		for i in range(len(self.chars)-1,-1,-1):
+			if self.chars[i].name.startswith('NameMe.'):
+				baseName = None
+				formName = None
+				for prop in self.chars[i].properties:
+					if prop.startswith('Refer: '):
+						cp = int(prop.split(' ')[2])
+						if cp == 0xFFA50:
+							formName = '.cartouche'
+						elif cp == 0xFFA51:
+							formName = '.extension'
+						else:
+							baseName = psName(cp)
+				if baseName is not None and formName is not None:
+					self.charindex.pop(self.chars[i].name)
+					self.charindex[baseName + formName] = i
+					self.chars[i].name = baseName + formName
+
 	def print(self):
 		print('SplineFontDB: ' + self.version)
 		for prop in self.properties:
@@ -448,6 +467,8 @@ def main():
 				sfd.sortByCodePoint()
 			elif arg == '-m' or arg == '--strictMonospace':
 				sfd.strictMonospace()
+			elif arg == '-sp' or arg == '--sitelenPonaRename':
+				sfd.sitelenPonaRename()
 			elif arg == '--marks':
 				for ch in sfd.chars:
 					zw = False

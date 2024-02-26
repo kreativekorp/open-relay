@@ -180,7 +180,9 @@ uF1983	epiku	# epiku, default
 uFFAAB	epiku1	# epiku, upwards arrow
 uFFAAC	epiku2	# epiku, pona with emitters
 uF197F	jasima	# jasima
-uF1980	kijetesantakalu	# kijetesantakalu
+uF1980	kijetesantakalu	# kijetesantakalu, default
+uF1980	kijetesantakalu1	# kijetesantakalu, raccoon
+uFFDC8	kijetesantakalu2	# kijetesantakalu, armadillo
 uF1979	kin	# kin, default
 uFFB14	kin1	# kin, straight exclamation radical
 uFFB15	kin2	# kin, diagonal exclamation radical
@@ -403,9 +405,15 @@ uFFB7A	lo	# lo, synonym of lu
 uFFB7C	me	# me
 uFFB7D	nele	# nele
 uFFB7F	nuwa	# nuwa
-uFFB80	poni	# poni, default
+uFFDC2	poni	# poni, default
 uFFB80	poni1	# poni, profile
 uFFD85	poni2	# poni, horseshoe
+uFFDC2	poni3	# poni, purple smart
+uFFDC3	poni4	# poni, blue fast
+uFFDC4	poni5	# poni, pink happy
+uFFDC5	poni6	# poni, white pretty
+uFFDC6	poni7	# poni, yellow quiet (best pony)
+uFFDC7	poni8	# poni, orange strong
 uFFB81	sipi	# sipi
 uFFB82	wi	# wi, default
 uFFB0E	wi1	# wi, straight
@@ -502,6 +510,14 @@ uFFDBE	kolo	# kolo
 uFFDC0	lisana	# lisana, default
 uFFDC0	lisana1	# lisana, tongue
 uFFDC1	lisana2	# lisana, uvula
+uFFDC9	penpo	# penpo
+uFFDCA	kulaso	# kulaso (green laso, glaso)
+uFFDCB	sulaso	# sulaso (cyan laso, slaso)
+uFFDCC	pulaso	# pulaso (blue laso, blaso)
+uFFDCD	masenta	# masenta (magenta)
+uFFDCE	antikontitutonelema	# antikontitutonelema, default
+uFFDCE	antikontitutonelema2	# antikontitutonelema, classical building
+uFFDCF	antikontitutonelema1	# antikontitutonelema, extra-wide jaki
 uFFDE1	kankuli	# kankuli (scrunkly)
 
 # long silapa and tasun

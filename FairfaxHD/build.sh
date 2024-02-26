@@ -19,7 +19,9 @@ else
 fi
 
 # Find Bits'n'Picas
-if test -f BitsNPicas.jar; then
+if command -v bitsnpicas >/dev/null 2>&1; then
+	BITSNPICAS="bitsnpicas"
+elif test -f BitsNPicas.jar; then
 	BITSNPICAS="java -jar BitsNPicas.jar"
 elif test -f ../BitsNPicas/BitsNPicas.jar; then
 	BITSNPICAS="java -jar ../BitsNPicas/BitsNPicas.jar"
