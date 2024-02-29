@@ -41,13 +41,13 @@ uF1C66	upi	# upi
 # For compatibility when displaying the font name.
 uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
-uF1C7F	Pula	# Pula
+uF1C71	Pula	# Pula
 uFFDDC	HD	# HD
 uF1982	Medium	# Medium
 
 # punctuation and format controls
-uF1990	[	# start of cartouche
-uF1991	]	# end of cartouche
+uF1C7E	[	# start of cartouche
+uF1C7F	]	# end of cartouche
 uF1997	(	# start of extended glyph
 uF1998	)	# end of extended glyph
 uF199A	{	# start of reverse extended glyph
@@ -56,7 +56,7 @@ uF199C	..	# interpunct
 uF199D	::	# colon
 
 # compounds of two words
-uF1C7E	tuki-tiki	# tuki tiki
-uF1C7E	tuki+tiki	# tuki tiki
-uF1C7F	titi-pula	# titi pula
-uF1C7F	titi+pula	# titi pula
+uF1C70	tuki-tiki	# tuki tiki
+uF1C70	tuki+tiki	# tuki tiki
+uF1C71	titi-pula	# titi pula
+uF1C71	titi+pula	# titi pula

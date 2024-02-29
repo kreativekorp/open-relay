@@ -17,12 +17,12 @@ feature calt {
 
   # extend cartouches across ideographs to the right
   lookup spCartoucheForward {
-    sub [uF1990 uF1992 uFFA50 @spCartouche] @spCartoucheless' by @spCartouche;
+    sub [uF1990 uF1992 uF1C7E uFFA50 @spCartouche] @spCartoucheless' by @spCartouche;
   } spCartoucheForward;
 
   # extend cartouches across ideographs to the left
   lookup spCartoucheBackward {
-    rsub @spCartoucheless' [@spCartouche uFFA50 uF1991] by @spCartouche;
+    rsub @spCartoucheless' [@spCartouche uFFA50 uF1991 uF1C7F] by @spCartouche;
   } spCartoucheBackward;
 
 
