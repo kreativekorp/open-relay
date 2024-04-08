@@ -97,11 +97,11 @@ $TTFHACK if=FairfaxHaxHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxHaxHD.ttf
 $TTFHACK if=FairfaxSMHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxSMHD.ttf
 
 # Create zip
-zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android
-zip FairfaxPonaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android
-zip FairfaxPulaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android
-zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android
-zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android
+zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/*
+zip FairfaxPonaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/*
+zip FairfaxPulaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/*
+zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/*
+zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/*
 
 # Create lowercase versions
 mkdir fairfaxhd
