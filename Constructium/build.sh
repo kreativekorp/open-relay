@@ -10,32 +10,6 @@ else
 	exit 1
 fi
 
-# Find Bits'n'Picas
-if command -v bitsnpicas >/dev/null 2>&1; then
-	BITSNPICAS="bitsnpicas"
-elif test -f BitsNPicas.jar; then
-	BITSNPICAS="java -jar BitsNPicas.jar"
-elif test -f ../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../BitsNPicas/BitsNPicas.jar"
-elif test -f ../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../Workspace/BitsNPicas/BitsNPicas.jar"
-elif test -f ../../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../BitsNPicas/BitsNPicas.jar"
-elif test -f ../../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../Workspace/BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../Workspace/BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../../BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../../Workspace/BitsNPicas/BitsNPicas.jar"
-else
-	echo "Could not find BitsNPicas."
-	exit 1
-fi
-
 # Find ttf2eot
 if command -v ttf2eot >/dev/null 2>&1; then
 	TTF2EOT="ttf2eot"
@@ -44,12 +18,17 @@ else
 	exit 1
 fi
 
+SFDPATCH="python ../openrelay-tools/tools/sfdpatch.py"
+BLOCKS="python ../openrelay-tools/tools/blocks.py"
+UNIDATA="python ../openrelay-tools/tools/unicodedata.py"
+PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
+
 # Clean
 rm -f Constructium.sfd-* Constructium.ttf Constructium.eot Constructium.zip ConstructiumTmp.*
 rm -rf constructium
 
 # Make timestamped version
-python ../bin/sfdpatch.py Constructium.sfd patches/timestamp.txt > ConstructiumTmp.sfd
+$SFDPATCH Constructium.sfd patches/timestamp.txt > ConstructiumTmp.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
@@ -58,11 +37,9 @@ mv ConstructiumTmp.ttf Constructium.ttf
 rm ConstructiumTmp.sfd
 
 # Inject PUAA table
-python ../bin/blocks.py cwadkkypjqvgtt > Blocks.txt
-python ../bin/unicodedata.py cwadkkypjqvgtt > UnicodeData.txt
-$BITSNPICAS injectpuaa \
-	-D Blocks.txt UnicodeData.txt \
-	-I Constructium.ttf
+$BLOCKS cwadkkypjqvgtt > Blocks.txt
+$UNIDATA cwadkkypjqvgtt > UnicodeData.txt
+$PYPUAA compile -D Blocks.txt UnicodeData.txt -I Constructium.ttf
 rm Blocks.txt UnicodeData.txt
 
 # Convert to eot

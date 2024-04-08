@@ -42,6 +42,12 @@ else
 	exit 1
 fi
 
+STRFTIME="python ../openrelay-tools/tools/strftime.py"
+SITELENPONA="python ../openrelay-tools/tools/sitelenpona.py"
+BLOCKS="python ../openrelay-tools/tools/blocks.py"
+UNIDATA="python ../openrelay-tools/tools/unicodedata.py"
+PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
+
 # Clean
 rm -f *_base.* Fairfax*.ttf Fairfax*.eot Fairfax*.zip
 rm -rf fairfax
@@ -49,9 +55,9 @@ rm -rf fairfax
 # Generate ttf
 $BITSNPICAS convertbitmap \
 	-f ttf -t 0xF800 -d 0x10FF40-0x10FFC0 \
-	-s '20XX[.]XX[.]XX' -r `python ../bin/strftime.py '%Y.%m.%d'` \
-	-s '20XXXXXX' -r `python ../bin/strftime.py '%Y%m%d'` \
-	-s '20XX' -r `python ../bin/strftime.py '%Y'` \
+	-s '20XX[.]XX[.]XX' -r `$STRFTIME '%Y.%m.%d'` \
+	-s '20XXXXXX' -r `$STRFTIME '%Y%m%d'` \
+	-s '20XX' -r `$STRFTIME '%Y'` \
 	-o Fairfax_base.ttf Fairfax.kbitx \
 	-o FairfaxBold_base.ttf FairfaxBold.kbitx \
 	-o FairfaxItalic_base.ttf FairfaxItalic.kbitx \
@@ -72,7 +78,7 @@ $BITSNPICAS convertbitmap \
 	-o FairfaxSerifSM_base.ttf FairfaxSerif.kbitx
 
 # Add OpenType features (Bits'n'Picas cannot do this itself)
-python ../bin/sitelenpona.py -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g Fairfax.kbitx
+$SITELENPONA -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g Fairfax.kbitx
 cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/variants.fea extendable.fea ../features/extensions.fea > Fairfax_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPona_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPula_base.fea
@@ -98,10 +104,9 @@ rm *_base.fea
 rm *_base.ttf
 
 # Inject PUAA table
-python ../bin/blocks.py czuowbanxkkfeypjqvgsittl > Blocks.txt
-python ../bin/unicodedata.py czuowbanxkkfeypjqvgsittl > UnicodeData.txt
-$BITSNPICAS injectpuaa \
-	-D Blocks.txt UnicodeData.txt \
+$BLOCKS czuowbanxkkfeypjqvgsittl > Blocks.txt
+$UNIDATA czuowbanxkkfeypjqvgsittl > UnicodeData.txt
+$PYPUAA compile -D Blocks.txt UnicodeData.txt \
 	-I Fairfax.ttf FairfaxBold.ttf FairfaxItalic.ttf FairfaxSerif.ttf \
 	-I FairfaxPona.ttf FairfaxPula.ttf \
 	-I FairfaxHax.ttf FairfaxHaxBold.ttf FairfaxHaxItalic.ttf FairfaxSerifHax.ttf \

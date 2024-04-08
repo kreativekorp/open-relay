@@ -18,32 +18,6 @@ else
 	exit 1
 fi
 
-# Find Bits'n'Picas
-if command -v bitsnpicas >/dev/null 2>&1; then
-	BITSNPICAS="bitsnpicas"
-elif test -f BitsNPicas.jar; then
-	BITSNPICAS="java -jar BitsNPicas.jar"
-elif test -f ../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../BitsNPicas/BitsNPicas.jar"
-elif test -f ../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../Workspace/BitsNPicas/BitsNPicas.jar"
-elif test -f ../../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../BitsNPicas/BitsNPicas.jar"
-elif test -f ../../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../Workspace/BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../Workspace/BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../../BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../../BitsNPicas/BitsNPicas.jar"
-elif test -f ../../../../Workspace/BitsNPicas/BitsNPicas.jar; then
-	BITSNPICAS="java -jar ../../../../Workspace/BitsNPicas/BitsNPicas.jar"
-else
-	echo "Could not find BitsNPicas."
-	exit 1
-fi
-
 # Find ttf2eot
 if command -v ttf2eot >/dev/null 2>&1; then
 	TTF2EOT="ttf2eot"
@@ -52,24 +26,30 @@ else
 	exit 1
 fi
 
+SFDPATCH="python ../openrelay-tools/tools/sfdpatch.py"
+SITELENPONA="python ../openrelay-tools/tools/sitelenpona.py"
+BLOCKS="python ../openrelay-tools/tools/blocks.py"
+UNIDATA="python ../openrelay-tools/tools/unicodedata.py"
+PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
+
 # Clean
 rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxPonaHD.* FairfaxPulaHD.* FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd
 
 # Make timestamped version
-python ../bin/sfdpatch.py FairfaxHD.sfd patches/timestamp.txt > FairfaxHD_base.sfd
+$SFDPATCH FairfaxHD.sfd patches/timestamp.txt > FairfaxHD_base.sfd
 
 # Make sitelen pona version
-python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/asuki.txt > FairfaxPonaHD_base.sfd
+$SFDPATCH FairfaxHD_base.sfd patches/asuki.txt > FairfaxPonaHD_base.sfd
 
 # Make titi pula version
-python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/atuki.txt > FairfaxPulaHD_base.sfd
+$SFDPATCH FairfaxHD_base.sfd patches/atuki.txt > FairfaxPulaHD_base.sfd
 
 # Make programming ligature version
-python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/ligatures.txt > FairfaxHaxHD_base.sfd
+$SFDPATCH FairfaxHD_base.sfd patches/ligatures.txt > FairfaxHaxHD_base.sfd
 
 # Make strict monospace version
-python ../bin/sfdpatch.py FairfaxHD_base.sfd patches/strictmono.txt > FairfaxSMHD_base.sfd
+$SFDPATCH FairfaxHD_base.sfd patches/strictmono.txt > FairfaxSMHD_base.sfd
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
@@ -78,7 +58,7 @@ $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv
 rm *_base.sfd
 
 # Add OpenType features (FontForge completely fouls this up on its own)
-python ../bin/sitelenpona.py -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g FairfaxHD.sfd
+$SITELENPONA -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g FairfaxHD.sfd
 cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHD_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPonaHD_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPulaHD_base.fea
@@ -95,13 +75,9 @@ rm *_base.fea
 rm *_base.ttf
 
 # Inject PUAA table
-python ../bin/blocks.py czuowbanxkkfeypjqvgsittl > Blocks.txt
-python ../bin/unicodedata.py czuowbanxkkfeypjqvgsittl > UnicodeData.txt
-$BITSNPICAS injectpuaa \
-	-D Blocks.txt UnicodeData.txt \
-	-I FairfaxHD.ttf \
-	-I FairfaxPonaHD.ttf FairfaxPulaHD.ttf \
-	-I FairfaxHaxHD.ttf FairfaxSMHD.ttf
+$BLOCKS czuowbanxkkfeypjqvgsittl > Blocks.txt
+$UNIDATA czuowbanxkkfeypjqvgsittl > UnicodeData.txt
+$PYPUAA compile -D Blocks.txt UnicodeData.txt -I FairfaxHD.ttf FairfaxPonaHD.ttf FairfaxPulaHD.ttf FairfaxHaxHD.ttf FairfaxSMHD.ttf
 rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
