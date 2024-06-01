@@ -46,7 +46,6 @@ uFFBEF	kijetesantakalu-\germandbls	# sharp s + kijetesantakalu
 uFFBEE	\uni1E9E-kijetesantakalu	# sharp s + kijetesantakalu
 uFFBEF	\germandbls-kijetesantakalu	# sharp s + kijetesantakalu
 
-uFFDED	kama-sona	# kama sona
 uFFBF0	ma-pona-pi-toki-pona	# ma pona pi toki pona
 uFFBF1	ma-pi-nasin-sitelen	# ma pi nasin sitelen
 uFFDE5	ma-toki-pona-wile-jan	# Ma Toki Pona VR

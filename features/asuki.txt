@@ -84,7 +84,9 @@ uF1939	mu	# mu, default
 uF1939	mu1	# mu, mouse face
 uFFAB8	mu2	# mu, emitters
 uF193A	mun	# mun
-uF193B	musi	# musi
+uF193B	musi	# musi, default
+uF193B	musi1	# musi, curved ends
+uFFD2E	musi2	# musi, straight ends
 uF193C	mute	# mute, default
 uF193C	mute1	# mute, three lines
 uFFD69	mute2	# mute, four hands
@@ -482,7 +484,8 @@ uFFDA3	sisi	# sisi
 uFFDA4	siwala	# siwala
 uFFDA5	snoweli	# snoweli
 uFFDA6	soni	# soni
-uFFDA7	ta	# ta
+uFFDA7	ta	# ta (particle)
+uFFDA7	ta1	# ta (particle)
 uFFDA8	tasun	# tasun
 uFFDAB	wiwi	# wiwi
 
@@ -519,6 +522,13 @@ uFFDCE	antikontitutonelema	# antikontitutonelema, default
 uFFDCE	antikontitutonelema2	# antikontitutonelema, classical building
 uFFDCF	antikontitutonelema1	# antikontitutonelema, extra-wide jaki
 uFFDE1	kankuli	# kankuli (scrunkly)
+uFFD2F	ja	# ja
+uFFE50	kepa	# kepa
+uFFE51	miko	# miko, default
+uFFE51	miko1	# miko, egg
+uFFE52	miko2	# miko, tardigrade
+uFFE53	ta2	# ta (content word)
+uFFE54	tuwa	# tuwa
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
@@ -616,12 +626,21 @@ uFFD5C	Waje	# jan Waje
 uFFD5D	Wen	# waso Wen
 uFFD5E	tenpi	# tonsi tenpi
 uFFD5F	kekantesantakalu	# jan Kekan San
+uFFDD0	Jesi	# akesi Jesi
+uFFDD1	lokoso	# leko lokoso
+uFFDD2	Nito	# ijo Nito, default
+uFFDD2	Nito1	# ijo Nito, ko with tail
+uFFDD3	Nito2	# ijo Nito, ko-headed jan
+uFFDD4	Samin	# kala Samin
+uFFDD5	Satun	# mun Satun
 uFFDD6	Kalu	# jan Kalu
 uFFDD7	lenlen	# len len
 uFFDD8	Pensa	# jan Pensa
 uFFDD9	Tonpite	# nanpa Tonpite
 uFFDEE	Enki	# kije Enki
 uFFDEF	KekanSan	# jan Kekan San
+uFFEA0	Ilaje	# soweli kijetesantakalu Ilaje
+uFFEA1	Kolisin	# namako Kolisin
 
 # names of communities
 uFFDED	kama+sona	# kama sona
@@ -1303,6 +1322,9 @@ uFF9A5	jan*utala	# jan utala, scaled
 uFF9A6	jan-wawa	# jan wawa, scaled
 uFF9A6	jan+wawa	# jan wawa, scaled
 uFF9A6	jan*wawa	# jan wawa, scaled
+uFFE00	kala-ike	# kala ike, scaled
+uFFE00	kala+ike	# kala ike, scaled
+uFFE00	kala*ike	# kala ike, scaled
 uFF9A7	kala-lete	# kala lete, default, default
 uFF9A7	kala+lete	# kala lete, default, default
 uFF9A7	kala*lete	# kala lete, default, scaled
@@ -1327,12 +1349,23 @@ uFF9A8	kala2-lili	# kala lili, with eyes, default
 uFF9A8	kala2+lili	# kala lili, with eyes, default
 uFF9A8	kala2*lili	# kala lili, with eyes, scaled
 uFFBBC	kala2^lili	# kala lili, with eyes, stacked
+uFFE01	kala-pona	# kala pona, scaled
+uFFE01	kala+pona	# kala pona, scaled
+uFFE01	kala*pona	# kala pona, scaled
 uFF9A9	kalama-musi	# kalama musi, stacked
 uFF9A9	kalama+musi	# kalama musi, stacked
 uFF9A9	kalama^musi	# kalama musi, stacked
-uFF9AA	kasi-jelo	# kesi jelo, stacked
-uFF9AA	kasi+jelo	# kesi jelo, stacked
-uFF9AA	kasi^jelo	# kesi jelo, stacked
+uFFE02	kama-pona	# kama pona, stacked
+uFFE02	kama+pona	# kama pona, stacked
+uFFE02	kama^pona	# kama pona, stacked
+uFFE03	kama-sona	# kama sona, stacked
+uFFE03	kama^sona	# kama sona, stacked
+uFF9AA	kasi-jelo	# kasi jelo, stacked
+uFF9AA	kasi+jelo	# kasi jelo, stacked
+uFF9AA	kasi^jelo	# kasi jelo, stacked
+uFFE04	kasi-ko	# kasi ko, stacked
+uFFE04	kasi+ko	# kasi ko, stacked
+uFFE04	kasi^ko	# kasi ko, stacked
 uFF9AB	kasi-kule	# kasi kule, stacked
 uFF9AB	kasi+kule	# kasi kule, stacked
 uFF9AB	kasi^kule	# kasi kule, stacked
@@ -1378,6 +1411,9 @@ uFF9B7	kili*suwi	# kili suwi, scaled
 uFF9B8	kili-walo	# kili walo, scaled
 uFF9B8	kili+walo	# kili walo, scaled
 uFF9B8	kili*walo	# kili walo, scaled
+uFFD2A	kiwen-ike	# kiwen ike, scaled
+uFFD2A	kiwen+ike	# kiwen ike, scaled
+uFFD2A	kiwen*ike	# kiwen ike, scaled
 uFF9B9	kiwen-jelo	# kiwen jelo, scaled
 uFF9B9	kiwen+jelo	# kiwen jelo, scaled
 uFF9B9	kiwen*jelo	# kiwen jelo, scaled
@@ -1402,6 +1438,9 @@ uFF9BF	kiwen*mun	# kiwen mun, scaled
 uFF9C0	kiwen-pimeja	# kiwen pimeja, scaled
 uFF9C0	kiwen+pimeja	# kiwen pimeja, scaled
 uFF9C0	kiwen*pimeja	# kiwen pimeja, scaled
+uFFD2B	kiwen-pona	# kiwen pona, scaled
+uFFD2B	kiwen+pona	# kiwen pona, scaled
+uFFD2B	kiwen*pona	# kiwen pona, scaled
 uFF9C1	kiwen-seli	# kiwen seli, scaled
 uFF9C1	kiwen+seli	# kiwen seli, scaled
 uFF9C1	kiwen*seli	# kiwen seli, scaled
@@ -1877,6 +1916,9 @@ uFFA08	pilin*pona	# pilin pona, scaled
 uFFA09	pilin-sama	# pilin sama, scaled
 uFFA09	pilin+sama	# pilin sama, scaled
 uFFA09	pilin*sama	# pilin sama, scaled
+uFFE05	pilin-seme	# pilin seme, scaled
+uFFE05	pilin+seme	# pilin seme, scaled
+uFFE05	pilin*seme	# pilin seme, scaled
 uFFD09	pimeja-jelo	# pimeja jelo, combined
 uFFD09	pimeja+jelo	# pimeja jelo, combined
 uFFD0A	pimeja-laso	# pimeja laso, combined
@@ -1997,6 +2039,12 @@ uFFA2B	supa^monsi	# supa monsi, stacked
 uFFA2C	supa-pali	# supa pali, stacked
 uFFA2C	supa+pali	# supa pali, stacked
 uFFA2C	supa^pali	# supa pali, stacked
+uFFE06	tawa-pona	# tawa pona, stacked
+uFFE06	tawa+pona	# tawa pona, stacked
+uFFE06	tawa^pona	# tawa pona, stacked
+uFFE07	tawa-sona	# tawa sona, stacked
+uFFE07	tawa+sona	# tawa sona, stacked
+uFFE07	tawa^sona	# tawa sona, stacked
 uFFA2D	telo-lete	# telo lete, scaled
 uFFA2D	telo+lete	# telo lete, scaled
 uFFA2D	telo*lete	# telo lete, scaled
@@ -2006,9 +2054,15 @@ uFFA2E	telo*lili	# telo lili, scaled
 uFFD0C	telo-sitelen	# telo sitelen, scaled
 uFFD0C	telo+sitelen	# telo sitelen, scaled
 uFFD0C	telo*sitelen	# telo sitelen, scaled
+uFFD2C	tenpo-ike	# tenpo ike, stacked
+uFFD2C	tenpo+ike	# tenpo ike, stacked
+uFFD2C	tenpo^ike	# tenpo ike, stacked
 uFFD03	tenpo-ni	# tenpo ni, stacked
 uFFD03	tenpo+ni	# tenpo ni, stacked
 uFFD03	tenpo^ni	# tenpo ni, stacked
+uFFD2D	tenpo-pona	# tenpo pona, stacked
+uFFD2D	tenpo+pona	# tenpo pona, stacked
+uFFD2D	tenpo^pona	# tenpo pona, stacked
 uFFA2F	toki-ala	# toki ala, scaled
 uFFA2F	toki+ala	# toki ala, scaled
 uFFA2F	toki*ala	# toki ala, scaled
@@ -2054,6 +2108,9 @@ uFFA3B	tomo*sona	# tomo sona, scaled
 uFFA3C	tomo-tawa	# tomo tawa, scaled
 uFFA3C	tomo+tawa	# tomo tawa, scaled
 uFFA3C	tomo*tawa	# tomo tawa, scaled
+uFFE08	tomo-telo	# tomo telo, scaled
+uFFE08	tomo+telo	# tomo telo, scaled
+uFFE08	tomo*telo	# tomo telo, scaled
 uFFA3D	tomo-unpa	# tomo unpa, scaled
 uFFA3D	tomo+unpa	# tomo unpa, scaled
 uFFA3D	tomo*unpa	# tomo unpa, scaled

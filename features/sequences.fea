@@ -1,5 +1,14 @@
 feature rlig {
 
+  lookup VariationSequences {
+
+    sub uni3001 uniFE00 by uni3001;
+    sub uni3001 uniFE01 by uni3001.vs2;
+    sub uni3002 uniFE00 by uni3002;
+    sub uni3002 uniFE01 by uni3002.vs2;
+
+  } VariationSequences;
+
   lookup CombiningSequences {
 
     # Latin Letters with Diacritics
