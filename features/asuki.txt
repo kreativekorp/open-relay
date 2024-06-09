@@ -597,7 +597,6 @@ uFFD3F	Kemu	# jan Kemu
 uFFD40	Kepi	# jan Kepi (Kirby)
 uFFD41	Kijan	# Kijan
 uFFD42	Koko	# jan Koko
-uFFD43	Lewi	# jan Lewi
 uFFD44	Luke	# jan Luke
 uFFD45	Luna	# jan Luna
 uFFD46	Maki	# jan Maki
