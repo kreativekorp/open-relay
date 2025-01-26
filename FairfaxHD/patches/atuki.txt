@@ -1,3 +1,27 @@
 ===FontName: FairfaxPulaHD
 ===FullName: Fairfax Pula HD
 ===FamilyName: Fairfax Pula HD
+
+StartChar: space
+===Width: 0
+EndChar
+
+StartChar: space.cartouche
+===Width: 0
+@@@RemoveSplines
+EndChar
+
+StartChar: space.extension
+===Width: 0
+@@@RemoveSplines
+EndChar
+
+StartChar: space.kijend
+===Width: 0
+@@@RemoveSplines
+EndChar
+
+StartChar: space.kijext
+===Width: 0
+@@@RemoveSplines
+EndChar

@@ -1,3 +1,8 @@
+@spCartoucheStart = [uF1990 uF1992 uF1C7E uFFA50 @spCartoucheComb @spCartouche];
+@spCartoucheEnd = [@spCartouche @spCartoucheEncl uFFA50 uF1991 uF1C7F];
+@spExtensionStart = [uF1997 uF1999 uF199A uFFA51 @spExtensionComb @spExtension];
+@spExtensionEnd = [@spExtension @spExtensionEncl uFFA51 uF1998 uF199B];
+
 feature calt {
 
   # LONG TASUN
@@ -17,13 +22,46 @@ feature calt {
 
   # extend cartouches across ideographs to the right
   lookup spCartoucheForward {
-    sub [uF1990 uF1992 uF1C7E uFFA50 @spCartouche] @spCartoucheless' by @spCartouche;
+    sub @spCartoucheStart [@spCartoucheless @spCartoucheAuto]' lookup spCartoucheApplyForward;
   } spCartoucheForward;
 
   # extend cartouches across ideographs to the left
-  lookup spCartoucheBackward {
-    rsub @spCartoucheless' [@spCartouche uFFA50 uF1991 uF1C7F] by @spCartouche;
-  } spCartoucheBackward;
+  # (Reverse chaining substitution rules cannot use multiple substitution lookups, only single substitution.
+  # We can use forward chaining substitution rules, but this only works once unless we repeat the rule multiple times.
+  # If we use explicit forms for the most common characters and repeat the rules to catch other characters it should be good enough.)
+  lookup spCartoucheBackwardRsub01 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub01;
+  lookup spCartoucheBackwardFsub01 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub01;
+  lookup spCartoucheBackwardRsub02 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub02;
+  lookup spCartoucheBackwardFsub02 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub02;
+  lookup spCartoucheBackwardRsub03 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub03;
+  lookup spCartoucheBackwardFsub03 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub03;
+  lookup spCartoucheBackwardRsub04 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub04;
+  lookup spCartoucheBackwardFsub04 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub04;
+  lookup spCartoucheBackwardRsub05 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub05;
+  lookup spCartoucheBackwardFsub05 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub05;
+  lookup spCartoucheBackwardRsub06 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub06;
+  lookup spCartoucheBackwardFsub06 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub06;
+  lookup spCartoucheBackwardRsub07 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub07;
+  lookup spCartoucheBackwardFsub07 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub07;
+  lookup spCartoucheBackwardRsub08 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub08;
+  lookup spCartoucheBackwardFsub08 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub08;
+  lookup spCartoucheBackwardRsub09 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub09;
+  lookup spCartoucheBackwardFsub09 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub09;
+  lookup spCartoucheBackwardRsub10 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub10;
+  lookup spCartoucheBackwardFsub10 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub10;
+  lookup spCartoucheBackwardRsub11 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub11;
+  lookup spCartoucheBackwardFsub11 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub11;
+  lookup spCartoucheBackwardRsub12 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub12;
+  lookup spCartoucheBackwardFsub12 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub12;
+  lookup spCartoucheBackwardRsub13 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub13;
+  lookup spCartoucheBackwardFsub13 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub13;
+  lookup spCartoucheBackwardRsub14 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub14;
+  lookup spCartoucheBackwardFsub14 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub14;
+  lookup spCartoucheBackwardRsub15 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub15;
+  lookup spCartoucheBackwardFsub15 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub15;
+  lookup spCartoucheBackwardRsub16 { rsub @spCartoucheless' @spCartoucheEnd by @spCartouche; } spCartoucheBackwardRsub16;
+  lookup spCartoucheBackwardFsub16 { sub @spCartoucheAuto' lookup spCartoucheApplyBackward @spCartoucheEnd; } spCartoucheBackwardFsub16;
+  lookup spCartoucheBackwardCleanup { sub @spCartoucheEncl' @spCartoucheEncl by NULL; } spCartoucheBackwardCleanup;
 
 
   # REVERSE EXTENDED KIJETESANTAKALU
@@ -56,12 +94,45 @@ feature calt {
 
   # extend long glyphs across ideographs to the right
   lookup spExtensionForward {
-    sub [uF1997 uF1999 uF199A uFFA51 @spExtension] @spExtensionless' by @spExtension;
+    sub @spExtensionStart [@spExtensionless @spExtensionAuto]' lookup spExtensionApplyForward;
   } spExtensionForward;
 
   # extend long glyphs across ideographs to the left
-  lookup spExtensionBackward {
-    rsub @spExtensionless' [@spExtension uFFA51 uF1998 uF199B] by @spExtension;
-  } spExtensionBackward;
+  # (Reverse chaining substitution rules cannot use multiple substitution lookups, only single substitution.
+  # We can use forward chaining substitution rules, but this only works once unless we repeat the rule multiple times.
+  # If we use explicit forms for the most common characters and repeat the rules to catch other characters it should be good enough.)
+  lookup spExtensionBackwardRsub01 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub01;
+  lookup spExtensionBackwardFsub01 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub01;
+  lookup spExtensionBackwardRsub02 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub02;
+  lookup spExtensionBackwardFsub02 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub02;
+  lookup spExtensionBackwardRsub03 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub03;
+  lookup spExtensionBackwardFsub03 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub03;
+  lookup spExtensionBackwardRsub04 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub04;
+  lookup spExtensionBackwardFsub04 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub04;
+  lookup spExtensionBackwardRsub05 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub05;
+  lookup spExtensionBackwardFsub05 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub05;
+  lookup spExtensionBackwardRsub06 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub06;
+  lookup spExtensionBackwardFsub06 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub06;
+  lookup spExtensionBackwardRsub07 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub07;
+  lookup spExtensionBackwardFsub07 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub07;
+  lookup spExtensionBackwardRsub08 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub08;
+  lookup spExtensionBackwardFsub08 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub08;
+  lookup spExtensionBackwardRsub09 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub09;
+  lookup spExtensionBackwardFsub09 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub09;
+  lookup spExtensionBackwardRsub10 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub10;
+  lookup spExtensionBackwardFsub10 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub10;
+  lookup spExtensionBackwardRsub11 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub11;
+  lookup spExtensionBackwardFsub11 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub11;
+  lookup spExtensionBackwardRsub12 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub12;
+  lookup spExtensionBackwardFsub12 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub12;
+  lookup spExtensionBackwardRsub13 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub13;
+  lookup spExtensionBackwardFsub13 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub13;
+  lookup spExtensionBackwardRsub14 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub14;
+  lookup spExtensionBackwardFsub14 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub14;
+  lookup spExtensionBackwardRsub15 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub15;
+  lookup spExtensionBackwardFsub15 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub15;
+  lookup spExtensionBackwardRsub16 { rsub @spExtensionless' @spExtensionEnd by @spExtension; } spExtensionBackwardRsub16;
+  lookup spExtensionBackwardFsub16 { sub @spExtensionAuto' lookup spExtensionApplyBackward @spExtensionEnd; } spExtensionBackwardFsub16;
+  lookup spExtensionBackwardCleanup { sub @spExtensionEncl' @spExtensionEncl by NULL; } spExtensionBackwardCleanup;
 
 } calt;

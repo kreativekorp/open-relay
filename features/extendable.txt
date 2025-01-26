@@ -80,3 +80,44 @@ uFFB82	uFFB83	------	------	------	------	# wi
 uFFB86	uFFB87	uFFB88	uFFB89	------	------	# sowoli
 uFFBA1	uFFBA2	uFFBA3	uFFBA4	------	------	# kijosin
 uFFBA5	uFFBA6	uFFBA7	uFFBA8	------	------	# linluwi, with emitters
+
+# rules for glyphs that can be automatically cartouched
+allow U+0020-02FF # Latin, IPA
+allow U+0370-0482 # Greek, Coptic, Cyrillic
+allow U+048A-052F # Cyrillic
+allow U+1C80-1C8F # Cyrillic
+allow U+1D00-1DBF # Latin
+allow U+1E00-200A # Latin, Greek, Punctuation
+allow U+2010-2027 # Punctuation
+allow U+202F-205F # Punctuation
+allow U+2070-20CF # Super/Subscripts, Currency Symbols
+allow U+2100-22FF # Letterlike Symbols, Number Forms, Arrows, Math
+allow U+2C60-2CEE # Latin, Coptic
+allow U+2CF2-2CFF # Coptic
+allow U+2E00-2E7F # Punctuation
+allow U+2FF0-301F # Punctuation
+allow U+A640-A66E # Cyrillic
+allow U+A673      # Cyrillic
+allow U+A67E-A69D # Cyrillic
+allow U+A700-A7FF # Latin
+allow U+AB30-AB6F # Latin
+allow U+F700-F89F # KK PUA
+allow U+FB00-FB0F # Latin
+allow U+10780-107BF # Latin
+allow U+1DF00-1DFFF # Latin
+allow U+1E030-1E06F # Cyrillic
+allow U+1F5E4-1F5E7 # Three Rays
+allow U+F1900-F19FF # Sitelen Pona
+allow U+F1C40-F1C9F # Titi Pula, Sitelen Pona
+allow U+FA700-FA71F # Latin
+allow U+FF100-FF1FF # KK PUA
+allow U+FF900-FFBFF # Sitelen Pona
+allow U+FFD00-FFEFF # Sitelen Pona
+deny uF199E
+deny uF199F
+deny uFFA50
+deny uFFA51
+deny uFFA51.busted
+deny uFFAB9
+deny uFFABA
+deny ^.+[.]stacked$

@@ -1,0 +1,4 @@
+U+FF366	kkChartClipping	Y
+U+FF367	kkChartClipping	Y
+U+FF374	kkChartClipping	Y
+U+FF37F	kkChartClipping	Y

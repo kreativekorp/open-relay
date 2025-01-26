@@ -1,0 +1,11 @@
+feature liga {
+
+	# You don't frighten us, Apple dog-cows! Go and boil your bottoms, sons of a silly person!
+	# I blow my nose at you, so-called WebKit! You and all your silly Apple k-wwwwwirksmodes!
+	# I fart in your general direction! Your mother was a hamster and your father smelt of elderberries!
+
+	sub [uni00A0 space] space' by uni00A0;
+	sub space uF1997 by uF1997;
+	sub uF199B space by uF199B;
+
+} liga;
