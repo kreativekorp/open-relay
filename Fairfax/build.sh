@@ -46,6 +46,7 @@ STRFTIME="python ../openrelay-tools/tools/strftime.py"
 SITELENPONA="python ../openrelay-tools/tools/sitelenpona.py"
 BLOCKS="python ../openrelay-tools/tools/blocks.py"
 UNIDATA="python ../openrelay-tools/tools/unicodedata.py"
+PUAABOOK="python ../openrelay-tools/tools/puaabook.py"
 PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
 
 # Clean
@@ -104,8 +105,10 @@ rm *_base.fea
 rm *_base.ttf
 
 # Inject PUAA table
-$BLOCKS czuowbanxkkfeypjqvgsittl > Blocks.txt
-$UNIDATA czuowbanxkkfeypjqvgsittl > UnicodeData.txt
+PUAAFLAGS="czuowbanxkkfeypjqvgsittl"
+$BLOCKS $PUAAFLAGS > Blocks.txt
+$UNIDATA $PUAAFLAGS > UnicodeData.txt
+$PUAABOOK -D Blocks.txt UnicodeData.txt -I Fairfax.ttf -O pua.html
 $PYPUAA compile -D Blocks.txt UnicodeData.txt \
 	-I Fairfax.ttf FairfaxBold.ttf FairfaxItalic.ttf FairfaxSerif.ttf \
 	-I FairfaxPona.ttf FairfaxPula.ttf \
@@ -130,7 +133,7 @@ $TTF2EOT < FairfaxSMItalic.ttf > FairfaxSMItalic.eot
 $TTF2EOT < FairfaxSerifSM.ttf > FairfaxSerifSM.eot
 
 # Create zip
-zip Fairfax.zip OFL.txt Fairfax*.ttf Fairfax*.eot
+zip Fairfax.zip OFL.txt Fairfax*.ttf Fairfax*.eot pua.html
 
 # Create lowercase versions
 mkdir fairfax
