@@ -2,6 +2,18 @@ feature rlig {
 
   lookup VariationSequences {
 
+    sub quoteleft uniFE00 by quoteleft;
+    sub quoteleft uniFE01 by quoteleft.vs2;
+    sub quoteleft uniFE02 by quoteleft;
+    sub quoteright uniFE00 by quoteright;
+    sub quoteright uniFE01 by quoteright.vs2;
+    sub quoteright uniFE02 by quoteright;
+    sub quotedblleft uniFE00 by quotedblleft;
+    sub quotedblleft uniFE01 by quotedblleft.vs2;
+    sub quotedblleft uniFE02 by quotedblleft;
+    sub quotedblright uniFE00 by quotedblright;
+    sub quotedblright uniFE01 by quotedblright.vs2;
+    sub quotedblright uniFE02 by quotedblright;
     sub uni3001 uniFE00 by uni3001;
     sub uni3001 uniFE01 by uni3001.vs2;
     sub uni3002 uniFE00 by uni3002;
