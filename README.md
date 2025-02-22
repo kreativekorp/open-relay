@@ -11,4 +11,10 @@ Free and open source fonts from Kreative Software:
   * [Kreative Square](http://www.kreativekorp.com/software/fonts/ksquare.shtml)
     * Kreative Square is a fullwidth scalable monospace font designed specifically to support pseudographics, semigraphics, and private use characters.
 
-More to follow!
+## Notice
+
+* This repository is only about fonts. It is not about Unicode character properties, character names, UCSUR proposals, etc.
+* **This is not the place to propose new scripts or characters for the UCSUR.** Please look for the About link at the bottom of the UCSUR page.
+* This is not the place to add or update character properties for private use characters. You want [openrelay-tools](https://github.com/kreativekorp/openrelay-tools) instead.
+* Issues requesting a particular script are welcome, to give me an idea of which scripts users of these fonts want the most. Issues requesting all the scripts these fonts do not yet support are not welcome as they are neither necessary nor helpful.
+* This repository will eventually disappear one day, replaced with individual repositories for each font.
