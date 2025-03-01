@@ -661,9 +661,9 @@ uFFDDF	Seki	# toki pona chess community
 
 # names of hello project
 uF9203	Momusu	# Momusu (Morning Musume)
-uF9210	Monin	# Monin
-uF9210	Molnin	# Molnon
-uF9210	Morning	# Morning
+uF92FF	Monin	# Monin
+uF92FF	Molnin	# Molnon
+uF92FF	Morning	# Morning
 uni5A18	Musume	# Musume
 uni5A18	Nuel	# Nuel
 
@@ -694,7 +694,7 @@ uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
-uF9211	Osu	# Osu (Osu!)
+uF9204	Osu	# Osu (Osu!)
 uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
 uF1C71	Pula	# Pula
