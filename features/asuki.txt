@@ -532,6 +532,10 @@ uFFE54	tuwa	# tuwa
 
 # single words - Reyvan Aprilian Vardhiana
 uF9360	kasapa	# kasapa (cassava)
+uF92E8	tukuma	# tukuma (dukuna)
+uF92E9	apinji	# apinji (abinzy)
+uF92E5	posla	# posla (fosra)
+uF92E6	jislu	# jislu (yisru)
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
@@ -643,6 +647,21 @@ uFFDEE	Enki	# kije Enki
 uFFDEF	KekanSan	# jan Kekan San
 uFFEA0	Ilaje	# soweli kijetesantakalu Ilaje
 uFFEA1	Kolisin	# namako Kolisin
+uF92ED	Ajaka	# jan Ajaka (Ayaka Wada from ANGERME)
+uF92E7	Elina	# jan Elina (Erina Ikuta from Morning Musume)
+uF92EC	Inoli	# jan Inoli (Inori Minase)
+uF92F4	Jouka	# jan Jouka (Youka Ogawa from Girls2)
+uF9362	Jusupa	# jan Jusupa (Yuzuha Oda from Girls2)
+uF92F3	Kila	# jan Kila (Kira Yamaguchi from Girls2)
+uF92EF	Kulewa	# jan Kulewa (Kurea Masuda from Girls2)
+uF92F0	Minami	# jan Minami (Minami Hishida from Girls2)
+uF92F1	Misaki	# jan Misaki (Misaki Tsuruya from Girls2)
+uF92E4	Moe	# jan Moe (Moe Kamikokuryo from ANGERME)
+uF92F2	Momoka	# jan Momoka (Momoka Sumitani from Girls2)
+uF92EA	Paluka	# jan Paluka (Haruka Inoue from Morning Musume)
+uF92EB	Paluka2	# jan Paluka2 (Haruka Tomatsu)
+uF92EE	Siwon	# jan Siwon (Shion Tamenaga from ANGERME)
+uF9361	Towa	# jan Towa (Toa Harada from Girls2)
 
 # names of communities
 uFFDED	kama+sona	# kama sona
@@ -704,7 +723,6 @@ uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
 uF92E1	Osu	# Osu (Osu!)
-uF92E4	Alco	# Alco
 uF92E3	Constructium	# Constructium
 uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
