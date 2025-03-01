@@ -530,6 +530,9 @@ uFFE52	miko2	# miko, tardigrade
 uFFE53	ta2	# ta (content word)
 uFFE54	tuwa	# tuwa
 
+# single words - Reyvan Aprilian Vardhiana
+uF9360	kasapa	# kasapa (cassava)
+
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
 uFFDF1	silapa2	# silapa, middle part
@@ -552,9 +555,6 @@ uFFDF8	taasun	# tasun, two ideographs wide
 uFFDF9	taaasun	# tasun, three ideographs wide
 uFFDFA	taa	# tasun, left part, two ideographs wide
 uFFDFB	aasun	# tasun, right part, two ideographs wide
-
-# single words - Reyvan Aprilian Vardhiana
-uF9360	kasapa	# kasapa (cassava)
 
 # names of people
 uFFB90	a+suli	# jan Asuli
@@ -687,7 +687,7 @@ uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
 uF92E4	Osu	# Osu (Osu!)
 uF92E1	Stumpel	# Stumpel (Stumble Guys)
-uF92E5	Nisatipi	# Nusatipi (Nusantara TV)
+uF92E5	Nusatipi	# Nusatipi (Nusantara TV)
 uF937D	Momusu	# Momusu (Morning Musume)
 uF92E0	Morning	# Morning (Morning Musume)
 uni5A18	Musume	# Musume (Morning Musume)
@@ -698,6 +698,7 @@ uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
 uF1C71	Pula	# Pula
 uFFDDC	HD	# HD
+uF92E3	SD	# SD
 uF1982	Medium	# Medium
 uFFBF9	sitelen+seli+kiwen	# sitelen seli kiwen
 uFFDFF	aAANUSEMEmailMahjong	# aAANUSEMEmailMahjong
