@@ -49,12 +49,6 @@ feature rlig {
     sub X uni0304 by uFF124;
     sub x uni0304 by uFF125;
 
-    # Hello! Project Members
-
-    # Hello! Project Logos
-
-    # Hello! Project Symbols
-
     # Symbols for Legacy Computing
     sub quotedbl uni200D period by uFFC1D;
     sub quotesingle uni200D period by uFFC1C;
@@ -160,24 +154,6 @@ feature rlig {
 
     # Engsvanyali Presentation Forms
 
-    # Syai Presentation Forms
-
-    # Verdurian Presentation Forms
-
-    # Amman-Iar Presentation Forms
-
-    # Xaini Presentation Forms
-
-    # Mizarian Presentation Forms
-
-    # Zirinka Presentation Forms
-
-    # Sarkai Presentation Forms
-
-    # Thelwik Presentation Forms
-
-    # Olaetyan Presentation Forms
-
     # Niskloz Presentation Forms
     sub uniE41A uniE415 uniE415 by uFE42A;
     sub uniE41A uniE415 uniE41D by uFE420;
@@ -256,15 +232,7 @@ feature rlig {
     sub uniE42E uniE41D by uFE424;
     sub uniE42E uniE41E by uFE429;
 
-    # Kazat Akkorou Presentation Forms
-
-    # Kazvarad Presentation Forms
-
-    # Zarkhand Presentation Forms
-
-    # Serivelna Presentation Forms
-
-    # Rynnan Presentation Forms
+    # Armenian Presentation Forms
 
     # Ssuraki Presentation Forms
 
@@ -294,11 +262,7 @@ feature rlig {
     sub uniE5F9 uniE5F7 by uFE5F8;
     sub uniE5F9 uniE5F9 by uFE5F9;
 
-    # Ferengi Presentation Forms
-
-    # Seussian Presentation Forms
-
-    # Sylabica Presentation Forms
+    # Youkinese Presentation Forms
 
     # Ewellic Presentation Forms
     sub uniE684 acutecomb by uFE684;
@@ -329,31 +293,37 @@ feature rlig {
 
     # Hacm Presentation Forms
 
-    # Visible Speech Presentation Forms
-
     # Liparxe Presentation Forms
 
     # Shaleian Presentation Forms
 
     # Zbalermorna Presentation Forms
 
-    # Tonal Presentation Forms
-
-    # Glaitha-A Presentation Forms
-
-    # Glaitha-B Presentation Forms
+    # Visible Speech Presentation Forms
 
     # Lhenazi Presentation Forms
 
-    # Wanya Presentation Forms
+    # Coptic Presentation Forms
 
-    # Orokin Presentation Forms
+    # Georgian Presentation Forms
 
-    # Niji Presentation Forms
-
-    # Miyutan Presentation Forms
+    # Tifinagh Presentation Forms
 
     # Tassarunese Presentation Forms
+
+    # Old Hungarian Presentation Forms
+
+    # Medefaidrin Presentation Forms
+
+    # Arabic Presentation Forms
+
+    # Kamakawi Presentation Forms
+
+    # Ihatemysalf Presentation Forms
+
+    # Tahano Veno Presentation Forms
+
+    # Ath Presentation Forms
 
     # Aiha Presentation Forms
     sub uniF8A0 uniF8C8 by uFF8A0;
@@ -401,12 +371,6 @@ feature rlig {
 
     # Klingon Presentation Forms
 
-    # Bamum Presentation Forms
-
-    # Shidinn Presentation Forms
-
-    # Youkinese Presentation Forms
-
     # QID Emoji
     sub u1F194 uE0051 uE0033 uE0035 uE0039 uE0032 uE0035 uE0032 uE0038 uE007F by uFF00F; # Q3592528 = seven-pointed star
     sub u1F194 uE0051 uE0031 uE0038 uE0038 uE0037 uE0030 uE0039 uE0034 uE007F by uFF00F; # Q1887094 = heptagram
@@ -421,6 +385,10 @@ feature rlig {
     sub u1F194 uE0051 uE0031 uE0039 uE0038 uE0034 uE0037 uE007F by uFF010;  # Q19847 = Poké Ball
     sub u1F194 uE0051 uE0031 uE0031 uE0033 uE0030 uE0033 uE007F by uFF183;  # Q11303 = skyscraper
     sub u1F194 uE0051 uE0037 uE0035 uE0034 uE0032 uE007F by uFF00B; # Q7542 = Prince
+
+    # Morning Musume Emoji
+
+    # Hello! Project Emoji
 
   } CombiningSequences;
 
