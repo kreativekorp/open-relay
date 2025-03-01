@@ -531,11 +531,9 @@ uFFE53	ta2	# ta (content word)
 uFFE54	tuwa	# tuwa
 
 # single words - Reyvan Aprilian Vardhiana
-uF9360	kasapa	# kasapa (cassava)
-uF92E8	tukuma	# tukuma (dukuna)
-uF92E9	apinji	# apinji (abinzy)
-uF92E5	posla	# posla (fosra)
-uF92E6	jislu	# jislu (yisru)
+uF92E0	kasapa	# kasapa (cassava)
+uF92E1	tukuma	# tukuma (dukuma)
+uF92E2	jouki	# jouki (youki)
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
@@ -647,21 +645,6 @@ uFFDEE	Enki	# kije Enki
 uFFDEF	KekanSan	# jan Kekan San
 uFFEA0	Ilaje	# soweli kijetesantakalu Ilaje
 uFFEA1	Kolisin	# namako Kolisin
-uF92ED	Ajaka	# jan Ajaka (Ayaka Wada from ANGERME)
-uF92E7	Elina	# jan Elina (Erina Ikuta from Morning Musume)
-uF92EC	Inoli	# jan Inoli (Inori Minase)
-uF92F4	Jouka	# jan Jouka (Youka Ogawa from Girls2)
-uF9362	Jusupa	# jan Jusupa (Yuzuha Oda from Girls2)
-uF92F3	Kila	# jan Kila (Kira Yamaguchi from Girls2)
-uF92EF	Kulewa	# jan Kulewa (Kurea Masuda from Girls2)
-uF92F0	Minami	# jan Minami (Minami Hishida from Girls2)
-uF92F1	Misaki	# jan Misaki (Misaki Tsuruya from Girls2)
-uF92E4	Moe	# jan Moe (Moe Kamikokuryo from ANGERME)
-uF92F2	Momoka	# jan Momoka (Momoka Sumitani from Girls2)
-uF92EA	Paluka	# jan Paluka (Haruka Inoue from Morning Musume)
-uF92EB	Paluka2	# jan Paluka2 (Haruka Tomatsu)
-uF92EE	Siwon	# jan Siwon (Shion Tamenaga from ANGERME)
-uF9361	Towa	# jan Towa (Toa Harada from Girls2)
 
 # names of communities
 uFFDED	kama+sona	# kama sona
@@ -677,26 +660,26 @@ uFFDE7	Seka	# ma Seka
 uFFDDF	Seki	# toki pona chess community
 
 # names of hello project
-uF937D	Momusu	# Momusu (Morning Musume)
-uF92E0	Monin	# Monin
-uF92E0	Molnin	# Molnon
-uF92E0	Morning	# Morning
+uF92E5	Momusu	# Momusu (Morning Musume)
+uF92FF	Monin	# Monin
+uF92FF	Molnin	# Molnon
+uF92FF	Morning	# Morning
 uni5A18	Musume	# Musume
 uni5A18	Nuel	# Nuel
-uF937E	Jute	# Jute (C-ute)
-uF937E	Juto	# Juto (C-ute)
-uF937E	Kute	# Kute (C-ute)
-uF937E	Kuto	# Kuto (C-ute)
-uF937E	Kjute	# Kjute (C-ute)
-uF937E	Kjuto	# Kjuto (C-ute)
-uF937F	Anjelme	# Anjelme (ANGERME)
-uF937F	Anjulumu	# Anjulumu (ANGERME)
-uF937F	Anjeme	# Anjeme (ANGERME)
-uF937F	Anseme	# Anseme (ANGERME)
+uF92E6	Jute	# Jute (C-ute)
+uF92E6	Juto	# Juto (C-ute)
+uF92E6	Kute	# Kute (C-ute)
+uF92E6	Kuto	# Kuto (C-ute)
+uF92E6	Kjute	# Kjute (C-ute)
+uF92E6	Kjuto	# Kjuto (C-ute)
+uF92E7	Anjelme	# Anjelme (ANGERME)
+uF92E7	Anjulumu	# Anjulumu (ANGERME)
+uF92E7	Anjeme	# Anjeme (ANGERME)
+uF92E7	Anseme	# Anseme (ANGERME)
 
 # names of other things
 uFFDE8	Losupan	# Losupan (Lojban)
-uF92E2	Metepatin	# Metepatin (Medefaidrin)
+uF92E4	Metepatin	# Metepatin (Medefaidrin)
 uFFDE9	Towan	# Towan (Toaq)
 uFF1E0	Votgil	# Votgil (I'm a bit excited)
 uFFDDE	mun+pi+ante+toki	# mun pi ante toki
@@ -722,8 +705,7 @@ uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
-uF92E1	Osu	# Osu (Osu!)
-uF92E3	Constructium	# Constructium
+uF92E3	Osu	# Osu (Osu!)
 uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
 uF1C71	Pula	# Pula
