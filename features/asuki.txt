@@ -533,7 +533,7 @@ uFFE54	tuwa	# tuwa
 # single words - Reyvan Aprilian Vardhiana
 uF9200	jouki	# jouki (youki)
 uF9201	kasapa	# kasapa (cassava)
-uF9202	tukuma	# tukuma (dukuma)
+uF9202	makuwa	# makuwa (makura)
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
