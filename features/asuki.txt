@@ -657,6 +657,8 @@ uFFDDF	Seki	# toki pona chess community
 # names of other things
 uFFDE8	Losupan	# Losupan (Lojban)
 uFFDE9	Towan	# Towan (Toaq)
+uF92F9	Metepatin	# Metepatin (Medefaidrin)
+uF92FA	Sulaki	# Sulaki (Ssuraki)
 uFF1E0	Votgil	# Votgil (I'm a bit excited)
 uFFDDE	mun+pi+ante+toki	# mun pi ante toki
 uFFDEA	suno+pi+toki+pona	# suno pi toki pona
@@ -681,6 +683,13 @@ uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
+uF937D	Momusu	# Momusu (Morning Musume)
+uF937E	Jute	# Jute (C-ute)
+uF937F	Anjelme	# Anjelme (ANGERME)
+uF937F	Anjulumu	# Anjulumu (ANGERME)
+uF92FB	Momoilo	# Momoilo (Momoiro)
+uF92FC	Klobel	# Klobel (Clover)
+uniFF3A	Jeit	# jeit (Z)
 uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
 uF1C71	Pula	# Pula
