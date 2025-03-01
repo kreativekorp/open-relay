@@ -553,6 +553,9 @@ uFFDF9	taaasun	# tasun, three ideographs wide
 uFFDFA	taa	# tasun, left part, two ideographs wide
 uFFDFB	aasun	# tasun, right part, two ideographs wide
 
+# single words - Reyvan Aprilian Vardhiana
+uF9360	kasapa	# kasapa (cassava)
+
 # names of people
 uFFB90	a+suli	# jan Asuli
 uFFB91	Asuto	# jan waso Asuto
@@ -656,9 +659,8 @@ uFFDDF	Seki	# toki pona chess community
 
 # names of other things
 uFFDE8	Losupan	# Losupan (Lojban)
+uF92E2	Metepatin	# Metepatin (Medefaidrin)
 uFFDE9	Towan	# Towan (Toaq)
-uF92F9	Metepatin	# Metepatin (Medefaidrin)
-uF92FA	Sulaki	# Sulaki (Ssuraki)
 uFF1E0	Votgil	# Votgil (I'm a bit excited)
 uFFDDE	mun+pi+ante+toki	# mun pi ante toki
 uFFDEA	suno+pi+toki+pona	# suno pi toki pona
@@ -683,13 +685,15 @@ uFFBFC	Amanka	# Amanka (Among Us)
 uFFBFC	Amonka	# Amonka (Among Us)
 uFFBFD	Manka	# Manka (Minecraft)
 uFFBFE	Nutan	# Nutan (Newton)
+uF92E4	Osu	# Osu (Osu!)
+uF92E1	Stumpel	# Stumpel (Stumble Guys)
+uF92E5	Nisatipi	# Nusatipi (Nusantara TV)
 uF937D	Momusu	# Momusu (Morning Musume)
+uF92E0	Morning	# Morning (Morning Musume)
+uni5A18	Musume	# Musume (Morning Musume)
 uF937E	Jute	# Jute (C-ute)
 uF937F	Anjelme	# Anjelme (ANGERME)
 uF937F	Anjulumu	# Anjulumu (ANGERME)
-uF92FB	Momoilo	# Momoilo (Momoiro)
-uF92FC	Klobel	# Klobel (Clover)
-uniFF3A	Jeit	# jeit (Z)
 uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
 uF1C71	Pula	# Pula
