@@ -49,6 +49,12 @@ feature rlig {
     sub X uni0304 by uFF124;
     sub x uni0304 by uFF125;
 
+    # Hello! Project Members
+
+    # Hello! Project Logos
+
+    # Hello! Project Symbols
+
     # Symbols for Legacy Computing
     sub quotedbl uni200D period by uFFC1D;
     sub quotesingle uni200D period by uFFC1C;
@@ -150,6 +156,28 @@ feature rlig {
     sub uniE052 uniE055 by uFE04D;
     sub uniE052 uniE056 by uFE04E;
 
+    # Cirth Presentation Forms
+
+    # Engsvanyali Presentation Forms
+
+    # Syai Presentation Forms
+
+    # Verdurian Presentation Forms
+
+    # Amman-Iar Presentation Forms
+
+    # Xaini Presentation Forms
+
+    # Mizarian Presentation Forms
+
+    # Zirinka Presentation Forms
+
+    # Sarkai Presentation Forms
+
+    # Thelwik Presentation Forms
+
+    # Olaetyan Presentation Forms
+
     # Niskloz Presentation Forms
     sub uniE41A uniE415 uniE415 by uFE42A;
     sub uniE41A uniE415 uniE41D by uFE420;
@@ -228,6 +256,18 @@ feature rlig {
     sub uniE42E uniE41D by uFE424;
     sub uniE42E uniE41E by uFE429;
 
+    # Kazat Akkorou Presentation Forms
+
+    # Kazvarad Presentation Forms
+
+    # Zarkhand Presentation Forms
+
+    # Serivelna Presentation Forms
+
+    # Rynnan Presentation Forms
+
+    # Ssuraki Presentation Forms
+
     # Ophidian Presentation Forms
     sub uniE5E1 uniE5E1 by uFE5E0;
     sub uniE5E1 uniE5E3 by uFE5E1;
@@ -254,6 +294,12 @@ feature rlig {
     sub uniE5F9 uniE5F7 by uFE5F8;
     sub uniE5F9 uniE5F9 by uFE5F9;
 
+    # Ferengi Presentation Forms
+
+    # Seussian Presentation Forms
+
+    # Sylabica Presentation Forms
+
     # Ewellic Presentation Forms
     sub uniE684 acutecomb by uFE684;
     sub uniE685 acutecomb by uFE685;
@@ -278,6 +324,36 @@ feature rlig {
     sub uniE6BD acutecomb by uFE6BD;
     sub uniE6BE acutecomb by uFE6BE;
     sub uniE6BF acutecomb by uFE6BF;
+
+    # Amlin Presentation Forms
+
+    # Hacm Presentation Forms
+
+    # Visible Speech Presentation Forms
+
+    # Liparxe Presentation Forms
+
+    # Shaleian Presentation Forms
+
+    # Zbalermorna Presentation Forms
+
+    # Tonal Presentation Forms
+
+    # Glaitha-A Presentation Forms
+
+    # Glaitha-B Presentation Forms
+
+    # Lhenazi Presentation Forms
+
+    # Wanya Presentation Forms
+
+    # Orokin Presentation Forms
+
+    # Niji Presentation Forms
+
+    # Miyutan Presentation Forms
+
+    # Tassarunese Presentation Forms
 
     # Aiha Presentation Forms
     sub uniF8A0 uniF8C8 by uFF8A0;
@@ -322,6 +398,14 @@ feature rlig {
     sub uniF8C9 uniF8CF by uFF8CD;
     sub uniF8CA uniF8C8 by uFF8CA;
     sub uniF8CA uniF8CF by uFF8CE;
+
+    # Klingon Presentation Forms
+
+    # Bamum Presentation Forms
+
+    # Shidinn Presentation Forms
+
+    # Youkinese Presentation Forms
 
     # QID Emoji
     sub u1F194 uE0051 uE0033 uE0035 uE0039 uE0032 uE0035 uE0032 uE0038 uE007F by uFF00F; # Q3592528 = seven-pointed star
