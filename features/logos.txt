@@ -1,4 +1,3 @@
-uniF800	Version	# Version
 uni5A18	Musume	# Musume
 
 uFFDDB	Fairfax	# Fairfax
@@ -14,8 +13,17 @@ uF9206	osu	# osu (Osu!)
 uF9205	Osu	# Osu (Osu!)
 uF9204	OSU	# OSU (Osu!)
 
-uFFDE8	Lojban	# Lojban
 uFFDE9	Toaq	# Toaq
 uFF1E0	Votgil	# Votgil (I'm a bit excited)
 
 uniEC70	MayCxC	# MayCxC
+
+uniF600	KreativeErin	# KreativeErin
+uniF710	KreativeOS	# KreativeOS
+uniF710	KreativeOperatingSystem	# KreativeOperatingSystem
+uniF711	KreativeKorp	# KreativeKorp
+uniF711	KreativeKorporation	# KreativeKorporation
+uniF712	KreativeEnt	# KreativeEnt
+uniF712	KreativeEntertainment	# KreativeEntertainment
+uniF713	KreativeSoftware	# KreativeSoftware
+uniF714	KreativeGammasoft	# KreativeGammasoft
