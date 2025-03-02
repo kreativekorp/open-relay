@@ -35,7 +35,7 @@ PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
 TTFHACK="python ../openrelay-tools/tools/ttfhack.py"
 
 # Clean
-rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxPonaHD.* FairfaxPulaHD.* FairfaxHaxHD.* FairfaxSMHD.*
+rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxPonaHD.* FairfaxPulaHD.* FairfaxLogosHD.* FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd Android
 
 # Make timestamped version
@@ -46,6 +46,9 @@ $SFDPATCH FairfaxHD_base.sfd patches/asuki.txt > FairfaxPonaHD_base.sfd
 
 # Make titi pula version
 $SFDPATCH FairfaxHD_base.sfd patches/atuki.txt > FairfaxPulaHD_base.sfd
+
+# Make my logos version
+$SFDPATCH FairfaxHD_base.sfd patches/logos.txt > FairfaxLogosHD_base.sfd
 
 # Make programming ligature version
 $SFDPATCH FairfaxHD_base.sfd patches/ligatures.txt > FairfaxHaxHD_base.sfd
@@ -64,12 +67,14 @@ $SITELENPONA -s -a ../features/asuki.txt -t ../features/atuki.txt -e ../features
 cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHD_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/aargh.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPonaHD_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/aargh.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPulaHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/logos.fea ../features/aargh.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxLogosHD_base.fea
 cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHaxHD_base.fea
 rm asuki.fea atuki.fea extendable.fea joiners.fea
 
 $FONTTOOLS feaLib -o FairfaxHD.ttf FairfaxHD_base.fea FairfaxHD_base.ttf
 $FONTTOOLS feaLib -o FairfaxPonaHD.ttf FairfaxPonaHD_base.fea FairfaxPonaHD_base.ttf
 $FONTTOOLS feaLib -o FairfaxPulaHD.ttf FairfaxPulaHD_base.fea FairfaxPulaHD_base.ttf
+$FONTTOOLS feaLib -o FairfaxLogosHD.ttf FairfaxLogosHD_base.fea FairfaxLogosHD_base.ttf
 $FONTTOOLS feaLib -o FairfaxHaxHD.ttf FairfaxHaxHD_base.fea FairfaxHaxHD_base.ttf
 cp FairfaxSMHD_base.ttf FairfaxSMHD.ttf
 
@@ -81,13 +86,14 @@ PUAAFLAGS="czuowbanxkkfeypjqvgsittl --ihatemysalf --halfwidth-and-fullwidth-form
 $BLOCKS $PUAAFLAGS > Blocks.txt
 $UNIDATA $PUAAFLAGS > UnicodeData.txt
 $PUAABOOK -D Blocks.txt UnicodeData.txt charts.txt -I FairfaxHD.ttf -O pua.html
-$PYPUAA compile -D Blocks.txt UnicodeData.txt -I FairfaxHD.ttf FairfaxPonaHD.ttf FairfaxPulaHD.ttf FairfaxHaxHD.ttf FairfaxSMHD.ttf
+$PYPUAA compile -D Blocks.txt UnicodeData.txt -I FairfaxHD.ttf FairfaxPonaHD.ttf FairfaxPulaHD.ttf FairfaxLogosHD.ttf FairfaxHaxHD.ttf FairfaxSMHD.ttf
 rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < FairfaxHD.ttf > FairfaxHD.eot
 $TTF2EOT < FairfaxPonaHD.ttf > FairfaxPonaHD.eot
 $TTF2EOT < FairfaxPulaHD.ttf > FairfaxPulaHD.eot
+$TTF2EOT < FairfaxLogosHD.ttf > FairfaxLogosHD.eot
 $TTF2EOT < FairfaxHaxHD.ttf > FairfaxHaxHD.eot
 $TTF2EOT < FairfaxSMHD.ttf > FairfaxSMHD.eot
 
@@ -96,15 +102,17 @@ mkdir Android
 $TTFHACK if=FairfaxHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxHD.ttf
 $TTFHACK if=FairfaxPonaHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxPonaHD.ttf
 $TTFHACK if=FairfaxPulaHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxPulaHD.ttf
+$TTFHACK if=FairfaxLogosHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxLogosHD.ttf
 $TTFHACK if=FairfaxHaxHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxHaxHD.ttf
 $TTFHACK if=FairfaxSMHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxSMHD.ttf
 
 # Create zip
-zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxPonaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxPulaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
+zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxLogosHD.ttf FairfaxLogosHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
+zip FairfaxPonaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxLogosHD.ttf FairfaxLogosHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
+zip FairfaxPulaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxLogosHD.ttf FairfaxLogosHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
+zip FairfaxLogosHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxLogosHD.ttf FairfaxLogosHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
+zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxLogosHD.ttf FairfaxLogosHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
+zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxLogosHD.ttf FairfaxLogosHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
 
 # Create lowercase versions
 mkdir fairfaxhd
@@ -117,6 +125,9 @@ cp FairfaxPonaHD.zip fairfaxhd/fairfaxponahd.zip
 cp FairfaxPulaHD.ttf fairfaxhd/fairfaxpulahd.ttf
 cp FairfaxPulaHD.eot fairfaxhd/fairfaxpulahd.eot
 cp FairfaxPulaHD.zip fairfaxhd/fairfaxpulahd.zip
+cp FairfaxLogosHD.ttf fairfaxhd/fairfaxlogoshd.ttf
+cp FairfaxLogosHD.eot fairfaxhd/fairfaxlogoshd.eot
+cp FairfaxLogosHD.zip fairfaxhd/fairfaxlogoshd.zip
 cp FairfaxHaxHD.ttf fairfaxhd/fairfaxhaxhd.ttf
 cp FairfaxHaxHD.eot fairfaxhd/fairfaxhaxhd.eot
 cp FairfaxHaxHD.zip fairfaxhd/fairfaxhaxhd.zip
