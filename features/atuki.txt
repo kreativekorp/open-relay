@@ -45,7 +45,7 @@ uni5A18	mutumi	# mutumi
 uni5A18	Mutumi	# Mutumi
 
 # For Beatmap Songs
-uF9204	Osu	# Osu (Osu!)
+uF9205	Osu	# Osu (Osu!)
 
 # For compatibility when displaying the font name.
 uFFDDB	Fairfax	# Fairfax
