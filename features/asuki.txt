@@ -667,11 +667,23 @@ uF92FF	Molunin	# Molunin
 uF92FF	Morning	# Morning
 uni5A18	Musume	# Musume
 uni5A18	meli4	# meli, Japanese Kanji
+uF9210	Anjeme	# Anjeme (ANGERME)
+uF9210	Anjumu	# Anjumu (ANGERME)
+uF9210	Anjulumu	# Anjulumu (ANGERME)
+uF9210	Anseme	# Anjeme (ANGERME)
+uF9210	Anseleme	# Anseleme (ANGERME)
+uF9210	ANGERME	# ANGERME
+uF9211	BEYOOOOONDS	# BEYOOOOONDS
+uF9211	Pejon	# Pejon (BEYOOOOONDS)
+uF9211	Pejonje	# Pejonje (BEYOOOOONDS)
+uF9211	Pejonsu	# Pejonsu (BEYOOOOONDS)
+uF9211	Pejonti	# Pejonti (BEYOOOOONDS)
 
 # names of other things
 uFFDE8	Losupan	# Losupan (Lojban)
 uF92FE	Metepatin	# Metepatin (Medefaidrin)
 uF92FE	Metepetin	# Metepetin (Medefaidrin)
+uF9207	Tamaneji	# Tamaneji (Tamanegi)
 uFFDE9	Towan	# Towan (Toaq)
 uFF1E0	Votgil	# Votgil (I'm a bit excited)
 uFFDDE	mun+pi+ante+toki	# mun pi ante toki
@@ -700,6 +712,7 @@ uFFBFE	Nutan	# Nutan (Newton)
 uF9206	osu	# osu (Osu!)
 uF9205	Osu	# Osu (Osu!)
 uF9204	OSU	# OSU (Osu!)
+uF9212	Wawajaja	# Wawajaja (Wawayaya)
 uFFDDB	Fairfax	# Fairfax
 uFFA19	Pona	# Pona
 uF1C71	Pula	# Pula
