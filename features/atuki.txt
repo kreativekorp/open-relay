@@ -38,14 +38,9 @@ uF1C64	tulu	# tulu
 uF1C65	uli	# uli
 uF1C66	upi	# upi
 
-# For モーニング娘。
+# For モーニング娘。Compatibility
 uF92FF	Morning	# Morning
 uni5A18	Musume	# Musume
-uni5A18	mutumi	# mutumi
-uni5A18	Mutumi	# Mutumi
-
-# For Beatmap Songs
-uF9205	Osu	# Osu (Osu!)
 
 # For compatibility when displaying the font name.
 uFFDDB	Fairfax	# Fairfax
