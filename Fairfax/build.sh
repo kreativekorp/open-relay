@@ -105,7 +105,7 @@ rm *_base.fea
 rm *_base.ttf
 
 # Inject PUAA table
-PUAAFLAGS="czuowbanxkkfeypjqvgsittl"
+PUAAFLAGS="czuowbanxkkfeypjqvgsittl --no-sylabica-2013 --sylabica-2017 --pua-a-sylabica-2013"
 $BLOCKS $PUAAFLAGS > Blocks.txt
 $UNIDATA $PUAAFLAGS > UnicodeData.txt
 $PUAABOOK -D Blocks.txt UnicodeData.txt -I Fairfax.ttf -O pua.html

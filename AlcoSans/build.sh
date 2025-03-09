@@ -21,6 +21,7 @@ fi
 SFDPATCH="python ../openrelay-tools/tools/sfdpatch.py"
 BLOCKS="python ../openrelay-tools/tools/blocks.py"
 UNIDATA="python ../openrelay-tools/tools/unicodedata.py"
+PUAABOOK="python ../openrelay-tools/tools/puaabook.py"
 PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
 
 # Clean
@@ -37,8 +38,10 @@ mv AlcoSansTmp.ttf AlcoSans.ttf
 rm AlcoSansTmp.sfd
 
 # Inject PUAA table
-$BLOCKS cwadkkypjqvgtt > Blocks.txt
-$UNIDATA cwadkkypjqvgtt > UnicodeData.txt
+PUAAFLAGS="cwadkkypjqvgtt --no-sylabica-2013 --sylabica-2017 --pua-a-sylabica-2013"
+$BLOCKS $PUAAFLAGS > Blocks.txt
+$UNIDATA $PUAAFLAGS > UnicodeData.txt
+$PUAABOOK -D Blocks.txt UnicodeData.txt -I AlcoSans.ttf -O pua.html
 $PYPUAA compile -D Blocks.txt UnicodeData.txt -I AlcoSans.ttf
 rm Blocks.txt UnicodeData.txt
 

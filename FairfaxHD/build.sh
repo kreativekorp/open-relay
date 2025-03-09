@@ -77,7 +77,7 @@ rm *_base.fea
 rm *_base.ttf
 
 # Inject PUAA table
-PUAAFLAGS="czuowbanxkkfeypjqvgsittl --ihatemysalf --halfwidth-and-fullwidth-forms-appendix-a"
+PUAAFLAGS="czuowbanxkkfeypjqvgsittl --no-sylabica-2013 --sylabica-2017 --pua-a-sylabica-2013 --ihatemysalf --halfwidth-and-fullwidth-forms-appendix-a"
 $BLOCKS $PUAAFLAGS > Blocks.txt
 $UNIDATA $PUAAFLAGS > UnicodeData.txt
 $PUAABOOK -D Blocks.txt UnicodeData.txt charts.txt -I FairfaxHD.ttf -O pua.html
