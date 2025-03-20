@@ -21,6 +21,7 @@ fi
 SFDPATCH="python ../openrelay-tools/tools/sfdpatch.py"
 BLOCKS="python ../openrelay-tools/tools/blocks.py"
 UNIDATA="python ../openrelay-tools/tools/unicodedata.py"
+PUAABOOK="python ../openrelay-tools/tools/puaabook.py"
 PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
 
 # Clean
@@ -40,8 +41,10 @@ mv KreativeSquareTmp.ttf KreativeSquare.ttf
 rm KreativeSquareTmp.sfd
 
 # Inject PUAA table
-$BLOCKS zuombxkkehsl > Blocks.txt
-$UNIDATA zuombxkkehsl > UnicodeData.txt
+PUAAFLAGS="zuombxkkehsl"
+$BLOCKS $PUAAFLAGS > Blocks.txt
+$UNIDATA $PUAAFLAGS > UnicodeData.txt
+$PUAABOOK -D Blocks.txt UnicodeData.txt -I KreativeSquare.ttf -O pua.html
 $PYPUAA compile -D Blocks.txt UnicodeData.txt -I KreativeSquare.ttf KreativeSquareSM.ttf
 rm Blocks.txt UnicodeData.txt
 
@@ -50,7 +53,7 @@ $TTF2EOT < KreativeSquare.ttf > KreativeSquare.eot
 $TTF2EOT < KreativeSquareSM.ttf > KreativeSquareSM.eot
 
 # Create zip
-zip KreativeSquare.zip OFL.txt KreativeSquare*.ttf KreativeSquare*.eot
+zip KreativeSquare.zip OFL.txt KreativeSquare*.ttf KreativeSquare*.eot pua.html
 
 # Create lowercase versions
 mkdir kreativesquare

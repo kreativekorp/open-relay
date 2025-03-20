@@ -49,7 +49,7 @@ rm Blocks.txt UnicodeData.txt
 $TTF2EOT < Constructium.ttf > Constructium.eot
 
 # Create zip
-zip Constructium.zip OFL.txt Constructium.sfd Constructium.ttf Constructium.eot
+zip Constructium.zip OFL.txt Constructium.sfd Constructium.ttf Constructium.eot pua.html
 
 # Create lowercase versions
 mkdir constructium

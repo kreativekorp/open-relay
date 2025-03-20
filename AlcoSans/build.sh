@@ -49,7 +49,7 @@ rm Blocks.txt UnicodeData.txt
 $TTF2EOT < AlcoSans.ttf > AlcoSans.eot
 
 # Create zip
-zip AlcoSans.zip OFL.txt AlcoSans.sfd AlcoSans.ttf AlcoSans.eot
+zip AlcoSans.zip OFL.txt AlcoSans.sfd AlcoSans.ttf AlcoSans.eot pua.html
 
 # Create lowercase versions
 mkdir alcosans
