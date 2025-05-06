@@ -61,10 +61,10 @@ rm *_base.sfd
 
 # Add OpenType features (FontForge completely fouls this up on its own)
 $SITELENPONA -s -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g FairfaxHD.sfd
-cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHD_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/aargh.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPonaHD_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/aargh.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPulaHD_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHaxHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea                                 ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/aargh.fea ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPonaHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/aargh.fea ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPulaHD_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea       ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHaxHD_base.fea
 rm asuki.fea atuki.fea extendable.fea joiners.fea
 
 $FONTTOOLS feaLib -o FairfaxHD.ttf FairfaxHD_base.fea FairfaxHD_base.ttf

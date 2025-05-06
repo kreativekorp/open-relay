@@ -80,10 +80,10 @@ $BITSNPICAS convertbitmap \
 
 # Add OpenType features (Bits'n'Picas cannot do this itself)
 $SITELENPONA -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g Fairfax.kbitx
-cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/variants.fea extendable.fea ../features/extensions.fea > Fairfax_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPona_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPula_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHax_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea                           ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > Fairfax_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea                 ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPona_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea                 ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPula_base.fea
+cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHax_base.fea
 rm asuki.fea atuki.fea extendable.fea joiners.fea
 
 $FONTTOOLS feaLib -o Fairfax.ttf Fairfax_base.fea Fairfax_base.ttf

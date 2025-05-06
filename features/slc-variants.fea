@@ -1,0 +1,31 @@
+feature ss08 {
+	featureNames {
+		name 3 1 1033 "plus cell triangles";
+		name 1 0 0 "plus cell triangles";
+	};
+	sub triagup by triagup.ss08;
+	sub uni25B6 by uni25B6.ss08;
+	sub triagdn by triagdn.ss08;
+	sub uni25C0 by uni25C0.ss08;
+	sub uni25C6 by uni25C6.ss08;
+	sub uni25E2 by uni25E2.ss08;
+	sub uni25E3 by uni25E3.ss08;
+	sub uni25E4 by uni25E4.ss08;
+	sub uni25E5 by uni25E5.ss08;
+} ss08;
+
+feature ss09 {
+	featureNames {
+		name 3 1 1033 "character cell triangles";
+		name 1 0 0 "character cell triangles";
+	};
+	sub triagup by triagup.ss09;
+	sub uni25B6 by uni25B6.ss09;
+	sub triagdn by triagdn.ss09;
+	sub uni25C0 by uni25C0.ss09;
+	sub uni25C6 by uni25C6.ss09;
+	sub uni25E2 by uni25E2.ss09;
+	sub uni25E3 by uni25E3.ss09;
+	sub uni25E4 by uni25E4.ss09;
+	sub uni25E5 by uni25E5.ss09;
+} ss09;
