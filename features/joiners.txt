@@ -52,6 +52,7 @@ uFFDE5	ma-toki-pona-wile-jan	# Ma Toki Pona VR
 uFFDE6	pali-pali-ale-pona-epiku	# pali Pape (Project Babel)
 uFFDEA	suno-pi-toki-pona	# suno pi toki pona
 uFFDDE	mun-pi-ante-toki	# mun pi ante toki
+uFFEAE	kulupu-pali-pi-sitelen-pona	# kulupu pali pi sitelen pona (Sitelen Pona Publishers and Typographers Association)
 uFFBF9	sitelen-seli-kiwen	# sitelen seli kiwen
 
 uFFD60	a-\exclamdbl	# a + double exclamation mark

@@ -147,7 +147,9 @@ uFFB07	sina2	# sina, curved
 uF195F	sinpin	# sinpin
 uF1960	sitelen	# sitelen
 uF1961	sona	# sona
-uF1962	soweli	# soweli
+uF1962	soweli	# soweli, default
+uF1962	soweli1	# soweli, pu
+uFFE09	soweli2	# soweli, unicorn
 uF1963	suli	# suli
 uF1964	suno	# suno
 uF1965	supa	# supa
@@ -182,13 +184,21 @@ uF1983	epiku	# epiku, default
 uFFAAB	epiku1	# epiku, upwards arrow
 uFFAAC	epiku2	# epiku, pona with emitters
 uF197F	jasima	# jasima
+uF1980	kije	# kije, clipping of kijetesantakalu, default
+uF1980	kije1	# kije, clipping of kijetesantakalu, raccoon
+uFFDC8	kije2	# kije, clipping of kijetesantakalu, armadillo
+uF1980	kijete	# kijete, clipping of kijetesantakalu, default
+uF1980	kijete1	# kijete, clipping of kijetesantakalu, raccoon
+uFFDC8	kijete2	# kijete, clipping of kijetesantakalu, armadillo
 uF1980	kijetesantakalu	# kijetesantakalu, default
 uF1980	kijetesantakalu1	# kijetesantakalu, raccoon
 uFFDC8	kijetesantakalu2	# kijetesantakalu, armadillo
 uF1979	kin	# kin, default
 uFFB14	kin1	# kin, straight exclamation radical
 uFFB15	kin2	# kin, diagonal exclamation radical
-uF197B	kipisi	# kipisi
+uF197B	kipisi	# kipisi, default
+uF197B	kipisi1	# kipisi, percent sign
+uFFE0B	kipisi2	# kipisi, scissors
 uF1984	kokosila	# kokosila, default
 uFFAAD	kokosila1	# kokosila, toki with stroke
 uFFAAE	kokosila2	# kokosila, star
@@ -292,14 +302,20 @@ uFFAE6	peto	# peto
 uFFAE7	po	# po
 uFFAE8	polinpin	# polinpin
 uFFAE9	pomotolo	# pomotolo
-uFFAEB	san	# san
+uFFAEB	san	# san, default
+uFFAEB	san1	# san, three vertical harpoons
+uFFE63	san2	# san, Arabic numeral
+uFFE6C	san3	# san, three horizontal lines
 uFFAEC	soto	# soto
 uFFAED	taki	# taki, default
 uFFAED	taki1	# taki, magnet
 uFFAEE	taki2	# taki, yinyang
 uFFAF0	te	# te
 uFFAEF	teje	# teje
-uFFAEB	tuli	# tuli
+uFFAEB	tuli	# tuli, default
+uFFAEB	tuli1	# tuli, three vertical harpoons
+uFFE63	tuli2	# tuli, Arabic numeral
+uFFE6C	tuli3	# tuli, three horizontal lines
 uFFAF1	to	# to, default
 uFFAF1	to1	# to, right corner bracket
 uFFAF2	umesu	# umesu, default
@@ -321,8 +337,9 @@ uFFB2E	nu	# nu, default
 uFFB2E	nu1	# nu, reserved word
 uFFB7E	nu2	# nu, synonym of sin
 uFFB2F	su	# su, default
-uFFB2F	su1	# su, reserved word
-uFFB3D	su2	# su, question marker
+uFFB3D	su0	# su, question marker
+uFFB2F	su1	# su, Oz
+uFFE0A	su2	# su, unicorn
 uFFB30	u	# u
 
 # single words - nimi ale pona, main
@@ -502,7 +519,7 @@ uFFDB3	masu	# masu
 uFFDB4	lato	# lato
 uFFDB5	topo	# topo
 
-# single words - 2024
+# single words - 2024 onwards
 uFFDB9	teken	# teken (same as sitelen; full writeup coming soon)
 uFFDBB	api	# api, default
 uFFDBB	api1	# api, pi noka ala, read as wings
@@ -515,8 +532,8 @@ uFFDC0	lisana1	# lisana, tongue
 uFFDC1	lisana2	# lisana, uvula
 uFFDC9	penpo	# penpo
 uFFDCA	kulaso	# kulaso (green laso, glaso)
-uFFDCB	sulaso	# sulaso (cyan laso, slaso)
-uFFDCC	pulaso	# pulaso (blue laso, blaso)
+uFFDCB	sulaso	# sulaso (cyan laso, slaso); same glyph as kewe
+uFFDCC	pulaso	# pulaso (blue laso, blaso); same glyph as kelo
 uFFDCD	masenta	# masenta (magenta)
 uFFDCE	antikontitutonelema	# antikontitutonelema, default
 uFFDCE	antikontitutonelema2	# antikontitutonelema, classical building
@@ -529,6 +546,36 @@ uFFE51	miko1	# miko, egg
 uFFE52	miko2	# miko, tardigrade
 uFFE53	ta2	# ta (content word)
 uFFE54	tuwa	# tuwa
+uFFE55	asu	# asu
+uFFE56	inta	# inta
+uFFE57	jete	# jete
+uFFE58	kani	# kani
+uFFE59	kijesankalu	# kijesankalu
+uFFE5A	kinute	# kinute
+uFFE5B	kitu	# kitu
+uFFE5C	nan	# nan
+uFFE5D	nusun	# nusun
+uFFE5E	onono	# onono
+uFFE5F	paka	# paka
+uFFE60	panpan	# panpan
+uFFE61	pe	# pe
+uFFE62	salantapotalusa	# salantapotalusa
+uFFE64	santa	# santa
+uFFE65	sokeli	# sokeli
+uFFDCC	kelo	# kelo; same glyph as pulaso
+uFFDCB	kewe	# kewe; same glyph as sulaso
+uFFE66	sunta	# sunta
+uFFE67	uka	# uka
+uFFE68	lan	# lan, default
+uFFE68	lan1	# lan, lon ijo
+uFFE69	lan2	# lan, ka
+uFFE6A	lan-sin	# lan sin, default
+uFFE6A	lan+sin	# lan sin, default
+uFFE6A	lan1-sin	# lan sin, lon ijo
+uFFE6A	lan1+sin	# lan sin, lon ijo
+uFFE6B	lan2-sin	# lan sin, ka
+uFFE6B	lan2+sin	# lan sin, ka
+uFFE6D	tawake	# tawake
 
 # long silapa and tasun
 uFFDF0	silapa1	# silapa, top part
@@ -557,6 +604,9 @@ uFFDFB	aasun	# tasun, right part, two ideographs wide
 uFFB90	a+suli	# jan Asuli
 uFFB91	Asuto	# jan waso Asuto
 uFFB92	Eko	# ilo Eko
+uFFB92	Eko1	# ilo Eko
+uFFEA9	Eko2	# waso Eko, waso lukin
+uFFEAA	Eko3	# waso Eko, soweli lukin
 uFFDE0	ijo+tan+anpa+nanpa	# jan Itan
 uFFB93	Jan	# jan Jan
 uFFB94	Kapilu	# jan Kapilu
@@ -640,11 +690,29 @@ uFFDEE	Enki	# kije Enki
 uFFDEF	KekanSan	# jan Kekan San
 uFFEA0	Ilaje	# soweli kijetesantakalu Ilaje
 uFFEA1	Kolisin	# namako Kolisin
+uFFEA2	Alisa	# jan Alisa
+uFFEA3	Ante	# mute Ante
+uFFEA4	Kaken	# suwi Kaken
+uFFEA5	Majeka	# jan Majeka
+uFFEA6	Stella	# ijo Stella
+uFFEA6	Stella1	# ijo Stella
+uFFEA7	Stella2	# ijo Stella
+uFFEA7	ijo-Stella	# ijo Stella
+uFFEA7	ijo+Stella	# ijo Stella
+uFFEA7	ijo*Stella	# ijo Stella
+uFFEA8	Ipan	# waso musi Ipan
+uFFEAB	vivi	# ijo vivi
+uFFEAB	vivi1	# ijo vivi
+uFFEAC	vivi2	# ijo vivi
+uFFEAC	ijo-vivi	# ijo vivi
+uFFEAC	ijo+vivi	# ijo vivi
+uFFEAC	ijo*vivi	# ijo vivi
 
 # names of communities
 uFFDED	kama+sona	# kama sona
+uFFEAE	kulupu+pali+pi+sitelen+pona	# kulupu pali pi sitelen pona (Sitelen Pona Publishers and Typographers Association)
 uFFBF2	Linku	# kulupu Linku
-uFFBF3	lipu+Wesi+pi+toki+pona	# lipu Wesi pi toki pona
+uFFBF3	lipu+Wesi+pi+toki+pona	# lipu Wesi pi toki pona (r/tokipona)
 uFFBF1	ma+pi+nasin+sitelen	# ma pi nasin sitelen
 uFFBF0	ma+pona+pi+toki+pona	# ma pona pi toki pona
 uFFDE5	ma+toki+pona+wile+jan	# Ma Toki Pona VR
@@ -662,6 +730,7 @@ uFFDDE	mun+pi+ante+toki	# mun pi ante toki
 uFFDEA	suno+pi+toki+pona	# suno pi toki pona
 uFFDDD	Token	# Token
 uFFDEB	Wakalito	# Wakalito
+uFFEAD	Wikipesija	# Wikipesija (toki pona Wikipedia)
 uFFDEC	asuki	# asuki (ASCII) (simplified form of ASCII chart from MIL-STD-188-100)
 uFFDEC	Asuki	# Asuki (ASCII) (simplified form of ASCII chart from MIL-STD-188-100)
 uFFB97	mono	# mono
@@ -2020,6 +2089,9 @@ uFFA26	sona*utala	# sona utala, scaled
 uFFD29	soweli-kijetesantakalu	# soweli kijetesantakalu, stacked
 uFFD29	soweli+kijetesantakalu	# soweli kijetesantakalu, stacked
 uFFD29	soweli^kijetesantakalu	# soweli kijetesantakalu, stacked
+uFFE0C	suno-sama	# suno sama, scaled
+uFFE0C	suno+sama	# suno sama, scaled
+uFFE0C	suno*sama	# suno sama, scaled
 uFFA27	supa-lape	# supa lape, stacked
 uFFA27	supa+lape	# supa lape, stacked
 uFFA27	supa^lape	# supa lape, stacked
