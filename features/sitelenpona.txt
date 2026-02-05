@@ -1,0 +1,1609 @@
+# Feature names. Must be defined before use.
+@ss16     straight a/o/kin/n
+@ss17     diagonal a/o/kin/n
+@ss18     straight mi/sina/ona
+@ss19     curved mi/sina/ona
+@ss20     sharp s kijetesantakalu
+@cv80     alternate kala
+@cv80.1   kala with two eyes
+@cv80.2   kala with one eye
+@cv81     alternate meli
+@cv81.1   Venus meli
+@cv81.2   Latin letter meli
+@cv82     alternate mije
+@cv82.1   Mars mije
+@cv82.2   Latin letter mije
+@cv83     alternate olin
+@cv83.1   emitters olin
+@cv83.2   overlapping olin
+@cv83.3   disconnected olin
+@cv84     alternate sewi
+@cv84.1   secular sewi
+@cv84.2   Arabic sewi
+@cv85     alternate uta
+@cv85.1   dotless uta
+@cv86     alternate wile
+@cv86.1   closed wile
+@cv87     alternate tonsi
+@cv87.1   Venus-Mars tonsi
+@cv87.2   Latin letter tonsi
+@cv87.3   antimony tonsi
+@cv88     alternate namako
+@cv88.1   pepper namako
+@cv88.2   crosshair namako
+@cv89     alternate soko
+@cv89.1   thick-stem soko
+@cv89.2   thin-stem soko
+@cv89.3   annulus soko
+@cv90     alternate meso
+@cv90.1   ante meso
+@cv90.2   vertical meso
+@cv91     alternate epiku
+@cv91.1   up arrow epiku
+@cv91.2   pona epiku
+@cv92     alternate akesi
+@cv92.1   four-legged akesi
+@cv92.2   six-legged akesi
+@cv93     alternate moli
+@cv93.1   headless moli
+@cv94     alternate kokosila
+@cv94.1   star kokosila
+@cv94.2   toki kokosila
+@cv95     alternate kiki
+@cv95.1   five-cusp kiki
+@cv95.2   three-cusp kiki
+@cv95.3   triangle kiki
+@cv95.4   spike ball kiki
+@cv96     alternate linluwi
+@cv96.1   len-linja-en linluwi
+@cv96.2   len-linja linluwi
+@cv96.3   kulupu linluwi
+@cv96.4   sitelen-len-linja linluwi
+@cv97     alternate lanpan
+@cv97.1   pana lanpan
+@cv97.2   jo lanpan
+@cv97.3   mistake lanpan
+@cv98     alternate ku
+@cv98.1   dot-emitters ku
+@cv98.2   toki ku
+@cv98.3   toki-pona ku
+@cv98.4   ijo-pona ku
+@cv98.5   fermata ku
+@cv98.6   circle ku
+@cv98.7   dot ku
+@cv99     alternate majuna
+@cv99.1   lotus majuna
+@cv99.2   sin majuna
+
+# UCSUR Sitelen Pona block, pu/ku subblock
+uF1900    a	# a, default
+uF1901    akesi	# akesi, default, upright
+uF1902    ala	# ala
+uF1903    alasa	# alasa
+uF1904    ale ali	# ale, ali
+uF1905    anpa	# anpa
+uF1906    ante	# ante
+uF1907    anu	# anu
+uF1908    awen	# awen
+uF1909    e	# e
+uF190A    en	# en
+uF190B    esun	# esun
+uF190C    ijo	# ijo
+uF190D    ike	# ike
+uF190E    ilo	# ilo
+uF190F    insa	# insa
+uF1910    jaki	# jaki
+uF1911    jan	# jan
+uF1912    jelo	# jelo
+uF1913    jo	# jo
+uF1914    kala kala1	# kala, default, no eyes
+uF1915    kalama	# kalama
+uF1916    kama	# kama
+uF1917    kasi	# kasi
+uF1918    ken	# ken
+uF1919    kepeken kepen	# kepeken, kepen
+uF191A    kili	# kili
+uF191B    kiwen	# kiwen
+uF191C    ko	# ko
+uF191D    kon	# kon
+uF191E    kule	# kule
+uF191F    kulupu	# kulupu
+uF1920    kute	# kute
+uF1921    la	# la
+uF1922    lape	# lape
+uF1923    laso	# laso
+uF1924    lawa	# lawa
+uF1925    len	# len
+uF1926    lete	# lete
+uF1927    li	# li
+uF1928    lili	# lili
+uF1929    linja	# linja
+uF192A    lipu	# lipu
+uF192B    loje	# loje
+uF192C    lon	# lon
+uF192D    luka	# luka
+uF192E    lukin	# lukin
+uF192F    lupa	# lupa
+uF1930    ma	# ma
+uF1931    mama	# mama
+uF1932    mani	# mani
+uF1933    meli meli1	# meli, default, hair or headscarf
+uF1934    mi	# mi, default
+uF1935    mije mije1	# mije, default, broad shoulders
+uF1936    moku moku1	# moku, default, hand to mouth
+uF1937    moli moli1	# moli, default, head and eyes
+uF1938    monsi monsi1	# monsi, default, dot
+uF1939    mu mu1	# mu, default, mouse face
+uF193A    mun	# mun
+uF193B    musi musi1	# musi, default, curved ends
+uF193C    mute mute1	# mute, default, three vertical lines
+uF193D    nanpa	# nanpa
+uF193E    nasa	# nasa
+uF193F    nasin	# nasin
+uF1940    nena	# nena
+uF1941    ni ni1 ni01 niv ni&\arrowdown	# ni, default, downwards
+uF1942    nimi	# nimi
+uF1943    noka	# noka
+uF1944    o	# o, default
+uF1945    olin	# olin, default
+uF1946    ona	# ona, default
+uF1947    open	# open
+uF1948    pakala	# pakala
+uF1949    pali	# pali
+uF194A    palisa	# palisa
+uF194B    pan	# pan
+uF194C    pana	# pana
+uF194D    pi	# pi
+uF194E    pilin	# pilin
+uF194F    pimeja	# pimeja
+uF1950    pini	# pini
+uF1951    pipi	# pipi
+uF1952    poka	# poka
+uF1953    poki	# poki
+uF1954    pona	# pona
+uF1955    pu	# pu
+uF1956    sama	# sama
+uF1957    seli	# seli
+uF1958    selo	# selo
+uF1959    seme	# seme
+uF195A    sewi sewi1 sewi01 sewi.cv84.2	# sewi, default, Arabic
+uF195B    sijelo	# sijelo
+uF195C    sike suke	# sike, suke (typo of sike)
+uF195D    sin	# sin
+uF195E    sina	# sina, default
+uF195F    sinpin sinpin1	# sinpin, default, dot
+uF1960    sitelen	# sitelen
+uF1961    sona	# sona
+uF1962    soweli soweli1	# soweli, default, pu style
+uF1963    suli	# suli
+uF1964    suno	# suno
+uF1965    supa	# supa
+uF1966    suwi	# suwi
+uF1967    tan	# tan
+uF1968    taso	# taso
+uF1969    tawa	# tawa
+uF196A    telo	# telo
+uF196B    tenpo tenpo1 ten ten1	# tenpo, ten, default, clock
+uF196C    toki	# toki
+uF196D    tomo toma	# tomo, toma (typo of tomo)
+uF196E    tu	# tu
+uF196F    unpa	# unpa
+uF1970    uta uta1	# uta, default, dotted
+uF1971    utala	# utala
+uF1972    walo	# walo
+uF1973    wan	# wan
+uF1974    waso waso1	# waso, default, two eyes
+uF1975    wawa	# wawa
+uF1976    weka weka1	# weka, default, pu style
+uF1977    wile wile1	# wile, default, open
+uF1978    namako	# namako, default
+uF1979    kin	# kin, default
+uF197A    oko oko1	# oko, default, ku style
+uF197B    kipisi kipisi1	# kipisi, default, percent sign
+uF197C    leko leko1	# leko, default, square
+uF197D    monsuta	# monsuta
+uF197E    tonsi tonsi1	# tonsi, default, three spokes
+uF197F    jasima	# jasima
+uF1980    kijetesantakalu	# kijetesantakalu, default, raccoon, two eyes
+uF1980    kijetesantakalu1	# kijetesantakalu, default, raccoon, two eyes
+uF1980    kijete kijete1 kije kije1	# kijetesantakalu, default, raccoon, two eyes
+uF1981    soko	# soko, default
+uF1982    meso	# meso, default
+uF1982    Medium	# glyph for font style name "Medium"
+uF1983    epiku	# epiku, default
+uF1984    kokosila	# kokosila, default (literally 1984)
+uF1985    lanpan	# lanpan, default
+uF1986    n	# n, default
+uF1987    misikeke misikeke1	# misikeke, default, pill
+uF1988    ku ku1 ku.cv98.7	# ku, default, dot
+uF1989    ni4 ni04 ni< ni&\arrowleft	# ni, leftwards
+uF198A    ni3 ni03 ni^ ni&\arrowup	# ni, upwards
+uF198B    ni2 ni02 ni> ni&\arrowright	# ni, rightwards
+uF198C    sewi2 sewi02 sewi.cv84.1	# sewi, secularized
+
+# UCSUR Sitelen Pona block, punctuation and format controls
+uF1990    [	# start of cartouche
+uF1991    ]	# end of cartouche
+uF1992    =	# combining cartouche extension
+uF1995    -	# stacking joiner
+uF1996    +	# scaling joiner
+uF1997    (	# start of extended glyph
+uF1998    )	# end of extended glyph
+uF1999    _	# combining long glyph extension
+uF199A    {	# start of reverse extended glyph
+uF199B    }	# end of reverse extended glyph
+uF199C    .	# interpunct
+uF199D    :	# colon
+uF199E    ,	# tally mark
+
+# UCSUR Sitelen Pona block, su/Linku subblock
+uF19A0    pake	# pake
+uF19A1    apeja	# apeja
+uF19A2    majuna	# majuna, default
+uF19A3    powe	# powe
+uF19A4    linluwi linuwi	# linluwi, linuwi, default
+uF19A5    kiki	# kiki, default
+uF19A6    su	# su, default
+uF19A7    isipin	# isipin
+uF19A8    kamalawala kama&pi&lawa&ala	# kamalawala
+uF19A9    kapesi	# kapesi, default
+uF19AA    melome meli&pi&olin&meli	# melome
+uF19AB    mijomi mije&pi&olin&mije	# mijomi
+uF19AC    misa	# misa, default
+uF19AD    nimisin	# nimisin
+uF19AE    nja	# nja
+uF19AF    oki oke	# oki, oke, default
+uF19B0    omekapo o&moku&e&kala&pona	# omekapo
+uF19B1    puwa	# puwa
+uF19B2    san tuli	# san, tuli, default
+uF19B3    taki	# taki, default
+uF19B4    te	# te
+uF19B5    to	# to
+uF19B6    unu	# unu
+uF19B7    usawi	# usawi
+uF19B8    wa	# wa, default
+uF19B9    wowujiti wuwojiti	# wowujiti, wuwojiti
+uF19BA    yupekosi	# yupekosi (pronounced �upekosi)
+
+# UCSUR Titi Pula block
+uF1C70    \uF1C62+\uF1C5A	# tuki tiki, scaled
+uF1C71    \uF1C60-\uF1C57	# titi pula, stacked
+uF1C71    Pula	# glyph for font family name "Pula"
+
+# Kreative Software Private Use Area
+uFF1E0    Votgil	# Votgil (I'm a bit excited)
+
+# Sitelen Pona Presentation Forms-A, combined glyphs subblock
+uFF900    anpa-lawa	# anpa lawa, stacked
+uFF901    ijo+akesi	# ijo akesi, scaled
+uFF901    ijo+akesi1	# ijo akesi, scaled
+uFF901    ijo+akesi2	# ijo akesi, scaled
+uFF902    ijo+ala	# ijo ala, scaled
+uFF903    ijo+alasa	# ijo alasa, scaled
+uFF904    ijo+ale ijo+ali	# ijo ale, ijo ali, scaled
+uFF905    ijo+anpa	# ijo anpa, scaled
+uFF906    ijo+ante	# ijo ante, scaled
+uFF907    ijo+anu	# ijo anu, scaled
+uFF908    ijo+apeja	# ijo apeja, scaled
+uFF909    ijo+awen	# ijo awen, scaled
+uFF90A    ijo+en	# ijo en, scaled
+uFF90B    ijo+esun	# ijo esun, scaled
+uFF90C    ijo+ike	# ijo ike, scaled
+uFF90D    ijo+ilo	# ijo ilo, scaled
+uFF90E    ijo+insa	# ijo insa, scaled
+uFF90F    ijo+jaki ijo+@jaki	# ijo jaki, scaled
+uFF910    ijo+jan	# ijo jan, scaled
+uFF911    ijo+jelo	# ijo jelo, scaled
+uFF912    ijo+jo	# ijo jo, scaled
+uFF913    ijo+kala	# ijo kala, scaled
+uFF913    ijo+kala1	# ijo kala, scaled
+uFF913    ijo+kala2	# ijo kala, scaled
+uFF913    ijo+kala3	# ijo kala, scaled
+uFF914    ijo+kalama	# ijo kalama, scaled
+uFF915    ijo+kama	# ijo kama, scaled
+uFF916    ijo+kasi	# ijo kasi, scaled
+uFF917    ijo+ken	# ijo ken, scaled
+uFF918    ijo+kepeken ijo+kepen	# ijo kepeken, ijo kepen, scaled
+uFF919    ijo+kijetesantakalu	# ijo kijetesantakalu, scaled
+uFF919    ijo+kijetesantakalu1	# ijo kijetesantakalu, scaled
+uFF919    ijo+kijete ijo+kijete1	# ijo kijetesantakalu, scaled
+uFF919    ijo+kije ijo+kije1	# ijo kijetesantakalu, scaled
+uFF91A    ijo+kili	# ijo kili, scaled
+uFF91B    ijo+kin ijo+kin1 ijo+kin2	# ijo kin, scaled
+uFF91C    ijo+kipisi ijo+kipisi1	# ijo kipisi, scaled
+uFF91D    ijo+kiwen	# ijo kiwen, scaled
+uFF91E    ijo+ko	# ijo ko, scaled
+uFF91F    ijo+kon	# ijo kon, scaled
+uFF920    ijo+kule	# ijo kule, scaled
+uFF921    ijo+kulupu	# ijo kulupu, scaled
+uFF922    ijo+kute	# ijo kute, scaled
+uFF923    ijo+lape	# ijo lape, scaled
+uFF924    ijo+laso	# ijo laso, scaled
+uFF925    ijo+lawa	# ijo lawa, scaled
+uFF926    ijo+leko ijo+leko1	# ijo leko, scaled
+uFF927    ijo+len	# ijo len, scaled
+uFF928    ijo+lete	# ijo lete, scaled
+uFF929    ijo+lili	# ijo lili, scaled
+uFF92A    ijo+linja	# ijo linja, scaled
+uFF92B    ijo+lipu	# ijo lipu, scaled
+uFF92C    ijo+loje	# ijo loje, scaled
+uFF92D    ijo+lon	# ijo lon, scaled
+uFF92E    ijo+luka	# ijo luka, scaled
+uFF92F    ijo+lukin	# ijo lukin, scaled
+uFF930    ijo+lupa	# ijo lupa, scaled
+uFF931    ijo+ma	# ijo ma, scaled
+uFF932    ijo+mama	# ijo mama, scaled
+uFF933    ijo+mani	# ijo mani, scaled
+uFF934    ijo+meli ijo+meli1	# ijo meli, default, hair or headscarf, scaled
+uFF935    ijo+mi ijo+mi1 ijo+mi2	# ijo mi, scaled
+uFF936    ijo+mije ijo+mije1	# ijo mije, default, broad shoulders, scaled
+uFF937    ijo+moku ijo+moku1	# ijo moku, scaled
+uFF938    ijo+moli ijo+moli1	# ijo moli, scaled
+uFF939    ijo+monsi ijo+monsi1	# ijo monsi, default, dot, scaled
+uFF93A    ijo+monsuta	# ijo monsuta, scaled
+uFF93B    ijo+mu ijo+mu1	# ijo mu, scaled
+uFF93C    ijo+mun	# ijo mun, scaled
+uFF93D    ijo+musi ijo+musi1 ijo+musi2	# ijo musi, scaled
+uFF93E    ijo+mute ijo+mute1	# ijo mute, default, three vertical lines, scaled
+uFF93F    ijo+namako ijo+namako1	# ijo namako, default, four rays, scaled
+uFF940    ijo+nanpa	# ijo nanpa, scaled
+uFF941    ijo+nasa	# ijo nasa, scaled
+uFF942    ijo+nasin	# ijo nasin, scaled
+uFF943    ijo+nena	# ijo nena, scaled
+uFF944    ijo+ni	# ijo ni, scaled
+uFF945    ijo+nimi	# ijo nimi, scaled
+uFF946    ijo+noka	# ijo noka, scaled
+uFF947    ijo+oko ijo+oko1	# ijo oko, ku style, scaled
+uFF948    ijo+olin ijo+olin0 ijo+olin1	# ijo olin, default, double pilin, scaled
+uFF949    ijo+ona ijo+ona1 ijo+ona2	# ijo ona, scaled
+uFF94A    ijo+open	# ijo open, scaled
+uFF94B    ijo+pakala	# ijo pakala, scaled
+uFF94C    ijo+pake	# ijo pake, scaled
+uFF94D    ijo+pali	# ijo pali, scaled
+uFF94E    ijo+palisa	# ijo palisa, scaled
+uFF94F    ijo+pan	# ijo pan, scaled
+uFF950    ijo+pana	# ijo pana, scaled
+uFF951    ijo+pilin	# ijo pilin, scaled
+uFF952    ijo+pimeja	# ijo pimeja, scaled
+uFF953    ijo+pini	# ijo pini, scaled
+uFF954    ijo+pipi	# ijo pipi, scaled
+uFF955    ijo+poka	# ijo poka, scaled
+uFF956    ijo+poki	# ijo poki, scaled
+uFF957    ijo+pona	# ijo pona, scaled
+uFF958    ijo+pu	# ijo pu, scaled
+uFF959    ijo+sama	# ijo sama, scaled
+uFF95A    ijo+seli	# ijo seli, scaled
+uFF95B    ijo+selo	# ijo selo, scaled
+uFF95C    ijo+seme	# ijo seme, scaled
+uFF95D    ijo+sewi ijo+sewi1 ijo+sewi01	# ijo sewi, default, Arabic, scaled
+uFF95E    ijo+sijelo	# ijo sijelo, scaled
+uFF95F    ijo+sike ijo+suke	# ijo sike, scaled
+uFF960    ijo+sin	# ijo sin, scaled
+uFF961    ijo+sina ijo+sina1 ijo+sina2	# ijo sina, scaled
+uFF962    ijo+sinpin ijo+sinpin1	# ijo sinpin, default, dot, scaled
+uFF963    ijo+sitelen	# ijo sitelen, scaled
+uFF964    ijo+sona	# ijo sona, scaled
+uFF965    ijo+soweli ijo+soweli1	# ijo soweli, default, pu style, scaled
+uFF966    ijo+suli	# ijo suli, scaled
+uFF967    ijo+suno	# ijo suno, scaled
+uFF968    ijo+supa	# ijo supa, scaled
+uFF969    ijo+suwi	# ijo suwi, scaled
+uFF96A    ijo+tan	# ijo tan, scaled
+uFF96B    ijo+taso	# ijo taso, scaled
+uFF96C    ijo+tawa	# ijo tawa, scaled
+uFF96D    ijo+telo	# ijo telo, scaled
+uFF96E    ijo+tenpo ijo+tenpo1	# ijo tenpo, ijo ten, default, clock, scaled
+uFF96E    ijo+ten ijo+ten1	# ijo tenpo, ijo ten, default, clock, scaled
+uFF96F    ijo+toki	# ijo toki, scaled
+uFF970    ijo+tomo ijo+toma	# ijo tomo, scaled
+uFF971    ijo+tonsi ijo+tonsi1	# ijo tonsi, default, three spokes, scaled
+uFF972    ijo+tu	# ijo tu, scaled
+uFF973    ijo+unpa	# ijo unpa, scaled
+uFF974    ijo+uta ijo+uta1	# ijo uta, default, dotted, scaled
+uFF975    ijo+utala	# ijo utala, scaled
+uFF976    ijo+walo	# ijo walo, scaled
+uFF977    ijo+wan	# ijo wan, scaled
+uFF978    ijo+waso ijo+waso1	# ijo waso, default, two eyes, scaled
+uFF979    ijo+wawa	# ijo wawa, scaled
+uFF97A    ijo+weka ijo+weka1	# ijo weka, default, pu style, scaled
+uFF97B    ijo+wile ijo+wile1	# ijo wile, default, open, scaled
+uFF97C    ike-ala	# ike ala, stacked
+uFF97D    ike-lili	# ike lili, stacked
+uFF97E    ike-lukin	# ike lukin, stacked
+uFF97F    ilo-kipisi ilo-kipisi1	# ilo kipisi, default, percent sign, stacked
+uFF980    ilo-lape	# ilo lape, stacked
+uFF981    ilo-lukin	# ilo lukin, stacked
+uFF982    ilo-moli ilo-moli1	# ilo moli, default, head and eyes, stacked
+uFF983    ilo-musi ilo-musi1 ilo-musi2	# ilo musi, stacked
+uFF984    ilo-nanpa	# ilo nanpa, stacked
+uFF985    ilo-oko ilo-oko1	# ilo oko, default, ku style, stacked
+uFF986    ilo-open	# ilo open, stacked
+uFF987    ilo-suno	# ilo suno, stacked
+uFF988    ilo-toki	# ilo toki, stacked
+uFF989    jan+ala	# jan ala, scaled
+uFF98A    jan+alasa	# jan alasa, scaled
+uFF98B    jan+ale jan+ali	# jan ale, jan ali, scaled
+uFF98C    jan+ante	# jan ante, scaled
+uFF98D    jan+ike	# jan ike, scaled
+uFF98E    jan+kala	# jan kala, scaled
+uFF98E    jan+kala1	# jan kala, scaled
+uFF98E    jan+kala2	# jan kala, scaled
+uFF98E    jan+kala3	# jan kala, scaled
+uFF98F    jan+kalama	# jan kalama, scaled
+uFF990    jan+kasi	# jan kasi, scaled
+uFF991    jan+kulupu	# jan kulupu, scaled
+uFF992    jan+lawa	# jan lawa, scaled
+uFF993    jan+lili	# jan lili, scaled
+uFF994    jan+monsuta	# jan monsuta, scaled
+uFF995    jan+mute jan+mute1	# jan mute, default, three vertical lines, scaled
+uFF996    jan+nasa	# jan nasa, scaled
+uFF997    jan+olin jan+olin0 jan+olin1	# jan olin, default, double pilin, scaled
+uFF998    jan+pakala	# jan pakala, scaled
+uFF999    jan+pali	# jan pali, scaled
+uFF99A    jan+poka	# jan poka, scaled
+uFF99B    jan+pona	# jan pona, scaled
+uFF99C    jan+sama	# jan sama, scaled
+uFF99D    jan+seme	# jan seme, scaled
+uFF99E    jan+sewi jan+sewi1 jan+sewi01	# jan sewi, default, Arabic, scaled
+uFF99F    jan+sin	# jan sin, scaled
+uFF9A0    jan+sona	# jan sona, scaled
+uFF9A1    jan+suli	# jan suli, scaled
+uFF9A2    jan+suwi	# jan suwi, scaled
+uFF9A3    jan+toki	# jan toki, scaled
+uFF9A4    jan+unpa	# jan unpa, scaled
+uFF9A5    jan+utala	# jan utala, scaled
+uFF9A6    jan+wawa	# jan wawa, scaled
+uFF9A7    kala+lete	# kala lete, scaled
+uFF9A7    kala1+lete	# kala lete, scaled
+uFF9A7    kala2+lete	# kala lete, scaled
+uFF9A7    kala3+lete	# kala lete, scaled
+uFF9A8    kala+lili	# kala lili, scaled
+uFF9A8    kala1+lili	# kala lili, scaled
+uFF9A8    kala2+lili	# kala lili, scaled
+uFF9A8    kala3+lili	# kala lili, scaled
+uFF9A9    kalama-musi	# kalama musi, stacked
+uFF9A9    kalama-musi1	# kalama musi, stacked
+uFF9A9    kalama-musi2	# kalama musi, stacked
+uFF9AA    kasi-jelo	# kasi jelo, stacked
+uFF9AB    kasi-kule	# kasi kule, stacked
+uFF9AC    kasi-laso	# kasi laso, stacked
+uFF9AD    kasi-lili	# kasi lili, stacked
+uFF9AE    kasi-loje	# kasi loje, stacked
+uFF9AF    kasi-pimeja	# kasi pimeja, stacked
+uFF9B0    kasi-walo	# kasi walo, stacked
+uFF9B1    kili+jelo	# kili jelo, scaled
+uFF9B2    kili+laso	# kili laso, scaled
+uFF9B3    kili+lili	# kili lili, scaled
+uFF9B4    kili+loje	# kili loje, scaled
+uFF9B5    kili+palisa	# kili palisa, scaled
+uFF9B6    kili+pimeja	# kili pimeja, scaled
+uFF9B7    kili+suwi	# kili suwi, scaled
+uFF9B8    kili+walo	# kili walo, scaled
+uFF9B9    kiwen+jelo	# kiwen jelo, scaled
+uFF9BA    kiwen+kasi	# kiwen kasi, scaled
+uFF9BB    kiwen+laso	# kiwen laso, scaled
+uFF9BC    kiwen+lete	# kiwen lete, scaled
+uFF9BD    kiwen+lili	# kiwen lili, scaled
+uFF9BE    kiwen+loje	# kiwen loje, scaled
+uFF9BF    kiwen+mun	# kiwen mun, scaled
+uFF9C0    kiwen+pimeja	# kiwen pimeja, scaled
+uFF9C1    kiwen+seli	# kiwen seli, scaled
+uFF9C2    kiwen+suno	# kiwen suno, scaled
+uFF9C3    kiwen+walo	# kiwen walo, scaled
+uFF9C4    ko+jaki ko+@jaki	# ko jaki, scaled
+uFF9C5    ko+jelo	# ko jelo, scaled
+uFF9C6    ko+kasi	# ko kasi, scaled
+uFF9C7    ko+kule	# ko kule, scaled
+uFF9C8    ko+laso	# ko laso, scaled
+uFF9C9    ko+lete	# ko lete, scaled
+uFF9CA    ko+lili	# ko lili, scaled
+uFF9CB    ko+loje	# ko loje, scaled
+uFF9CC    ko+nasa	# ko nasa, scaled
+uFF9CD    ko+pimeja	# ko pimeja, scaled
+uFF9CE    ko+seli	# ko seli, scaled
+uFF9CF    ko+walo	# ko walo, scaled
+uFF9D0    kon+lete	# kon lete, scaled
+uFF9D1    len+jan	# len jan, scaled
+uFF9D2    len+jelo	# len jelo, scaled
+uFF9D3    len+laso	# len laso, scaled
+uFF9D4    len+lawa	# len lawa, scaled
+uFF9D5    len+lili	# len lili, scaled
+uFF9D6    len+loje	# len loje, scaled
+uFF9D7    len+luka	# len luka, scaled
+uFF9D8    len+noka	# len noka, scaled
+uFF9D9    len+pimeja	# len pimeja, scaled
+uFF9DA    len+sin	# len sin, scaled
+uFF9DB    len+walo	# len walo, scaled
+uFF9DC    linja-lili	# linja lili, stacked
+uFF9DD    linja-pona	# linja pona, stacked
+uFF9DE    lipu+kasi	# lipu kasi, scaled
+uFF9DF    lipu+nanpa	# lipu nanpa, scaled
+uFF9E0    lipu+sewi	# lipu sewi, default, Arabic, scaled
+uFF9E0    lipu+sewi1	# lipu sewi, default, Arabic, scaled
+uFF9E0    lipu+sewi01	# lipu sewi, default, Arabic, scaled
+uFF9E1    lipu+sona	# lipu sona, scaled
+uFF9E2    lipu+toki	# lipu toki, scaled
+uFF9E3    luka-luka	# luka luka, stacked (10)
+uFF9E4    lupa+jaki lupa+@jaki	# lupa jaki, scaled
+uFF9E5    lupa+kiwen	# lupa kiwen, scaled
+uFF9E6    lupa+kute	# lupa kute, scaled
+uFF9E7    lupa+lili	# lupa lili, scaled
+uFF9E8    lupa+meli lupa+meli1	# lupa meli, default, hair or headscarf, scaled
+uFF9E9    lupa+monsi lupa+monsi1	# lupa monsi, default, dot, scaled
+uFF9EA    lupa+nena	# lupa nena, scaled
+uFF9EB    lupa+tomo lupa+toma	# lupa tomo, scaled
+uFF9EC    ma-ale ma-ali	# ma ale, ma ali, stacked
+uFF9ED    ma-kasi	# ma kasi, stacked
+uFF9EE    ma-tomo ma-toma	# ma tomo, stacked
+uFF9EF    mama+mama	# mama mama, scaled
+uFF9F0    mama+meli mama+meli1	# mama meli, default, hair or headscarf, scaled
+uFF9F1    mama+mije mama+mije1	# mama mije, default, broad shoulders, scaled
+uFF9F2    meli+ike meli1+ike	# meli ike, default, hair or headscarf, scaled
+uFF9F3    meli+lili meli1+lili	# meli lili, default, hair or headscarf, scaled
+uFF9F4    meli+pona meli1+pona	# meli pona, default, hair or headscarf, scaled
+uFF9F5    meli+sama meli1+sama	# meli sama, default, hair or headscarf, scaled
+uFF9F6    meli+unpa meli1+unpa	# meli unpa, default, hair or headscarf, scaled
+uFF9F7    mije+ike mije1+ike	# mije ike, default, broad shoulders, scaled
+uFF9F8    mije+lili mije1+lili	# mije lili, default, broad shoulders, scaled
+uFF9F9    mije+pona mije1+pona	# mije pona, default, broad shoulders, scaled
+uFF9FA    mije+sama mije1+sama	# mije sama, default, broad shoulders, scaled
+uFF9FB    mije+unpa mije1+unpa	# mije unpa, default, broad shoulders, scaled
+uFF9FC    mije+wawa mije1+wawa	# mije wawa, default, broad shoulders, scaled
+uFF9FD    musi+lili	# musi lili, scaled
+uFF9FD    musi1+lili	# musi lili, scaled
+uFF9FD    musi2+lili	# musi lili, scaled
+uFF9FE    nena+kon	# nena kon, scaled
+uFF9FF    nena+kute	# nena kute, scaled
+uFFA00    nena+lili	# nena lili, scaled
+uFFA01    nena+mama	# nena mama, scaled
+uFFA02    nena+meli nena+meli1	# nena meli, default, hair or headscarf, scaled
+uFFA03    palisa+lili	# palisa lili, scaled
+uFFA04    pilin+ala	# pilin ala, scaled
+uFFA05    pilin+ike	# pilin ike, scaled
+uFFA06    pilin+nasa	# pilin nasa, scaled
+uFFA07    pilin+pakala	# pilin pakala, scaled
+uFFA08    pilin+pona	# pilin pona, scaled
+uFFA09    pilin+sama	# pilin sama, scaled
+uFFA0A    poki+kon	# poki kon, scaled
+uFFA0B    poki+len	# poki len, scaled
+uFFA0C    poki+lete	# poki lete, scaled
+uFFA0D    poki+lili	# poki lili, scaled
+uFFA0E    poki+seli	# poki seli, scaled
+uFFA0F    poki+telo	# poki telo, scaled
+uFFA10    pona-ala	# pona ala, stacked
+uFFA11    pona-lili	# pona lili, stacked
+uFFA12    pona-lukin	# pona lukin, stacked
+uFFA13    selo-len	# selo len, stacked
+uFFA14    selo-soweli	# selo soweli, stacked
+uFFA15    sike+lili suke+lili	# sike lili, scaled
+uFFA16    sitelen+ike	# sitelen ike, scaled
+uFFA17    sitelen+ma	# sitelen ma, scaled
+uFFA18    sitelen+monsuta	# sitelen monsuta, scaled
+uFFA19    sitelen+pona	# sitelen pona, scaled
+uFFA19    Pona	# glyph for font family name "Pona"
+uFFA1A    sitelen+sitelen	# sitelen sitelen, scaled
+uFFA1B    sitelen+tawa	# sitelen tawa, scaled
+uFFA1C    sitelen+toki	# sitelen toki, scaled
+uFFA1D    sona+ala	# sona ala, scaled
+uFFA1E    sona+ike	# sona ike, scaled
+uFFA1F    sona+lili	# sona lili, scaled
+uFFA20    sona+ma	# sona ma, scaled
+uFFA21    sona+nanpa	# sona nanpa, scaled
+uFFA22    sona+pona	# sona pona, scaled
+uFFA23    sona+sijelo	# sona sijelo, scaled
+uFFA24    sona+tenpo sona+tenpo1	# sona tenpo, sona ten, default, clock, scaled
+uFFA24    sona+ten sona+ten1	# sona tenpo, sona ten, default, clock, scaled
+uFFA25    sona+toki	# sona toki, scaled
+uFFA26    sona+utala	# sona utala, scaled
+uFFA27    supa-lape	# supa lape, stacked
+uFFA28    supa-lawa	# supa lawa, stacked
+uFFA29    supa-lupa	# supa lupa, stacked
+uFFA2A    supa-moku supa-moku1	# supa moku, default, hand to mouth, stacked
+uFFA2B    supa-monsi supa-monsi1	# supa monsi, default, dot, stacked
+uFFA2C    supa-pali	# supa pali, stacked
+uFFA2D    telo+lete	# telo lete, scaled
+uFFA2E    telo+lili	# telo lili, scaled
+uFFA2F    toki+ala	# toki ala, scaled
+uFFA30    toki+ike	# toki ike, scaled
+uFFA31    toki+pona	# toki pona, scaled
+uFFA32    toki+sin	# toki sin, scaled
+uFFA33    toki+sona	# toki sona, scaled
+uFFA34    toki+utala	# toki utala, scaled
+uFFA35    tomo+lape toma+lape	# tomo lape, scaled
+uFFA36    tomo+mani toma+mani	# tomo mani, scaled
+uFFA37    tomo+moku toma+moku	# tomo moku, default, pu style, scaled
+uFFA37    tomo+moku1 toma+moku1	# tomo moku, default, pu style, scaled
+uFFA38    tomo+monsuta toma+monsuta	# tomo monsuta, scaled
+uFFA39    tomo+nasin toma+nasin	# tomo nasin, scaled
+uFFA3A    tomo+pali toma+pali	# tomo pali, scaled
+uFFA3B    tomo+sona toma+sona	# tomo sona, scaled
+uFFA3C    tomo+tawa toma+tawa	# tomo tawa, scaled
+uFFA3D    tomo+unpa toma+unpa	# tomo unpa, scaled
+uFFA3E    tomo+utala toma+utala	# tomo utala, scaled
+uFFA3F    tu&tu	# tu tu, horizontal (4)
+uFFA40    tu&wan	# tu wan, horizontal (3)
+uFFA41    wan&tu	# wan tu, horizontal (3)
+uFFA42    luka&wan	# luka wan, horizontal (6)
+uFFA43    wan&luka	# wan luka, horizontal (6)
+uFFA44    luka&tu	# luka tu, horizontal (7)
+uFFA45    tu&luka	# tu luka, horizontal (7)
+uFFA46    luka&tu&wan	# luka tu wan (8)
+uFFA47    luka&wan&tu	# luka wan tu (8)
+uFFA48    luka&tu&tu	# luka tu tu (9)
+uFFA49    luka&luka	# luka luka, horizontal (10)
+uFFA4A    luka&luka&wan	# luka luka wan (11)
+uFFA4B    luka&luka&tu	# luka luka tu (12)
+uFFA4C    luka&luka&tu&wan	# luka luka tu wan (13)
+uFFA4D    luka&luka&wan&tu	# luka luka wan tu (13)
+uFFA4E    luka&luka&tu&tu	# luka luka tu tu (14)
+uFFA4F    luka&luka&luka	# luka luka luka (15)
+
+# Sitelen Pona Presentation Forms-A, variants subblock
+uFFA52    a_	# a, default, extended forward
+uFFA53    ala_	# ala, extended forward
+uFFA54    _ala	# ala, extended backward
+uFFA55    _ala_	# ala, extended bidirectional
+uFFA56    awen_	# awen, extended forward
+uFFA57    _awen	# awen, extended backward
+uFFA58    _awen_	# awen, extended bidirectional
+uFFA59    esun_	# esun, extended forward
+uFFA5A    _kama	# kama, extended backward
+uFFA5B    ken_	# ken, extended forward
+uFFA5C    _ken	# ken, extended backward
+uFFA5D    _ken_	# ken, extended bidirectional
+uFFA5E    kepeken_ kepen_	# kepeken, kepen, extended forward
+uFFA5F    len_	# len, extended forward
+uFFA60    _len	# len, extended backward
+uFFA61    _len_	# len, extended bidirectional
+uFFA62    linja_	# linja, extended forward
+uFFA63    lon_	# lon, extended forward
+uFFA64    _lon	# lon, extended backward
+uFFA65    _lon_	# lon, extended bidirectional
+uFFA66    luka_	# luka, extended forward
+uFFA67    meli_ meli1_	# meli, default, hair or headscarf, extended forward
+uFFA68    _meli _meli1	# meli, default, hair or headscarf, extended backward
+uFFA69    _meli_ _meli1_	# meli, default, hair or headscarf, extended bidirectional
+uFFA6A    _mi _mi1 _mi2	# mi, extended backward
+uFFA6B    mije_ mije1_	# mije, default, broad shoulders, extended forward
+uFFA6C    _mije _mije1	# mije, default, broad shoulders, extended backward
+uFFA6D    _mije_ _mije1_	# mije, default, broad shoulders, extended bidirectional
+uFFA6E    moku_ moku1_	# moku, default, hand to mouth, extended forward
+uFFA6F    monsi_ monsi1_	# monsi, default, dot, extended forward
+uFFA70    mute_ mute1_	# mute, default, three vertical lines, extended forward
+uFFA71    _mute _mute1	# mute, default, three vertical lines, extended backward
+uFFA72    _mute_ _mute1_	# mute, default, three vertical lines, extended bidirectional
+uFFA73    nanpa_	# nanpa, extended forward
+uFFA74    _nanpa	# nanpa, extended backward
+uFFA75    _nanpa_	# nanpa, extended bidirectional
+uFFA76    nena_	# nena, extended forward
+uFFA77    _nena	# nena, extended backward
+uFFA78    _nena_	# nena, extended bidirectional
+uFFA79    _ona _ona1 _ona2	# ona, extended backward
+uFFA7A    pali_	# pali, extended forward
+uFFA7B    pana_	# pana, extended forward
+uFFA7C    pi_	# pi, extended forward
+uFFA7D    pini_	# pini, extended forward
+uFFA7E    _pini	# pini, extended backward
+uFFA7F    _pini_	# pini, extended bidirectional
+uFFA80    selo_	# selo, extended forward
+uFFA81    _selo	# selo, extended backward
+uFFA82    _selo_	# selo, extended bidirectional
+uFFA83    sewi_ sewi1_ sewi01_	# sewi, default, Arabic, extended forward
+uFFA84    sijelo_	# sijelo, extended forward
+uFFA85    _sijelo	# sijelo, extended backward
+uFFA86    _sijelo_	# sijelo, extended bidirectional
+uFFA87    _sinpin _sinpin1	# sinpin, default, dot, extended backward
+uFFA88    soweli_ soweli1_	# soweli, default, pu style, extended forward
+uFFA89    _soweli _soweli1	# soweli, default, pu style, extended backward
+uFFA8A    _soweli_ _soweli1_	# soweli, default, pu style, extended bidirectional
+uFFA8B    supa_	# supa, extended forward
+uFFA8C    _supa	# supa, extended backward
+uFFA8D    _supa_	# supa, extended bidirectional
+uFFA8E    taso_	# taso, extended forward
+uFFA8F    tawa_	# tawa, extended forward
+uFFA90    _telo	# telo, extended backward
+uFFA91    _waso _waso1	# waso, default, two eyes, extended backward
+uFFA92    weka_ weka1_	# weka, default, pu style, extended forward
+uFFA93    _weka _weka1	# weka, default, pu style, extended backward
+uFFA94    _weka_ _weka1_	# weka, default, pu style, extended bidirectional
+uFFA95    oko_ oko1_	# oko, default, ku style, extended forward
+uFFA96    _kipisi _kipisi1	# kipisi, default, percent sign, extended backward
+uFFA97    _jasima	# jasima, extended backward
+uFFA98    kijetesantakalu_	# kijetesantakalu, default, raccoon, two eyes, extended forward
+uFFA98    kijetesantakalu1_	# kijetesantakalu, default, raccoon, two eyes, extended forward
+uFFA98    kijete_ kijete1_	# kijetesantakalu, default, raccoon, two eyes, extended forward
+uFFA98    kije_ kije1_	# kijetesantakalu, default, raccoon, two eyes, extended forward
+uFFA99    meso_ meso1_	# meso, default, vertical, extended forward
+uFFA9A    _meso _meso1	# meso, default, vertical, extended backward
+uFFA9B    _meso_ _meso1_	# meso, default, vertical, extended bidirectional
+uFFA9C    lanpan_ lanpan1_	# lanpan, default, jo, extended forward
+uFFA9D    n_ n1_	# n, default, straight exclamation radical, extended forward
+uFFA9E    _n _n1	# n, default, straight exclamation radical, extended backward
+uFFA9F    _n_ _n1_	# n, default, straight exclamation radical, extended bidirectional
+uFFAA0    kala2 kala.cv80.1	# kala, two eyes
+uFFAA1    meli2 meli.cv81.1	# meli, Venus
+uFFAA2    mije2 mije.cv82.1	# mije, Mars
+uFFAA3    olin2 olin.cv83.1	# olin, pilin with emitters
+uFFAA4    sewi2 sewi02 sewi.cv84.1	# sewi, secularized
+uFFAA5    uta2 uta.cv85.1	# uta, dotless
+uFFAA6    wile2 wile.cv86.1	# wile, closed
+uFFAA7    namako1 namako.cv88.2	# namako, four rays
+uFFAA8    namako2 namako.cv88.1	# namako, pepper with emitters
+uFFAA9    meso1 meso.cv90.2	# meso, vertical lines with dot
+uFFAAA    meso2 meso.cv90.1	# meso, ante with dot
+uFFAAB    epiku1 epiku.cv91.1	# epiku, upwards arrow
+uFFAAC    epiku2 epiku.cv91.2	# epiku, pona with emitters
+uFFAAD    kokosila1 kokosila.cv94.2	# kokosila, toki with stroke
+uFFAAE    kokosila2 kokosila.cv94.1	# kokosila, star
+uFFAAF    lanpan1 lanpan.cv97.2	# lanpan, jo
+uFFAB0    lanpan2 lanpan.cv97.3	# lanpan, mistake
+uFFAB1    lanpan3 lanpan.cv97.1	# lanpan, turned pana
+uFFAB2    majuna1 majuna.cv99.2	# majuna, turned sin
+uFFAB3    majuna2 majuna.cv99.1	# majuna, lotus or sunset
+uFFAB4    sewi2_ sewi02_	# sewi, secularized, extended forward
+uFFAB5    _sewi2 _sewi02	# sewi, secularized, extended backward
+uFFAB6    _sewi2_ _sewi02_	# sewi, secularized, extended bidirectional
+uFFAB7    lanpan2_	# lanpan, mistake, extended forward
+uFFAB8    mu2 mu&\u1F5E7	# mu, emitters
+uFFABB    =kijetesantakalu	# kijetesantakalu, default, raccoon, two eyes, extended backward
+uFFABB    =kijetesantakalu1	# kijetesantakalu, default, raccoon, two eyes, extended backward
+uFFABB    =kijete =kijete1	# kijetesantakalu, default, raccoon, two eyes, extended backward
+uFFABB    =kije =kije1	# kijetesantakalu, default, raccoon, two eyes, extended backward
+uFFABC    =kijetesantakalu_	# kijetesantakalu, default, raccoon, two eyes, extended bidirectional
+uFFABC    =kijetesantakalu1_	# kijetesantakalu, default, raccoon, two eyes, extended bidirectional
+uFFABC    =kijete_ =kijete1_	# kijetesantakalu, default, raccoon, two eyes, extended bidirectional
+uFFABC    =kije_ =kije1_	# kijetesantakalu, default, raccoon, two eyes, extended bidirectional
+uFFABD    nata	# soweli nata
+uFFABE    lipamanka Lipamanka	# lipamanka; kijetesantakalu + star of David
+uFFABE    kijetesantakalu&\uni2721	# lipamanka; kijetesantakalu + star of David
+uFFABE    kijetesantakalu1&\uni2721	# lipamanka; kijetesantakalu + star of David
+uFFABE    kijete&\uni2721	# lipamanka; kijetesantakalu + star of David
+uFFABE    kijete1&\uni2721	# lipamanka; kijetesantakalu + star of David
+uFFABE    kije&\uni2721	# lipamanka; kijetesantakalu + star of David
+uFFABE    kije1&\uni2721	# lipamanka; kijetesantakalu + star of David
+uFFABF    Lepeka melinjakulekule	# jan Lepeka; melinjakulekule; meli + cat face
+uFFABF    meli&\u1F431	# jan Lepeka; melinjakulekule; meli + cat face
+uFFABF    meli1&\u1F431	# jan Lepeka; melinjakulekule; meli + cat face
+uFFABF    meli&kule&kule	# jan Lepeka; melinjakulekule; meli + cat face
+uFFABF    meli1&kule&kule	# jan Lepeka; melinjakulekule; meli + cat face
+uFFABF    meli&nja&kule&kule	# jan Lepeka; melinjakulekule; meli + cat face
+uFFABF    meli1&nja&kule&kule	# jan Lepeka; melinjakulekule; meli + cat face
+
+# Sitelen Pona Presentation Forms-B
+uFFAC0    isipin	# isipin
+uFFAC1    kapesi1	# kapesi, triangle with ma above
+uFFAC2    kapesi2	# kapesi, triangle with ma inside
+uFFAC3    kiki1 kiki.cv95.4	# kiki, kiki-bouba experiment
+uFFAC4    linluwi1 linluwi.cv96.4	# linluwi, linuwi, sitelen-len-linja
+uFFAC4    linuwi1 linuwi.cv96.4	# linluwi, linuwi, sitelen-len-linja
+uFFAC5    linluwi1_ linuwi1_	# linluwi, linuwi, sitelen-len-linja, extended forward
+uFFAC6    _linluwi1 _linuwi1	# linluwi, linuwi, sitelen-len-linja, extended backward
+uFFAC7    _linluwi1_ _linuwi1_	# linluwi, linuwi, sitelen-len-linja, extended bidirectional
+uFFAC8    mulapisu mulapisu1	# mulapisu, default, traditional
+uFFAC9    samu	# samu
+uFFACA    unu	# unu
+uFFACB    wa	# wa, default
+uFFACC    ete ete1	# ete, default, rectangle with dot above
+uFFACD    ete2	# ete, sewi with arrow to dot above
+uFFACE    ete2_	# ete, sewi with arrow to dot above, extended forward
+uFFACF    kan	# kan
+uFFAD0    kuntu kalama&musi&tan&uta	# kuntu
+uFFAD1    loka jalan	# loka, jalan
+uFFAD2    misa1	# misa, no foot and no ear
+uFFAD3    misa2	# misa, no foot and short ear
+uFFAD4    misa3	# misa, no foot and long ear
+uFFAD5    misa4	# misa, foot and no ear
+uFFAD6    misa5	# misa, foot and short ear
+uFFAD7    misa6	# misa, foot and long ear
+uFFAD8    waleja	# waleja
+uFFAD9    ewe	# ewe
+uFFADA    kamalawala kama&pi&lawa&ala	# kamalawala
+uFFADB    ke	# ke, default
+uFFADC    ke_	# ke, default, extended forward
+uFFADD    _ke	# ke, default, extended backward
+uFFADE    _ke_	# ke, default, extended bidirectional
+uFFADF    kese	# kese
+uFFAE0    _kese	# kese, extended backward
+uFFAE1    kulijo kulijo1	# kulijo, default, lete with emitters
+uFFAE2    likujo	# likujo
+uFFAE3    neja	# neja
+uFFAE4    oke1 oki2	# oke, oki, circle with checkmark
+uFFAE5    pata	# pata
+uFFAE6    peto pana&e&telo&oko	# peto
+uFFAE7    po	# po
+uFFAE8    polinpin	# polinpin
+uFFAE9    pomotolo	# pomotolo
+uFFAEA    pomotolo_	# pomotolo, extended forward
+uFFAEB    san1 tuli1	# san, tuli, three vertical harpoons
+uFFAEC    soto	# soto
+uFFAED    taki1	# taki, magnet
+uFFAEE    taki2	# taki, yinyang
+uFFAEF    teje	# teje
+uFFAF0    te	# te
+uFFAF1    to	# to
+uFFAF2    umesu umesu1	# umesu, default, podium
+uFFAF3    umesu_ umesu1_	# umesu, default, podium, extended forward
+uFFAF4    _umesu _umesu1	# umesu, default, podium, extended backward
+uFFAF5    _umesu_ _umesu1_	# umesu, default, podium, extended bidirectional
+uFFAF6    usawi	# usawi
+uFFAF7    wasoweli2	# wasoweli, tan jan Lepeka
+uFFAF8    wasoweli2_	# wasoweli, tan jan Lepeka, extended forward
+uFFAF9    _wasoweli2	# wasoweli, tan jan Lepeka, extended backward
+uFFAFA    _wasoweli2_	# wasoweli, tan jan Lepeka, extended bidirectional
+uFFAFB    sutopatikuna	# sutopatikuna
+uFFAFC    yupekosi	# yupekosi (pronounced �upekosi)
+uFFAFD    Pingo	# Pingo
+uFFAFE    kalamARR	# kalamARR
+uFFAFF    akesiv	# akesi, default, turned
+uFFB00    ni4 ni04 ni< ni&\arrowleft	# ni, leftwards
+uFFB01    ni3 ni03 ni^ ni&\arrowup	# ni, upwards
+uFFB02    ni2 ni02 ni> ni&\arrowright	# ni, rightwards
+uFFB03    ni ni1 ni01 niv ni&\arrowdown	# ni, default, downwards
+uFFB04    mi1 mi.ss18	# mi, straight
+uFFB05    mi2 mi.ss19	# mi, curved
+uFFB06    sina1 sina.ss18	# sina, straight
+uFFB07    sina2 sina.ss19	# sina, curved
+uFFB08    ona1 ona.ss18	# ona, straight
+uFFB09    ona2 ona.ss19	# ona, curved
+uFFB0A    iki1 iki.ss18	# iki, straight
+uFFB0B    iki2 iki.ss19	# iki, curved
+uFFB0C    ipi1 ipi.ss18	# ipi, straight
+uFFB0D    ipi2 ipi.ss19	# ipi, curved
+uFFB0E    wi1 wi.ss18	# wi, straight
+uFFB0F    wi2 wi.ss19	# wi, curved
+uFFB10    a1 a.ss16	# a, straight exclamation radical
+uFFB11    a2 a.ss17	# a, diagonal exclamation radical
+uFFB12    o1 o.ss16	# o, straight exclamation radical
+uFFB13    o2 o.ss17	# o, diagonal exclamation radical
+uFFB14    kin1 kin.ss16	# kin, straight exclamation radical
+uFFB15    kin2 kin.ss17	# kin, diagonal exclamation radical
+uFFB16    n1 n.ss16	# n, straight exclamation radical
+uFFB17    n1_	# n, straight exclamation radical, extended forward
+uFFB18    _n1	# n, straight exclamation radical, extended backward
+uFFB19    _n1_	# n, straight exclamation radical, extended bidirectional
+uFFB1A    n2 n.ss17	# n, diagonal exclamation radical
+uFFB1B    n2_	# n, diagonal exclamation radical, extended forward
+uFFB1C    _n2	# n, diagonal exclamation radical, extended backward
+uFFB1D    _n2_	# n, diagonal exclamation radical, extended bidirectional
+uFFB1E    wa1 wa.ss16	# wa, straight exclamation radical
+uFFB1F    wa2 wa.ss17	# wa, diagonal exclamation radical
+uFFB20    ke1 ke.ss16	# ke, straight exclamation radical
+uFFB21    ke1_	# ke, straight exclamation radical, extended forward
+uFFB22    _ke1	# ke, straight exclamation radical, extended backward
+uFFB23    _ke1_	# ke, straight exclamation radical, extended bidirectional
+uFFB24    ke2 ke.ss17	# ke, diagonal exclamation radical
+uFFB25    ke2_	# ke, diagonal exclamation radical, extended forward
+uFFB26    _ke2	# ke, diagonal exclamation radical, extended backward
+uFFB27    _ke2_	# ke, diagonal exclamation radical, extended bidirectional
+uFFB28    je1 je.ss16	# je, straight exclamation radical
+uFFB29    je2 je.ss17	# je, diagonal exclamation radical
+uFFB2A    ako1 ako.ss16	# ako, straight exclamation radical
+uFFB2B    ako2 ako.ss17	# ako, diagonal exclamation radical
+uFFB2C    ju	# ju, reserved word
+uFFB2D    lu lu1	# lu, reserved word
+uFFB2E    nu nu1	# nu, reserved word
+uFFB2F    su1	# su, Oz
+uFFB30    u	# u, reserved word
+uFFB31    jami	# jami
+uFFB32    melome meli&pi&olin&meli	# melome
+uFFB33    melome_	# melome, extended forward
+uFFB34    _melome	# melome, extended backward
+uFFB35    _melome_	# melome, extended bidirectional
+uFFB36    mijomi mije&pi&olin&mije	# mijomi
+uFFB37    mijomi_	# mijomi, extended forward
+uFFB38    _mijomi	# mijomi, extended backward
+uFFB39    _mijomi_	# mijomi, extended bidirectional
+uFFB3A    natu aka eki	# natu, aka, eki
+uFFB3B    omekapo o&moku&e&kala&pona	# omekapo
+uFFB3C    puwa	# puwa
+uFFB3D    su0	# su, question marker
+uFFB3E    wekama	# wekama
+uFFB3F    _wekama	# wekama, extended backward
+uFFB40    alu	# alu
+uFFB41    awase	# awase
+uFFB42    awase_	# awase, extended forward
+uFFB43    enko enko1	# enko, default, space alien looking thing
+uFFB44    enko2	# enko, arrows
+uFFB45    enko3	# enko, grid
+uFFB46    i	# i
+uFFB47    iki	# iki, default
+uFFB48    ipi	# ipi, default
+uFFB49    itomi	# itomi
+uFFB4A    itomi_	# itomi, extended forward
+uFFB4B    _itomi	# itomi, extended backward
+uFFB4C    _itomi_	# itomi, extended bidirectional
+uFFB4D    jaku	# jaku
+uFFB4E    je	# je, default
+uFFB4F    jonke	# jonke
+uFFB50    _jonke	# jonke, extended backward
+uFFB51    kapa	# kapa
+uFFB52    kapa_	# kapa, extended forward
+uFFB53    _kapa	# kapa, extended backward
+uFFB54    _kapa_	# kapa, extended bidirectional
+uFFB55    ki	# ki
+uFFB56    ki_	# ki, extended forward
+uFFB57    kisa	# kisa
+uFFB58    konwe	# konwe
+uFFB59    kosan	# kosan
+uFFB5A    kosan_	# kosan, extended forward
+uFFB5B    _kosan	# kosan, extended backward
+uFFB5C    _kosan_	# kosan, extended bidirectional
+uFFB5D    kulu	# kulu
+uFFB5E    lokon	# lokon
+uFFB5F    molusa	# molusa
+uFFB60    nja	# nja
+uFFB61    okepuma	# okepuma
+uFFB62    omen o&moli&e&mi	# omen
+uFFB63    oni oni1	# oni, default, closed eyelid
+uFFB64    oni2	# oni, mun with emitters
+uFFB65    owe	# owe
+uFFB66    pa	# pa
+uFFB67    pasila	# pasila
+uFFB68    pasila_	# pasila, extended forward
+uFFB69    peta	# peta
+uFFB6A    pika pika1	# pika, default, lightning bolt
+uFFB6B    pipo	# pipo
+uFFB6C    sikomo	# sikomo
+uFFB6D    sikomo_	# sikomo, extended forward
+uFFB6E    _sikomo	# sikomo, extended backward
+uFFB6F    _sikomo_	# sikomo, extended bidirectional
+uFFB70    tokana tokana1	# tokana, default, magnifying glass
+uFFB71    wawajete	# wawajete
+uFFB72    we1	# we, particle
+uFFB73    ako	# ako, default
+uFFB74    jume	# jume
+uFFB75    konsi	# konsi
+uFFB76    konsi_	# konsi, extended forward
+uFFB77    kutopoma	# kutopoma
+uFFB78    lijokuku lijokuku1	# lijokuku, default, Hangul
+uFFB79    lijokuku2	# lijokuku, pilin sama with musi
+uFFB7A    lo lu2	# lo, lu
+uFFB7B    lo_ lu2_	# lo, lu, extended forward
+uFFB7C    me	# me
+uFFB7D    nele	# nele
+uFFB7E    nu2	# nu, synonym of sin
+uFFB7F    nuwa	# nuwa
+uFFB80    poni1	# poni, profile
+uFFB81    sipi	# sipi
+uFFB82    wi	# wi, default
+uFFB83    wi_ wi1_ wi2_	# wi, extended forward
+uFFB84    oki1 oke2	# oki, oke, checkmark without circle
+uFFB85    To to2	# mute To
+uFFB86    sowoli	# sOwOli
+uFFB87    sowoli_	# sOwOli, extended forward
+uFFB88    _sowoli	# sOwOli, extended backward
+uFFB89    _sowoli_	# sOwOli, extended bidirectional
+uFFB8A    kulepiku	# kulepiku
+uFFB8B    epikule	# epikule
+uFFB8C    yutu	# yutu
+uFFB8D    slape \s&lape	# slape
+uFFB8E    jans jan&\s	# jans
+uFFB8F    jew	# jew
+uFFB90    a&suli	# jan Asuli
+uFFB91    Asuto waso&\u1F47D	# jan waso Asuto; waso + extraterrestrial alien
+uFFB92    Eko Eko1	# ilo Eko
+uFFB93    Jan jan&jan&jan	# jan Jan; jan + jan + jan
+uFFB94    Kapilu	# jan Kapilu
+uFFB95    kili&ma kulupu&kili&ma	# kulupu Kilima; kulupu + kili + ma
+uFFB96    kulupu&en kulupu&\ampersand	# The & System; kulupu + ampersand
+uFFB97    mono	# glyph for font family name "mono"
+uFFB98    Nili	# jan Nili Koloto
+uFFB99    unikijetesantakalu	# jan Wija / Wyub; kijetesantakalu + face with halo
+uFFB99    kijetesantakalu&\u1F607	# jan Wija / Wyub; kijetesantakalu + face with halo
+uFFB9A    waso&pimeja	# waso Atemi / waso pimeja
+uFFB9B    Weko	# jan Kita / jan Weko
+uFFB9C    nasulin Nasulin	# Nasulin (Touhou hijack)
+uFFB9D    juniko Juniko	# Juniko (Unicode)
+uFFB9E    sijesuwa Sijesuwa	# Sijesuwa (CSUR)
+uFFB9E    sisa Sisa	# Sisa (CSUR)
+uFFB9F    jusijesuwa Jusijesuwa	# Jusijesuwa (UCSUR)
+uFFB9F    jusisa Jusisa	# Jusisa (UCSUR)
+uFFBA0    kalijopilale	# kalijopilale
+uFFBA1    kijosin	# kijosin
+uFFBA2    kijosin_	# kijosin, extended forward
+uFFBA3    _kijosin	# kijosin, extended backward
+uFFBA4    _kijosin_	# kijosin, extended bidirectional
+uFFBA5    linluwi2 linluwi.cv96.1	# linluwi, linuwi, len-linja-en with emitters
+uFFBA5    linuwi2 linuwi.cv96.1	# linluwi, linuwi, len-linja-en with emitters
+uFFBA6    linluwi2_ linuwi2_	# linluwi, linuwi, len-linja-en with emitters, extended forward
+uFFBA7    _linluwi2 _linuwi2	# linluwi, linuwi, len-linja-en with emitters, extended backward
+uFFBA8    _linluwi2_ _linuwi2_	# linluwi, linuwi, len-linja-en with emitters, extended bidirectional
+uFFBA9    mamasi mamasina	# mamasi, mamasina
+uFFBAA    waken	# waken
+uFFBAB    lansan	# lansan
+uFFBAC    wiki	# wiki
+uFFBAD    tenpo2 ten2	# tenpo, ten, hourglass, Roman numeral X
+uFFBAE    tona	# tona
+uFFBAF    poki+tona	# poki tona, scaled
+uFFBB0    ijo+meli2	# ijo meli, Venus, scaled
+uFFBB1    ijo+mije2	# ijo mije, Mars, scaled
+uFFBB2    ijo+namako2	# ijo namako, pepper with emitters, scaled
+uFFBB3    ijo+olin2	# ijo olin, pilin with emitters, scaled
+uFFBB4    ijo+sewi2 ijo+sewi02	# ijo sewi, secularized, scaled
+uFFBB5    ijo+uta2	# ijo uta, dotless, scaled
+uFFBB6    ijo+wile2	# ijo wile, turned pilin, scaled
+uFFBB7    jan+olin2	# jan olin, pilin with emitters, scaled
+uFFBB8    jan+sewi2 jan+sewi02	# jan sewi, secularized, scaled
+uFFBB9    kala-lete kala1-lete	# kala lete, default, without eyes, stacked
+uFFBBA    kala2-lete	# kala lete, with eyes, stacked
+uFFBBB    kala-lili kala1-lili	# kala lili, default, without eyes, stacked
+uFFBBC    kala2-lili	# kala lili, with eyes, stacked
+uFFBBD    laso-kasi	# laso kasi, stacked
+uFFBBE    laso-mun	# laso mun, stacked
+uFFBBF    laso-sewi	# laso sewi, default, Arabic, stacked
+uFFBBF    laso-sewi1	# laso sewi, default, Arabic, stacked
+uFFBBF    laso-sewi01	# laso sewi, default, Arabic, stacked
+uFFBC0    laso-sewi2	# laso sewi, secularized, stacked
+uFFBC0    laso-sewi02	# laso sewi, secularized, stacked
+uFFBC1    laso-telo	# laso telo, stacked
+uFFBC2    lipu+nimi	# lipu nimi, scaled
+uFFBC3    lipu+sewi2 lipu+sewi02	# lipu sewi, secularized, scaled
+uFFBC4    lipu&tenpo lipu&tenpo1	# lipu tenpo, magazine logo
+uFFBC4    lipu&ten lipu&ten1	# lipu tenpo, magazine logo
+uFFBC5    loje-jelo	# loje jelo, stacked
+uFFBC6    loje-walo	# loje walo, stacked
+uFFBC7    luka+luka	# luka luka, scaled (10)
+uFFBC8    luka&luka&luka&tu	# luka luka luka tu (17)
+uFFBC9    luka&luka&luka&tu&tu	# luka luka luka tu tu (19)
+uFFBCA    luka&luka&luka&tu&wan	# luka luka luka tu wan (18)
+uFFBCB    luka&luka&luka&wan	# luka luka luka wan (16)
+uFFBCC    luka&luka&luka&wan&tu	# luka luka luka wan tu (18)
+uFFBCD    luka-tu	# luka tu, stacked (7)
+uFFBCE    luka-wan	# luka wan, stacked (6)
+uFFBCF    lupa+meli2	# lupa meli, Venus, scaled
+uFFBD0    mama+meli2	# mama meli, Venus, scaled
+uFFBD1    mama+mije2	# mama mije, Mars, scaled
+uFFBD2    mama+tonsi	# mama tonsi, scaled
+uFFBD3    meli2+ike	# meli ike, Venus, scaled
+uFFBD4    meli2+lili	# meli lili, Venus, scaled
+uFFBD5    meli2+pona	# meli pona, Venus, scaled
+uFFBD6    meli2+sama	# meli sama, Venus, scaled
+uFFBD7    meli+tonsi meli1+tonsi	# meli tonsi, default, hair or headscarf, scaled
+uFFBD7    meli+tonsi1 meli1+tonsi1	# meli tonsi, default, hair or headscarf, scaled
+uFFBD8    meli2+tonsi meli2+tonsi1	# meli tonsi, Venus, scaled
+uFFBD9    meli2+unpa	# meli unpa, Venus, scaled
+uFFBDA    meli+wawa meli1+wawa	# meli wawa, default, hair or headscarf, scaled
+uFFBDB    meli2+wawa	# meli wawa, Venus, scaled
+uFFBDC    mije2+ike	# mije ike, Mars, scaled
+uFFBDD    mije2+lili	# mije lili, Mars, scaled
+uFFBDE    mije2+pona	# mije pona, Mars, scaled
+uFFBDF    mije2+sama	# mije sama, Mars, scaled
+uFFBE0    mije+tonsi mije1+tonsi	# mije tonsi, default, broad shoulders, scaled
+uFFBE0    mije+tonsi1 mije1+tonsi1	# mije tonsi, default, broad shoulders, scaled
+uFFBE1    mije2+tonsi mije2+tonsi1	# mije tonsi, Mars, scaled
+uFFBE2    mije2+unpa	# mije unpa, Mars, scaled
+uFFBE3    mije2+wawa	# mije wawa, Mars, scaled
+uFFBE4    nena+meli2	# nena meli, Venus, scaled
+uFFBE5    tonsi+ike tonsi1+ike	# tonsi ike, scaled
+uFFBE6    tonsi+lili tonsi1+lili	# tonsi lili, scaled
+uFFBE7    tonsi+pona tonsi1+pona	# tonsi pona, scaled
+uFFBE8    tonsi+sama tonsi1+sama	# tonsi sama, scaled
+uFFBE9    tonsi+sin tonsi1+sin	# tonsi sin, scaled
+uFFBEA    tonsi+unpa tonsi1+unpa	# tonsi unpa, scaled
+uFFBEB    tonsi+wawa tonsi1+wawa	# tonsi wawa, scaled
+uFFBEC    walo+pimeja	# walo pimeja, scaled
+uFFBED    wawa+tenpo	# wawa tenpo, scaled
+uFFBEE    kijetesantakalu&\uni1E9E	# sharp s + kijetesantakalu
+uFFBEE    \uni1E9E&kijetesantakalu	# sharp s + kijetesantakalu
+uFFBEE    \uni1E9E.ss20	# sharp s + kijetesantakalu
+uFFBEF    kijetesantakalu&\germandbls	# sharp s + kijetesantakalu
+uFFBEF    \germandbls&kijetesantakalu	# sharp s + kijetesantakalu
+uFFBEF    \germandbls.ss20	# sharp s + kijetesantakalu
+uFFBF0    ma&pona&pi&toki&pona	# ma pona pi toki pona
+uFFBF1    ma&pi&nasin&sitelen	# ma pi nasin sitelen
+uFFBF2    Linku	# kulupu Linku
+uFFBF3    "lipu&Wesi&pi&toki&pona"	# lipu Wesi pi toki pona (r/tokipona)
+uFFBF3    "lipu+Wesi+pi+toki+pona"	# lipu Wesi pi toki pona (r/tokipona)
+uFFBF3    "lipu-Wesi-pi-toki-pona"	# lipu Wesi pi toki pona (r/tokipona)
+uFFBF4    linja-sike linja-suke	# linja sike, stacked
+uFFBF5    linja-suwi	# linja suwi, stacked
+uFFBF6    nasin&nanpa	# nasin nanpa, horizontal
+uFFBF7    nasin-nanpa	# nasin nanpa, stacked
+uFFBF8    nasin-sitelen	# nasin sitelen, stacked
+uFFBF9    sitelen&seli&kiwen	# sitelen seli kiwen
+uFFBFA    nimi-sin	# nimi sin, stacked
+uFFBFB    nimi+sin	# nimi sin, scaled
+uFFBFC    Amanka Amonka	# Among Us
+uFFBFD    Manka	# Minecraft
+uFFBFE    Nutan	# Apple Newton
+uFFBFF    ijo&ni&li&seme	# ijo ni li seme
+
+# Sitelen Pona Presentation Forms-C, combined glyphs subblock
+uFFD00    ijo-ni	# ijo ni, stacked
+uFFD01    jan-ni	# jan ni, stacked
+uFFD02    ma-ni	# ma ni, stacked
+uFFD03    tenpo-ni tenpo1-ni	# tenpo ni, stacked
+uFFD03    ten-ni ten1-ni	# tenpo ni, stacked
+uFFD04    tomo-ni toma-ni	# tomo ni, stacked
+uFFD05    ma-ike	# ma ike, stacked
+uFFD06    ma-pona	# ma pona, stacked
+uFFD07    meli&mije mije&meli	# meli mije, hair or headscarf and broad shoulders, combined
+uFFD07    meli1&mije1 mije1&meli1	# meli mije, hair or headscarf and broad shoulders, combined
+uFFD08    meli2&mije2 mije2&meli2	# meli mije, Venus and Mars, combined
+uFFD08    tonsi2 tonsi.cv87.1	# tonsi, Venus and Mars
+uFFD09    pimeja&jelo	# pimeja jelo, combined
+uFFD0A    pimeja&laso	# pimeja laso, combined
+uFFD0B    pimeja&loje	# pimeja loje, combined
+uFFD0C    telo+sitelen	# telo sitelen, scaled
+uFFD0D    walo&jelo	# walo jelo, combined
+uFFD0E    walo&laso	# walo laso, combined
+uFFD0F    walo&loje	# walo loje, combined
+uFFD10    lipu-majuna lipu-majuna2	# lipu majuna, default, lotus or sunset, stacked
+uFFD11    lipu+majuna lipu+majuna2	# lipu majuna, default, lotus or sunset, scaled
+uFFD12    lipu-kule	# lipu kule, stacked
+uFFD13    lipu+kule	# lipu kule, scaled
+uFFD14    lipu-tenpo lipu-tenpo1	# lipu tenpo, stacked
+uFFD14    lipu-ten lipu-ten1	# lipu tenpo, stacked
+uFFD15    lipu+tenpo lipu+tenpo1	# lipu tenpo, scaled
+uFFD15    lipu+ten lipu+ten1	# lipu tenpo, scaled
+uFFD16    lipu-unpa	# lipu unpa, stacked
+uFFD17    lipu+unpa	# lipu unpa, scaled
+uFFD18    mije3 mije.cv82.2	# mije, circle with letter J
+uFFD19    meli3 meli.cv81.2	# meli, circle with letter L
+uFFD1A    tonsi3 tonsi.cv87.2	# tonsi, circle with letter T
+uFFD1B    tonsi4 tonsi.cv87.3	# tonsi, antimony symbol
+uFFD1C    ike-mute	# ike mute, stacked
+uFFD1D    mute-mute	# mute mute, stacked
+uFFD1E    pona-mute	# pona mute, stacked
+uFFD1F    kule-ma	# kule ma, stacked
+uFFD20    kule-uta	# kule uta, stacked
+uFFD21    kule-kili	# kule kili, stacked
+uFFD22    kule-suno	# kule suno, stacked
+uFFD23    kule-kasi	# kule kasi, stacked
+uFFD24    kule-sewi	# kule sewi, stacked
+uFFD24    kule-sewi1 kule-sewi01	# kule sewi, stacked
+uFFD24    kule-sewi2 kule-sewi02	# kule sewi, stacked
+uFFD25    kule-telo	# kule telo, stacked
+uFFD26    kule-mun	# kule mun, stacked
+uFFD27    kule-pilin	# kule pilin, stacked
+uFFD28    kijetesantakalu-soweli	# kijetesantakalu soweli, stacked
+uFFD29    soweli-kijetesantakalu	# soweli kijetesantakalu, stacked
+uFFD2A    kiwen+ike	# kiwen ike, scaled
+uFFD2B    kiwen+pona	# kiwen pona, scaled
+uFFD2C    tenpo-ike tenpo1-ike	# tenpo ike, stacked
+uFFD2C    ten-ike ten1-ike	# tenpo ike, stacked
+uFFD2D    tenpo-pona tenpo1-pona	# tenpo pona, stacked
+uFFD2D    ten-pona ten1-pona	# tenpo pona, stacked
+uFFD2E    musi2	# musi, straight ends
+uFFD2F    ja	# ja
+
+# Sitelen Pona Presentation Forms-C, name glyphs subblock
+uFFD30    Aja	# jan Aja
+uFFD31    AkesiKon	# akesi kon Nalasuni
+uFFD32    Amelin	# jan Amelin
+uFFD33    Ansu	# jan Ansu
+uFFD34    Antepan	# jan Antepan
+uFFD35    Asiku	# jan Asiku
+uFFD36    Atu	# waso Atu
+uFFD37    Esile	# jan Esile
+uFFD38    Eweke Eweke1	# soweli Eweke
+uFFD39    Ipawi	# jan Ipawi
+uFFD3A    Iseja	# jan Iseja
+uFFD3B    Jalepu	# jan Alepu
+uFFD3C    Jasun	# jan Jasun
+uFFD3D    Jonatan	# jan Jonatan
+uFFD3E    Jules	# Jules
+uFFD3F    Kemu	# jan Kemu
+uFFD40    Kepi	# jan Kepi (Kirby)
+uFFD41    Kijan	# Kijan
+uFFD42    Koko	# jan Koko
+uFFD43    Kulusepelipowi	# jan Kulusepelipowi
+uFFD44    Luke	# jan Luke
+uFFD45    Luna	# jan Luna
+uFFD46    Maki	# jan Maki
+uFFD47    Mako	# jan Mako
+uFFD48    Mekuwi	# jan Mekuwi
+uFFD49    Mila	# jan Mila
+uFFD4A    Mimuki	# ilo Mimuki
+uFFD4B    motan	# motan
+uFFD4C    Nalasuni	# akesi kon Nalasuni
+uFFD4D    nano	# nano
+uFFD4E    Niko	# jan Niko
+uFFD4F    Nlsn	# akesi kon Nalasuni
+uFFD50    Opa	# jan Opa
+uFFD51    Palensi	# jan Palensi
+uFFD52    Pami	# jan Pami
+uFFD53    Poman	# jan Poman
+uFFD54    Sijala	# jan Sijala
+uFFD55    Silani	# jan Silani
+uFFD56    Siwan	# jan Siwan
+uFFD57    Temi	# jan Temi
+uFFD58    Tensi	# jan Tensi
+uFFD59    Tonyu	# kala pona Tonyu
+uFFD5A    Usawi	# jan Usawi
+uFFD5B    Vriska	# Vriska
+uFFD5C    Waje	# jan Waje
+uFFD5D    Wen	# waso Wen
+uFFD5E    tenpi	# tonsi tenpi
+uFFD5F    kekantesantakalu	# jan Kekan te San takalu
+
+# Sitelen Pona Presentation Forms-C, variants subblock
+uFFD60    a3 a&\exclamdbl	# a, double exclamation
+uFFD61    a4 a&seli	# a, triple exclamation
+uFFD62    a5 a&\uni203D	# a, interrobang
+uFFD63    akesi2 akesi.cv92.1	# akesi, four-legged, upright
+uFFD64    akesiv2 akesiv.cv92.1	# akesi, four-legged, turned
+uFFD65    soko1 soko.cv89.1	# soko, thick stem
+uFFD66    soko2 soko.cv89.2	# soko, thin stem
+uFFD67    soko3 soko.cv89.3	# soko, thin stem with annulus
+uFFD68    moli2 moli.cv93.1	# moli, eyes and mouth
+uFFD69    mute2 luka&luka&luka&luka	# mute, four hands; luka luka luka luka (20)
+uFFD6A    misikeke2	# misikeke, mortar and pestle
+uFFD6B    linluwi3 linluwi.cv96.2	# linluwi, linuwi, len-linja with emitters
+uFFD6B    linuwi3 linluwi.cv96.2	# linluwi, linuwi, len-linja with emitters
+uFFD6C    linluwi4 linluwi.cv96.3	# linluwi, linuwi, connected kulupu
+uFFD6C    linuwi4 linuwi.cv96.3	# linluwi, linuwi, connected kulupu
+uFFD6D    kiki2 kiki.cv95.1	# kiki, hyperbolic squarrel
+uFFD6E    kiki3 kiki.cv95.2	# kiki, deltoid
+uFFD6F    kiki4 kiki.cv95.3	# kiki, hazard sign
+uFFD70    ni7 ni^< ni<^ ni&\uni2196	# ni, northwest
+uFFD71    ni6 ni^> ni>^ ni&\uni2197	# ni, northeast
+uFFD72    ni5 niv> ni>v ni&\uni2198	# ni, southeast
+uFFD73    ni8 niv< ni<v ni&\uni2199	# ni, southwest
+uFFD74    olin0 olin.cv83.3	# olin, disconnected double pilin
+uFFD75    olin1 olin.cv83.2	# olin, overlapping double pilin
+uFFD76    ku2 ku.cv98.1	# ku, dot with emitters
+uFFD77    ku3 ku.cv98.2	# ku, toki
+uFFD78    ku4 ku.cv98.3	# ku, toki pona
+uFFD79    ku5 ku.cv98.4	# ku, ijo pona
+uFFD7A    ku6 ku.cv98.5	# ku, fermata
+uFFD7B    ku7 ku.cv98.6	# ku, ijo
+uFFD7C    alu_	# alu, extended forward
+uFFD7D    _la	# la, extended backward
+uFFD7E    a1_	# a, straight exclamation radical, extended forward
+uFFD7F    a2_	# a, diagonal exclamation radical, extended forward
+
+# Sitelen Pona Presentation Forms-C, nimisin subblock
+uFFD80    alente	# alente
+uFFD81    jule	# jule
+uFFD82    nalanja1	# nalanja, orange slice
+uFFD83    ojuta	# ojuta
+uFFD84    omekalike o&moku&e&kala&ike	# omekalike
+uFFD85    poni2	# poni, horseshoe
+uFFD86    wowujiti wuwojiti	# wowujiti, wuwojiti
+uFFD87    aku	# aku
+uFFD88    ani	# ani
+uFFD89    anta	# anta
+uFFD8A    apelo	# apelo
+uFFD8B    elen	# elen
+uFFD8C    iseki	# iseki
+uFFD8D    kalapisituwi	# kalapisituwi
+uFFD8E    kana	# kana
+uFFD8F    kikolo	# kikolo
+uFFD90    kikulo	# kikulo
+uFFD91    kokoliko	# kokoliko
+uFFD92    koni	# koni
+uFFD93    kosikosa	# kosikosa
+uFFD94    masalo	# masalo
+uFFD95    matula	# matula
+uFFD96    nimi&sin	# nimi sin, combined
+uFFD97    nowi	# nowi
+uFFD98    olala	# olala
+uFFD99    opasan	# opasan
+uFFD9A    pakola pakola1	# pakola, default, pakala with emitters
+uFFD9B    pakola2	# pakola, Half As Interesting logo
+uFFD9C    panke	# panke
+uFFD9D    pika2	# pika, electric plug
+uFFD9E    pipolo	# pipolo
+uFFD9F    sapelipope	# sapelipope
+uFFDA0    sikako	# sikako
+uFFDA1    silapa silapa0	# silapa
+uFFDA2    sipije	# sipije
+uFFDA3    sisi	# sisi
+uFFDA4    siwala	# siwala
+uFFDA5    snoweli	# snoweli
+uFFDA6    soni	# soni
+uFFDA7    ta ta1	# ta (particle)
+uFFDA8    tasun tasun0	# tasun
+uFFDA9    tokana2	# tokana, rotated ante with dot
+uFFDAA    tokana3	# tokana, four rays with dot
+uFFDAB    wiwi	# wiwi
+uFFDAC    eliki	# eliki
+uFFDAD    enepi	# enepi
+uFFDAE    nasin&mani	# nasin mani (capitalism)
+uFFDAF    wiju	# wiju
+uFFDB0    saja	# saja
+uFFDB1    ana	# ana
+uFFDB2    eni ene	# eni, ene
+uFFDB3    masu	# masu
+uFFDB4    lato	# lato
+uFFDB5    topo	# topo
+uFFDB6    nalanja nalanja2	# nalanja, default, kili
+uFFDB7    we we2	# we, content word
+uFFDB8    umesu2	# umesu, trophy (Here, The Cheat, have a trophy!)
+uFFDB9    teken	# teken (same as sitelen; full writeup coming soon)
+uFFDBA    api4	# api, tawa sinpin
+uFFDBB    api api1	# api, default, pi noka ala, read as wings
+uFFDBC    api2	# api, pi noka ala, read as antennae
+uFFDBD    api3	# api, Menasewian
+uFFDBE    kolo	# kolo
+uFFDBF    kulijo2	# kulijo, thumbs up
+uFFDC0    lisana lisana1	# lisana, default, tongue
+uFFDC1    lisana2	# lisana, uvula
+uFFDC2    poni poni3	# poni, default, purple smart
+uFFDC3    poni4	# poni, blue fast
+uFFDC4    poni5	# poni, pink happy
+uFFDC5    poni6	# poni, white pretty
+uFFDC6    poni7	# poni, yellow quiet (best pony)
+uFFDC7    poni8	# poni, orange strong
+uFFDC8    kijetesantakalu2	# kijetesantakalu, armadillo
+uFFDC8    kijete2 kije2	# kijetesantakalu, armadillo
+uFFDC9    penpo	# penpo
+uFFDCA    kulaso	# kulaso (green laso, glaso)
+uFFDCB    sulaso kewe	# sulaso (cyan laso, slaso); kewe
+uFFDCC    pulaso kelo	# pulaso (blue laso, blaso); kelo
+uFFDCD    masenta	# masenta (magenta)
+uFFDCE    antikontitutonelema	# antikontitutonelema, default, classical building
+uFFDCE    antikontitutonelema2	# antikontitutonelema, default, classical building
+uFFDCF    antikontitutonelema1	# antikontitutonelema, extra-wide jaki
+
+# Sitelen Pona Presentation Forms-C, name glyphs subblock
+uFFDD0    Jesi	# akesi Jesi
+uFFDD1    lokoso	# leko lokoso
+uFFDD2    Nito Nito1	# ijo Nito, default, ko with tail
+uFFDD3    Nito2	# ijo Nito, ko-headed jan
+uFFDD4    Samin	# kala Samin
+uFFDD5    Satun	# mun Satun
+uFFDD6    Kalu	# jan Kalu
+uFFDD7    lenlen	# len len
+uFFDD8    Pensa	# jan Pensa
+uFFDD9    Tonpite	# nanpa Tonpite
+uFFDDA    Eweke2	# soweli Eweke
+uFFDDB    Fairfax	# glyph for font family name "Fairfax"
+uFFDDC    HD	# glyph for font family name "HD"
+uFFDDD    Token	# Token
+uFFDDE    mun&pi&ante&toki	# mun pi ante toki
+uFFDDF    Seki	# toki pona chess community
+uFFDE0    ijo&tan&anpa&nanpa	# jan Itan
+uFFDE1    kankuli	# kankuli (scrunkly)
+uFFDE2    Keli waso&\u1F380	# waso Keli; waso + ribbon
+uFFDE3    KeTami	# jan Ke Tami
+uFFDE4    Kita	# jan Kita
+uFFDE5    ma&toki&pona&wile&jan	# Ma Toki Pona VR
+uFFDE5    "ma&toki&pona&VR"	# Ma Toki Pona VR
+uFFDE5    "ma+toki+pona+VR"	# Ma Toki Pona VR
+uFFDE5    "ma-toki-pona-VR"	# Ma Toki Pona VR
+uFFDE6    pali&pali&ale&pona&epiku	# pali Pape (Project Babel)
+uFFDE6    "pali&Pape"	# pali Pape (Project Babel)
+uFFDE6    "pali+Pape"	# pali Pape (Project Babel)
+uFFDE6    "pali-Pape"	# pali Pape (Project Babel)
+uFFDE7    Seka	# ma Seka
+uFFDE8    Losupan	# Losupan (Lojban)
+uFFDE9    Towan	# Towan (Toaq)
+uFFDEA    suno&pi&toki&pona	# suno pi toki pona
+uFFDEB    Wakalito	# Wakalito
+uFFDEC    asuki Asuki	# asuki (ASCII) (simplified form of ASCII chart from MIL-STD-188-100)
+uFFDED    kama&sona	# kama sona, Discord server logo
+uFFDEE    Enki	# kije Enki
+uFFDEF    KekanSan	# jan Kekan San
+
+# Sitelen Pona Presentation Forms-C, silapa/tasun subblock
+uFFDF0    silapa1 si\	# silapa, top part
+uFFDF1    silapa2 i\	# silapa, middle part
+uFFDF2    silapa3 ilapa	# silapa, bottom part
+uFFDF3    silapa4 siilapa	# silapa, two lines tall
+uFFDF4    silapa5 siiilapa	# silapa, three lines tall
+uFFDF5    tasun1	# tasun, left part
+uFFDF6    tasun2	# tasun, center part
+uFFDF7    tasun3	# tasun, right part
+uFFDF8    tasun4 taasun	# tasun, two ideographs wide
+uFFDF9    tasun5 taaasun	# tasun, three ideographs wide
+uFFDFA    tasun6 taa	# tasun, left part, two ideographs wide
+uFFDFB    tasun7 aasun	# tasun, right part, two ideographs wide
+uFFDFC    sama_	# sama, extended forward
+uFFDFD    _sama	# sama, extended backward
+uFFDFE    _sama_	# sama, extended bidirectional
+uFFDFF    aAANUSEMEmailMahjong	# aAANUSEMEmailMahjong
+uFFDFF    a&anu&seme&\u1F4E7&\u1F004	# aAANUSEMEmailMahjong
+
+# Sitelen Pona Presentation Forms-D, combined glyphs subblock
+uFFE00    kala+ike kala1+ike	# kala ike, default, no eyes, scaled
+uFFE01    kala+pona kala1+pona	# kala pona, default, no eyes, scaled
+uFFE02    kama-pona	# kama pona, stacked
+uFFE03    kama-sona	# kama sona, stacked
+uFFE04    kasi-ko	# kasi ko, stacked
+uFFE05    pilin+seme	# pilin seme, scaled
+uFFE06    tawa-pona	# tawa pona, stacked
+uFFE07    tawa-sona	# tawa sona, stacked
+uFFE08    tomo+telo toma+telo	# tomo telo, scaled
+uFFE09    soweli2	# soweli, unicorn
+uFFE0A    su2 lipu+soweli2	# su, unicorn; lipu soweli, unicorn, scaled
+uFFE0B    kipisi2	# kipisi, scissors
+uFFE0C    suno+sama	# suno sama, scaled
+uFFE0D    su3 lipu+suno+sama	# su, lipu suno sama
+uFFE0E    monsi2	# monsi, tail
+uFFE0F    sinpin2	# sinpin, eyes
+uFFE10    leko2	# leko, staircase
+uFFE11    moku2	# moku, spoon
+uFFE12    n3	# n, wavy line
+uFFE13    oko2	# oko, dot
+uFFE14    weka2	# weka, exit sign
+uFFE15    kala3 kala.cv80.2	# kala, one eye
+uFFE16    kijetesantakalu3	# kijetesantakalu, one eye
+uFFE16    kijete3 kije3	# kijetesantakalu, one eye
+uFFE17    soweli3	# soweli, one eye
+uFFE18    waso2	# waso, one eye
+uFFE19    kijetesantakalu&uta	# kijetesantakalu uta, combined
+uFFE19    kijetesantakalu1&uta	# kijetesantakalu uta, combined
+uFFE19    kijete&uta kijete1&uta	# kijetesantakalu uta, combined
+uFFE19    kije&uta kije1&uta	# kijetesantakalu uta, combined
+uFFE1A    nasa&ala	# nasa ala, diagonal stroke
+uFFE1B    ni&ala	# ni ala, diagonal stroke
+uFFE1C    pilin&ala	# pilin ala, diagonal stroke
+uFFE1D    pini&ala	# pini ala, diagonal stroke
+uFFE1E    sama&ala	# sama ala, diagonal stroke
+uFFE1F    tan&ala	# tan ala, diagonal stroke
+uFFE20    ijo&mute ijo&mute1	# ijo mute, drop shadow
+uFFE21    jan&mute jan&mute1	# jan mute, drop shadow
+uFFE22    kule&mute kule&mute1	# kule mute, drop shadow
+uFFE23    lipu&mute lipu&mute1	# lipu mute, drop shadow
+uFFE24    luka&mute luka&mute1	# luka mute, drop shadow
+uFFE25    tomo&mute tomo&mute1	# tomo mute, drop shadow
+uFFE4F    kama&tawa	# kama tawa, combined
+
+# Sitelen Pona Presentation Forms-D, nimisin subblock
+uFFE50    kepa	# kepa
+uFFE51    miko miko1	# miko, default, egg
+uFFE52    miko2	# miko, tardigrade
+uFFE53    ta2	# ta (content word)
+uFFE54    tuwa	# tuwa
+uFFE55    asu	# asu
+uFFE56    inta inta1	# inta, default, interrupted vertical line
+uFFE57    jete	# jete
+uFFE58    kani	# kani
+uFFE59    kijesankalu	# kijesankalu
+uFFE5A    kinute	# kinute
+uFFE5B    kitu	# kitu
+uFFE5C    nan	# nan
+uFFE5D    nusun	# nusun
+uFFE5E    onono	# onono
+uFFE5F    paka	# paka
+uFFE60    panpan	# panpan
+uFFE61    pe	# pe
+uFFE62    salantapotalusa	# salantapotalusa
+uFFE63    san2 tuli2	# san, tuli, Arabic numeral
+uFFE64    santa	# santa
+uFFE65    sokeli	# sokeli
+uFFE66    sunta	# sunta
+uFFE67    uka	# uka
+uFFE68    lan lan1	# lan, default, lon ijo
+uFFE69    lan2	# lan, ka
+uFFE6A    lan+sin lan1+sin	# lan sin, default, lon ijo
+uFFE6B    lan2+sin	# lan sin, ka
+uFFE6C    san3 tuli3	# san, tuli, three horizontal lines
+uFFE6D    tawake	# tawake
+uFFE6E    an	# an
+uFFE6F    apoko	# apoko
+uFFE70    api5	# api, circled times, above-facing
+uFFE71    api6	# api, circled times, forward-facing
+uFFE72    api7	# api, joke
+uFFE73    inisa	# inisa
+uFFE74    inta2	# inta, greater-than-or-equal-to
+uFFE75    josuta	# josuta
+uFFE76    juna	# juna
+uFFE77    jupi	# jupi
+uFFE78    ka	# ka
+uFFE79    kasan	# kasan
+uFFE7A    kewi	# kewi
+uFFE7B    kolin	# kolin
+uFFE7C    konsuno konsuno1	# konsuno, default, pake with emitters
+uFFE7D    konsuno2	# konsuno, suno with wavy lines
+uFFE7E    kuki	# kuki
+uFFE7F    lajuto	# lajuto
+uFFE80    lapan1	# lapan, cow
+uFFE81    lapan lapan2	# lapan, default, milk carton
+uFFE82    lenke	# lenke
+uFFE83    lipasa	# lipasa
+uFFE84    lisa	# lisa
+uFFE85    lonsi	# lonsi
+uFFE86    mulapisu2	# mulapisu, simplified
+uFFE87    ne	# ne
+uFFE88    nun	# nun
+uFFE89    papa papa1	# papa, default, mama + Mars
+uFFE8A    papa2	# papa, mama + broad shoulders
+uFFE8B    papa3	# papa, Baba from Baba Is You
+uFFE8C    papa4	# papa, spinning iridium object
+uFFE8D    pela	# pela
+uFFE8E    pokasi	# pokasi
+uFFE8F    positu	# positu
+uFFE90    potesu	# potesu
+uFFE91    se se1	# se, default, CJK-ish
+uFFE92    se2	# se, Pluto-ish
+uFFE93    sole	# sole
+uFFE94    suwili	# suwili
+uFFE95    take2	# take, heptogram
+uFFE96    tankala tenkala	# tankala, tenkala
+uFFE97    teki	# teki
+uFFE98    towoki	# tOwOki
+uFFE99    wasoweli wasoweli1	# wasoweli, default, original
+uFFE9A    wisa	# wisa
+
+# Sitelen Pona Presentation Forms-D, name glyphs subblock
+uFFEA0    Ilaje	# soweli kijetesantakalu Ilaje
+uFFEA1    Kolisin	# namako Kolisin
+uFFEA2    Alisa	# jan Alisa
+uFFEA3    Ante	# mute Ante
+uFFEA4    Kaken	# suwi Kaken
+uFFEA5    Majeka	# jan Majeka
+uFFEA6    Stella Stella1	# ijo Stella
+uFFEA7    Stella2 ijo+Stella	# ijo Stella
+uFFEA8    Ipan	# waso musi Ipan
+uFFEA9    Eko2	# waso Eko, waso lukin
+uFFEAA    Eko3	# waso Eko, soweli lukin
+uFFEAB    vivi vivi1	# ijo vivi
+uFFEAC    vivi2 ijo+vivi	# ijo vivi
+uFFEAD    Wikipesija	# Wikipesija (toki pona Wikipedia)
+uFFEAE    kulupu&pali&pi&sitelen&pona	# kulupu pali pi sitelen pona (Sitelen Pona Publishers and Typographers Association)
+uFFEB0    Eten	# jan Eten
+uFFEB1    kalake	# kala Ke
+uFFEB2    meliSiliwa	# meli Siliwa
+uFFEB3    Pisowe	# jan Pisowe
+
+# Sitelen Pona Presentation Forms-D, punctuation subblock
+uFFEF0    ,,	# tally mark 2x
+uFFEF1    ,,,	# tally mark 3x
+uFFEF2    ,,,,	# tally mark 4x
+uFFEF3    ,,,,,	# tally mark 5x
+uFFEF4    ,,,,,,	# tally mark 6x
+uFFEF5    ,,,,,,,	# tally mark 7x
+uFFEF6    ,,,,,,,,	# tally mark 8x
+uFFEFE    akesi1 akesi.cv92.2	# akesi, six-legged, upright
+uFFEFF    akesiv1 akesiv.cv92.2	# akesi, six-legged, turned
+
+# Latin-1 Supplement
+degree    *	# degree sign; handakuten
+
+# General Punctuation
+uni200D   &	# zero-width joiner
+
+# CJK Symbols and Punctuation
+uni3000   |	# ideographic space
+
+# CJK Unified Ideographs
+uni4E03   take take1	# take, default, CJK ideograph
+uni4E5D   kajo	# kajo, CJK ideograph
+uni516B   patu	# patu, CJK ideograph
+uni516D   loku	# loku, CJK ideograph
+
+# Rules for which glyphs can be automatically cartouched.
+@allow U+0020-02FF # Latin, IPA
+@allow U+0370-0482 # Greek, Coptic, Cyrillic
+@allow U+048A-052F # Cyrillic
+@allow U+1C80-1C8F # Cyrillic
+@allow U+1D00-1DBF # Latin
+@allow U+1E00-200A # Latin, Greek, Punctuation
+@allow U+2010-2027 # Punctuation
+@allow U+202F-205F # Punctuation
+@allow U+2070-20CF # Super/Subscripts, Currency Symbols
+@allow U+2100-22FF # Letterlike Symbols, Number Forms, Arrows, Math
+@allow U+2C60-2CEE # Latin, Coptic
+@allow U+2CF2-2CFF # Coptic
+@allow U+2E00-2E7F # Punctuation
+@allow U+2FF0-301F # Punctuation
+@allow U+A640-A66E # Cyrillic
+@allow U+A673      # Cyrillic
+@allow U+A67E-A69D # Cyrillic
+@allow U+A700-A7FF # Latin
+@allow U+AB30-AB6F # Latin
+@allow U+F700-F89F # KK PUA
+@allow U+FB00-FB0F # Latin
+@allow U+10780-107BF # Latin
+@allow U+1DF00-1DFFF # Latin
+@allow U+1E030-1E06F # Cyrillic
+@allow U+1F5E4-1F5E7 # Three Rays
+@allow U+F1900-F19FF # Sitelen Pona
+@allow U+F1C40-F1C9F # Titi Pula, Sitelen Pona
+@allow U+FA700-FA71F # Latin
+@allow U+FF100-FF1FF # KK PUA
+@allow U+FF900-FFBFF # Sitelen Pona
+@allow U+FFD00-FFEFF # Sitelen Pona
+@deny uF199E
+@deny uF199F
+@deny uFFA50
+@deny uFFA51
+@deny uFFA51.busted
+@deny uFFAB9
+@deny uFFABA
+@deny ^.+[.]stacked$
+
+# EOF

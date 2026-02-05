@@ -1,0 +1,132 @@
+# UCSUR Sitelen Pona block, pu/ku subblock
+uF191B    kiwen	# kiwen
+uF1957    seli	# seli
+uF1960    sitelen	# sitelen
+uF1982    meso	# meso
+uF1982    Medium	# glyph for font style name "Medium"
+
+# UCSUR Sitelen Pona block, punctuation and format controls
+uF1992    =	# combining cartouche extension
+uF1995    -	# stacking joiner
+uF1996    +	# scaling joiner
+uF1997    (	# start of extended glyph
+uF1998    )	# end of extended glyph
+uF1999    _	# combining long glyph extension
+uF199A    {	# start of reverse extended glyph
+uF199B    }	# end of reverse extended glyph
+uF199C    .	# interpunct
+uF199D    :	# colon
+uF199E    ,	# tally mark
+
+# UCSUR Titi Pula block, simple glyph subblock
+uF1C40    a	# a
+uF1C41    ala	# ala
+uF1C42    i	# i
+uF1C43    iku	# iku
+uF1C44    ilu	# ilu
+uF1C45    ka	# ka
+uF1C46    kati	# kati
+uF1C47    ki	# ki
+uF1C48    kiku	# kiku
+uF1C49    ku	# ku
+uF1C4A    la	# la
+uF1C4B    lapi	# lapi
+uF1C4C    li	# li
+uF1C4D    lika	# lika
+uF1C4E    lili	# lili
+uF1C4F    lu	# lu
+uF1C50    lupa	# lupa
+uF1C51    mi	# mi
+uF1C52    muku	# muku
+uF1C53    muti	# muti
+uF1C54    paka	# paka
+uF1C55    pali	# pali
+uF1C56    puka	# puka
+uF1C57    pula	# pula
+uF1C58    taka	# taka
+uF1C59    tama	# tama
+uF1C5A    tiki	# tiki
+uF1C5B    tiku	# tiku
+uF1C5C    tila	# tila
+uF1C5D    tilu	# tilu
+uF1C5E    timi	# timi
+uF1C5F    tipi	# tipi
+uF1C60    titi	# titi
+uF1C61    tu	# tu
+uF1C62    tuki	# tuki
+uF1C63    tula	# tula
+uF1C64    tulu	# tulu
+uF1C65    uli	# uli
+uF1C66    upi	# upi
+
+# UCSUR Titi Pula block, compound glyph subblock
+uF1C70    tuki+tiki	# tuki tiki, scaled
+uF1C71    titi-pula	# titi pula, stacked
+uF1C71    Pula	# glyph for font family name "Pula"
+uF1C7E    [	# start of cartouche
+uF1C7F    ]	# end of cartouche
+
+# Sitelen Pona Presentation Forms
+uFFA19    Pona	# glyph for font family name "Pona"
+uFFB97    mono	# glyph for font family name "mono"
+uFFDDB    Fairfax	# glyph for font family name "Fairfax"
+uFFDDC    HD	# glyph for font family name "HD"
+uFFEF0    ,,	# tally mark 2x
+uFFEF1    ,,,	# tally mark 3x
+uFFEF2    ,,,,	# tally mark 4x
+uFFEF3    ,,,,,	# tally mark 5x
+uFFEF4    ,,,,,,	# tally mark 6x
+uFFEF5    ,,,,,,,	# tally mark 7x
+uFFEF6    ,,,,,,,,	# tally mark 8x
+
+# Latin-1 Supplement
+degree    *	# degree sign; handakuten
+
+# General Punctuation
+uni200D   &	# zero-width joiner
+
+# CJK Symbols and Punctuation
+uni3000   |	# ideographic space
+
+# Rules for which glyphs can be automatically cartouched.
+@allow U+0020-02FF # Latin, IPA
+@allow U+0370-0482 # Greek, Coptic, Cyrillic
+@allow U+048A-052F # Cyrillic
+@allow U+1C80-1C8F # Cyrillic
+@allow U+1D00-1DBF # Latin
+@allow U+1E00-200A # Latin, Greek, Punctuation
+@allow U+2010-2027 # Punctuation
+@allow U+202F-205F # Punctuation
+@allow U+2070-20CF # Super/Subscripts, Currency Symbols
+@allow U+2100-22FF # Letterlike Symbols, Number Forms, Arrows, Math
+@allow U+2C60-2CEE # Latin, Coptic
+@allow U+2CF2-2CFF # Coptic
+@allow U+2E00-2E7F # Punctuation
+@allow U+2FF0-301F # Punctuation
+@allow U+A640-A66E # Cyrillic
+@allow U+A673      # Cyrillic
+@allow U+A67E-A69D # Cyrillic
+@allow U+A700-A7FF # Latin
+@allow U+AB30-AB6F # Latin
+@allow U+F700-F89F # KK PUA
+@allow U+FB00-FB0F # Latin
+@allow U+10780-107BF # Latin
+@allow U+1DF00-1DFFF # Latin
+@allow U+1E030-1E06F # Cyrillic
+@allow U+1F5E4-1F5E7 # Three Rays
+@allow U+F1900-F19FF # Sitelen Pona
+@allow U+F1C40-F1C9F # Titi Pula, Sitelen Pona
+@allow U+FA700-FA71F # Latin
+@allow U+FF100-FF1FF # KK PUA
+@allow U+FF900-FFBFF # Sitelen Pona
+@allow U+FFD00-FFEFF # Sitelen Pona
+@deny uF199E
+@deny uF199F
+@deny uFFA50
+@deny uFFA51
+@deny uFFA51.busted
+@deny uFFAB9
+@deny uFFABA
+@deny ^.+[.]stacked$
+
+# EOF

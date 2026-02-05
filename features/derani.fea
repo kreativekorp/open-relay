@@ -1,0 +1,19 @@
+# Derani Presentation Forms
+@deraniCartoucheless = [space uni00A0 uF16B0 uF16B1 uF16B2 uF16B3 uF16B4 uF16B5 uF16B6 uF16B7 uF16B8 uF16B9 uF16BA uF16BB uF16BC uF16BD uF16BE uF16BF uF16C0 uF16C1 uF16C2 uF16C3 uF16C4 uF16C5 uF16C6 uF16DB uFF6DB];
+@deraniCartouche = [uFF6D9 uFF6D9 uFF6B0 uFF6B1 uFF6B2 uFF6B3 uFF6B4 uFF6B5 uFF6B6 uFF6B7 uFF6B8 uFF6B9 uFF6BA uFF6BB uFF6BC uFF6BD uFF6BE uFF6BF uFF6C0 uFF6C1 uFF6C2 uFF6C3 uFF6C4 uFF6C5 uFF6C6 uFF6D9 uFF6DA];
+
+feature calt {
+
+  # extend cartouches across letters to the right
+  lookup deraniCartoucheForward {
+    lookupflag IgnoreMarks;
+    sub [uF16D8 uFF6D8 @deraniCartouche] @deraniCartoucheless' by @deraniCartouche;
+  } deraniCartoucheForward;
+
+  # extend cartouches across letters to the left
+  lookup deraniCartoucheBackward {
+    lookupflag IgnoreMarks;
+    rsub @deraniCartoucheless' [@deraniCartouche uF16D9] by @deraniCartouche;
+  } deraniCartoucheBackward;
+
+} calt;

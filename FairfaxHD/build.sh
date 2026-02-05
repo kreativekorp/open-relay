@@ -27,7 +27,7 @@ else
 fi
 
 SFDPATCH="python ../openrelay-tools/tools/sfdpatch.py"
-SITELENPONA="python ../openrelay-tools/tools/sitelenpona.py"
+SITELENPANA="python ../openrelay-tools/tools/sitelenpana.py"
 BLOCKS="python ../openrelay-tools/tools/blocks.py"
 UNIDATA="python ../openrelay-tools/tools/unicodedata.py"
 PUAABOOK="python ../openrelay-tools/tools/puaabook.py"
@@ -35,45 +35,48 @@ PYPUAA="python ../openrelay-tools/tools/pypuaa.py"
 TTFHACK="python ../openrelay-tools/tools/ttfhack.py"
 
 # Clean
-rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxPonaHD.* FairfaxPulaHD.* FairfaxHaxHD.* FairfaxSMHD.*
+rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHD-NoCJK.* FairfaxPonaHD.* FairfaxPulaHD.* FairfaxHaxHD.* FairfaxSMHD.*
 rm -rf fairfaxhd Android
 
-# Make timestamped version
-$SFDPATCH FairfaxHD.sfd patches/timestamp.txt > FairfaxHD_base.sfd
-
-# Make sitelen pona version
+# Make patched versions
+$SFDPATCH FairfaxHD.sfd patches/base.txt > FairfaxHD_base.sfd
+$SFDPATCH FairfaxHD_base.sfd patches/nocjk.txt > FairfaxHDNoCJK_base.sfd
 $SFDPATCH FairfaxHD_base.sfd patches/asuki.txt > FairfaxPonaHD_base.sfd
-
-# Make titi pula version
 $SFDPATCH FairfaxHD_base.sfd patches/atuki.txt > FairfaxPulaHD_base.sfd
-
-# Make programming ligature version
 $SFDPATCH FairfaxHD_base.sfd patches/ligatures.txt > FairfaxHaxHD_base.sfd
-
-# Make strict monospace version
 $SFDPATCH FairfaxHD_base.sfd patches/strictmono.txt > FairfaxSMHD_base.sfd
+
+# Generate fea
+grep -v cjkMark ../features/marks.fea > ../features/marks-nocjk.fea
+grep -v uni300 ../features/sequences.fea > ../features/sequences-nocjk.fea
+grep -E -v "uni(30|4E|51)" ../features/sitelenpona.txt > ../features/sitelenpona-nocjk.txt
+$SITELENPANA -f FairfaxHDNoCJK_base.sfd -i ../features/sitelenpona-nocjk.txt -a /dev/null -o ../features/spnocjk.fea
+$SITELENPANA -f FairfaxPonaHD_base.sfd -i ../features/sitelenpona.txt -a ../features/spascii.fea -o ../features/spbase.fea
+$SITELENPANA -f FairfaxPulaHD_base.sfd -i ../features/titipula.txt -a ../features/tpascii.fea -o /dev/null
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
-	FairfaxHD_base.sfd FairfaxPonaHD_base.sfd FairfaxPulaHD_base.sfd FairfaxHaxHD_base.sfd FairfaxSMHD_base.sfd
+	FairfaxHD_base.sfd FairfaxHDNoCJK_base.sfd \
+	FairfaxPonaHD_base.sfd FairfaxPulaHD_base.sfd \
+	FairfaxHaxHD_base.sfd FairfaxSMHD_base.sfd
 
-rm *_base.sfd
-
-# Add OpenType features (FontForge completely fouls this up on its own)
-$SITELENPONA -s -a ../features/asuki.txt -t ../features/atuki.txt -e ../features/extendable.txt -j ../features/joiners.txt -g FairfaxHD.sfd
-cat ../features/languages.fea ../features/sequences.fea joiners.fea                                 ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHD_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea asuki.fea ../features/aargh.fea ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPonaHD_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea atuki.fea ../features/aargh.fea ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxPulaHD_base.fea
-cat ../features/languages.fea ../features/sequences.fea joiners.fea ../features/ligatures.fea       ../features/slc-variants.fea ../features/variants.fea extendable.fea ../features/extensions.fea > FairfaxHaxHD_base.fea
-rm asuki.fea atuki.fea extendable.fea joiners.fea
-
-$FONTTOOLS feaLib -o FairfaxHD.ttf FairfaxHD_base.fea FairfaxHD_base.ttf
-$FONTTOOLS feaLib -o FairfaxPonaHD.ttf FairfaxPonaHD_base.fea FairfaxPonaHD_base.ttf
-$FONTTOOLS feaLib -o FairfaxPulaHD.ttf FairfaxPulaHD_base.fea FairfaxPulaHD_base.ttf
-$FONTTOOLS feaLib -o FairfaxHaxHD.ttf FairfaxHaxHD_base.fea FairfaxHaxHD_base.ttf
+# Add OpenType features
+$FONTTOOLS feaLib -o FairfaxHD.ttf ../features/base.fea FairfaxHD_base.ttf
+$FONTTOOLS feaLib -o FairfaxHD-NoCJK.ttf ../features/nocjk.fea FairfaxHDNoCJK_base.ttf
+$FONTTOOLS feaLib -o FairfaxPonaHD.ttf ../features/asuki.fea FairfaxPonaHD_base.ttf
+$FONTTOOLS feaLib -o FairfaxPulaHD.ttf ../features/atuki.fea FairfaxPulaHD_base.ttf
+$FONTTOOLS feaLib -o FairfaxHaxHD.ttf ../features/code.fea FairfaxHaxHD_base.ttf
 cp FairfaxSMHD_base.ttf FairfaxSMHD.ttf
 
-rm *_base.fea
+# Remove intermediate artifacts
+rm *_base.sfd
+rm ../features/marks-nocjk.fea
+rm ../features/sequences-nocjk.fea
+rm ../features/sitelenpona-nocjk.txt
+rm ../features/spascii.fea
+rm ../features/spbase.fea
+rm ../features/spnocjk.fea
+rm ../features/tpascii.fea
 rm *_base.ttf
 
 # Inject PUAA table
@@ -81,11 +84,15 @@ PUAAFLAGS="czuowbanxkkfeypjqvgsittl --no-sylabica-2013 --sylabica-2017 --pua-a-s
 $BLOCKS $PUAAFLAGS > Blocks.txt
 $UNIDATA $PUAAFLAGS > UnicodeData.txt
 $PUAABOOK -D Blocks.txt UnicodeData.txt charts.txt -I FairfaxHD.ttf -O pua.html
-$PYPUAA compile -D Blocks.txt UnicodeData.txt -I FairfaxHD.ttf FairfaxPonaHD.ttf FairfaxPulaHD.ttf FairfaxHaxHD.ttf FairfaxSMHD.ttf
+$PYPUAA compile -D Blocks.txt UnicodeData.txt \
+	-I FairfaxHD.ttf FairfaxHD-NoCJK.ttf \
+	-I FairfaxPonaHD.ttf FairfaxPulaHD.ttf \
+	-I FairfaxHaxHD.ttf FairfaxSMHD.ttf
 rm Blocks.txt UnicodeData.txt
 
 # Convert to eot
 $TTF2EOT < FairfaxHD.ttf > FairfaxHD.eot
+$TTF2EOT < FairfaxHD-NoCJK.ttf > FairfaxHD-NoCJK.eot
 $TTF2EOT < FairfaxPonaHD.ttf > FairfaxPonaHD.eot
 $TTF2EOT < FairfaxPulaHD.ttf > FairfaxPulaHD.eot
 $TTF2EOT < FairfaxHaxHD.ttf > FairfaxHaxHD.eot
@@ -94,23 +101,35 @@ $TTF2EOT < FairfaxSMHD.ttf > FairfaxSMHD.eot
 # Create hacked Android version
 mkdir Android
 $TTFHACK if=FairfaxHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxHD.ttf
+$TTFHACK if=FairfaxHD-NoCJK.ttf yMin=-544 yMax=1308 of=Android/FairfaxHD-NoCJK.ttf
 $TTFHACK if=FairfaxPonaHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxPonaHD.ttf
 $TTFHACK if=FairfaxPulaHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxPulaHD.ttf
 $TTFHACK if=FairfaxHaxHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxHaxHD.ttf
 $TTFHACK if=FairfaxSMHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxSMHD.ttf
 
 # Create zip
-zip FairfaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxPonaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxPulaHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxHaxHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
-zip FairfaxSMHD.zip OFL.txt FairfaxHD.ttf FairfaxHD.eot FairfaxPonaHD.ttf FairfaxPonaHD.eot FairfaxPulaHD.ttf FairfaxPulaHD.eot FairfaxHaxHD.ttf FairfaxHaxHD.eot FairfaxSMHD.ttf FairfaxSMHD.eot Android/* pua.html
+zip FairfaxHD.zip OFL.txt \
+	FairfaxHD.ttf FairfaxHD.eot \
+	FairfaxHD-NoCJK.ttf FairfaxHD-NoCJK.eot \
+	FairfaxPonaHD.ttf FairfaxPonaHD.eot \
+	FairfaxPulaHD.ttf FairfaxPulaHD.eot \
+	FairfaxHaxHD.ttf FairfaxHaxHD.eot \
+	FairfaxSMHD.ttf FairfaxSMHD.eot \
+	Android/* pua.html
+cp FairfaxHD.zip FairfaxHD-NoCJK.zip
+cp FairfaxHD.zip FairfaxPonaHD.zip
+cp FairfaxHD.zip FairfaxPulaHD.zip
+cp FairfaxHD.zip FairfaxHaxHD.zip
+cp FairfaxHD.zip FairfaxSMHD.zip
 
 # Create lowercase versions
 mkdir fairfaxhd
 cp FairfaxHD.ttf fairfaxhd/fairfaxhd.ttf
 cp FairfaxHD.eot fairfaxhd/fairfaxhd.eot
 cp FairfaxHD.zip fairfaxhd/fairfaxhd.zip
+cp FairfaxHD-NoCJK.ttf fairfaxhd/fairfaxhd-nocjk.ttf
+cp FairfaxHD-NoCJK.eot fairfaxhd/fairfaxhd-nocjk.eot
+cp FairfaxHD-NoCJK.zip fairfaxhd/fairfaxhd-nocjk.zip
 cp FairfaxPonaHD.ttf fairfaxhd/fairfaxponahd.ttf
 cp FairfaxPonaHD.eot fairfaxhd/fairfaxponahd.eot
 cp FairfaxPonaHD.zip fairfaxhd/fairfaxponahd.zip

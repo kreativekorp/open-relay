@@ -1,0 +1,22 @@
+==%Copyright: Fairfax HD copyright (c) Kreative Software 2017-%Y under the Open Font License.
+==%Version: %Y.%m.%d
+
+StartChar: uniF800
+@@@RemoveSplines 0
+@@@AppendSplines u10FFC0
+@@%AppendSplines u10FF4%(Ch)d u10FF5%(Cl)d
+@@%AppendSplines u10FF6%(yh)d u10FF7%(yl)d
+@@%AppendSplines u10FF8%(mh)d u10FF9%(ml)d
+@@%AppendSplines u10FFA%(dh)d u10FFB%(dl)d
+EndChar
+
+@@@RemoveChar /^(u10FF[456789AB][0-9]|u10FFC0)$/
+
+@@@SortByCodePoint
+
+@@@SitelenPonaCartouche exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash
+@@@SitelenPonaCartouche zero one two three four five six seven eight nine colon semicolon less equal greater question
+@@@SitelenPonaCartouche at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore
+@@@SitelenPonaCartouche grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde
+@@@SitelenPonaCartouche uni3001 uni3001.vs2 uni3002 uni3002.vs2 uni300C uni300D uni300E uni300F
+@@@SitelenPonaCartouche /^(uF19[0-8][0-9A-F]|uF199[CD]|uF19[A-F][0-9A-F]|uF1C[4-6][0-9A-F]|uF1C7[0-9A-D]|uF1C[89][0-9A-F])([.]rand[0-9]+)?$/
