@@ -1,7 +1,9 @@
 *.pyc
 *.zip
 Android
+glyphs.html
 install.sh
+linku_*.json
 /AlcoSans/alcosans/
 /Constructium/constructium/
 /Fairfax/fairfax/

@@ -51,7 +51,7 @@ grep -v cjkMark ../features/marks.fea > ../features/marks-nocjk.fea
 grep -v uni300 ../features/sequences.fea > ../features/sequences-nocjk.fea
 grep -E -v "uni(30|4E|51)" ../features/sitelenpona.txt > ../features/sitelenpona-nocjk.txt
 $SITELENPANA -f FairfaxHDNoCJK_base.sfd -i ../features/sitelenpona-nocjk.txt -a /dev/null -o ../features/spnocjk.fea
-$SITELENPANA -f FairfaxPonaHD_base.sfd -i ../features/sitelenpona.txt -a ../features/spascii.fea -o ../features/spbase.fea
+$SITELENPANA -f FairfaxPonaHD_base.sfd -i ../features/sitelenpona.txt -a ../features/spascii.fea -o ../features/spbase.fea -g glyphs.html -e FairfaxHD.eot -t FairfaxHD.ttf
 $SITELENPANA -f FairfaxPulaHD_base.sfd -i ../features/titipula.txt -a ../features/tpascii.fea -o /dev/null
 
 # Generate ttf

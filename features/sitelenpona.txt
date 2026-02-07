@@ -1093,8 +1093,6 @@ uFFBF0    ma&pona&pi&toki&pona	# ma pona pi toki pona
 uFFBF1    ma&pi&nasin&sitelen	# ma pi nasin sitelen
 uFFBF2    Linku	# kulupu Linku
 uFFBF3    "lipu&Wesi&pi&toki&pona"	# lipu Wesi pi toki pona (r/tokipona)
-uFFBF3    "lipu+Wesi+pi+toki+pona"	# lipu Wesi pi toki pona (r/tokipona)
-uFFBF3    "lipu-Wesi-pi-toki-pona"	# lipu Wesi pi toki pona (r/tokipona)
 uFFBF4    linja-sike linja-suke	# linja sike, stacked
 uFFBF5    linja-suwi	# linja suwi, stacked
 uFFBF6    nasin&nanpa	# nasin nanpa, horizontal
@@ -1124,7 +1122,7 @@ uFFD08    tonsi2 tonsi.cv87.1	# tonsi, Venus and Mars
 uFFD09    pimeja&jelo	# pimeja jelo, combined
 uFFD0A    pimeja&laso	# pimeja laso, combined
 uFFD0B    pimeja&loje	# pimeja loje, combined
-uFFD0C    telo+sitelen	# telo sitelen, scaled
+uFFD0C    telo&sitelen	# telo sitelen, combined
 uFFD0D    walo&jelo	# walo jelo, combined
 uFFD0E    walo&laso	# walo laso, combined
 uFFD0F    walo&loje	# walo loje, combined
@@ -1361,12 +1359,8 @@ uFFDE3    KeTami	# jan Ke Tami
 uFFDE4    Kita	# jan Kita
 uFFDE5    ma&toki&pona&wile&jan	# Ma Toki Pona VR
 uFFDE5    "ma&toki&pona&VR"	# Ma Toki Pona VR
-uFFDE5    "ma+toki+pona+VR"	# Ma Toki Pona VR
-uFFDE5    "ma-toki-pona-VR"	# Ma Toki Pona VR
 uFFDE6    pali&pali&ale&pona&epiku	# pali Pape (Project Babel)
 uFFDE6    "pali&Pape"	# pali Pape (Project Babel)
-uFFDE6    "pali+Pape"	# pali Pape (Project Babel)
-uFFDE6    "pali-Pape"	# pali Pape (Project Babel)
 uFFDE7    Seka	# ma Seka
 uFFDE8    Losupan	# Losupan (Lojban)
 uFFDE9    Towan	# Towan (Toaq)
@@ -1605,5 +1599,45 @@ uni516D   loku	# loku, CJK ideograph
 @deny uFFAB9
 @deny uFFABA
 @deny ^.+[.]stacked$
+
+# Overrides for usage categories.
+@sandbox su0
+@none aAANUSEMEmailMahjong
+@name asuki juniko jusijesuwa jusisa
+@name kalake kekantesantakalu
+@name lenlen lipamanka lokoso
+@name melinjakulekule mono motan nano nata
+@name sijesuwa sisa tenpi to2
+@name unikijetesantakalu vivi vivi2
+@name a&suli
+@name ijo&tan&anpa&nanpa
+@name ijo+vivi
+@name jan&jan&jan
+@name kama&sona
+@name kili&ma
+@name kulupu&en
+@name kulupu&pali&pi&sitelen&pona
+@name lipu&tenpo
+@name ma&pi&nasin&sitelen
+@name ma&pona&pi&toki&pona
+@name mun&pi&ante&toki
+@name sitelen&seli&kiwen
+@name suno&pi&toki&pona
+@name telo&sitelen
+@name waso&pimeja
+@dupe a1 akesi2 mi1 o1 olin0 ona1 sina1
+@dupe niv ni^ ni< ni> niv< niv>
+@dupe ni^< ni^> ni<^ ni>^ ni<v ni>v
+@dupe kin1 n1 namako1 soko3
+@dupe epiku2 lanpan1 linluwi4 majuna2 meso1 su1
+@dupe kapesi1 kiki4 kokosila1 misa1 oke2 san3 taki2 wa1
+@dupe ako1 iki1 ipi1 je1 ke1 oki1 silapa4 silapa5 tuli3 wi1
+@dupe aasun akesiv2 i\ ilapa kije kije2 kije3
+@dupe kijete kijete2 kijete3 linuwi4
+@dupe si\ siiilapa siilapa taa taaasun taasun
+@dupe Amanka Asuki Juniko Jusijesuwa Jusisa
+@dupe Lipamanka Sijesuwa Sisa nasulin
+@dupe ma&toki&pona&wile&jan
+@dupe pali&pali&ale&pona&epiku
 
 # EOF

@@ -71,7 +71,7 @@ $BITSNPICAS convertbitmap -f kbitx \
 	-o FairfaxSerif_base.kbitx FairfaxSerif.kbitx
 
 # Generate fea
-$SITELENPANA -f Fairfax_base.kbitx -i ../features/sitelenpona.txt -a ../features/spascii.fea -o ../features/spbase.fea
+$SITELENPANA -f Fairfax_base.kbitx -i ../features/sitelenpona.txt -a ../features/spascii.fea -o ../features/spbase.fea -g glyphs.html -e Fairfax.eot -t Fairfax.ttf
 $SITELENPANA -f Fairfax_base.kbitx -i ../features/titipula.txt -a ../features/tpascii.fea -o /dev/null
 
 # Generate ttf
