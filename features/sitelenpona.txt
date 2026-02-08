@@ -1260,7 +1260,7 @@ uFFD84    omekalike o&moku&e&kala&ike	# omekalike
 uFFD85    poni2	# poni, horseshoe
 uFFD86    wowujiti wuwojiti	# wowujiti, wuwojiti
 uFFD87    aku	# aku
-uFFD88    ani	# ani
+uFFD88    ani wi0	# ani, wi
 uFFD89    anta	# anta
 uFFD8A    apelo	# apelo
 uFFD8B    elen	# elen
@@ -1270,7 +1270,7 @@ uFFD8E    kana	# kana
 uFFD8F    kikolo	# kikolo
 uFFD90    kikulo	# kikulo
 uFFD91    kokoliko	# kokoliko
-uFFD92    koni	# koni
+uFFD92    koni ki0	# koni, ki
 uFFD93    kosikosa	# kosikosa
 uFFD94    masalo	# masalo
 uFFD95    matula	# matula
@@ -1290,7 +1290,7 @@ uFFDA2    sipije	# sipije
 uFFDA3    sisi	# sisi
 uFFDA4    siwala	# siwala
 uFFDA5    snoweli	# snoweli
-uFFDA6    soni	# soni
+uFFDA6    soni si si0	# soni, si
 uFFDA7    ta ta1	# ta (particle)
 uFFDA8    tasun tasun0	# tasun
 uFFDA9    tokana2	# tokana, rotated ante with dot
@@ -1602,7 +1602,7 @@ uni516D   loku	# loku, CJK ideograph
 
 # Overrides for usage categories.
 @sandbox su0
-@none aAANUSEMEmailMahjong
+@none aAANUSEMEmailMahjong ki0 wi0
 @name asuki juniko jusijesuwa jusisa
 @name kalake kekantesantakalu
 @name lenlen lipamanka lokoso
