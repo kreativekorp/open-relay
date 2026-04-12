@@ -36,7 +36,7 @@ TTFHACK="python ../openrelay-tools/tools/ttfhack.py"
 
 # Clean
 rm -f *.sfd-* *Tmp* *_base.* FairfaxHD.ttf FairfaxHD.eot FairfaxHD.zip FairfaxHD-NoCJK.* FairfaxPonaHD.* FairfaxPulaHD.* FairfaxHaxHD.* FairfaxSMHD.*
-rm -rf fairfaxhd Android
+rm -rf fairfaxhd Android BoundsHack/*.ttf
 
 # Make patched versions
 $SFDPATCH FairfaxHD.sfd patches/base.txt > FairfaxHD_base.sfd
@@ -98,14 +98,13 @@ $TTF2EOT < FairfaxPulaHD.ttf > FairfaxPulaHD.eot
 $TTF2EOT < FairfaxHaxHD.ttf > FairfaxHaxHD.eot
 $TTF2EOT < FairfaxSMHD.ttf > FairfaxSMHD.eot
 
-# Create hacked Android version
-mkdir Android
-$TTFHACK if=FairfaxHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxHD.ttf
-$TTFHACK if=FairfaxHD-NoCJK.ttf yMin=-544 yMax=1308 of=Android/FairfaxHD-NoCJK.ttf
-$TTFHACK if=FairfaxPonaHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxPonaHD.ttf
-$TTFHACK if=FairfaxPulaHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxPulaHD.ttf
-$TTFHACK if=FairfaxHaxHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxHaxHD.ttf
-$TTFHACK if=FairfaxSMHD.ttf yMin=-544 yMax=1308 of=Android/FairfaxSMHD.ttf
+# Create bounds hacked version
+$TTFHACK if=FairfaxHD.ttf yMin=-544 yMax=1308 of=BoundsHack/FairfaxHD.ttf
+$TTFHACK if=FairfaxHD-NoCJK.ttf yMin=-544 yMax=1308 of=BoundsHack/FairfaxHD-NoCJK.ttf
+$TTFHACK if=FairfaxPonaHD.ttf yMin=-544 yMax=1308 of=BoundsHack/FairfaxPonaHD.ttf
+$TTFHACK if=FairfaxPulaHD.ttf yMin=-544 yMax=1308 of=BoundsHack/FairfaxPulaHD.ttf
+$TTFHACK if=FairfaxHaxHD.ttf yMin=-544 yMax=1308 of=BoundsHack/FairfaxHaxHD.ttf
+$TTFHACK if=FairfaxSMHD.ttf yMin=-544 yMax=1308 of=BoundsHack/FairfaxSMHD.ttf
 
 # Create zip
 zip FairfaxHD.zip OFL.txt \
@@ -115,7 +114,7 @@ zip FairfaxHD.zip OFL.txt \
 	FairfaxPulaHD.ttf FairfaxPulaHD.eot \
 	FairfaxHaxHD.ttf FairfaxHaxHD.eot \
 	FairfaxSMHD.ttf FairfaxSMHD.eot \
-	Android/* pua.html
+	BoundsHack/* pua.html
 cp FairfaxHD.zip FairfaxHD-NoCJK.zip
 cp FairfaxHD.zip FairfaxPonaHD.zip
 cp FairfaxHD.zip FairfaxPulaHD.zip
