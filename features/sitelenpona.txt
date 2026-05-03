@@ -116,7 +116,7 @@ uF1924    lawa	# lawa
 uF1925    len	# len
 uF1926    lete	# lete
 uF1927    li	# li
-uF1928    lili	# lili
+uF1928    lili lili1	# lili, default, the smallest V imaginable (still not small enough! smaller!)
 uF1929    linja linja1	# linja, default, no tick
 uF192A    lipu	# lipu
 uF192B    loje	# loje
@@ -333,7 +333,7 @@ uFF925    ijo+lawa	# ijo lawa, scaled
 uFF926    ijo+leko ijo+leko1	# ijo leko, scaled
 uFF927    ijo+len	# ijo len, scaled
 uFF928    ijo+lete	# ijo lete, scaled
-uFF929    ijo+lili	# ijo lili, scaled
+uFF929    ijo+lili ijo+lili1	# ijo lili, scaled
 uFF92A    ijo+linja ijo+linja1	# ijo linja, scaled
 uFF92B    ijo+lipu	# ijo lipu, scaled
 uFF92C    ijo+loje	# ijo loje, scaled
@@ -422,7 +422,7 @@ uFF979    ijo+wawa	# ijo wawa, scaled
 uFF97A    ijo+weka ijo+weka1	# ijo weka, default, pu style, scaled
 uFF97B    ijo+wile ijo+wile01 ijo+wile1	# ijo wile, default, open, scaled
 uFF97C    ike-ala	# ike ala, stacked
-uFF97D    ike-lili	# ike lili, stacked
+uFF97D    ike-lili ike-lili1	# ike lili, stacked
 uFF97E    ike-lukin	# ike lukin, stacked
 uFF97F    ilo-kipisi ilo-kipisi1	# ilo kipisi, default, percent sign, stacked
 uFF980    ilo-lape ilo-lape01 ilo-lape1	# ilo lape, stacked
@@ -453,6 +453,7 @@ uFF990    jan+kasi      jan01+kasi      jan1+kasi	# jan kasi, scaled
 uFF991    jan+kulupu    jan01+kulupu    jan1+kulupu	# jan kulupu, scaled
 uFF992    jan+lawa      jan01+lawa      jan1+lawa	# jan lawa, scaled
 uFF993    jan+lili      jan01+lili      jan1+lili	# jan lili, scaled
+uFF993    jan+lili1     jan01+lili1     jan1+lili1	# jan lili, scaled
 uFF994    jan+monsuta   jan01+monsuta   jan1+monsuta	# jan monsuta, scaled
 uFF994    jan+monsuta01 jan01+monsuta01 jan1+monsuta01	# jan monsuta, scaled
 uFF994    jan+monsuta1  jan01+monsuta1  jan1+monsuta1	# jan monsuta, scaled
@@ -488,23 +489,25 @@ uFF9A7    kala+lete	# kala lete, scaled
 uFF9A7    kala01+lete kala1+lete	# kala lete, scaled
 uFF9A7    kala02+lete kala2+lete	# kala lete, scaled
 uFF9A7    kala3+lete	# kala lete, scaled
-uFF9A8    kala+lili	# kala lili, scaled
-uFF9A8    kala01+lili kala1+lili	# kala lili, scaled
-uFF9A8    kala02+lili kala2+lili	# kala lili, scaled
-uFF9A8    kala3+lili	# kala lili, scaled
+uFF9A8    kala+lili kala+lili1	# kala lili, scaled
+uFF9A8    kala1+lili kala1+lili1	# kala lili, scaled
+uFF9A8    kala01+lili kala01+lili1	# kala lili, scaled
+uFF9A8    kala2+lili kala2+lili1	# kala lili, scaled
+uFF9A8    kala02+lili kala02+lili1	# kala lili, scaled
+uFF9A8    kala3+lili kala3+lili1	# kala lili, scaled
 uFF9A9    kalama-musi	# kalama musi, stacked
 uFF9A9    kalama-musi1	# kalama musi, stacked
 uFF9A9    kalama-musi2	# kalama musi, stacked
 uFF9AA    kasi-jelo	# kasi jelo, stacked
 uFF9AB    kasi-kule	# kasi kule, stacked
 uFF9AC    kasi-laso	# kasi laso, stacked
-uFF9AD    kasi-lili	# kasi lili, stacked
+uFF9AD    kasi-lili kasi-lili1	# kasi lili, stacked
 uFF9AE    kasi-loje	# kasi loje, stacked
 uFF9AF    kasi-pimeja	# kasi pimeja, stacked
 uFF9B0    kasi-walo	# kasi walo, stacked
 uFF9B1    kili+jelo	# kili jelo, scaled
 uFF9B2    kili+laso	# kili laso, scaled
-uFF9B3    kili+lili	# kili lili, scaled
+uFF9B3    kili+lili kili+lili1	# kili lili, scaled
 uFF9B4    kili+loje	# kili loje, scaled
 uFF9B5    kili+palisa	# kili palisa, scaled
 uFF9B6    kili+pimeja	# kili pimeja, scaled
@@ -514,7 +517,7 @@ uFF9B9    kiwen+jelo	# kiwen jelo, scaled
 uFF9BA    kiwen+kasi	# kiwen kasi, scaled
 uFF9BB    kiwen+laso	# kiwen laso, scaled
 uFF9BC    kiwen+lete	# kiwen lete, scaled
-uFF9BD    kiwen+lili	# kiwen lili, scaled
+uFF9BD    kiwen+lili kiwen+lili1	# kiwen lili, scaled
 uFF9BE    kiwen+loje	# kiwen loje, scaled
 uFF9BF    kiwen+mun	# kiwen mun, scaled
 uFF9C0    kiwen+pimeja	# kiwen pimeja, scaled
@@ -529,6 +532,7 @@ uFF9C7    ko+kule   @ko01+kule   ko1+kule   ko2+kule   ko01+kule   ko02+kule	# k
 uFF9C8    ko+laso   @ko01+laso   ko1+laso   ko2+laso   ko01+laso   ko02+laso	# ko laso, scaled
 uFF9C9    ko+lete   @ko01+lete   ko1+lete   ko2+lete   ko01+lete   ko02+lete	# ko lete, scaled
 uFF9CA    ko+lili   @ko01+lili   ko1+lili   ko2+lili   ko01+lili   ko02+lili	# ko lili, scaled
+uFF9CA    ko+lili1  @ko01+lili1  ko1+lili1  ko2+lili1  ko01+lili1  ko02+lili1	# ko lili, scaled
 uFF9CB    ko+loje   @ko01+loje   ko1+loje   ko2+loje   ko01+loje   ko02+loje	# ko loje, scaled
 uFF9CC    ko+nasa   @ko01+nasa   ko1+nasa   ko2+nasa   ko01+nasa   ko02+nasa	# ko nasa, scaled
 uFF9CD    ko+pimeja @ko01+pimeja ko1+pimeja ko2+pimeja ko01+pimeja ko02+pimeja	# ko pimeja, scaled
@@ -543,14 +547,15 @@ uFF9D1    len+jan3	# len jan, scaled
 uFF9D2    len+jelo	# len jelo, scaled
 uFF9D3    len+laso	# len laso, scaled
 uFF9D4    len+lawa	# len lawa, scaled
-uFF9D5    len+lili	# len lili, scaled
+uFF9D5    len+lili len+lili1	# len lili, scaled
 uFF9D6    len+loje	# len loje, scaled
 uFF9D7    len+luka	# len luka, scaled
 uFF9D8    len+noka	# len noka, scaled
 uFF9D9    len+pimeja	# len pimeja, scaled
 uFF9DA    len+sin	# len sin, scaled
 uFF9DB    len+walo	# len walo, scaled
-uFF9DC    linja-lili linja1-lili	# linja lili, stacked
+uFF9DC    linja-lili linja-lili1	# linja lili, stacked
+uFF9DC    linja1-lili linja1-lili1	# linja lili, stacked
 uFF9DD    linja-pona linja1-pona	# linja pona, stacked
 uFF9DE    lipu+kasi	# lipu kasi, scaled
 uFF9DF    lipu+nanpa	# lipu nanpa, scaled
@@ -565,6 +570,7 @@ uFF9E4    lupa+@jaki   lupa01+@jaki   lupa1+@jaki	# lupa jaki, scaled
 uFF9E5    lupa+kiwen   lupa01+kiwen   lupa1+kiwen	# lupa kiwen, scaled
 uFF9E6    lupa+kute    lupa01+kute    lupa1+kute	# lupa kute, scaled
 uFF9E7    lupa+lili    lupa01+lili    lupa1+lili	# lupa lili, scaled
+uFF9E7    lupa+lili1   lupa01+lili1   lupa1+lili1	# lupa lili, scaled
 uFF9E8    lupa+meli    lupa01+meli    lupa1+meli	# lupa meli, default, hair or headscarf, scaled
 uFF9E8    lupa+meli01  lupa01+meli01  lupa1+meli01	# lupa meli, default, hair or headscarf, scaled
 uFF9E8    lupa+meli1   lupa01+meli1   lupa1+meli1	# lupa meli, default, hair or headscarf, scaled
@@ -589,26 +595,29 @@ uFF9F0    mama+meli mama+meli01 mama+meli1	# mama meli, default, hair or headsca
 uFF9F1    mama+mije mama+mije01 mama+mije1	# mama mije, default, broad shoulders, scaled
 uFF9F2    meli+ike  meli01+ike  meli1+ike	# meli ike, default, hair or headscarf, scaled
 uFF9F3    meli+lili meli01+lili meli1+lili	# meli lili, default, hair or headscarf, scaled
+uFF9F3    meli+lili1 meli01+lili1 meli1+lili1	# meli lili, default, hair or headscarf, scaled
 uFF9F4    meli+pona meli01+pona meli1+pona	# meli pona, default, hair or headscarf, scaled
 uFF9F5    meli+sama meli01+sama meli1+sama	# meli sama, default, hair or headscarf, scaled
 uFF9F6    meli+unpa meli01+unpa meli1+unpa	# meli unpa, default, hair or headscarf, scaled
 uFF9F7    mije+ike  mije01+ike  mije1+ike	# mije ike, default, broad shoulders, scaled
 uFF9F8    mije+lili mije01+lili mije1+lili	# mije lili, default, broad shoulders, scaled
+uFF9F8    mije+lili1 mije01+lili1 mije1+lili1	# mije lili, default, broad shoulders, scaled
 uFF9F9    mije+pona mije01+pona mije1+pona	# mije pona, default, broad shoulders, scaled
 uFF9FA    mije+sama mije01+sama mije1+sama	# mije sama, default, broad shoulders, scaled
 uFF9FB    mije+unpa mije01+unpa mije1+unpa	# mije unpa, default, broad shoulders, scaled
 uFF9FC    mije+wawa mije01+wawa mije1+wawa	# mije wawa, default, broad shoulders, scaled
-uFF9FD    musi+lili	# musi lili, scaled
-uFF9FD    musi1+lili	# musi lili, scaled
-uFF9FD    musi2+lili	# musi lili, scaled
+uFF9FD    musi+lili musi+lili1	# musi lili, scaled
+uFF9FD    musi1+lili musi1+lili1	# musi lili, scaled
+uFF9FD    musi2+lili musi2+lili1	# musi lili, scaled
 uFF9FE    nena+kon    nena01+kon    nena1+kon	# nena kon, scaled
 uFF9FF    nena+kute   nena01+kute   nena1+kute	# nena kute, scaled
 uFFA00    nena+lili   nena01+lili   nena1+lili	# nena lili, scaled
+uFFA00    nena+lili1  nena01+lili1  nena1+lili1	# nena lili, scaled
 uFFA01    nena+mama   nena01+mama   nena1+mama	# nena mama, scaled
 uFFA02    nena+meli   nena01+meli   nena1+meli	# nena meli, default, hair or headscarf, scaled
 uFFA02    nena+meli01 nena01+meli01 nena1+meli01	# nena meli, default, hair or headscarf, scaled
 uFFA02    nena+meli1  nena01+meli1  nena1+meli1	# nena meli, default, hair or headscarf, scaled
-uFFA03    palisa+lili	# palisa lili, scaled
+uFFA03    palisa+lili palisa+lili1	# palisa lili, scaled
 uFFA04    pilin+ala	# pilin ala, scaled
 uFFA05    pilin+ike	# pilin ike, scaled
 uFFA06    pilin+nasa	# pilin nasa, scaled
@@ -618,15 +627,16 @@ uFFA09    pilin+sama	# pilin sama, scaled
 uFFA0A    poki+kon	# poki kon, scaled
 uFFA0B    poki+len	# poki len, scaled
 uFFA0C    poki+lete	# poki lete, scaled
-uFFA0D    poki+lili	# poki lili, scaled
+uFFA0D    poki+lili poki+lili1	# poki lili, scaled
 uFFA0E    poki+seli poki+seli1	# poki seli, scaled
 uFFA0F    poki+telo	# poki telo, scaled
 uFFA10    pona-ala	# pona ala, stacked
-uFFA11    pona-lili	# pona lili, stacked
+uFFA11    pona-lili pona-lili1	# pona lili, stacked
 uFFA12    pona-lukin	# pona lukin, stacked
 uFFA13    selo-len	# selo len, stacked
 uFFA14    selo-soweli	# selo soweli, stacked
 uFFA15    sike+lili suke+lili	# sike lili, scaled
+uFFA15    sike+lili1 suke+lili1	# sike lili, scaled
 uFFA16    sitelen+ike       sitelen01+ike       sitelen1+ike	# sitelen ike, scaled
 uFFA17    sitelen+ma        sitelen01+ma        sitelen1+ma	# sitelen ma, scaled
 uFFA18    sitelen+monsuta   sitelen01+monsuta   sitelen1+monsuta	# sitelen monsuta, scaled
@@ -641,7 +651,7 @@ uFFA1B    sitelen+tawa      sitelen01+tawa      sitelen1+tawa	# sitelen tawa, sc
 uFFA1C    sitelen+toki      sitelen01+toki      sitelen1+toki	# sitelen toki, scaled
 uFFA1D    sona+ala	# sona ala, scaled
 uFFA1E    sona+ike	# sona ike, scaled
-uFFA1F    sona+lili	# sona lili, scaled
+uFFA1F    sona+lili sona+lili1	# sona lili, scaled
 uFFA20    sona+ma	# sona ma, scaled
 uFFA21    sona+nanpa	# sona nanpa, scaled
 uFFA22    sona+pona	# sona pona, scaled
@@ -657,7 +667,7 @@ uFFA2A    supa-moku supa-moku1	# supa moku, default, hand to mouth, stacked
 uFFA2B    supa-monsi supa-monsi01 supa-monsi1	# supa monsi, default, dot, stacked
 uFFA2C    supa-pali	# supa pali, stacked
 uFFA2D    telo+lete	# telo lete, scaled
-uFFA2E    telo+lili	# telo lili, scaled
+uFFA2E    telo+lili telo+lili1	# telo lili, scaled
 uFFA2F    toki+ala	# toki ala, scaled
 uFFA30    toki+ike	# toki ike, scaled
 uFFA31    toki+pona	# toki pona, scaled
@@ -1093,9 +1103,11 @@ uFFBB8    jan+sewi2  jan01+sewi2  jan1+sewi2	# jan sewi, secularized, scaled
 uFFBB9    kala-lete	# kala lete, default, without eyes, stacked
 uFFBB9    kala01-lete kala1-lete	# kala lete, default, without eyes, stacked
 uFFBBA    kala02-lete kala2-lete	# kala lete, with eyes, stacked
-uFFBBB    kala-lili	# kala lili, default, without eyes, stacked
-uFFBBB    kala01-lili kala1-lili	# kala lili, default, without eyes, stacked
-uFFBBC    kala02-lili kala2-lili	# kala lili, with eyes, stacked
+uFFBBB    kala-lili kala-lili1	# kala lili, default, without eyes, stacked
+uFFBBB    kala1-lili kala1-lili1	# kala lili, default, without eyes, stacked
+uFFBBB    kala01-lili kala01-lili1	# kala lili, default, without eyes, stacked
+uFFBBC    kala2-lili kala2-lili1	# kala lili, with eyes, stacked
+uFFBBC    kala02-lili kala02-lili1	# kala lili, with eyes, stacked
 uFFBBD    laso-kasi	# laso kasi, stacked
 uFFBBE    laso-mun	# laso mun, stacked
 uFFBBF    laso-sewi	# laso sewi, default, Arabic, stacked
@@ -1128,6 +1140,7 @@ uFFBD2    mama+tonsi01	# mama tonsi, scaled
 uFFBD2    mama+tonsi1	# mama tonsi, scaled
 uFFBD3    meli2+ike     meli02+ike	# meli ike, Venus, scaled
 uFFBD4    meli2+lili    meli02+lili	# meli lili, Venus, scaled
+uFFBD4    meli2+lili1   meli02+lili1	# meli lili, Venus, scaled
 uFFBD5    meli2+pona    meli02+pona	# meli pona, Venus, scaled
 uFFBD6    meli2+sama    meli02+sama	# meli sama, Venus, scaled
 uFFBD7    meli+tonsi    meli01+tonsi   meli1+tonsi	# meli tonsi, default, hair or headscarf, scaled
@@ -1141,6 +1154,7 @@ uFFBDA    meli+wawa     meli01+wawa    meli1+wawa	# meli wawa, default, hair or 
 uFFBDB    meli2+wawa    meli02+wawa	# meli wawa, Venus, scaled
 uFFBDC    mije2+ike     mije02+ike	# mije ike, Mars, scaled
 uFFBDD    mije2+lili    mije02+lili	# mije lili, Mars, scaled
+uFFBDD    mije2+lili1   mije02+lili1	# mije lili, Mars, scaled
 uFFBDE    mije2+pona    mije02+pona	# mije pona, Mars, scaled
 uFFBDF    mije2+sama    mije02+sama	# mije sama, Mars, scaled
 uFFBE0    mije+tonsi    mije01+tonsi   mije1+tonsi	# mije tonsi, default, broad shoulders, scaled
@@ -1156,6 +1170,7 @@ uFFBE4    nena01+meli2 nena01+meli02	# nena meli, Venus, scaled
 uFFBE4    nena1+meli2  nena1+meli02	# nena meli, Venus, scaled
 uFFBE5    tonsi+ike  tonsi01+ike  tonsi1+ike	# tonsi ike, scaled
 uFFBE6    tonsi+lili tonsi01+lili tonsi1+lili	# tonsi lili, scaled
+uFFBE6    tonsi+lili1 tonsi01+lili1 tonsi1+lili1	# tonsi lili, scaled
 uFFBE7    tonsi+pona tonsi01+pona tonsi1+pona	# tonsi pona, scaled
 uFFBE8    tonsi+sama tonsi01+sama tonsi1+sama	# tonsi sama, scaled
 uFFBE9    tonsi+sin  tonsi01+sin  tonsi1+sin	# tonsi sin, scaled
@@ -1551,6 +1566,31 @@ uFFE2F    pipi2	# pipi, butterfly
 uFFE30    poka2	# poka, vertical line
 uFFE31    seli2	# seli, fire
 uFFE32    tomo02 tomo2 toma02 toma2	# tomo, overhang
+uFFE33    ijo&ala	# ijo ala, diagonal stroke
+uFFE34    kulupu&ilo	# kulupu ilo, combined
+uFFE35    kulupu&jan	# kulupu jan, combined
+uFFE35    kulupu&jan01	# kulupu jan, combined
+uFFE35    kulupu&jan1	# kulupu jan, combined
+uFFE36    kulupu&kulupu	# kulupu kulupu, combined
+uFFE37    kulupu&kulupu&kulupu	# kulupu kulupu kulupu, combined
+uFFE38    kulupu&lawa	# kulupu lawa, combined
+uFFE39    kulupu&lipu	# kulupu lipu, combined
+uFFE3A    kulupu&mun	# kulupu mun, combined
+uFFE3B    kulupu&nanpa	# kulupu nanpa, combined
+uFFE3C    kulupu&sitelen	# kulupu sitelen, combined
+uFFE3C    kulupu&sitelen01	# kulupu sitelen, combined
+uFFE3C    kulupu&sitelen1	# kulupu sitelen, combined
+uFFE3D    kulupu&tawa	# kulupu tawa, combined
+uFFE3E    kulupu&toki&pona	# kulupu toki pona, combined
+uFFE3F    kulupu&tomo kulupu&toma	# kulupu tomo, combined
+uFFE3F    kulupu&tomo01 kulupu&toma01	# kulupu tomo, combined
+uFFE3F    kulupu&tomo02 kulupu&toma02	# kulupu tomo, combined
+uFFE3F    kulupu&tomo1 kulupu&toma1	# kulupu tomo, combined
+uFFE3F    kulupu&tomo2 kulupu&toma2	# kulupu tomo, combined
+uFFE40    pipi&linja pipi&linja1	# pipi linja, combined
+uFFE40    pipi1&linja pipi1&linja1	# pipi linja, combined
+uFFE41    akesi3	# akesi, lizard?
+uFFE42    lili2	# lili, horizontal line below small end of V
 uFFE4F    kama&tawa	# kama tawa, combined
 
 # Sitelen Pona Presentation Forms-D, nimisin subblock
@@ -1604,13 +1644,13 @@ uFFE7E    kuki	# kuki
 uFFE7F    lajuto	# lajuto
 uFFE80    lapan1	# lapan, cow
 uFFE81    lapan lapan2	# lapan, default, milk carton
-uFFE82    lenke	# lenke
+uFFE82    lenke lenke1	# lenke
 uFFE83    lipasa	# lipasa
 uFFE84    lisa	# lisa
 uFFE85    lonsi	# lonsi
 uFFE86    mulapisu2	# mulapisu, simplified
 uFFE87    ne	# ne
-uFFE88    nun	# nun
+uFFE88    nun nun1	# nun
 uFFE89    papa papa1	# papa, default, mama + Mars
 uFFE8A    papa2	# papa, mama + broad shoulders
 uFFE8B    papa3	# papa, Baba from Baba Is You
@@ -1633,6 +1673,7 @@ uFFE9B    lonpo	# lonpo
 uFFE9C    musitenpike	# musitenpike
 uFFE9D    yupekosi2	# yupekosi, straight Y
 uFFE9E    yupekosi3	# yupekosi, filled turned toki
+uFFE9F    iwa	# iwa
 
 # Sitelen Pona Presentation Forms-D, name glyphs subblock
 uFFEA0    Ilaje	# soweli kijetesantakalu Ilaje
@@ -1644,8 +1685,6 @@ uFFEA5    Majeka	# jan Majeka
 uFFEA6    Stella Stella1	# ijo Stella
 uFFEA7    Stella2 ijo+Stella	# ijo Stella
 uFFEA8    Ipan	# waso musi Ipan
-uFFEA9    Eko2	# waso Eko, waso lukin
-uFFEAA    Eko3	# waso Eko, soweli lukin
 uFFEAB    vivi vivi1	# ijo vivi
 uFFEAC    vivi2 ijo+vivi	# ijo vivi
 uFFEAD    Wikipesija	# Wikipesija (toki pona Wikipedia)
@@ -1656,6 +1695,10 @@ uFFEB1    kalake	# kala Ke
 uFFEB2    meliSiliwa	# meli Siliwa
 uFFEB3    Pisowe	# jan Pisowe
 uFFEB4    Enta	# jan lili Enta
+uFFEB5    Pijuku	# soweli Pijuku
+
+# Sitelen Pona Presentation Forms-D, nimisin subblock
+uFFEE0    upisisi	# upisisi
 
 # Sitelen Pona Presentation Forms-D, punctuation subblock
 uFFEF0    ,,	# tally mark 2x
@@ -1679,9 +1722,21 @@ uni3000   |	# ideographic space
 
 # CJK Unified Ideographs
 uni4E03   take take1	# take, default, CJK ideograph
-uni4E5D   kajo	# kajo, CJK ideograph
-uni516B   patu	# patu, CJK ideograph
-uni516D   loku	# loku, CJK ideograph
+uni4E5D   kajo kajo1	# kajo, CJK ideograph
+uni516B   patu patu1	# patu, CJK ideograph
+uni516D   loku loku1	# loku, CJK ideograph
+
+# Halfwidth and Fullwidth Forms
+uniFF10   lenke0	# lenke, digit zero
+uniFF11   jatu jatu0	# jatu, digit one
+uniFF12   ini ini0	# ini, digit two
+uniFF13   san0 tuli0	# san, tuli, digit three
+uniFF14   se0	# se, digit four
+uniFF15   nun0	# nun, digit five
+uniFF16   loku0	# loku, digit six
+uniFF17   take0	# take, digit seven
+uniFF18   patu0	# patu, digit eight
+uniFF19   kajo0	# kajo, digit nine
 
 # Rules for which glyphs can be automatically cartouched.
 @allow U+0020-02FF # Latin, IPA

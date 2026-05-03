@@ -59,10 +59,11 @@ uF1C64    tulu	# tulu
 uF1C65    uli	# uli
 uF1C66    upi	# upi
 
-# UCSUR Titi Pula block, compound glyph subblock
+# UCSUR Titi Pula block, supplemental subblock
 uF1C70    tuki+tiki	# tuki tiki, scaled
 uF1C71    titi-pula	# titi pula, stacked
 uF1C71    Pula	# glyph for font family name "Pula"
+uF1C72    liti	# liti
 uF1C7E    [	# start of cartouche
 uF1C7F    ]	# end of cartouche
 
@@ -127,6 +128,7 @@ uni3000   |	# ideographic space
 @deny uFFA51.busted
 @deny uFFAB9
 @deny uFFABA
+@deny uFFEF0-FFEFD
 @deny ^.+[.]stacked$
 
 # EOF
