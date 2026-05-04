@@ -1591,6 +1591,11 @@ uFFE40    pipi&linja pipi&linja1	# pipi linja, combined
 uFFE40    pipi1&linja pipi1&linja1	# pipi linja, combined
 uFFE41    akesi3	# akesi, lizard?
 uFFE42    lili2	# lili, horizontal line below small end of V
+uFFE43    ni9	# ni, chevrons pointing towards center
+uFFE44    ni10	# ni, arrows pointing towards center
+uFFE45    ni11	# ni, arrows pointing away from center
+uFFE46    ni12	# ni, pointing away from viewer
+uFFE47    ni13	# ni, pointing towards viewer
 uFFE4F    kama&tawa	# kama tawa, combined
 
 # Sitelen Pona Presentation Forms-D, nimisin subblock
@@ -1699,6 +1704,9 @@ uFFEB5    Pijuku	# soweli Pijuku
 
 # Sitelen Pona Presentation Forms-D, nimisin subblock
 uFFEE0    upisisi	# upisisi
+uFFEE1    konwe2	# konwe
+uFFEE2    konwe3	# konwe
+uFFEE3    konwe4	# konwe
 
 # Sitelen Pona Presentation Forms-D, punctuation subblock
 uFFEF0    ,,	# tally mark 2x
