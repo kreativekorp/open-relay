@@ -4,9 +4,8 @@ languagesystem grek dflt;
 languagesystem cyrl dflt;
 
 include (sequences.fea);
-include (tpascii.fea);
 include (slc-variants.fea);
+include (titipula-ascii.fea);
 include (halfwidth.fea);
-include (spbase.fea);
 include (derani.fea);
 include (marks.fea);

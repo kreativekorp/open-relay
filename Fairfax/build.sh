@@ -71,8 +71,17 @@ $BITSNPICAS convertbitmap -f kbitx \
 	-o FairfaxSerif_base.kbitx FairfaxSerif.kbitx
 
 # Generate fea
-$SITELENPANA -f Fairfax_base.kbitx -i ../features/sitelenpona.txt -a ../features/spascii.fea -o ../features/spbase.fea -g glyphs.html -e Fairfax.eot -t Fairfax.ttf
-$SITELENPANA -f Fairfax_base.kbitx -i ../features/titipula.txt -a ../features/tpascii.fea -o /dev/null
+
+$SITELENPANA -f Fairfax_base.kbitx \
+             -i ../features/sitelenpona.txt \
+             -a ../features/sitelenpona-ascii.fea \
+             -o ../features/sitelenpona-unicode.fea \
+             -g glyphs.html -e Fairfax.eot -t Fairfax.ttf
+
+$SITELENPANA -f Fairfax_base.kbitx \
+             -i ../features/sitelenpona.txt \
+             -l ../features/titipula.txt \
+             -a ../features/titipula-ascii.fea
 
 # Generate ttf
 $BITSNPICAS convertbitmap -f ttf \
@@ -113,9 +122,9 @@ cp FairfaxSerifSM_base.ttf FairfaxSerifSM.ttf
 
 # Remove intermediate artifacts
 rm *_base.kbitx
-rm ../features/spascii.fea
-rm ../features/spbase.fea
-rm ../features/tpascii.fea
+rm ../features/sitelenpona-ascii.fea
+rm ../features/sitelenpona-unicode.fea
+rm ../features/titipula-ascii.fea
 rm *_base.ttf
 
 # Inject PUAA table

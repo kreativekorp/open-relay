@@ -51,9 +51,21 @@ $SFDPATCH FairfaxHD_base.sfd patches/strictmono.txt > FairfaxSMHD_base.sfd
 grep -v cjkMark ../features/marks.fea > ../features/marks-nocjk.fea
 grep -v uni300 ../features/sequences.fea > ../features/sequences-nocjk.fea
 grep -E -v "uni(30|4E|51|FF)" ../features/sitelenpona.txt > ../features/sitelenpona-nocjk.txt
-$SITELENPANA -f FairfaxHD_NoCJK_NewName_base.sfd -i ../features/sitelenpona-nocjk.txt -a /dev/null -o ../features/spnocjk.fea
-$SITELENPANA -f FairfaxPonaHD_base.sfd -i ../features/sitelenpona.txt -a ../features/spascii.fea -o ../features/spbase.fea -g glyphs.html -e FairfaxHD.eot -t FairfaxHD.ttf
-$SITELENPANA -f FairfaxPulaHD_base.sfd -i ../features/titipula.txt -a ../features/tpascii.fea -o /dev/null
+
+$SITELENPANA -f FairfaxHD_NoCJK_NewName_base.sfd \
+             -i ../features/sitelenpona-nocjk.txt \
+             -o ../features/sitelenpona-nocjk.fea
+
+$SITELENPANA -f FairfaxPonaHD_base.sfd \
+             -i ../features/sitelenpona.txt \
+             -a ../features/sitelenpona-ascii.fea \
+             -o ../features/sitelenpona-unicode.fea \
+             -g glyphs.html -e FairfaxHD.eot -t FairfaxHD.ttf
+
+$SITELENPANA -f FairfaxPulaHD_base.sfd \
+             -i ../features/sitelenpona.txt \
+             -l ../features/titipula.txt \
+             -a ../features/titipula-ascii.fea
 
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
@@ -79,10 +91,10 @@ rm *_base.sfd
 rm ../features/marks-nocjk.fea
 rm ../features/sequences-nocjk.fea
 rm ../features/sitelenpona-nocjk.txt
-rm ../features/spascii.fea
-rm ../features/spbase.fea
-rm ../features/spnocjk.fea
-rm ../features/tpascii.fea
+rm ../features/sitelenpona-ascii.fea
+rm ../features/sitelenpona-nocjk.fea
+rm ../features/sitelenpona-unicode.fea
+rm ../features/titipula-ascii.fea
 rm *_base.ttf
 
 # Convert to eot

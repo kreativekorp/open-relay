@@ -5,6 +5,6 @@ languagesystem cyrl dflt;
 
 include (sequences-nocjk.fea);
 include (slc-variants.fea);
-include (spnocjk.fea);
+include (sitelenpona-nocjk.fea);
 include (derani.fea);
 include (marks-nocjk.fea);

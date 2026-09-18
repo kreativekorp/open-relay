@@ -7,6 +7,6 @@ include (sequences.fea);
 include (ligatures.fea);
 include (slc-variants.fea);
 include (halfwidth.fea);
-include (spbase.fea);
+include (sitelenpona-unicode.fea);
 include (derani.fea);
 include (marks.fea);
