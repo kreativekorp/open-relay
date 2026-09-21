@@ -1,4 +1,7 @@
 # Feature names. Must be defined before use.
+@ss13     hand radical kepeken/luka/moku/pali/pana
+@ss14     paw kepeken/luka/moku/pali/pana
+@ss15     paw mi/sina/ona
 @ss16     straight a/o/kin/n
 @ss17     diagonal a/o/kin/n
 @ss18     straight mi/sina/ona
@@ -22,6 +25,8 @@
 @cv84.2   Arabic sewi
 @cv85     alternate uta
 @cv85.1   dotless uta
+@cv85.2   single-fang uta
+@cv85.3   double-fang uta
 @cv86     alternate wile
 @cv86.1   closed wile
 @cv87     alternate tonsi
@@ -101,14 +106,16 @@ uF1915    kalama	# kalama
 uF1916    kama	# kama
 uF1917    kasi	# kasi
 uF1918    ken	# ken
-uF1919    kepeken kepen	# kepeken, kepen
+uF1919    kepeken kepen	# kepeken, kepen, default, hand radical
+uF1919    kepeken1 kepen1	# kepeken, kepen, default, hand radical
+uF1919    kepeken.ss13 kepen.ss13	# kepeken, kepen, default, hand radical
 uF191A    kili	# kili
 uF191B    kiwen	# kiwen
 uF191C    ko ko1 ko02	# ko, default, flower
 uF191D    kon	# kon
 uF191E    kule	# kule
 uF191F    kulupu	# kulupu
-uF1920    kute	# kute
+uF1920    kute kute1	# kute, default, round
 uF1921    la	# la
 uF1922    lape lape01 lape1	# lape, default, head
 uF1923    laso	# laso
@@ -118,11 +125,11 @@ uF1926    lete	# lete
 uF1927    li	# li
 uF1928    lili lili1	# lili, default, the smallest V imaginable (still not small enough! smaller!)
 uF1929    linja linja1	# linja, default, no tick
-uF192A    lipu	# lipu
+uF192A    lipu lipu1	# lipu, default, rectangle
 uF192B    loje	# loje
 uF192C    lon	# lon
-uF192D    luka	# luka
-uF192E    lukin	# lukin
+uF192D    luka luka1 luka.ss13	# luka, default, hand radical
+uF192E    lukin lukin1	# lukin, default, round
 uF192F    lupa lupa01 lupa1	# lupa, default, U
 uF1930    ma	# ma
 uF1931    mama	# mama
@@ -130,7 +137,7 @@ uF1932    mani	# mani
 uF1933    meli meli01 meli1	# meli, default, hair or headscarf
 uF1934    mi	# mi, default
 uF1935    mije mije01 mije1	# mije, default, broad shoulders
-uF1936    moku moku1	# moku, default, hand to mouth
+uF1936    moku moku1 moku.ss13	# moku, default, hand radical
 uF1937    moli moli01 moli1	# moli, default, head and eyes
 uF1938    monsi monsi01 monsi1	# monsi, default, dot
 uF1939    mu mu01 mu1	# mu, default, mouse face
@@ -139,7 +146,7 @@ uF193B    musi musi1	# musi, default, curved ends
 uF193C    mute mute01 mute1	# mute, default, three vertical lines
 uF193D    nanpa	# nanpa
 uF193E    nasa	# nasa
-uF193F    nasin	# nasin
+uF193F    nasin nasin1	# nasin, default, directed edge
 uF1940    nena nena01 nena1	# nena, default, U
 uF1941    ni ni1 ni01 niv ni&\arrowdown	# ni, default, downwards
 uF1942    nimi nimi1	# nimi, default, empty
@@ -149,14 +156,14 @@ uF1945    olin	# olin, default
 uF1946    ona	# ona, default
 uF1947    open	# open
 uF1948    pakala	# pakala
-uF1949    pali	# pali
+uF1949    pali pali1 pali.ss13	# pali, default, hand radical
 uF194A    palisa	# palisa
 uF194B    pan	# pan
-uF194C    pana	# pana
+uF194C    pana pana1 pana.ss13	# pana, default, hand radical
 uF194D    pi	# pi
 uF194E    pilin	# pilin
 uF194F    pimeja	# pimeja
-uF1950    pini	# pini
+uF1950    pini pini1	# pini, default, I-beam
 uF1951    pipi pipi1	# pipi, default, pu style
 uF1952    poka poka1	# poka, default, dot
 uF1953    poki	# poki
@@ -167,13 +174,13 @@ uF1957    seli seli1	# seli, default, pu style
 uF1958    selo	# selo
 uF1959    seme	# seme
 uF195A    sewi sewi1 sewi01 sewi.cv84.2	# sewi, default, Arabic
-uF195B    sijelo	# sijelo
+uF195B    sijelo sijelo1	# sijelo, default, pu style
 uF195C    sike suke	# sike, suke (typo of sike)
 uF195D    sin	# sin
 uF195E    sina	# sina, default
 uF195F    sinpin sinpin01 sinpin1	# sinpin, default, dot
 uF1960    sitelen sitelen01 sitelen1	# sitelen, default, dots
-uF1961    sona	# sona
+uF1961    sona sona1	# sona, default, rectangle with emitters
 uF1962    soweli soweli1	# soweli, default, pu style
 uF1963    suli	# suli
 uF1964    suno	# suno
@@ -182,9 +189,9 @@ uF1966    suwi	# suwi
 uF1967    tan	# tan
 uF1968    taso	# taso
 uF1969    tawa	# tawa
-uF196A    telo	# telo
+uF196A    telo telo1	# telo, default, pu style
 uF196B    tenpo tenpo01 tenpo1 ten ten1	# tenpo, ten, default, clock
-uF196C    toki	# toki
+uF196C    toki toki1	# toki, default, circle with emitters
 uF196D    tomo tomo01 tomo1	# tomo, default, no overhang
 uF196D    toma toma01 toma1	# tomo, default, no overhang
 uF196E    tu	# tu
@@ -1596,6 +1603,9 @@ uFFE44    ni10	# ni, arrows pointing towards center
 uFFE45    ni11	# ni, arrows pointing away from center
 uFFE46    ni12	# ni, pointing away from viewer
 uFFE47    ni13	# ni, pointing towards viewer
+uFFE48    monsuta2	# monsuta, constant amplitude
+uFFE4D    tu-tu	# tu tu, stacked
+uFFE4E    tu-wan	# tu wan, stacked
 uFFE4F    kama&tawa	# kama tawa, combined
 
 # Sitelen Pona Presentation Forms-D, nimisin subblock
@@ -1681,7 +1691,7 @@ uFFE9E    yupekosi3	# yupekosi, filled turned toki
 uFFE9F    iwa	# iwa
 
 # Sitelen Pona Presentation Forms-D, name glyphs subblock
-uFFEA0    Ilaje	# soweli kijetesantakalu Ilaje
+uFFEA0    Ilaje	# soweli kijetesantakalu Ilaje Jejuta Semelu
 uFFEA1    Kolisin	# namako Kolisin
 uFFEA2    Alisa	# jan Alisa
 uFFEA3    Ante	# mute Ante
@@ -1701,12 +1711,52 @@ uFFEB2    meliSiliwa	# meli Siliwa
 uFFEB3    Pisowe	# jan Pisowe
 uFFEB4    Enta	# jan lili Enta
 uFFEB5    Pijuku	# soweli Pijuku
+uFFEB6    Jejuta	# soweli kijetesantakalu Ilaje Jejuta Semelu
+uFFEB7    Semelu	# soweli kijetesantakalu Ilaje Jejuta Semelu
+uFFEB8    Koko&uta	# jan Koko + uta
+uFFEB9    Lepeka&uta	# jan Lepeka + uta
+uFFEB9    melinjakulekule&uta	# jan Lepeka + uta
+uFFEBA    Pipitawa	# Tobamacha-whatever I don't care
+
+# Sitelen Pona Presentation Forms-D, variants subblock
+uFFEC0    linja3	# linja, shoelace
+uFFEC1    lipu2	# lipu, dog-ear
+uFFEC2    lukin2	# lukin, pointy
+uFFEC3    nasin2	# nasin, signpost
+uFFEC4    nimi3	# nimi, Egyptian
+uFFEC5    pini2	# pini, pin
+uFFEC6    sijelo2	# sijelo, stick figure
+uFFEC7    sijelo3	# sijelo, stick figure with dress
+uFFEC8    sijelo4	# sijelo, sawhorse
+uFFEC9    sitelen3	# sitelen, cursive
+uFFECA    sona2	# sona, lightbulb
+uFFECB    telo2	# telo, choppy
+uFFECC    toki2	# toki, speech bubble
+uFFECD    toki2&e	# toki e, speech bubble
+uFFED0    kepeken2 kepen2	# kepeken, kepen, paw
+uFFED0    kepeken.ss14 kepen.ss14	# kepeken, kepen, paw
+uFFED1    kute2	# kute, pointy
+uFFED2    luka2 luka.ss14	# luka, paw
+uFFED3    mi3 mi.ss15	# mi, paw
+uFFED4    moku3 moku.ss14	# moku, paw
+uFFED5    ona3 ona.ss15	# ona, paw
+uFFED6    pali2 pali.ss14	# pali, paw
+uFFED7    pana2 pana.ss14	# pana, paw
+uFFED8    sina3 sina.ss15	# sina, paw
+uFFED9    uta3 uta.cv85.2	# uta, single fang
+uFFEDA    uta4 uta.cv85.3	# uta, double fang
 
 # Sitelen Pona Presentation Forms-D, nimisin subblock
 uFFEE0    upisisi	# upisisi
 uFFEE1    konwe2	# konwe
 uFFEE2    konwe3	# konwe
 uFFEE3    konwe4	# konwe
+uFFEE4    kanjanu	# kanjanu
+uFFEE5    kosi	# kosi
+uFFEE6    lajotu	# lajotu
+uFFEE7    lenija	# lenija
+uFFEE8    mosa	# mosa
+uFFEE9    r	# Pingo 2.0, worse in every way
 
 # Sitelen Pona Presentation Forms-D, punctuation subblock
 uFFEF0    ,,	# tally mark 2x
@@ -1809,6 +1859,7 @@ uniFF19   kajo0	# kajo, digit nine
 @name lipu&tenpo
 @name ma&pi&nasin&sitelen
 @name ma&pona&pi&toki&pona
+@name melinjakulekule&uta
 @name mun&pi&ante&toki
 @name sitelen&seli&kiwen
 @name suno&pi&toki&pona
