@@ -10,6 +10,14 @@ else
 	exit 1
 fi
 
+# Find fonttools
+if command -v fonttools >/dev/null 2>&1; then
+	FONTTOOLS="fonttools"
+else
+	echo "Could not find fonttools."
+	exit 1
+fi
+
 # Find ttf2eot
 if command -v ttf2eot >/dev/null 2>&1; then
 	TTF2EOT="ttf2eot"
@@ -37,8 +45,14 @@ $SFDPATCH KreativeSquareTmp.sfd patches/strictmono.txt > KreativeSquareSM.sfd
 # Generate ttf
 $FONTFORGE -lang=ff -c 'i = 1; while (i < $argc); Open($argv[i]); Generate($argv[i]:r + ".ttf", "", 0); i = i+1; endloop' \
 	KreativeSquareTmp.sfd KreativeSquareSM.sfd
-mv KreativeSquareTmp.ttf KreativeSquare.ttf
+
+# Add OpenType features
+$FONTTOOLS feaLib -o KreativeSquare.ttf ksquare.fea KreativeSquareTmp.ttf
+
+# Remove intermediate artifacts
+rm KreativeSquareSM.sfd
 rm KreativeSquareTmp.sfd
+rm KreativeSquareTmp.ttf
 
 # Inject PUAA table
 PUAAFLAGS="zuombxkkehsl"

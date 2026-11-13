@@ -1,0 +1,164 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem grek dflt;
+
+feature rlig {
+
+  lookup CombiningSequences {
+
+    # Latin Letters with Diacritics
+    sub A uni030A uni0308 by uFF128;
+    sub a uni030A uni0308 by uFF129;
+    sub Aring uni0308 by uFF128;
+    sub aring uni0308 by uFF129;
+    sub G uni0308 by uFF120;
+    sub g uni0308 by uFF121;
+    sub K tildecomb by uniF700;
+    sub k tildecomb by uniF701;
+    sub L tildecomb by uFF122;
+    sub l tildecomb by uFF123;
+    sub M tildecomb by uniF704;
+    sub m tildecomb by uniF705;
+    sub N uni0302 by uFF1A6;
+    sub n uni0302 by uFF1A7;
+    sub N uni0308 by uFF126;
+    sub n uni0308 by uFF127;
+    sub O uni0327 by uFF1A8;
+    sub o uni0327 by uFF1A9;
+    sub Oslash uni0308 by uFF12A;
+    sub oslash uni0308 by uFF12B;
+    sub P uni0302 by uFF130;
+    sub p uni0302 by uFF131;
+    sub Q uni0302 by uFF138;
+    sub q uni0302 by uFF139;
+    sub R tildecomb by uFF13A;
+    sub r tildecomb by uFF13B;
+    sub X uni0304 by uFF124;
+    sub x uni0304 by uFF125;
+
+    # Symbols for Legacy Computing
+    sub quotedbl uni200D period by uFFC1D;
+    sub quotesingle uni200D period by uFFC1C;
+    sub quotesingle uni200D s by uFFC13;
+    sub parenleft uni200D parenright by uFFC14;
+    sub parenright uni200D arrowleft by uFFC11;
+    sub hyphen uni200D V by uFFC1E;
+    sub period uni200D quotedbl by uFFC1D;
+    sub period uni200D quotesingle by uFFC1C;
+    sub C uni200D r by uFFC24;
+    sub C uni200D z by uFFC25;
+    sub F uni200D t by uFFC27;
+    sub V uni200D hyphen by uFFC1E;
+    sub z uni200D lslash by uFFC26;
+    sub quoteright uni200D s by uFFC13;
+    sub uni2088 uni200D uni2077 by uFFC87;
+    sub arrowright uni200D parenleft by uFFC10;
+    sub uniA7F3 uni200D uni2081 by uFFC31;
+    sub uniA7F3 uni200D uni2082 by uFFC32;
+    sub uniA7F3 uni200D uni2083 by uFFC33;
+    sub uniA7F3 uni200D uni2084 by uFFC34;
+    sub uniA7F3 uni200D uni2085 by uFFC35;
+
+  } CombiningSequences;
+
+} rlig;
+
+feature ss06 {
+	featureNames {
+		name 3 1 1033 "one eighth block width";
+		name 1 0 0 "one eighth block width";
+	};
+	sub uni2581 by uni2581.ss06;
+	sub uni258F by uni258F.ss06;
+	sub uni2594 by uni2594.ss06;
+	sub uni2595 by uni2595.ss06;
+	sub u1FB70 by u1FB70.ss06;
+	sub u1FB71 by u1FB71.ss06;
+	sub u1FB72 by u1FB72.ss06;
+	sub u1FB73 by u1FB73.ss06;
+	sub u1FB74 by u1FB74.ss06;
+	sub u1FB75 by u1FB75.ss06;
+	sub u1FB76 by u1FB76.ss06;
+	sub u1FB77 by u1FB77.ss06;
+	sub u1FB78 by u1FB78.ss06;
+	sub u1FB79 by u1FB79.ss06;
+	sub u1FB7A by u1FB7A.ss06;
+	sub u1FB7B by u1FB7B.ss06;
+	sub u1FB7C by u1FB7C.ss06;
+	sub u1FB7D by u1FB7D.ss06;
+	sub u1FB7E by u1FB7E.ss06;
+	sub u1FB7F by u1FB7F.ss06;
+	sub u1FB80 by u1FB80.ss06;
+	sub u1FB81 by u1FB81.ss06;
+	sub u1FBB5 by u1FBB5.ss06;
+	sub u1FBB6 by u1FBB6.ss06;
+	sub u1FBB7 by u1FBB7.ss06;
+	sub u1FBB8 by u1FBB8.ss06;
+	sub u1FBBC by u1FBBC.ss06;
+} ss06;
+
+feature ss07 {
+	featureNames {
+		name 3 1 1033 "box drawing line width";
+		name 1 0 0 "box drawing line width";
+	};
+	sub uni2581 by uni2581.ss07;
+	sub uni258F by uni258F.ss07;
+	sub uni2594 by uni2594.ss07;
+	sub uni2595 by uni2595.ss07;
+	sub u1FB70 by u1FB70.ss07;
+	sub u1FB71 by u1FB71.ss07;
+	sub u1FB72 by u1FB72.ss07;
+	sub u1FB73 by u1FB73.ss07;
+	sub u1FB74 by u1FB74.ss07;
+	sub u1FB75 by u1FB75.ss07;
+	sub u1FB76 by u1FB76.ss07;
+	sub u1FB77 by u1FB77.ss07;
+	sub u1FB78 by u1FB78.ss07;
+	sub u1FB79 by u1FB79.ss07;
+	sub u1FB7A by u1FB7A.ss07;
+	sub u1FB7B by u1FB7B.ss07;
+	sub u1FB7C by u1FB7C.ss07;
+	sub u1FB7D by u1FB7D.ss07;
+	sub u1FB7E by u1FB7E.ss07;
+	sub u1FB7F by u1FB7F.ss07;
+	sub u1FB80 by u1FB80.ss07;
+	sub u1FB81 by u1FB81.ss07;
+	sub u1FBB5 by u1FBB5.ss07;
+	sub u1FBB6 by u1FBB6.ss07;
+	sub u1FBB7 by u1FBB7.ss07;
+	sub u1FBB8 by u1FBB8.ss07;
+	sub u1FBBC by u1FBBC.ss07;
+} ss07;
+
+feature ss08 {
+	featureNames {
+		name 3 1 1033 "plus cell triangles";
+		name 1 0 0 "plus cell triangles";
+	};
+	sub triagup by triagup.ss08;
+	sub uni25B6 by uni25B6.ss08;
+	sub triagdn by triagdn.ss08;
+	sub uni25C0 by uni25C0.ss08;
+	sub uni25C6 by uni25C6.ss08;
+	sub uni25E2 by uni25E2.ss08;
+	sub uni25E3 by uni25E3.ss08;
+	sub uni25E4 by uni25E4.ss08;
+	sub uni25E5 by uni25E5.ss08;
+} ss08;
+
+feature ss09 {
+	featureNames {
+		name 3 1 1033 "character cell triangles";
+		name 1 0 0 "character cell triangles";
+	};
+	sub triagup by triagup.ss09;
+	sub uni25B6 by uni25B6.ss09;
+	sub triagdn by triagdn.ss09;
+	sub uni25C0 by uni25C0.ss09;
+	sub uni25C6 by uni25C6.ss09;
+	sub uni25E2 by uni25E2.ss09;
+	sub uni25E3 by uni25E3.ss09;
+	sub uni25E4 by uni25E4.ss09;
+	sub uni25E5 by uni25E5.ss09;
+} ss09;

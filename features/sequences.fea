@@ -36,8 +36,12 @@ feature rlig {
     sub l tildecomb by uFF123;
     sub M tildecomb by uniF704;
     sub m tildecomb by uniF705;
+    sub N uni0302 by uFF1A6;
+    sub n uni0302 by uFF1A7;
     sub N uni0308 by uFF126;
     sub n uni0308 by uFF127;
+    sub O uni0327 by uFF1A8;
+    sub o uni0327 by uFF1A9;
     sub Oslash uni0308 by uFF12A;
     sub oslash uni0308 by uFF12B;
     sub P uni0302 by uFF130;

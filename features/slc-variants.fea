@@ -1,3 +1,71 @@
+feature ss06 {
+	featureNames {
+		name 3 1 1033 "one eighth block width";
+		name 1 0 0 "one eighth block width";
+	};
+	sub uni2581 by uni2581.ss06;
+	sub uni258F by uni258F.ss06;
+	sub uni2594 by uni2594.ss06;
+	sub uni2595 by uni2595.ss06;
+	sub u1FB70 by u1FB70.ss06;
+	sub u1FB71 by u1FB71.ss06;
+	sub u1FB72 by u1FB72.ss06;
+	sub u1FB73 by u1FB73.ss06;
+	sub u1FB74 by u1FB74.ss06;
+	sub u1FB75 by u1FB75.ss06;
+	sub u1FB76 by u1FB76.ss06;
+	sub u1FB77 by u1FB77.ss06;
+	sub u1FB78 by u1FB78.ss06;
+	sub u1FB79 by u1FB79.ss06;
+	sub u1FB7A by u1FB7A.ss06;
+	sub u1FB7B by u1FB7B.ss06;
+	sub u1FB7C by u1FB7C.ss06;
+	sub u1FB7D by u1FB7D.ss06;
+	sub u1FB7E by u1FB7E.ss06;
+	sub u1FB7F by u1FB7F.ss06;
+	sub u1FB80 by u1FB80.ss06;
+	sub u1FB81 by u1FB81.ss06;
+	sub u1FBB5 by u1FBB5.ss06;
+	sub u1FBB6 by u1FBB6.ss06;
+	sub u1FBB7 by u1FBB7.ss06;
+	sub u1FBB8 by u1FBB8.ss06;
+	sub u1FBBC by u1FBBC.ss06;
+} ss06;
+
+feature ss07 {
+	featureNames {
+		name 3 1 1033 "box drawing line width";
+		name 1 0 0 "box drawing line width";
+	};
+	sub uni2581 by uni2581.ss07;
+	sub uni258F by uni258F.ss07;
+	sub uni2594 by uni2594.ss07;
+	sub uni2595 by uni2595.ss07;
+	sub u1FB70 by u1FB70.ss07;
+	sub u1FB71 by u1FB71.ss07;
+	sub u1FB72 by u1FB72.ss07;
+	sub u1FB73 by u1FB73.ss07;
+	sub u1FB74 by u1FB74.ss07;
+	sub u1FB75 by u1FB75.ss07;
+	sub u1FB76 by u1FB76.ss07;
+	sub u1FB77 by u1FB77.ss07;
+	sub u1FB78 by u1FB78.ss07;
+	sub u1FB79 by u1FB79.ss07;
+	sub u1FB7A by u1FB7A.ss07;
+	sub u1FB7B by u1FB7B.ss07;
+	sub u1FB7C by u1FB7C.ss07;
+	sub u1FB7D by u1FB7D.ss07;
+	sub u1FB7E by u1FB7E.ss07;
+	sub u1FB7F by u1FB7F.ss07;
+	sub u1FB80 by u1FB80.ss07;
+	sub u1FB81 by u1FB81.ss07;
+	sub u1FBB5 by u1FBB5.ss07;
+	sub u1FBB6 by u1FBB6.ss07;
+	sub u1FBB7 by u1FBB7.ss07;
+	sub u1FBB8 by u1FBB8.ss07;
+	sub u1FBBC by u1FBBC.ss07;
+} ss07;
+
 feature ss08 {
 	featureNames {
 		name 3 1 1033 "plus cell triangles";
